@@ -1,6 +1,6 @@
 # Algo Trading Status
 
-_Updated 27 Sep 2026 17:10 IST · paper trading unless marked LIVE_
+_Updated 27 Sep 2026 17:11 IST · paper trading unless marked LIVE_
 
 | Bot | Market | TF | Equity | Total P&L | Today | Trades | Win % | Open | Last run | Health |
 |---|---|---|---:|---:|---:|---:|---:|---:|---|---|
@@ -19,7 +19,7 @@ _No trades yet_
 
 ## Errors
 
-**crypto_supertrend** at 27 Sep 17:10
+**crypto_supertrend** at 27 Sep 17:11
 ```
 Traceback (most recent call last):
   File "/home/runner/work/algo-trading-platform/algo-trading-platform/engine/run.py", line 197, in main

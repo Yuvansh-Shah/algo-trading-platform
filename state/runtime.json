@@ -2,7 +2,7 @@
   "crypto_supertrend": {
     "started": true,
     "last_error": {
-      "time": "2026-09-27T11:40:46+00:00",
+      "time": "2026-09-27T11:41:34+00:00",
       "msg": "assignment destination is read-only",
       "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/algo-trading-platform/algo-trading-platform/engine/run.py\", line 197, in main\n    s.on_bar(ctx)\n  File \"/home/runner/work/algo-trading-platform/algo-trading-platform/strategies/crypto_supertrend.py\", line 14, in on_bar\n    _, direction = ta.supertrend(df, 10, 3.0)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/algo-trading-platform/algo-trading-platform/engine/ta.py\", line 88, in supertrend\n    lower[i] = lower[i - 1]\n    ~~~~~^^^\nValueError: assignment destination is read-only\n"
     }
@@ -11,6 +11,6 @@
   "external_signals": {},
   "tv_rating_swing": {},
   "_meta": {
-    "last_engine_run": "2026-09-27T11:40:46+00:00"
+    "last_engine_run": "2026-09-27T11:41:34+00:00"
   }
 }
