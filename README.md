@@ -14,6 +14,23 @@ Runs your trading bots in the cloud **for free**. Your computer can be off.
    └─ claude/mcp_strategies/*.md -> signals/inbox/*.json -> executed by strategies/external_signals.py
 ```
 
+## The bot arena 🏆
+
+20 paper bots, **₹50,000 each**, trading NSE from the open (crypto 24/7), ranked live in
+**[STATUS.md](STATUS.md)** (and `dashboard/index.html`). After each close your phone gets the top 5 / bottom 3.
+**[BACKTESTS.md](BACKTESTS.md)** has how each one did over the last 120 days.
+
+| Style | Bots |
+|---|---|
+| Intraday (15m, auto square-off 15:15) | `orb_breakout`, `vwap_pullback`, `vwap_reversion`, `ema_crossover`, `supertrend_intraday`, `bb_squeeze`, `macd_adx`, `gap_and_go`, `tv_rating_scalper` |
+| Scalp / very short hold (≤1h) | `rsi2_scalper` |
+| Short-term swing (days) | `connors_rsi2`, `donchian_turtle`, `ema_trend_swing`, `bb_reversion_daily`, `hourly_macd_swing`, `tv_rating_swing` |
+| Positional | `momentum_rotation` (top-3 NIFTY 50 by 3M strength) |
+| Reference | `nifty_buy_hold` (benchmark every bot must beat), `crypto_supertrend`, `external_signals` (Claude + MCP) |
+
+Intraday bots trade 12 liquid NIFTY 50 names (`engine/bots.py → NIFTY_LIQUID`), long and short,
+max 3 positions of ~33% each, no leverage. Re-run the historical race any time: `python -m engine.backtest --all`.
+
 ## Daily use
 
 | I want to… | Do this |

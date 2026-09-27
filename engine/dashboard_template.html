@@ -3,63 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Algo Dashboard</title>
+<title>Bot Leaderboard</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-  :root { --bg:#f7f7f5; --card:#fff; --ink:#1b1b1b; --mute:#6b6b6b; --line:#e4e4e0; --up:#1a7f4b; --down:#c0392b; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#111214; --card:#1a1b1e; --ink:#ececec; --mute:#9a9a9a; --line:#2a2b2f; --up:#3ecf8e; --down:#ff6b6b; } }
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1b1b1b; --mute:#6b6b6b; --line:#e4e4e0; --up:#1a7f4b; --down:#c0392b; --hl:#fff7e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111214; --card:#1a1b1e; --ink:#ececec; --mute:#9a9a9a; --line:#2a2b2f; --up:#3ecf8e; --down:#ff6b6b; --hl:#2a2616; } }
   body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; }
-  main { max-width:1100px; margin:0 auto; padding:20px 16px 60px; }
-  h1 { font-size:20px; margin:0 0 4px; } .mute { color:var(--mute); }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin:16px 0; }
+  main { max-width:1200px; margin:0 auto; padding:20px 16px 60px; }
+  h1 { font-size:20px; margin:0 0 4px; } h2 { font-size:16px; margin:28px 0 10px; } .mute { color:var(--mute); }
   .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
-  .big { font-size:22px; font-weight:600; font-variant-numeric:tabular-nums; }
-  .up { color:var(--up); } .down { color:var(--down); }
-  .chart { height:320px; }
+  .chart { height:360px; }
   table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
-  th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { font-weight:600; color:var(--mute); font-size:12px; cursor:pointer; user-select:none; }
+  td.n, th.n { text-align:right; }
+  tr.bench td { background:var(--hl); }
+  .up { color:var(--up); } .down { color:var(--down); }
   .scroll { overflow-x:auto; }
+  .tag { font-size:11px; padding:2px 6px; border-radius:6px; border:1px solid var(--line); color:var(--mute); }
+  .desc { color:var(--mute); font-size:12px; white-space:normal; min-width:220px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Algo trading dashboard</h1>
+  <h1>🏆 Bot leaderboard</h1>
   <div class="mute" id="updated"></div>
-  <div class="grid" id="cards"></div>
+  <h2>Ranking</h2>
+  <div class="card scroll"><table id="board"></table></div>
+  <h2>Return over time</h2>
   <div class="card"><div class="chart"><canvas id="eq"></canvas></div></div>
-  <h2 style="font-size:16px;margin-top:24px">Recent trades</h2>
+  <h2>Recent fills</h2>
   <div class="card scroll"><table id="trades"></table></div>
 </main>
 <script>
 const D = /*__DATA__*/null;
-const fmt = n => Number(n).toLocaleString('en-IN', {maximumFractionDigits: 0});
-document.getElementById('updated').textContent = 'Updated ' + D.updated;
-const cards = document.getElementById('cards');
-for (const [name, b] of Object.entries(D.bots)) {
-  const eq = b.equity ?? b.initial, pnl = eq - b.initial, pct = 100 * pnl / b.initial;
-  const el = document.createElement('div'); el.className = 'card';
-  el.innerHTML = `<div class="mute">${name} · ${b.market ?? ''} ${b.interval ?? ''}</div>
-    <div class="big">${fmt(eq)}</div>
-    <div class="${pnl >= 0 ? 'up' : 'down'}">${pnl >= 0 ? '+' : ''}${fmt(pnl)} (${pct.toFixed(2)}%)</div>
-    ${b.last_error ? '<div class="down">error: ' + b.last_error.msg.slice(0, 80) + '</div>' : ''}`;
-  cards.appendChild(el);
+const fmt = (n, d = 0) => n == null ? '–' : Number(n).toLocaleString('en-IN', {maximumFractionDigits: d, minimumFractionDigits: d});
+const sgn = (n, d = 2, suf = '') => n == null ? '–' : `<span class="${n >= 0 ? 'up' : 'down'}">${n >= 0 ? '+' : ''}${fmt(n, d)}${suf}</span>`;
+document.getElementById('updated').textContent = 'Updated ' + D.updated + ' · paper trading · ₹50,000 per bot';
+const medal = r => ({1: '🥇', 2: '🥈', 3: '🥉'})[r] || r;
+const cols = [
+  ['rank', '#', r => medal(r.rank), 1], ['bot', 'Bot', r => `<b>${r.bot}</b>`],
+  ['style', 'Style', r => `<span class="tag">${r.style} ${r.interval}</span>`],
+  ['ret', 'Return', r => sgn(r.ret, 2, '%'), 1], ['pnl', 'P&L', r => sgn(r.pnl, 0), 1],
+  ['today', 'Today', r => sgn(r.today, 0), 1], ['vs_bench', 'vs NIFTY', r => sgn(r.vs_bench, 2, '%'), 1],
+  ['trades', 'Trades', r => r.trades, 1], ['win', 'Win %', r => fmt(r.win), 1],
+  ['pf', 'Profit f.', r => fmt(r.pf, 2), 1], ['mdd', 'Max DD', r => fmt(r.mdd, 1) + '%', 1],
+  ['open', 'Open', r => r.open, 1], ['description', 'Strategy', r => `<span class="desc">${r.error ? '❌ ' + r.error : r.description}</span>`],
+];
+let sortKey = 'rank', asc = true;
+function drawBoard() {
+  const rows = D.board.slice().sort((a, b) => ((a[sortKey] ?? -1e9) > (b[sortKey] ?? -1e9) ? 1 : -1) * (asc ? 1 : -1));
+  document.getElementById('board').innerHTML =
+    '<tr>' + cols.map(([k, h, , n]) => `<th class="${n ? 'n' : ''}" data-k="${k}">${h}</th>`).join('') + '</tr>' +
+    rows.map(r => `<tr class="${r.style === 'benchmark' ? 'bench' : ''}">` +
+      cols.map(([, , f, n]) => `<td class="${n ? 'n' : ''}">${f(r)}</td>`).join('') + '</tr>').join('');
+  document.querySelectorAll('#board th').forEach(th => th.onclick = () => {
+    asc = sortKey === th.dataset.k ? !asc : th.dataset.k === 'rank'; sortKey = th.dataset.k; drawBoard(); });
 }
-const palette = ['#4e79a7','#f28e2b','#59a14f','#e15759','#76b7b2','#edc948','#b07aa1','#ff9da7'];
+drawBoard();
+const init = Object.fromEntries(D.board.map(r => [r.bot, r.initial]));
+const palette = ['#4e79a7','#f28e2b','#59a14f','#e15759','#76b7b2','#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac'];
 new Chart(document.getElementById('eq'), {
   type: 'line',
   data: { datasets: Object.entries(D.series).map(([name, pts], i) => ({
-    label: name, data: pts.map(([t, v]) => ({x: new Date(t).getTime(), y: 100 * (v / (D.bots[name]?.initial || v) - 1)})),
-    borderColor: palette[i % palette.length], pointRadius: 0, borderWidth: 2, tension: 0.15 })) },
-  options: { maintainAspectRatio: false, parsing: false,
-    scales: { x: { type: 'linear', ticks: { maxTicksLimit: 8, callback: v => new Date(v).toLocaleDateString('en-IN', {day:'2-digit', month:'short'}) } },
+    label: name, data: pts.map(([t, v]) => ({x: new Date(t).getTime(), y: 100 * (v / (init[name] || v) - 1)})),
+    borderColor: palette[i % palette.length], borderDash: i >= 10 ? [5, 3] : [], pointRadius: 0, borderWidth: 1.8, tension: 0.15 })) },
+  options: { maintainAspectRatio: false, parsing: false, interaction: { mode: 'nearest', intersect: false },
+    scales: { x: { type: 'linear', ticks: { maxTicksLimit: 8, callback: v => new Date(v).toLocaleDateString('en-IN', {day: '2-digit', month: 'short'}) } },
               y: { title: { display: true, text: 'Return %' }, ticks: { callback: v => v.toFixed(1) + '%' } } },
-    plugins: { tooltip: { callbacks: { title: c => new Date(c[0].parsed.x).toLocaleString('en-IN') } } } }
+    plugins: { legend: { labels: { boxWidth: 12, font: { size: 11 } } },
+               tooltip: { callbacks: { title: c => new Date(c[0].parsed.x).toLocaleString('en-IN'),
+                                        label: c => `${c.dataset.label}: ${c.parsed.y.toFixed(2)}%` } } } }
 });
-const t = document.getElementById('trades');
-t.innerHTML = '<tr><th>Time</th><th>Bot</th><th>Side</th><th>Qty</th><th>Symbol</th><th>Price</th><th>P&L</th><th>Reason</th></tr>' +
+document.getElementById('trades').innerHTML =
+  '<tr><th>Time</th><th>Bot</th><th>Side</th><th class="n">Qty</th><th>Symbol</th><th class="n">Price</th><th class="n">P&L</th><th>Reason</th></tr>' +
   D.trades.slice().reverse().map(r => `<tr><td>${new Date(r.time).toLocaleString('en-IN')}</td><td>${r.strategy}</td>
-  <td>${r.side}</td><td>${r.qty}</td><td>${r.symbol}</td><td>${Number(r.price).toFixed(2)}</td>
-  <td class="${r.pnl >= 0 ? 'up' : 'down'}">${fmt(r.pnl)}</td><td>${r.reason}</td></tr>`).join('');
+  <td>${r.side}</td><td class="n">${r.qty}</td><td>${r.symbol}</td><td class="n">${fmt(r.price, 2)}</td>
+  <td class="n">${r.kind === 'close' ? sgn(Number(r.pnl), 0) : ''}</td><td>${r.reason}</td></tr>`).join('');
 </script>
 </body>
 </html>

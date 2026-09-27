@@ -114,3 +114,27 @@ def highest(s: pd.Series, n: int) -> pd.Series:
 
 def lowest(s: pd.Series, n: int) -> pd.Series:
     return s.rolling(n).min()
+
+
+def adx(df: pd.DataFrame, n: int = 14):
+    """Returns (adx, +DI, -DI) like Pine's ta.dmi."""
+    up, down = df.high.diff(), -df.low.diff()
+    plus_dm = pd.Series(np.where((up > down) & (up > 0), up, 0.0), index=df.index)
+    minus_dm = pd.Series(np.where((down > up) & (down > 0), down, 0.0), index=df.index)
+    tr = rma(true_range(df), n)
+    plus_di = 100 * rma(plus_dm, n) / tr
+    minus_di = 100 * rma(minus_dm, n) / tr
+    dx = 100 * (plus_di - minus_di).abs() / (plus_di + minus_di).replace(0, np.nan)
+    return rma(dx, n), plus_di, minus_di
+
+
+def session(df: pd.DataFrame, tz: str = "Asia/Kolkata") -> pd.DataFrame:
+    """Bars of the most recent trading day in `df` (for opening-range / gap logic)."""
+    days = df.index.tz_convert(tz).date
+    return df[days == days[-1]]
+
+
+def prev_session(df: pd.DataFrame, tz: str = "Asia/Kolkata") -> pd.DataFrame:
+    days = df.index.tz_convert(tz).date
+    prior = sorted(set(days))[:-1]
+    return df[days == prior[-1]] if prior else df.iloc[0:0]

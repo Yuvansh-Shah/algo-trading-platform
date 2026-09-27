@@ -11,9 +11,11 @@ from engine import Strategy
 
 
 class ExternalSignals(Strategy):
+    description = "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)"
+    style = "claude"
     market = "NSE"          # checked every run while NSE is open
     interval = "15m"
-    capital = 100_000
+    capital = 50_000
     allow_short = False
 
     def on_bar(self, ctx):

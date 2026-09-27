@@ -45,6 +45,8 @@ class Strategy:
     allow_short: bool = False
     run_at: str | None = None        # for 1D bots: local market time to run, e.g. "15:10"
     live: bool = False               # forward orders to live webhook (see config.yaml)
+    style: str = "custom"            # leaderboard label: intraday / scalp / swing / positional / benchmark
+    description: str = ""            # one line shown on the leaderboard
 
     def on_start(self, ctx: "Context"):
         """Called once, the first time the bot ever runs."""
@@ -76,12 +78,28 @@ class Context:
     def now(self) -> datetime:
         return self._clock or datetime.now(timezone.utc)
 
+    @property
+    def local_time(self) -> str:
+        """Current market-local time as "HH:MM" (e.g. "14:45" IST for NSE)."""
+        from .markets import SESSIONS
+        from zoneinfo import ZoneInfo
+        return self.now.astimezone(ZoneInfo(SESSIONS[self.market].tz)).strftime("%H:%M")
+
+    @property
+    def today(self) -> str:
+        from .markets import SESSIONS
+        from zoneinfo import ZoneInfo
+        return self.now.astimezone(ZoneInfo(SESSIONS[self.market].tz)).date().isoformat()
+
     # ------------------------------------------------------------------ data
     def data(self, symbol: str, interval: str | None = None, bars: int = 300,
-             closed_only: bool = True) -> pd.DataFrame:
+             closed_only: bool | None = None) -> pd.DataFrame:
         """OHLCV DataFrame (open/high/low/close/volume), newest bar last.
-        closed_only drops the still-forming bar so signals don't repaint."""
+        closed_only drops the still-forming bar so signals don't repaint. Default: True for
+        intraday bars; False for daily+ (daily bots run near the close, today's bar ~ final)."""
         interval = interval or self.strategy.interval
+        if closed_only is None:
+            closed_only = INTERVAL_MIN[interval] < 1440
         if self._data:
             return self._data.bars(symbol, interval, bars, self.now)
         key = (symbol, interval, bars)

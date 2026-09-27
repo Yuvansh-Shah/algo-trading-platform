@@ -76,7 +76,8 @@ class PaperBroker:
                 return None
         fee = abs(delta) * fill * self.fees
         pnl = 0.0
-        if q and (q > 0) != (delta > 0):  # reducing / flipping
+        reducing = bool(q and (q > 0) != (delta > 0))
+        if reducing:  # reducing / flipping
             closed = min(abs(delta), abs(q))
             pnl = closed * (fill - pos["avg"]) * (1 if q > 0 else -1)
             self.pf.realized += pnl
@@ -105,7 +106,7 @@ class PaperBroker:
         trade = {"time": when, "strategy": self.pf.strategy, "symbol": sym,
                  "side": "BUY" if delta > 0 else "SELL", "qty": abs(delta), "price": round(fill, 4),
                  "fee": round(fee, 2), "pnl": round(pnl - fee, 2) if pnl else round(-fee, 2),
-                 "position_after": new_q, "reason": reason}
+                 "position_after": new_q, "kind": "close" if reducing else "open", "reason": reason}
         self.log.append(trade)
         if self.live:
             trade["live"] = self.live.forward(trade)

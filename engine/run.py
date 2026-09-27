@@ -25,7 +25,7 @@ STATE = ROOT / "state"
 INBOX = ROOT / "signals" / "inbox"
 PROCESSED = ROOT / "signals" / "processed"
 TRADE_FIELDS = ["time", "strategy", "symbol", "side", "qty", "price", "fee", "pnl",
-                "position_after", "reason", "live"]
+                "position_after", "kind", "reason", "live"]
 
 
 def load_json(path: Path, default):
@@ -169,6 +169,8 @@ def main(argv=None):
                       notifier=lambda m, t: notify.send(m, t))
 
         rt["market"], rt["interval"] = market, s.interval
+        rt["style"] = s.style
+        rt["description"] = s.description or (s.__doc__ or "").strip().splitlines()[0] if (s.description or s.__doc__) else ""
         is_open = markets.is_open(market)
         if not is_open and not args.force:
             if s.intraday and pf.positions:  # left open by a missed run -> flatten at next chance
@@ -236,12 +238,12 @@ def main(argv=None):
     meta = runtime.setdefault("_meta", {})
     if cfg.get("notify", {}).get("daily_summary", True) and ist.weekday() < 5 and \
             (ist.hour, ist.minute) >= (15, 35) and meta.get("last_summary") != ist.date().isoformat():
-        lines = []
-        for name, rt in runtime.items():
-            if name.startswith("_") or "equity" not in rt:
-                continue
-            start = (rt.get("day") or {}).get("start_equity") or rt["equity"]
-            lines.append(f"{name}: {rt['equity']:,.0f} ({rt['equity'] - start:+,.0f} today)")
+        save_json(STATE / "runtime.json", runtime)
+        board = report.leaderboard(STATE)
+        lines = [f"{r['rank']}. {r['bot']}: {r['ret']:+.2f}% (today {r['today']:+,.0f})" for r in board[:5]]
+        if len(board) > 5:
+            lines.append("...")
+            lines += [f"{r['rank']}. {r['bot']}: {r['ret']:+.2f}%" for r in board[-3:]]
         if lines:
             notify.send("\n".join(lines), "Daily summary", tags="bar_chart")
         meta["last_summary"] = ist.date().isoformat()
