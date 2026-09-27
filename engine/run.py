@@ -168,6 +168,7 @@ def main(argv=None):
         ctx = Context(s, broker, market, signals=signals.get(s.name, []),
                       notifier=lambda m, t: notify.send(m, t))
 
+        rt["market"], rt["interval"] = market, s.interval
         is_open = markets.is_open(market)
         if not is_open and not args.force:
             if s.intraday and pf.positions:  # left open by a missed run -> flatten at next chance
@@ -206,8 +207,6 @@ def main(argv=None):
             if day.get("date") != local_today:
                 rt["day"] = {"date": local_today, "start_equity": round(eq, 2)}
             rt["equity"] = round(eq, 2)
-            rt["market"] = market
-            rt["interval"] = s.interval
             equity_rows.append((stamp, s.name, round(eq, 2), round(pf.cash, 2), len(pf.positions)))
         except Exception as e:
             tb = traceback.format_exc(limit=6)
