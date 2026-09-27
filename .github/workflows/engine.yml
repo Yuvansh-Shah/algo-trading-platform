@@ -4,13 +4,12 @@ on:
   schedule:
     # GitHub drops scheduled runs at busy minutes (:00/:15/:30/:45 and the top of the hour),
     # so every trigger sits on an odd minute. Runs are idempotent: an extra run does nothing twice.
-    # NSE session 09:15-15:30 IST = 03:45-10:00 UTC, every 15 min
-    - cron: "47 3 * * 1-5"            # 09:17 IST
-    - cron: "2,17,32,47 4-9 * * 1-5"  # 09:32 ... 15:17 IST (15:17 = intraday square-off)
-    - cron: "52 9 * * 1-5"            # 15:22 IST backup square-off
-    - cron: "8,38 10 * * 1-5"         # 15:38 / 16:08 IST daily leaderboard summary
-    # 24/7 markets (crypto) - hourly
-    - cron: "23 * * * *"
+    # NSE only (session 09:15-15:30 IST = 03:45-10:00 UTC), every 10 min. ~41 runs/day x 22 days
+    # = ~900 of the 2,000 free minutes/month. Crypto bots are checked on these same runs.
+    - cron: "47,57 3 * * 1-5"               # 09:17, 09:27 IST
+    - cron: "2,12,22,32,42,52 4-9 * * 1-5"  # 09:32 ... 15:22 IST (15:22 = intraday square-off)
+    - cron: "57 9 * * 1-5"                  # 15:27 IST backup square-off
+    - cron: "8,38 10 * * 1-5"               # 15:38 / 16:08 IST daily leaderboard summary
   push:
     branches: [main]
     paths: ["signals/inbox/**"]   # new external signal -> act on it right away
