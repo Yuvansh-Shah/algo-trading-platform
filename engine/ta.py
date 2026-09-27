@@ -78,8 +78,9 @@ def supertrend(df: pd.DataFrame, n: int = 10, mult: float = 3.0):
     """Returns (supertrend_line, direction) where direction = 1 uptrend, -1 downtrend."""
     a = atr(df, n)
     hl2 = (df.high + df.low) / 2
-    upper, lower = (hl2 + mult * a).values, (hl2 - mult * a).values
-    close = df.close.values
+    upper = (hl2 + mult * a).to_numpy(dtype=float, copy=True)
+    lower = (hl2 - mult * a).to_numpy(dtype=float, copy=True)
+    close = df.close.to_numpy(dtype=float)
     st, dirn = np.full(len(df), np.nan), np.ones(len(df))
     for i in range(1, len(df)):
         if np.isnan(a.iloc[i]):
