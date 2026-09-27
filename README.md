@@ -91,7 +91,9 @@ Store) → + → subscribe to the topic name you were given. Telegram is optiona
   static IP, which GitHub's servers don't have. See "Going live" below.
 - **NSE/BSE prices are ~15 min delayed** (TradingView logged-out feed). Fine for swing and slower
   intraday bots, not for scalping. Crypto is real-time.
-- **Cadence:** fastest is every 15 min (GitHub cron can also start runs 5-15 min late at busy times).
+- **Cadence:** fastest is every 15 min. GitHub's scheduler is best-effort: runs can start late or be
+  skipped at busy times (triggers sit on odd minutes to reduce this). For guaranteed timing, have a free
+  pinger such as cron-job.org call the workflow's "Run workflow" API on a schedule.
   Budget is ~1,300 of the 2,000 free Actions minutes/month on a private repo.
 - **Holidays** are detected automatically (if NIFTY has no bar today, the market is shut).
 
