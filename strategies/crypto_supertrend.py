@@ -1,10 +1,10 @@
 """24/7 crypto trend follower: long while Supertrend(10, 3) on 1h bars is up. BTC + ETH.
-Crypto data from TradingView is real-time and the market never closes. Capital is in USDT."""
+Crypto data is real-time, but to save GitHub minutes it is only checked during NSE-hours runs. Capital is in USDT."""
 from engine import Strategy, ta
 
 
 class CryptoSupertrend(Strategy):
-    description = "BTC/ETH long while 1h Supertrend 10/3 is up (24/7, USDT)"
+    description = "BTC/ETH long while 1h Supertrend 10/3 is up (checked in NSE hours only, USDT)"
     style = "crypto"
     symbols = ["BINANCE:BTCUSDT", "BINANCE:ETHUSDT"]
     interval = "1h"
