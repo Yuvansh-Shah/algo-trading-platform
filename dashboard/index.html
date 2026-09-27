@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bot Leaderboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1b1b1b; --mute:#6b6b6b; --line:#e4e4e0; --up:#1a7f4b; --down:#c0392b; --hl:#fff7e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111214; --card:#1a1b1e; --ink:#ececec; --mute:#9a9a9a; --line:#2a2b2f; --up:#3ecf8e; --down:#ff6b6b; --hl:#2a2616; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; }
+  main { max-width:1200px; margin:0 auto; padding:20px 16px 60px; }
+  h1 { font-size:20px; margin:0 0 4px; } h2 { font-size:16px; margin:28px 0 10px; } .mute { color:var(--mute); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+  .chart { height:360px; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { font-weight:600; color:var(--mute); font-size:12px; cursor:pointer; user-select:none; }
+  td.n, th.n { text-align:right; }
+  tr.bench td { background:var(--hl); }
+  .up { color:var(--up); } .down { color:var(--down); }
+  .scroll { overflow-x:auto; }
+  .tag { font-size:11px; padding:2px 6px; border-radius:6px; border:1px solid var(--line); color:var(--mute); }
+  .desc { color:var(--mute); font-size:12px; white-space:normal; min-width:220px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🏆 Bot leaderboard</h1>
+  <div class="mute" id="updated"></div>
+  <h2>Ranking</h2>
+  <div class="card scroll"><table id="board"></table></div>
+  <h2>Return over time</h2>
+  <div class="card"><div class="chart"><canvas id="eq"></canvas></div></div>
+  <h2>Recent fills</h2>
+  <div class="card scroll"><table id="trades"></table></div>
+</main>
+<script>
+const D = {"updated": "27 Sep 2026 18:22 IST", "series": {"crypto_supertrend": [["2026-09-27T12:52:12+00:00", 49968.5]]}, "trades": [{"time": "2026-09-27T12:52:12+00:00", "strategy": "crypto_supertrend", "symbol": "BINANCE:BTCUSDT", "side": "BUY", "qty": "0.264796", "price": "84988.0042", "fee": "11.25", "pnl": "-11.25", "position_after": "0.264796", "kind": "open", "reason": "Supertrend up", "live": ""}, {"time": "2026-09-27T12:52:13+00:00", "strategy": "crypto_supertrend", "symbol": "BINANCE:ETHUSDT", "side": "BUY", "qty": "8.288925", "price": "2714.1527", "fee": "11.25", "pnl": "-11.25", "position_after": "8.288925", "kind": "open", "reason": "Supertrend up", "live": ""}], "board": [{"bot": "bb_reversion_daily", "style": "swing", "market": "NSE", "interval": "1D", "description": "Close below lower BB(20,2) while above SMA200 -> buy; exit at the middle band", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 1, "vs_bench": 0.0}, {"bot": "bb_squeeze", "style": "intraday", "market": "NSE", "interval": "15m", "description": "BB width at a 30-bar low, then a close outside the band; exit at mid band", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 2, "vs_bench": 0.0}, {"bot": "connors_rsi2", "style": "swing", "market": "NSE", "interval": "1D", "description": "Close > SMA200 and RSI(2) < 10 -> buy; exit close > SMA5 (hold 1-5 days)", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 3, "vs_bench": 0.0}, {"bot": "donchian_turtle", "style": "swing", "market": "NSE", "interval": "1D", "description": "Close above prior 20-day high -> buy; exit below 10-day low; 2 ATR stop", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 4, "vs_bench": 0.0}, {"bot": "ema_crossover", "style": "intraday", "market": "NSE", "interval": "15m", "description": "EMA 9/21 cross + RSI>50 + above VWAP (mirror for shorts), 1.5/3 ATR", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 5, "vs_bench": 0.0}, {"bot": "ema_trend_swing", "style": "swing", "market": "NSE", "interval": "1D", "description": "EMA20>EMA50 uptrend, close crosses back above EMA20 -> buy; 8% trailing stop", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 6, "vs_bench": 0.0}, {"bot": "external_signals", "style": "claude", "market": "NSE", "interval": "15m", "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 7, "vs_bench": 0.0}, {"bot": "gap_and_go", "style": "intraday", "market": "NSE", "interval": "15m", "description": "Gap >0.8% + first 15m candle confirms + break of its high/low, 2R", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 8, "vs_bench": 0.0}, {"bot": "hourly_macd_swing", "style": "swing", "market": "NSE", "interval": "1h", "description": "1h MACD crosses above signal while above EMA200; exit on cross down; 2/4 ATR", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 9, "vs_bench": 0.0}, {"bot": "macd_adx", "style": "intraday", "market": "NSE", "interval": "15m", "description": "MACD histogram crosses zero with ADX>20 and EMA50 trend; exit on opposite cross", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 10, "vs_bench": 0.0}, {"bot": "momentum_rotation", "style": "positional", "market": "NSE", "interval": "1D", "description": "Hold top-3 NIFTY 50 by 3M return (above SMA50, TV rating > 0); rotate out below top 10", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 11, "vs_bench": 0.0}, {"bot": "nifty_buy_hold", "style": "benchmark", "market": "NSE", "interval": "1D", "description": "Benchmark - 100% NIFTY 50 ETF (NIFTYBEES), buy once and hold", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 12, "vs_bench": 0.0}, {"bot": "orb_breakout", "style": "intraday", "market": "NSE", "interval": "15m", "description": "15-min opening range breakout, long/short, stop at other side, 2R target", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 13, "vs_bench": 0.0}, {"bot": "rsi2_scalper", "style": "scalp", "market": "NSE", "interval": "15m", "description": "RSI(2)<10 above EMA50 (or >90 below), exit on snap-back or after 4 bars", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 14, "vs_bench": 0.0}, {"bot": "supertrend_intraday", "style": "intraday", "market": "NSE", "interval": "15m", "description": "Supertrend 10/3 flips on 15m, stop at the Supertrend line, 2R", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 15, "vs_bench": 0.0}, {"bot": "tv_rating_scalper", "style": "intraday", "market": "NSE", "interval": "15m", "description": "TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 16, "vs_bench": 0.0}, {"bot": "tv_rating_swing", "style": "swing", "market": "NSE", "interval": "1D", "description": "NIFTY 50 names rated STRONG BUY (1D) + BUY (1W) by TradingView; 7% trailing stop", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 17, "vs_bench": 0.0}, {"bot": "vwap_pullback", "style": "intraday", "market": "NSE", "interval": "15m", "description": "Trend (EMA20>EMA50) + pullback that holds VWAP, 1 ATR stop, 2R target", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 18, "vs_bench": 0.0}, {"bot": "vwap_reversion", "style": "intraday", "market": "NSE", "interval": "15m", "description": "Fade 2-sigma stretches from VWAP, exit back at VWAP", "initial": 50000.0, "equity": 50000.0, "pnl": 0.0, "ret": 0.0, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": 0.0, "open": 0, "last_run": null, "error": null, "rank": 19, "vs_bench": 0.0}, {"bot": "crypto_supertrend", "style": "crypto", "market": "CRYPTO", "interval": "1h", "description": "BTC/ETH long while 1h Supertrend 10/3 is up (24/7, USDT)", "initial": 50000.0, "equity": 49968.5, "pnl": -31.5, "ret": -0.06300000000000194, "today": 0.0, "trades": 0, "win": null, "pf": null, "avg": null, "mdd": -0.06300000000000194, "open": 2, "last_run": "2026-09-27T12:52:12+00:00", "error": null, "rank": 20, "vs_bench": -0.06300000000000194}]};
+const fmt = (n, d = 0) => n == null ? '–' : Number(n).toLocaleString('en-IN', {maximumFractionDigits: d, minimumFractionDigits: d});
+const sgn = (n, d = 2, suf = '') => n == null ? '–' : `<span class="${n >= 0 ? 'up' : 'down'}">${n >= 0 ? '+' : ''}${fmt(n, d)}${suf}</span>`;
+document.getElementById('updated').textContent = 'Updated ' + D.updated + ' · paper trading · ₹50,000 per bot';
+const medal = r => ({1: '🥇', 2: '🥈', 3: '🥉'})[r] || r;
+const cols = [
+  ['rank', '#', r => medal(r.rank), 1], ['bot', 'Bot', r => `<b>${r.bot}</b>`],
+  ['style', 'Style', r => `<span class="tag">${r.style} ${r.interval}</span>`],
+  ['ret', 'Return', r => sgn(r.ret, 2, '%'), 1], ['pnl', 'P&L', r => sgn(r.pnl, 0), 1],
+  ['today', 'Today', r => sgn(r.today, 0), 1], ['vs_bench', 'vs NIFTY', r => sgn(r.vs_bench, 2, '%'), 1],
+  ['trades', 'Trades', r => r.trades, 1], ['win', 'Win %', r => fmt(r.win), 1],
+  ['pf', 'Profit f.', r => fmt(r.pf, 2), 1], ['mdd', 'Max DD', r => fmt(r.mdd, 1) + '%', 1],
+  ['open', 'Open', r => r.open, 1], ['description', 'Strategy', r => `<span class="desc">${r.error ? '❌ ' + r.error : r.description}</span>`],
+];
+let sortKey = 'rank', asc = true;
+function drawBoard() {
+  const rows = D.board.slice().sort((a, b) => ((a[sortKey] ?? -1e9) > (b[sortKey] ?? -1e9) ? 1 : -1) * (asc ? 1 : -1));
+  document.getElementById('board').innerHTML =
+    '<tr>' + cols.map(([k, h, , n]) => `<th class="${n ? 'n' : ''}" data-k="${k}">${h}</th>`).join('') + '</tr>' +
+    rows.map(r => `<tr class="${r.style === 'benchmark' ? 'bench' : ''}">` +
+      cols.map(([, , f, n]) => `<td class="${n ? 'n' : ''}">${f(r)}</td>`).join('') + '</tr>').join('');
+  document.querySelectorAll('#board th').forEach(th => th.onclick = () => {
+    asc = sortKey === th.dataset.k ? !asc : th.dataset.k === 'rank'; sortKey = th.dataset.k; drawBoard(); });
+}
+drawBoard();
+const init = Object.fromEntries(D.board.map(r => [r.bot, r.initial]));
+const palette = ['#4e79a7','#f28e2b','#59a14f','#e15759','#76b7b2','#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac'];
+new Chart(document.getElementById('eq'), {
+  type: 'line',
+  data: { datasets: Object.entries(D.series).map(([name, pts], i) => ({
+    label: name, data: pts.map(([t, v]) => ({x: new Date(t).getTime(), y: 100 * (v / (init[name] || v) - 1)})),
+    borderColor: palette[i % palette.length], borderDash: i >= 10 ? [5, 3] : [], pointRadius: 0, borderWidth: 1.8, tension: 0.15 })) },
+  options: { maintainAspectRatio: false, parsing: false, interaction: { mode: 'nearest', intersect: false },
+    scales: { x: { type: 'linear', ticks: { maxTicksLimit: 8, callback: v => new Date(v).toLocaleDateString('en-IN', {day: '2-digit', month: 'short'}) } },
+              y: { title: { display: true, text: 'Return %' }, ticks: { callback: v => v.toFixed(1) + '%' } } },
+    plugins: { legend: { labels: { boxWidth: 12, font: { size: 11 } } },
+               tooltip: { callbacks: { title: c => new Date(c[0].parsed.x).toLocaleString('en-IN'),
+                                        label: c => `${c.dataset.label}: ${c.parsed.y.toFixed(2)}%` } } } }
+});
+document.getElementById('trades').innerHTML =
+  '<tr><th>Time</th><th>Bot</th><th>Side</th><th class="n">Qty</th><th>Symbol</th><th class="n">Price</th><th class="n">P&L</th><th>Reason</th></tr>' +
+  D.trades.slice().reverse().map(r => `<tr><td>${new Date(r.time).toLocaleString('en-IN')}</td><td>${r.strategy}</td>
+  <td>${r.side}</td><td class="n">${r.qty}</td><td>${r.symbol}</td><td class="n">${fmt(r.price, 2)}</td>
+  <td class="n">${r.kind === 'close' ? sgn(Number(r.pnl), 0) : ''}</td><td>${r.reason}</td></tr>`).join('');
+</script>
+</body>
+</html>

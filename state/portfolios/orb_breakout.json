@@ -1,0 +1,12 @@
+{
+  "strategy": "orb_breakout",
+  "initial": 50000.0,
+  "cash": 50000.0,
+  "positions": {},
+  "realized": 0.0,
+  "fees": 0.0,
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "memory": {}
+}
