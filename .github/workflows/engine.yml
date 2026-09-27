@@ -2,12 +2,15 @@ name: trading-engine
 
 on:
   schedule:
-    # NSE session 09:15-15:30 IST = 03:45-10:00 UTC, every 15 min (+15:45 IST for the daily summary)
-    - cron: "45 3 * * 1-5"
-    - cron: "*/15 4-9 * * 1-5"
-    - cron: "0,15 10 * * 1-5"
+    # GitHub drops scheduled runs at busy minutes (:00/:15/:30/:45 and the top of the hour),
+    # so every trigger sits on an odd minute. Runs are idempotent: an extra run does nothing twice.
+    # NSE session 09:15-15:30 IST = 03:45-10:00 UTC, every 15 min
+    - cron: "47 3 * * 1-5"            # 09:17 IST
+    - cron: "2,17,32,47 4-9 * * 1-5"  # 09:32 ... 15:17 IST (15:17 = intraday square-off)
+    - cron: "52 9 * * 1-5"            # 15:22 IST backup square-off
+    - cron: "8,38 10 * * 1-5"         # 15:38 / 16:08 IST daily leaderboard summary
     # 24/7 markets (crypto) - hourly
-    - cron: "5 * * * *"
+    - cron: "23 * * * *"
   push:
     branches: [main]
     paths: ["signals/inbox/**"]   # new external signal -> act on it right away
