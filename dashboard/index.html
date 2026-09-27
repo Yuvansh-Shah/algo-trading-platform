@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Algo Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1b1b1b; --mute:#6b6b6b; --line:#e4e4e0; --up:#1a7f4b; --down:#c0392b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111214; --card:#1a1b1e; --ink:#ececec; --mute:#9a9a9a; --line:#2a2b2f; --up:#3ecf8e; --down:#ff6b6b; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:20px 16px 60px; }
+  h1 { font-size:20px; margin:0 0 4px; } .mute { color:var(--mute); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin:16px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+  .big { font-size:22px; font-weight:600; font-variant-numeric:tabular-nums; }
+  .up { color:var(--up); } .down { color:var(--down); }
+  .chart { height:320px; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  .scroll { overflow-x:auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Algo trading dashboard</h1>
+  <div class="mute" id="updated"></div>
+  <div class="grid" id="cards"></div>
+  <div class="card"><div class="chart"><canvas id="eq"></canvas></div></div>
+  <h2 style="font-size:16px;margin-top:24px">Recent trades</h2>
+  <div class="card scroll"><table id="trades"></table></div>
+</main>
+<script>
+const D = {"updated": "27 Sep 2026 17:10 IST", "series": {}, "trades": [], "bots": {"external_signals": {"initial": 100000.0}, "tv_rating_swing": {"initial": 200000.0}, "crypto_supertrend": {"initial": 10000.0, "started": true, "last_error": {"time": "2026-09-27T11:40:25+00:00", "msg": "assignment destination is read-only", "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/algo-trading-platform/algo-trading-platform/engine/run.py\", line 197, in main\n    s.on_bar(ctx)\n  File \"/home/runner/work/algo-trading-platform/algo-trading-platform/strategies/crypto_supertrend.py\", line 14, in on_bar\n    _, direction = ta.supertrend(df, 10, 3.0)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/algo-trading-platform/algo-trading-platform/engine/ta.py\", line 88, in supertrend\n    lower[i] = lower[i - 1]\n    ~~~~~^^^\nValueError: assignment destination is read-only\n"}}, "ema_crossover": {"initial": 100000.0}}};
+const fmt = n => Number(n).toLocaleString('en-IN', {maximumFractionDigits: 0});
+document.getElementById('updated').textContent = 'Updated ' + D.updated;
+const cards = document.getElementById('cards');
+for (const [name, b] of Object.entries(D.bots)) {
+  const eq = b.equity ?? b.initial, pnl = eq - b.initial, pct = 100 * pnl / b.initial;
+  const el = document.createElement('div'); el.className = 'card';
+  el.innerHTML = `<div class="mute">${name} · ${b.market ?? ''} ${b.interval ?? ''}</div>
+    <div class="big">${fmt(eq)}</div>
+    <div class="${pnl >= 0 ? 'up' : 'down'}">${pnl >= 0 ? '+' : ''}${fmt(pnl)} (${pct.toFixed(2)}%)</div>
+    ${b.last_error ? '<div class="down">error: ' + b.last_error.msg.slice(0, 80) + '</div>' : ''}`;
+  cards.appendChild(el);
+}
+const palette = ['#4e79a7','#f28e2b','#59a14f','#e15759','#76b7b2','#edc948','#b07aa1','#ff9da7'];
+new Chart(document.getElementById('eq'), {
+  type: 'line',
+  data: { datasets: Object.entries(D.series).map(([name, pts], i) => ({
+    label: name, data: pts.map(([t, v]) => ({x: new Date(t).getTime(), y: 100 * (v / (D.bots[name]?.initial || v) - 1)})),
+    borderColor: palette[i % palette.length], pointRadius: 0, borderWidth: 2, tension: 0.15 })) },
+  options: { maintainAspectRatio: false, parsing: false,
+    scales: { x: { type: 'linear', ticks: { maxTicksLimit: 8, callback: v => new Date(v).toLocaleDateString('en-IN', {day:'2-digit', month:'short'}) } },
+              y: { title: { display: true, text: 'Return %' }, ticks: { callback: v => v.toFixed(1) + '%' } } },
+    plugins: { tooltip: { callbacks: { title: c => new Date(c[0].parsed.x).toLocaleString('en-IN') } } } }
+});
+const t = document.getElementById('trades');
+t.innerHTML = '<tr><th>Time</th><th>Bot</th><th>Side</th><th>Qty</th><th>Symbol</th><th>Price</th><th>P&L</th><th>Reason</th></tr>' +
+  D.trades.slice().reverse().map(r => `<tr><td>${new Date(r.time).toLocaleString('en-IN')}</td><td>${r.strategy}</td>
+  <td>${r.side}</td><td>${r.qty}</td><td>${r.symbol}</td><td>${Number(r.price).toFixed(2)}</td>
+  <td class="${r.pnl >= 0 ? 'up' : 'down'}">${fmt(r.pnl)}</td><td>${r.reason}</td></tr>`).join('');
+</script>
+</body>
+</html>
