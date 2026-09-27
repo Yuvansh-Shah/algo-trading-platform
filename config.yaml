@@ -1,0 +1,26 @@
+# Global settings for the trading engine.
+
+# Paper-trading cost model (applied per side). ~0.05% covers Indian brokerage + STT + charges
+# for delivery/intraday reasonably; raise it for F&O or illiquid stocks.
+fees_pct: 0.05
+slippage_pct: 0.02
+
+notify:
+  trades: true          # push every fill to your phone
+  daily_summary: true   # P&L summary after 15:35 IST on weekdays
+
+# Per-bot overrides without editing the bot file (name = file name in strategies/).
+# Keys: enabled, capital, interval, symbols, intraday, live, run_at
+strategies:
+  ema_crossover:     {enabled: true}
+  tv_rating_swing:   {enabled: true}
+  crypto_supertrend: {enabled: true}
+  external_signals:  {enabled: true}
+
+# LIVE ORDERS - off. When enabled, bots with `live: true` also POST each order to the
+# LIVE_WEBHOOK_URL secret (e.g. a broker/bridge that accepts TradingView-style webhooks).
+# The paper book keeps running alongside so you can compare.
+live:
+  enabled: false
+  # template: {"secret": "...", "transactionType": "{{side}}", "exchange": "{{exchange}}",
+  #            "symbol": "{{symbol}}", "quantity": "{{qty}}", "orderType": "MKT"}
