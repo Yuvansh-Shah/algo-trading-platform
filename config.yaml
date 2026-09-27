@@ -11,11 +11,9 @@ notify:
 
 # Per-bot overrides without editing the bot file (name = file name in strategies/).
 # Keys: enabled, capital, interval, symbols, intraday, live, run_at
-strategies:
-  ema_crossover:     {enabled: true}
-  tv_rating_swing:   {enabled: true}
-  crypto_supertrend: {enabled: true}
-  external_signals:  {enabled: true}
+strategies: {}
+  # example: ema_crossover: {enabled: false}
+  # example: connors_rsi2:  {capital: 100000}
 
 # LIVE ORDERS - off. When enabled, bots with `live: true` also POST each order to the
 # LIVE_WEBHOOK_URL secret (e.g. a broker/bridge that accepts TradingView-style webhooks).

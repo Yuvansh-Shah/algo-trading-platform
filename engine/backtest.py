@@ -1,40 +1,61 @@
-"""Backtest a bot on historical TradingView bars with the exact same code that runs live.
+"""Backtest bots on historical TradingView bars with the exact same code that runs live.
 
-    python -m engine.backtest ema_crossover            # default 3000 bars
-    python -m engine.backtest ema_crossover --bars 5000
+    python -m engine.backtest ema_crossover             # one bot, last 120 days
+    python -m engine.backtest ema_crossover --days 180
+    python -m engine.backtest --all                     # every bot, same period -> BACKTESTS.md
 
 Orders placed on a bar's close fill at the NEXT bar's open (no look-ahead). Stops/targets
-are checked against each bar's high/low. Results -> backtests/<bot>_trades.csv + equity.csv
+are checked against each bar's high/low. Results -> backtests/<bot>_trades.csv + _equity.csv
 """
 from __future__ import annotations
 
 import argparse
 import csv
-from datetime import timedelta
+import math
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
 from . import markets, tv
 from .broker import PaperBroker, Portfolio
 from .loader import ROOT, load_strategies
-from .strategy import INTERVAL_MIN, Context
+from .strategy import INTERVAL_MIN, Context, NotAvailableInBacktest
+
+WARMUP_BARS = 260
+
+
+def bars_needed(interval: str, market: str, days: int) -> int:
+    mins = INTERVAL_MIN[interval]
+    if market == "CRYPTO":
+        per_day = 1440 / mins
+        trading_days = days
+    else:
+        s = markets.SESSIONS[market]
+        session_min = (s.close.hour * 60 + s.close.minute) - (s.open.hour * 60 + s.open.minute)
+        per_day = max(1.0, session_min / mins) if mins < 1440 else 1.0
+        trading_days = days * 5 / 7
+    if mins >= 1440:
+        per_day = 1440 / mins
+    return min(5000, int(math.ceil(trading_days * per_day)) + WARMUP_BARS)
 
 
 class BacktestData:
-    def __init__(self, total_bars: int):
-        self.total = total_bars
+    def __init__(self, market: str, days: int):
+        self.market, self.days = market, days
         self.frames: dict = {}
 
     def frame(self, symbol, interval):
         key = (symbol, interval)
         if key not in self.frames:
-            self.frames[key] = tv.ohlcv(symbol, interval, min(self.total, 5000))
+            self.frames[key] = tv.ohlcv(symbol, interval, bars_needed(interval, self.market, self.days))
         return self.frames[key]
 
     def bars(self, symbol, interval, n, now):
         df = self.frame(symbol, interval)
-        closed = df[df.index + timedelta(minutes=INTERVAL_MIN[interval]) <= now]
-        return closed.tail(n)
+        cutoff = pd.Timestamp(now) - timedelta(minutes=INTERVAL_MIN[interval])
+        i = df.index.searchsorted(cutoff, side="right")
+        return df.iloc[max(0, i - n):i]
 
     def price(self, symbol, now):
         for iv in sorted((iv for s, iv in self.frames if s == symbol), key=INTERVAL_MIN.get):
@@ -44,20 +65,23 @@ class BacktestData:
         return float("nan")
 
 
-def run(name: str, bars: int = 3000, capital: float | None = None, fees_pct=0.05, slippage_pct=0.02,
-        quiet=False):
+def run(name: str, days: int = 120, capital: float | None = None, fees_pct=0.05, slippage_pct=0.02,
+        quiet=True) -> dict:
     strategies, errors = load_strategies([name])
     if not strategies:
         raise SystemExit(f"bot {name!r} not found. {errors}")
     s = strategies[0]
+    base = {"bot": s.name, "style": s.style, "interval": s.interval}
     if not s.symbols:
-        raise SystemExit("backtests need a fixed `symbols` list (screener-based bots can only paper-trade live)")
+        return {**base, "status": "live-only (uses the live screener)"}
     market = s.market or markets.market_of_symbol(s.symbols[0])
-    data = BacktestData(bars)
+    data = BacktestData(market, days)
     step = timedelta(minutes=INTERVAL_MIN[s.interval])
     for sym in s.symbols:
         data.frame(sym, s.interval)
     timeline = data.frame(s.symbols[0], s.interval).index
+    start = pd.Timestamp(datetime.now(timezone.utc) - timedelta(days=days))
+    first = max(int(timeline.searchsorted(start)), 30)
     pf = Portfolio(s.name, capital or s.capital, capital or s.capital)
     trades: list[dict] = []
     broker = PaperBroker(pf, fees_pct, slippage_pct, s.allow_short, trades)
@@ -67,54 +91,52 @@ def run(name: str, bars: int = 3000, capital: float | None = None, fees_pct=0.05
     def executor(symbol, delta, reason, sl, tp, trail):
         pending.append((symbol, delta, reason, sl, tp, trail))
 
-    ctx = Context(s, broker, market, data_provider=data, executor=executor, logger=(lambda *a: None) if quiet else print)
-    s.on_start(ctx)
-    warmup = min(50, len(timeline) // 5)
-    for i in range(warmup, len(timeline)):
-        t = timeline[i]
-        when = t.isoformat()
-        bar = {sym: data.frame(sym, s.interval) for sym in s.symbols}
-        row = {sym: df.loc[t] for sym, df in bar.items() if t in df.index}
-        # fill yesterday's orders at this bar's open
-        for sym, delta, reason, sl, tp, trail in pending:
-            px = row[sym].open if sym in row else data.price(sym, t)
-            if delta < 0 and broker.position(sym) <= 0 and not s.allow_short:
-                continue
-            broker.order(sym, delta, float(px), when, reason, sl, tp, trail)
-        pending.clear()
-        # stops/targets inside this bar
-        if pf.positions:
-            opens = {k: float(v.open) for k, v in row.items()}
-            broker.check_exits(opens, when, {k: float(v.high) for k, v in row.items()},
-                               {k: float(v.low) for k, v in row.items()})
-        ctx._clock = (t + step).to_pydatetime()
-        # intraday square-off near the close
-        if s.intraday and not markets.SESSIONS[market].always_open and \
-                markets.minutes_to_close(market, ctx._clock) <= s.square_off_minutes:
-            for sym, p in list(pf.positions.items()):
-                broker.order(sym, -p["qty"], float(row[sym].close) if sym in row else data.price(sym, t),
-                             when, "intraday square-off")
-        else:
-            s.on_bar(ctx)
-        closes = {k: float(v.close) for k, v in row.items()}
-        curve.append((t, pf.equity(closes)))
+    ctx = Context(s, broker, market, data_provider=data, executor=executor,
+                  logger=(lambda *a: None) if quiet else print)
+    frames = {sym: data.frame(sym, s.interval) for sym in s.symbols}
+    try:
+        s.on_start(ctx)
+        for i in range(first, len(timeline)):
+            t = timeline[i]
+            when = t.isoformat()
+            row = {sym: df.loc[t] for sym, df in frames.items() if t in df.index}
+            for sym, delta, reason, sl, tp, trail in pending:  # fill last bar's orders at this open
+                px = row[sym].open if sym in row else data.price(sym, t)
+                if delta < 0 and broker.position(sym) <= 0 and not s.allow_short:
+                    continue
+                broker.order(sym, delta, float(px), when, reason, sl, tp, trail)
+            pending.clear()
+            if pf.positions:
+                broker.check_exits({k: float(v.open) for k, v in row.items()}, when,
+                                   {k: float(v.high) for k, v in row.items()},
+                                   {k: float(v.low) for k, v in row.items()})
+            ctx._clock = (t + step).to_pydatetime()
+            if s.intraday and not markets.SESSIONS[market].always_open and \
+                    markets.minutes_to_close(market, ctx._clock) <= s.square_off_minutes:
+                for sym, p in list(pf.positions.items()):
+                    px = float(row[sym].close) if sym in row else data.price(sym, t)
+                    broker.order(sym, -p["qty"], px, when, "intraday square-off")
+            else:
+                s.on_bar(ctx)
+            curve.append((t, pf.equity({k: float(v.close) for k, v in row.items()})))
+    except NotAvailableInBacktest as e:
+        return {**base, "status": f"live-only ({e})"}
 
     eq = pd.Series([v for _, v in curve], index=[t for t, _ in curve])
-    dd = (eq / eq.cummax() - 1).min() * 100
-    first = data.frame(s.symbols[0], s.interval)
-    bh = (first.close.iloc[-1] / first.close.iloc[warmup] - 1) * 100
-    closed = pf.wins + pf.losses
-    gross_win = sum(t["pnl"] for t in trades if t["pnl"] > 0)
-    gross_loss = -sum(t["pnl"] for t in trades if t["pnl"] < 0)
+    closes = [t["pnl"] for t in trades if t.get("kind") == "close"]
+    wins, losses = [p for p in closes if p > 0], [-p for p in closes if p <= 0]
+    ist = ZoneInfo("Asia/Kolkata")
     stats = {
-        "bot": s.name, "interval": s.interval, "symbols": ", ".join(s.symbols),
-        "from": str(timeline[warmup])[:16], "to": str(timeline[-1])[:16],
+        **base, "status": "ok", "symbols": len(s.symbols),
+        "from": timeline[first].tz_convert(ist).strftime("%d %b %Y"),
+        "to": timeline[-1].tz_convert(ist).strftime("%d %b %Y"),
         "start_equity": round(pf.initial), "end_equity": round(eq.iloc[-1]),
         "return_pct": round((eq.iloc[-1] / pf.initial - 1) * 100, 2),
-        "buy_hold_pct": round(bh, 2), "max_drawdown_pct": round(dd, 2),
-        "fills": len(trades), "closed_trades": closed,
-        "win_rate_pct": round(100 * pf.wins / closed, 1) if closed else None,
-        "profit_factor": round(gross_win / gross_loss, 2) if gross_loss else None,
+        "max_drawdown_pct": round((eq / eq.cummax() - 1).min() * 100, 2),
+        "closed_trades": len(closes),
+        "win_rate_pct": round(100 * len(wins) / len(closes), 1) if closes else None,
+        "profit_factor": round(sum(wins) / sum(losses), 2) if losses and sum(losses) else None,
+        "avg_trade": round(sum(closes) / len(closes)) if closes else None,
         "fees_paid": round(pf.fees),
     }
     out = ROOT / "backtests"
@@ -128,13 +150,53 @@ def run(name: str, bars: int = 3000, capital: float | None = None, fees_pct=0.05
     return stats
 
 
+def write_board(results: list[dict], days: int):
+    ok = sorted([r for r in results if r["status"] == "ok"], key=lambda r: r["return_pct"], reverse=True)
+    other = [r for r in results if r["status"].startswith("live-only")]
+    failed = [r for r in results if r["status"].startswith("error")]
+    medals = {1: "🥇", 2: "🥈", 3: "🥉"}
+    f = lambda v, suf="": "–" if v is None else f"{v}{suf}"
+    L = ["# Backtest leaderboard", "",
+         f"_Last {days} days of TradingView data · ₹50,000 per bot · fees {0.05}% + slippage {0.02}% per side · "
+         f"generated {datetime.now(ZoneInfo('Asia/Kolkata')).strftime('%d %b %Y %H:%M IST')}_", "",
+         "Past performance on a few months of data says little about the future — this is a sanity check, "
+         "the live paper leaderboard in STATUS.md is the real test.", "",
+         "| # | Bot | Style | Period | Return | Max DD | Trades | Win % | Profit factor | Avg trade | Fees |",
+         "|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|"]
+    for i, r in enumerate(ok, 1):
+        L.append(f"| {medals.get(i, i)} | **{r['bot']}** | {r['style']} {r['interval']} | {r['from']} → {r['to']} | "
+                 f"{r['return_pct']:+.2f}% | {r['max_drawdown_pct']:.1f}% | {r['closed_trades']} | "
+                 f"{f(r['win_rate_pct'])} | {f(r['profit_factor'])} | {f(r['avg_trade'])} | {r['fees_paid']:,} |")
+    if other:
+        L += ["", "**Not backtestable** (they use live TradingView snapshots — ratings/screener — which have no history):", ""]
+        L += [f"- {r['bot']} — {r['status']}" for r in other]
+    (ROOT / "BACKTESTS.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+    return L
+
+
 def main():
+    import sys
+    sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("bot")
-    ap.add_argument("--bars", type=int, default=3000)
+    ap.add_argument("bot", nargs="?")
+    ap.add_argument("--all", action="store_true")
+    ap.add_argument("--days", type=int, default=120)
     ap.add_argument("--capital", type=float)
     a = ap.parse_args()
-    stats = run(a.bot, a.bars, a.capital, quiet=True)
+    if a.all:
+        results = []
+        for s in load_strategies()[0]:
+            try:
+                r = run(s.name, a.days, a.capital)
+            except Exception as e:
+                r = {"bot": s.name, "style": s.style, "interval": s.interval, "status": f"error: {e}"}
+            print(f"{r['bot']:<22} {r.get('return_pct', r['status'])}")
+            results.append(r)
+        print("\n".join(write_board(results, a.days)))
+        return
+    if not a.bot:
+        ap.error("give a bot name or --all")
+    stats = run(a.bot, a.days, a.capital)
     w = max(map(len, stats))
     print("\n".join(f"{k.ljust(w)}  {v}" for k, v in stats.items()))
 

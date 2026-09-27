@@ -1,21 +1,22 @@
-"""24/7 crypto trend follower: Supertrend(10, 3) on 1h bars, long-only, BTC + ETH.
-Crypto data from TradingView is real-time (no delay) and the market never closes."""
+"""24/7 crypto trend follower: long while Supertrend(10, 3) on 1h bars is up. BTC + ETH.
+Crypto data from TradingView is real-time and the market never closes. Capital is in USDT."""
 from engine import Strategy, ta
 
 
 class CryptoSupertrend(Strategy):
+    description = "BTC/ETH long while 1h Supertrend 10/3 is up (24/7, USDT)"
+    style = "crypto"
     symbols = ["BINANCE:BTCUSDT", "BINANCE:ETHUSDT"]
     interval = "1h"
-    capital = 10_000  # USDT
+    capital = 50_000
 
     def on_bar(self, ctx):
         for sym in self.symbols:
             df = ctx.data(sym, bars=300)
             _, direction = ta.supertrend(df, 10, 3.0)
-            flipped_up = direction.iloc[-1] == 1 and direction.iloc[-2] == -1
-            flipped_down = direction.iloc[-1] == -1 and direction.iloc[-2] == 1
+            up = direction.iloc[-1] == 1
             pos = ctx.position(sym)
-            if pos == 0 and flipped_up:
-                ctx.buy(sym, pct=45, reason="Supertrend flipped up")
-            elif pos > 0 and flipped_down:
-                ctx.close(sym, reason="Supertrend flipped down")
+            if pos == 0 and up:
+                ctx.buy(sym, pct=45, reason="Supertrend up")
+            elif pos > 0 and not up:
+                ctx.close(sym, reason="Supertrend turned down")

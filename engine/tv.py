@@ -188,8 +188,22 @@ def _frame(method: str, params: list) -> str:
     return f"~m~{len(msg)}~m~{msg}"
 
 
-def ohlcv(symbol: str, interval: str = "1D", bars: int = 300, tries: int = 3) -> pd.DataFrame:
-    """Historical bars (like MCP get_ohlcv). Index = bar open time (UTC, tz-aware)."""
+_OHLCV_CACHE: dict = {}
+
+
+def ohlcv(symbol: str, interval: str = "1D", bars: int = 300, tries: int = 3,
+          use_cache: bool = True) -> pd.DataFrame:
+    """Historical bars (like MCP get_ohlcv). Index = bar open time (UTC, tz-aware).
+    Cached for the rest of the process, so 20 bots on the same symbols fetch once."""
+    key = (symbol, interval)
+    if use_cache and key in _OHLCV_CACHE and len(_OHLCV_CACHE[key]) >= bars:
+        return _OHLCV_CACHE[key].tail(bars)
+    df = _fetch_ohlcv(symbol, interval, max(bars, 500), tries)
+    _OHLCV_CACHE[key] = df
+    return df.tail(bars)
+
+
+def _fetch_ohlcv(symbol: str, interval: str, bars: int, tries: int) -> pd.DataFrame:
     res = TF_CHART[interval]
     last_err = None
     for _ in range(tries):
@@ -221,7 +235,7 @@ def ohlcv(symbol: str, interval: str = "1D", bars: int = 300, tries: int = 3) ->
             df = pd.DataFrame(rows, columns=["time", "open", "high", "low", "close", "volume"][:len(rows[0])])
             if "volume" not in df:
                 df["volume"] = 0.0
-            df.index = pd.to_datetime(df.pop("time"), unit="s", utc=True)
+            df.index = pd.DatetimeIndex(pd.to_datetime(df.pop("time"), unit="s", utc=True)).as_unit("ns")
             return df.astype(float)
         except ValueError:
             raise

@@ -1,34 +1,29 @@
-"""Intraday EMA crossover on NSE large caps (15-minute bars).
-
-Long when EMA 9 crosses above EMA 21 with RSI > 50 and price above VWAP.
-1.5x ATR stop, 3x ATR target, exit on the opposite cross, squared off 15 min before close.
-"""
-from engine import Strategy, ta
+"""Intraday EMA 9/21 crossover with RSI and VWAP filters."""
+from engine import ta
+from engine.bots import SignalBot
 
 
-class EmaCrossover(Strategy):
-    symbols = ["NSE:RELIANCE", "NSE:HDFCBANK", "NSE:ICICIBANK", "NSE:INFY", "NSE:TCS"]
+class EmaCrossover(SignalBot):
+    description = "EMA 9/21 cross + RSI>50 + above VWAP (mirror for shorts), 1.5/3 ATR"
+    style = "intraday"
     interval = "15m"
-    capital = 100_000
     intraday = True
+    allow_short = True
+    sl_atr = 1.5
+    tp_atr = 3
+    no_entry_after = "14:45"
 
-    fast, slow = 9, 21
-    alloc_pct = 20  # % of equity per trade
+    def entry(self, ctx, sym, df):
+        f, s = ta.ema(df.close, 9), ta.ema(df.close, 21)
+        r, v, c = ta.rsi(df.close).iloc[-1], ta.vwap(df).iloc[-1], df.close.iloc[-1]
+        if ta.crossover(f, s) and r > 50 and c > v:
+            return "long", f"EMA9>21, RSI {r:.0f}"
+        if ta.crossunder(f, s) and r < 50 and c < v:
+            return "short", f"EMA9<21, RSI {r:.0f}"
+        return None
 
-    def on_bar(self, ctx):
-        for sym in self.symbols:
-            df = ctx.data(sym, bars=200)
-            if len(df) < self.slow + 5:
-                continue
-            fast, slow = ta.ema(df.close, self.fast), ta.ema(df.close, self.slow)
-            rsi = ta.rsi(df.close, 14).iloc[-1]
-            vwap = ta.vwap(df).iloc[-1]
-            atr = ta.atr(df, 14).iloc[-1]
-            px = df.close.iloc[-1]
-            pos = ctx.position(sym)
-
-            if pos == 0 and ta.crossover(fast, slow) and rsi > 50 and px > vwap:
-                ctx.buy(sym, pct=self.alloc_pct, sl=px - 1.5 * atr, tp=px + 3 * atr,
-                        reason=f"EMA{self.fast}>{self.slow}, RSI {rsi:.0f}")
-            elif pos > 0 and ta.crossunder(fast, slow):
-                ctx.close(sym, reason="EMA cross down")
+    def exit(self, ctx, sym, df, qty):
+        f, s = ta.ema(df.close, 9), ta.ema(df.close, 21)
+        if (qty > 0 and ta.crossunder(f, s)) or (qty < 0 and ta.crossover(f, s)):
+            return "opposite EMA cross"
+        return None
