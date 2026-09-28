@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 28 Sep 2026 23:26 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 28 Sep 2026 23:36 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 28 Sep 2026 23:26 IST · paper trading · every bot started with ₹50,
 | 17 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 18 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 19 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -1.68% | -838 | +0 | -1.68% | 2 | 0 | 0.00 | -1.7% | 0 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -1.71% | -853 | -15 | -1.71% | 2 | 0 | 0.00 | -1.7% | 1 | ✅ |
 
 <details><summary>What each bot does</summary>
 
@@ -54,12 +54,15 @@ _Updated 28 Sep 2026 23:26 IST · paper trading · every bot started with ₹50,
 
 ## Open positions
 
-_None_
+| Bot | Symbol | Qty | Avg | Stop | Target | Opened |
+|---|---|---:|---:|---:|---:|---|
+| crypto_supertrend | BINANCE:ETHUSDT | 8.20668 | 2,696.28 | – | – | 28 Sep 23:36 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 28 Sep 23:36 | crypto_supertrend | BUY | 8.20668 | BINANCE:ETHUSDT | 2,696.28 |  | Supertrend up |
 | 28 Sep 15:41 | crypto_supertrend | SELL | 0.264796 | BINANCE:BTCUSDT | 82,705.38 | -615 | Supertrend turned down |
 | 27 Sep 23:42 | crypto_supertrend | SELL | 8.28893 | BINANCE:ETHUSDT | 2,691.40 | -200 | Supertrend turned down |
 | 27 Sep 18:22 | crypto_supertrend | BUY | 8.28893 | BINANCE:ETHUSDT | 2,714.15 |  | Supertrend up |
