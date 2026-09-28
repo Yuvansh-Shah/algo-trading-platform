@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 27 Sep 2026 23:42 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 28 Sep 2026 15:41 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 27 Sep 2026 23:42 IST · paper trading · every bot started with ₹50,
 | 17 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 18 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 19 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -0.65% | -327 | -296 | -0.65% | 1 | 0 | 0.00 | -0.8% | 1 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -1.68% | -838 | +0 | -1.68% | 2 | 0 | 0.00 | -1.7% | 0 | ✅ |
 
 <details><summary>What each bot does</summary>
 
@@ -48,20 +48,19 @@ _Updated 27 Sep 2026 23:42 IST · paper trading · every bot started with ₹50,
 | tv_rating_swing | NIFTY 50 names rated STRONG BUY (1D) + BUY (1W) by TradingView; 7% trailing stop |
 | vwap_pullback | Trend (EMA20>EMA50) + pullback that holds VWAP, 1 ATR stop, 2R target |
 | vwap_reversion | Fade 2-sigma stretches from VWAP, exit back at VWAP |
-| crypto_supertrend | BTC/ETH long while 1h Supertrend 10/3 is up (24/7, USDT) |
+| crypto_supertrend | BTC/ETH long while 1h Supertrend 10/3 is up (checked in NSE hours only, USDT) |
 
 </details>
 
 ## Open positions
 
-| Bot | Symbol | Qty | Avg | Stop | Target | Opened |
-|---|---|---:|---:|---:|---:|---|
-| crypto_supertrend | BINANCE:BTCUSDT | 0.264796 | 84,988.00 | – | – | 27 Sep 18:22 |
+_None_
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 28 Sep 15:41 | crypto_supertrend | SELL | 0.264796 | BINANCE:BTCUSDT | 82,705.38 | -615 | Supertrend turned down |
 | 27 Sep 23:42 | crypto_supertrend | SELL | 8.28893 | BINANCE:ETHUSDT | 2,691.40 | -200 | Supertrend turned down |
 | 27 Sep 18:22 | crypto_supertrend | BUY | 8.28893 | BINANCE:ETHUSDT | 2,714.15 |  | Supertrend up |
 | 27 Sep 18:22 | crypto_supertrend | BUY | 0.264796 | BINANCE:BTCUSDT | 84,988.00 |  | Supertrend up |
