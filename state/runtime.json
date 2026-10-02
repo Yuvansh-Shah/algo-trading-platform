@@ -29,7 +29,7 @@
       "date": "2026-10-02",
       "start_equity": 50028.59
     },
-    "equity": 50028.59
+    "equity": 50015.84
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -128,7 +128,7 @@
     "description": "Fade 2-sigma stretches from VWAP, exit back at VWAP"
   },
   "_meta": {
-    "last_engine_run": "2026-10-02T10:03:59+00:00",
-    "last_summary": "2026-10-01"
+    "last_engine_run": "2026-10-02T10:12:43+00:00",
+    "last_summary": "2026-10-02"
   }
 }

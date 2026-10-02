@@ -1,10 +1,10 @@
 # 🏆 Bot Leaderboard
 
-_Updated 02 Oct 2026 15:34 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 02 Oct 2026 15:42 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 🥇 | **crypto_supertrend** | crypto 1h | +0.06% | +29 | +0 | +0.06% | 3 | 0 | 0.00 | -2.6% | 2 | ✅ |
+| 🥇 | **crypto_supertrend** | crypto 1h | +0.03% | +16 | -13 | +0.03% | 3 | 0 | 0.00 | -2.6% | 2 | ✅ |
 | 🥈 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 🥉 | **bb_squeeze** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 4 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
