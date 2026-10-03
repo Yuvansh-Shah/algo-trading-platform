@@ -63,10 +63,9 @@ def is_open(market: str, at: datetime | None = None) -> bool:
     s = SESSIONS[market]
     if s.always_open or not s.benchmark:
         return True
+    # Open only once today's bars actually exist. With delayed NSE data that's ~09:31 IST,
+    # which also means holidays are never mistaken for trading days.
     t = (at or now()).astimezone(ZoneInfo(s.tz))
-    opened = t.replace(hour=s.open.hour, minute=s.open.minute, second=0, microsecond=0)
-    if t - opened < timedelta(minutes=30):
-        return True  # too early for (delayed) data to prove anything
     return _traded_today(market, t.date().isoformat())
 
 
