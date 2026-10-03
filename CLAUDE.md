@@ -1,7 +1,7 @@
 # Algo trading platform — notes for Claude
 
-Free, always-on paper-trading engine. GitHub Actions runs `python -m engine.run` every 10 min
-in NSE hours only (NSE is the priority; crypto bots ride on those runs). State lives in `state/` and is committed back by the bot.
+Free, always-on paper-trading engine. One GitHub Actions job per NSE session (`engine/session.py`) runs `python -m engine.run`
+every 5 min from 09:15 to 15:40 IST (crypto bots ride on those runs). Public repo = unlimited minutes. State lives in `state/` and is committed back by the bot.
 `STATUS.md` and `dashboard/index.html` are regenerated every run.
 
 - Bots: one file per bot in `strategies/` (copy `strategies/_template.py`). API is documented

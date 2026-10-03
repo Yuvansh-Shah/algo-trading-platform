@@ -1,30 +1,32 @@
 name: trading-engine
 
+# One long job per NSE session (engine/session.py) runs the bots every 5 min, instead of relying on
+# GitHub's best-effort cron for every run. The crons below only need ONE of them to fire each
+# morning; later ones are backups that restart the session if it died. If a session is already
+# running, a backup trigger just waits in the queue and exits immediately after the close.
 on:
   schedule:
-    # GitHub drops scheduled runs at busy minutes (:00/:15/:30/:45 and the top of the hour),
-    # so every trigger sits on an odd minute. Runs are idempotent: an extra run does nothing twice.
-    # NSE only (session 09:15-15:30 IST = 03:45-10:00 UTC), every 10 min. ~41 runs/day x 22 days
-    # = ~900 of the 2,000 free minutes/month. Crypto bots are checked on these same runs.
-    - cron: "47,57 3 * * 1-5"               # 09:17, 09:27 IST
-    - cron: "2,12,22,32,42,52 4-9 * * 1-5"  # 09:32 ... 15:22 IST (15:22 = intraday square-off)
-    - cron: "57 9 * * 1-5"                  # 15:27 IST backup square-off
-    - cron: "8,38 10 * * 1-5"               # 15:38 / 16:08 IST daily leaderboard summary
-  push:
-    branches: [main]
-    paths: ["signals/inbox/**"]   # new external signal -> act on it right away
+    - cron: "7,22,37,52 3 * * 1-5"   # 08:37 - 09:22 IST: start the session (pre-open)
+    - cron: "17 4-9 * * 1-5"         # hourly backups through the day
+    - cron: "48 10 * * 1-5"          # 16:18 IST: catch-up leaderboard summary
   workflow_dispatch:
     inputs:
+      mode:
+        description: "session = run all day; once = single run"
+        type: choice
+        options: [once, session]
+        default: once
       only:
-        description: "Comma-separated bot names (blank = all)"
+        description: "Comma-separated bot names (blank = all, 'once' mode only)"
         required: false
       force:
-        description: "Run now even if market closed / bar not due"
+        description: "Run now even if market closed / bar not due ('once' mode only)"
         type: boolean
         default: false
 
 permissions:
   contents: write
+  actions: write   # lets a session hand over to its successor before the 6h job limit
 
 concurrency:
   group: trading-engine
@@ -33,7 +35,13 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
+    env:
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      LIVE_WEBHOOK_URL: ${{ secrets.LIVE_WEBHOOK_URL }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v5
 
@@ -44,12 +52,17 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Run bots
+      - run: |
+          git config user.name "trading-bot"
+          git config user.email "trading-bot@users.noreply.github.com"
+
+      - name: Market session (every 5 min until the close)
+        if: github.event_name == 'schedule' || inputs.mode == 'session'
+        run: python -u -m engine.session
+
+      - name: Single run
+        if: github.event_name == 'workflow_dispatch' && inputs.mode != 'session'
         env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          LIVE_WEBHOOK_URL: ${{ secrets.LIVE_WEBHOOK_URL }}
           ONLY: ${{ inputs.only }}
           FORCE: ${{ inputs.force }}
         run: |
@@ -57,17 +70,7 @@ jobs:
           if [ -n "$ONLY" ]; then set -- "$@" --only "$ONLY"; fi
           if [ "$FORCE" = "true" ]; then set -- "$@" --force; fi
           python -m engine.run "$@"
-
-      - name: Save state
-        if: always()
-        run: |
-          git config user.name "trading-bot"
-          git config user.email "trading-bot@users.noreply.github.com"
-          git add -A state signals STATUS.md dashboard
-          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-          git commit -q -m "engine run $(date -u +%Y-%m-%dT%H:%MZ)"
-          for i in 1 2 3; do
-            git pull --rebase -q -X theirs origin main && git push -q && exit 0
-            sleep 5
-          done
-          exit 1
+          python - <<'EOF'
+          from engine.session import save_state
+          save_state("manual run")
+          EOF

@@ -23,5 +23,5 @@ as the prompt of a scheduled task / routine.
    If nothing qualifies, write no file.
 4. Commit only that file and push to `main`
    (`git add signals/inbox && git commit -m "mcp signals" && git pull --rebase && git push`).
-   The push triggers the engine on GitHub, which executes the signals when the market is open.
+   The running market session pulls it within 5 minutes and executes the signals while NSE is open.
 5. Reply with a 3-5 line summary: what was scanned, what was signalled, and why.
