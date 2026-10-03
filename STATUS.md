@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 02 Oct 2026 21:44 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 03 Oct 2026 10:25 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 02 Oct 2026 21:44 IST · paper trading · every bot started with ₹50,
 | 17 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 18 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 19 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -1.42% | -710 | -739 | -1.42% | 3 | 0 | 0.00 | -2.6% | 2 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -2.12% | -1,062 | +0 | -2.12% | 5 | 20 | 0.07 | -2.6% | 0 | ✅ |
 
 <details><summary>What each bot does</summary>
 
@@ -54,15 +54,14 @@ _Updated 02 Oct 2026 21:44 IST · paper trading · every bot started with ₹50,
 
 ## Open positions
 
-| Bot | Symbol | Qty | Avg | Stop | Target | Opened |
-|---|---|---:|---:|---:|---:|---|
-| crypto_supertrend | BINANCE:BTCUSDT | 0.263638 | 84,224.85 | – | – | 29 Sep 15:39 |
-| crypto_supertrend | BINANCE:ETHUSDT | 8.20884 | 2,686.86 | – | – | 30 Sep 21:44 |
+_None_
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 03 Oct 10:25 | crypto_supertrend | SELL | 8.20884 | BINANCE:ETHUSDT | 2,675.26 | -106 | Supertrend turned down |
+| 03 Oct 10:25 | crypto_supertrend | SELL | 0.263638 | BINANCE:BTCUSDT | 84,570.36 | +80 | Supertrend turned down |
 | 30 Sep 21:44 | crypto_supertrend | BUY | 8.20884 | BINANCE:ETHUSDT | 2,686.86 |  | Supertrend up |
 | 29 Sep 21:48 | crypto_supertrend | SELL | 8.20668 | BINANCE:ETHUSDT | 2,677.52 | -165 | Supertrend turned down |
 | 29 Sep 15:39 | crypto_supertrend | BUY | 0.263638 | BINANCE:BTCUSDT | 84,224.85 |  | Supertrend up |
