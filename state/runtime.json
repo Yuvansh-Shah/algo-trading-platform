@@ -23,13 +23,13 @@
     "style": "crypto",
     "description": "BTC/ETH long while 1h Supertrend 10/3 is up (checked in NSE hours only, USDT)",
     "started": true,
-    "last_bar": "497500",
-    "last_run": "2026-10-03T04:55:49+00:00",
+    "last_bar": "497554",
+    "last_run": "2026-10-05T10:19:06+00:00",
     "day": {
-      "date": "2026-10-03",
-      "start_equity": 48938.09
+      "date": "2026-10-05",
+      "start_equity": 48922.67
     },
-    "equity": 48938.09
+    "equity": 48922.67
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -128,7 +128,7 @@
     "description": "Fade 2-sigma stretches from VWAP, exit back at VWAP"
   },
   "_meta": {
-    "last_engine_run": "2026-10-03T04:55:49+00:00",
-    "last_summary": "2026-10-02"
+    "last_engine_run": "2026-10-05T10:19:06+00:00",
+    "last_summary": "2026-10-05"
   }
 }
