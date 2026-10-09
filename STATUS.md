@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 08 Oct 2026 23:06 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 09 Oct 2026 15:56 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 08 Oct 2026 23:06 IST · paper trading · every bot started with ₹50,
 | 17 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 18 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 19 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -3.33% | -1,663 | +0 | -3.33% | 7 | 14 | 0.05 | -3.4% | 0 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -3.39% | -1,694 | +0 | -3.39% | 7 | 14 | 0.05 | -3.4% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
@@ -54,12 +54,17 @@ _Updated 08 Oct 2026 23:06 IST · paper trading · every bot started with ₹50,
 
 ## Open positions
 
-_None_
+| Bot | Symbol | Qty | Avg | Stop | Target | Opened |
+|---|---|---:|---:|---:|---:|---|
+| crypto_supertrend | BINANCE:BTCUSDT | 0.263176 | 82,666.53 | – | – | 09 Oct 15:56 |
+| crypto_supertrend | BINANCE:ETHUSDT | 8.69791 | 2,500.49 | – | – | 09 Oct 15:56 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 09 Oct 15:56 | crypto_supertrend | BUY | 8.69791 | BINANCE:ETHUSDT | 2,500.49 |  | Supertrend up |
+| 09 Oct 15:56 | crypto_supertrend | BUY | 0.263176 | BINANCE:BTCUSDT | 82,666.53 |  | Supertrend up |
 | 07 Oct 15:39 | crypto_supertrend | SELL | 0.256707 | BINANCE:BTCUSDT | 83,745.25 | -497 | Supertrend turned down |
 | 06 Oct 22:27 | crypto_supertrend | BUY | 0.256707 | BINANCE:BTCUSDT | 85,641.13 |  | Supertrend up |
 | 06 Oct 15:39 | crypto_supertrend | SELL | 8.1009 | BINANCE:ETHUSDT | 2,710.27 | -82 | Supertrend turned down |
