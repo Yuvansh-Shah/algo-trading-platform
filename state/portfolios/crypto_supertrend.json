@@ -1,11 +1,28 @@
 {
   "strategy": "crypto_supertrend",
   "initial": 50000.0,
-  "cash": 48336.73705598544,
-  "positions": {},
+  "cash": 4810.11096333334,
+  "positions": {
+    "BINANCE:BTCUSDT": {
+      "qty": 0.263176,
+      "avg": 82666.53,
+      "sl": null,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-09T10:26:14+00:00"
+    },
+    "BINANCE:ETHUSDT": {
+      "qty": 8.697906,
+      "avg": 2500.4899979999996,
+      "sl": null,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-09T10:26:14+00:00"
+    }
+  },
   "realized": -1508.615799918237,
-  "fees": 154.647144096325,
-  "trades": 14,
+  "fees": 176.3995809242371,
+  "trades": 16,
   "wins": 1,
   "losses": 6,
   "memory": {}
