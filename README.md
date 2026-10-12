@@ -3,7 +3,7 @@
 Runs your trading bots in the cloud **for free**. Your computer can be off.
 
 ```
- GitHub Actions (free): one job per NSE session, runs the bots every 5 min 09:15-15:40 IST
+ cron-job.org (free clock) -> GitHub Actions (free compute), every 5 min in NSE hours
    └─ engine/run.py
         ├─ loads every bot in strategies/*.py
         ├─ data: TradingView public endpoints (same source as the TradingView MCP)
@@ -91,9 +91,10 @@ Store) → + → subscribe to the topic name you were given. Telegram is optiona
   static IP, which GitHub's servers don't have. See "Going live" below.
 - **NSE/BSE prices are ~15 min delayed** (TradingView logged-out feed). Fine for swing and slower
   intraday bots, not for scalping. Crypto is real-time.
-- **Cadence:** every 5 min, 09:15-15:40 IST, weekdays. GitHub's cron is unreliable for frequent
-  runs, so one job stays awake for the whole session (`engine/session.py`); morning and hourly backup
-  triggers restart it if it ever dies. Crypto bots are only checked during NSE hours.
+- **Cadence:** every 5 min, 09:00-15:55 IST, weekdays. The clock is a free cron-job.org job that
+  presses the workflow's "Run" button through GitHub's API (GitHub's own scheduler ran hours late).
+  If the bots ever stop, check the job's history on cron-job.org: a 401 means the GitHub token expired.
+  Crypto bots are only checked during NSE hours.
 - **Public repo:** needed for unlimited free Actions minutes. Secrets (ntfy topic etc.) stay hidden.
 - **Holidays** are detected automatically (if NIFTY has no bar today, the market is shut).
 

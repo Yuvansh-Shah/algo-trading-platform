@@ -1,14 +1,9 @@
 name: trading-engine
 
-# One long job per NSE session (engine/session.py) runs the bots every 5 min, instead of relying on
-# GitHub's best-effort cron for every run. The crons below only need ONE of them to fire each
-# morning; later ones are backups that restart the session if it died. If a session is already
-# running, a backup trigger just waits in the queue and exits immediately after the close.
+# Started from outside: cron-job.org calls this workflow's dispatch API every 5 min, 09:00-15:55 IST,
+# Mon-Fri (mode=once). GitHub's own `schedule` trigger is NOT used: it delivered runs hours late
+# or not at all, so the bots never ran in market hours.
 on:
-  schedule:
-    - cron: "7,22,37,52 3 * * 1-5"   # 08:37 - 09:22 IST: start the session (pre-open)
-    - cron: "17 4-9 * * 1-5"         # hourly backups through the day
-    - cron: "48 10 * * 1-5"          # 16:18 IST: catch-up leaderboard summary
   workflow_dispatch:
     inputs:
       mode:
@@ -57,11 +52,11 @@ jobs:
           git config user.email "trading-bot@users.noreply.github.com"
 
       - name: Market session (every 5 min until the close)
-        if: github.event_name == 'schedule' || inputs.mode == 'session'
+        if: inputs.mode == 'session'
         run: python -u -m engine.session
 
       - name: Single run
-        if: github.event_name == 'workflow_dispatch' && inputs.mode != 'session'
+        if: inputs.mode != 'session'
         env:
           ONLY: ${{ inputs.only }}
           FORCE: ${{ inputs.force }}

@@ -1,7 +1,10 @@
 # Algo trading platform — notes for Claude
 
-Free, always-on paper-trading engine. One GitHub Actions job per NSE session (`engine/session.py`) runs `python -m engine.run`
-every 5 min from 09:15 to 15:40 IST (crypto bots ride on those runs). Public repo = unlimited minutes. State lives in `state/` and is committed back by the bot.
+Free, always-on paper-trading engine. cron-job.org (user's account, job "Algo trading bots") calls the workflow's dispatch API every 5 min,
+09:00-15:55 IST Mon-Fri; each call runs `python -m engine.run` once on GitHub Actions (crypto bots ride on those runs).
+GitHub's own `schedule` trigger is not used (it fired hours late). The call needs the user's fine-grained GitHub token
+(Actions: write on this repo) in the cron-job.org Authorization header; if runs stop, check that token first.
+Public repo = unlimited minutes. State lives in `state/` and is committed back by the bot.
 `STATUS.md` and `dashboard/index.html` are regenerated every run.
 
 - Bots: one file per bot in `strategies/` (copy `strategies/_template.py`). API is documented
