@@ -72,6 +72,9 @@ def main():
             run_engine(final=True)  # daily leaderboard summary (deduplicated by the engine)
             print("session over for today")
             return
+        if hm < (8, 30):
+            print("started hours before the open (late GitHub trigger) - exiting instead of waiting")
+            return
         if hm < OPEN:
             wait = (now.replace(hour=OPEN[0], minute=OPEN[1], second=30) - now).total_seconds()
             print(f"pre-open, sleeping {wait / 60:.0f} min", flush=True)
