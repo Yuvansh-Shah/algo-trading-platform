@@ -28,9 +28,9 @@
   "memory": {
     "held": {
       "NSE:RELIANCE": 4,
-      "NSE:SBIN": 2,
+      "NSE:SBIN": 3,
       "NSE:BHARTIARTL": 4,
-      "NSE:TCS": 0
+      "NSE:TCS": 1
     }
   }
 }
