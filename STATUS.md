@@ -1,10 +1,10 @@
 # 🏆 Bot Leaderboard
 
-_Updated 13 Oct 2026 09:30 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 13 Oct 2026 09:35 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 🥇 | **tv_rating_scalper** | intraday 15m | +0.12% | +59 | +69 | +0.12% | 0 | – | – | -0.0% | 3 | ✅ |
+| 🥇 | **tv_rating_scalper** | intraday 15m | +0.25% | +126 | +136 | +0.25% | 0 | – | – | -0.0% | 3 | ✅ |
 | 🥈 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 🥉 | **bb_squeeze** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 4 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
@@ -23,7 +23,7 @@ _Updated 13 Oct 2026 09:30 IST · paper trading · every bot started with ₹50,
 | 17 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 18 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 19 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -3.26% | -1,632 | -30 | -3.26% | 9 | 22 | 0.12 | -3.6% | 2 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -3.19% | -1,593 | +9 | -3.19% | 9 | 22 | 0.12 | -3.6% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
