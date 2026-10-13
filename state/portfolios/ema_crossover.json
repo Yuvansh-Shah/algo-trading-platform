@@ -1,7 +1,7 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 50837.623245485,
+  "cash": 34969.421689775,
   "positions": {
     "NSE:TCS": {
       "qty": 7,
@@ -18,11 +18,19 @@
       "tp": 436.59938535768015,
       "trail_pct": null,
       "opened": "2026-10-13T06:45:31+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1762.2523800000001,
+      "sl": 1756.5670868292113,
+      "tp": 1777.3658263415773,
+      "trail_pct": null,
+      "opened": "2026-10-13T08:30:40+00:00"
     }
   },
   "realized": 130.00933000000464,
-  "fees": 48.019084515,
-  "trades": 6,
+  "fees": 55.949220225000005,
+  "trades": 7,
   "wins": 1,
   "losses": 1,
   "memory": {}

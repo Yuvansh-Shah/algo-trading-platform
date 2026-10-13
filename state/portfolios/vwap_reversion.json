@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 50101.64863149,
+  "cash": 66340.67497653,
   "positions": {
     "NSE:AXISBANK": {
       "qty": -13,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-13T08:15:37+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": -12,
+      "avg": 1353.9291600000001,
+      "sl": 1358.8974116699815,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T08:30:42+00:00"
     }
   },
   "realized": 52.75212000000215,
-  "fees": 80.89382851,
-  "trades": 10,
+  "fees": 89.01740347,
+  "trades": 11,
   "wins": 3,
   "losses": 1,
   "memory": {}
