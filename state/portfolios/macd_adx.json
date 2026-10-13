@@ -1,7 +1,7 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 18001.86377742501,
+  "cash": 34133.96501176501,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 23,
@@ -18,11 +18,19 @@
       "tp": 2264.5626922671513,
       "trail_pct": null,
       "opened": "2026-10-13T04:15:34+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": -14,
+      "avg": 1152.8693799999999,
+      "sl": 1158.3364513221682,
+      "tp": 1143.2270973556638,
+      "trail_pct": null,
+      "opened": "2026-10-13T06:30:40+00:00"
     }
   },
   "realized": 0.0,
-  "fees": 15.991072574999997,
-  "trades": 2,
+  "fees": 24.061158234999994,
+  "trades": 3,
   "wins": 0,
   "losses": 0,
   "memory": {}

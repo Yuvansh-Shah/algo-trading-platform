@@ -63,3 +63,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T05:50:23+00:00,bb_squeeze,NSE:BHARTIARTL,SELL,9,1773.4452,7.98,-108.89,0,close,stop-loss,
 2026-10-13T06:00:54+00:00,vwap_reversion,NSE:BHARTIARTL,BUY,9,1771.0541,7.97,-7.97,9,open,-2.3 sigma below VWAP,
 2026-10-13T06:25:24+00:00,tv_rating_scalper,NSE:INFY,SELL,16,1049.1901,8.39,275.35,0,close,target,
+2026-10-13T06:30:40+00:00,macd_adx,NSE:RELIANCE,SELL,14,1152.8694,8.07,-8.07,-14,open,"MACD down, ADX 22",
+2026-10-13T06:30:40+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,14,1152.8694,8.07,-8.07,-14,open,TV 15m -0.54 / 1h -0.56,
+2026-10-13T06:30:40+00:00,vwap_reversion,NSE:BHARTIARTL,SELL,9,1778.2443,8.0,56.71,0,close,back to VWAP,
