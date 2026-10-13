@@ -1,16 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 82182.740522305,
+  "cash": 65971.99932236501,
   "positions": {
-    "NSE:RELIANCE": {
-      "qty": -14,
-      "avg": 1157.46846,
-      "sl": 1166.9616,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T07:15:37+00:00"
-    },
     "NSE:SBIN": {
       "qty": -17,
       "avg": 943.9111800000001,
@@ -20,15 +12,15 @@
       "opened": "2026-10-13T08:00:53+00:00"
     }
   },
-  "realized": -3.8021299999936673,
-  "fees": 64.505847695,
-  "trades": 8,
+  "realized": -1.8835699999926874,
+  "fees": 72.607167635,
+  "trades": 9,
   "wins": 2,
-  "losses": 1,
+  "losses": 2,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 3,
-      "NSE:SBIN": 0,
+      "NSE:RELIANCE": 4,
+      "NSE:SBIN": 1,
       "NSE:BHARTIARTL": 4
     }
   }

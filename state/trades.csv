@@ -83,3 +83,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T07:30:44+00:00,vwap_pullback,NSE:SBIN,SELL,17,942.6114,8.01,-8.01,-17,open,rally rejected at VWAP in downtrend,
 2026-10-13T07:45:36+00:00,vwap_reversion,NSE:AXISBANK,SELL,13,1256.8486,8.17,-8.17,-13,open,2.4 sigma above VWAP,
 2026-10-13T08:00:53+00:00,rsi2_scalper,NSE:SBIN,SELL,17,943.9112,8.02,-8.02,-17,open,RSI2 95 in downtrend,
+2026-10-13T08:15:36+00:00,macd_adx,NSE:SBIN,BUY,17,944.2388,8.03,-44.19,0,close,MACD reversed,
+2026-10-13T08:15:36+00:00,rsi2_scalper,NSE:RELIANCE,BUY,14,1157.3314,8.1,-6.18,0,close,time stop (1h),
+2026-10-13T08:15:29+00:00,vwap_reversion,NSE:KOTAKBANK,SELL,37,437.9124,8.1,-107.1,0,close,stop-loss,
+2026-10-13T08:15:37+00:00,vwap_reversion,NSE:KOTAKBANK,BUY,37,438.0876,8.1,-8.1,37,open,-2.0 sigma below VWAP,
