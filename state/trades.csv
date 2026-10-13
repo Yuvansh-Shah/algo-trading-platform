@@ -18,3 +18,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-12T17:23:48+00:00,crypto_supertrend,BINANCE:BTCUSDT,SELL,0.263176,82569.4828,10.87,-36.41,0.0,close,Supertrend turned down,
 2026-10-12T17:23:49+00:00,crypto_supertrend,BINANCE:ETHUSDT,SELL,8.697906,2515.5068,10.94,119.67,0.0,close,Supertrend turned down,
 2026-10-13T03:55:39+00:00,tv_rating_scalper,NSE:LT,SELL,4,3626.7745,7.25,-7.25,-4,open,TV 15m -0.54 / 1h -0.54,
+2026-10-13T04:00:51+00:00,crypto_supertrend,BINANCE:BTCUSDT,BUY,0.261364,83345.5458,10.89,-10.89,0.261364,open,Supertrend up,
+2026-10-13T04:00:51+00:00,crypto_supertrend,BINANCE:ETHUSDT,BUY,8.680919,2508.5716,10.89,-10.89,8.680919,open,Supertrend up,
+2026-10-13T04:00:59+00:00,tv_rating_scalper,NSE:TCS,BUY,7,2179.8359,7.63,-7.63,7,open,TV 15m +0.60 / 1h +0.45,
+2026-10-13T04:00:59+00:00,tv_rating_scalper,NSE:INFY,BUY,16,1031.4562,8.25,-8.25,16,open,TV 15m +0.56 / 1h +0.52,

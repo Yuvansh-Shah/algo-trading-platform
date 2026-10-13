@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 64499.844451,
+  "cash": 32721.81221542,
   "positions": {
     "NSE:LT": {
       "qty": -4,
@@ -10,11 +10,27 @@
       "tp": 3569.46,
       "trail_pct": null,
       "opened": "2026-10-13T03:55:39+00:00"
+    },
+    "NSE:TCS": {
+      "qty": 7,
+      "avg": 2179.83588,
+      "sl": 2161.9648,
+      "tp": 2214.2704000000003,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:00:59+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 16,
+      "avg": 1031.45625,
+      "sl": 1023.0,
+      "tp": 1047.75,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:00:59+00:00"
     }
   },
   "realized": 0.0,
-  "fees": 7.2535490000000005,
-  "trades": 1,
+  "fees": 23.13462458,
+  "trades": 3,
   "wins": 0,
   "losses": 0,
   "memory": {}
