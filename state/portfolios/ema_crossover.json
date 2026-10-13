@@ -1,16 +1,8 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 2399.9485183250054,
+  "cash": 18723.115931785007,
   "positions": {
-    "NSE:HDFCBANK": {
-      "qty": 23,
-      "avg": 714.8929499999999,
-      "sl": 710.7458396986483,
-      "tp": 722.7583206027034,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:15:33+00:00"
-    },
     "NSE:INFY": {
       "qty": 15,
       "avg": 1039.60788,
@@ -28,10 +20,10 @@
       "opened": "2026-10-13T04:15:34+00:00"
     }
   },
-  "realized": 0.0,
-  "fees": 23.788131675,
-  "trades": 3,
+  "realized": -111.20476999999619,
+  "fees": 31.953798215,
+  "trades": 4,
   "wins": 0,
-  "losses": 0,
+  "losses": 1,
   "memory": {}
 }
