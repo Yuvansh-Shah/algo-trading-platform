@@ -35,9 +35,9 @@
   "losses": 0,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 2,
-      "NSE:SBIN": 2,
-      "NSE:BHARTIARTL": 2
+      "NSE:RELIANCE": 3,
+      "NSE:SBIN": 3,
+      "NSE:BHARTIARTL": 3
     }
   }
 }

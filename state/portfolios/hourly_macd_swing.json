@@ -1,11 +1,20 @@
 {
   "strategy": "hourly_macd_swing",
   "initial": 50000.0,
-  "cash": 50000.0,
-  "positions": {},
+  "cash": 34297.11410081,
+  "positions": {
+    "NSE:TCS": {
+      "qty": 7,
+      "avg": 2242.1483399999997,
+      "sl": 2182.704465419118,
+      "tp": 2362.391069161764,
+      "trail_pct": null,
+      "opened": "2026-10-13T05:00:50+00:00"
+    }
+  },
   "realized": 0.0,
-  "fees": 0.0,
-  "trades": 0,
+  "fees": 7.847519189999999,
+  "trades": 1,
   "wins": 0,
   "losses": 0,
   "memory": {}

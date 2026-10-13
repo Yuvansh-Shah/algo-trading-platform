@@ -50,3 +50,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T04:30:42+00:00,vwap_pullback,NSE:INFY,BUY,15,1041.9083,7.81,-7.81,15,open,pullback held VWAP in uptrend,
 2026-10-13T04:30:42+00:00,vwap_reversion,NSE:AXISBANK,SELL,13,1257.6484,8.17,-8.17,-13,open,2.7 sigma above VWAP,
 2026-10-13T04:30:42+00:00,vwap_reversion,NSE:BHARTIARTL,SELL,9,1787.7424,8.04,-8.04,-9,open,2.7 sigma above VWAP,
+2026-10-13T05:00:50+00:00,hourly_macd_swing,NSE:TCS,BUY,7,2242.1483,7.85,-7.85,7,open,1h MACD bull cross above EMA200,
+2026-10-13T05:00:57+00:00,tv_rating_scalper,NSE:LT,BUY,4,3652.9304,7.31,-111.93,0,close,15m rating faded (+0.05),
+2026-10-13T05:00:57+00:00,vwap_reversion,NSE:AXISBANK,BUY,13,1253.8507,8.15,41.22,0,close,back to VWAP,
+2026-10-13T05:00:57+00:00,vwap_reversion,NSE:BHARTIARTL,BUY,9,1783.5566,8.03,29.65,0,close,back to VWAP,

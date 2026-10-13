@@ -1,29 +1,12 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 82422.89132456001,
-  "positions": {
-    "NSE:AXISBANK": {
-      "qty": -13,
-      "avg": 1257.6484200000002,
-      "sl": 1264.5294257556736,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:30:42+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": -9,
-      "avg": 1787.74238,
-      "sl": 1796.6010622581189,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:30:42+00:00"
-    }
-  },
-  "realized": 0.0,
-  "fees": 16.21955544,
-  "trades": 2,
-  "wins": 0,
+  "cash": 50054.64617000001,
+  "positions": {},
+  "realized": 87.04176000000302,
+  "fees": 32.39559,
+  "trades": 4,
+  "wins": 2,
   "losses": 0,
   "memory": {}
 }
