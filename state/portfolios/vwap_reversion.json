@@ -1,21 +1,12 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 33568.347121590006,
-  "positions": {
-    "NSE:KOTAKBANK": {
-      "qty": 37,
-      "avg": 438.0876,
-      "sl": 436.1446013400018,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T08:15:37+00:00"
-    }
-  },
-  "realized": -117.01629999999773,
-  "fees": 105.39537841,
-  "trades": 13,
-  "wins": 3,
+  "cash": 49796.28123552,
+  "positions": {},
+  "realized": -90.20535999999925,
+  "fees": 113.51340448,
+  "trades": 14,
+  "wins": 4,
   "losses": 3,
   "memory": {}
 }

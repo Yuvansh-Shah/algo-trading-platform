@@ -1,37 +1,12 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 1866.8255400500002,
-  "positions": {
-    "NSE:RELIANCE": {
-      "qty": 14,
-      "avg": 1164.6328800000001,
-      "sl": 1152.2,
-      "tp": 1188.4999999999998,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:30:41+00:00"
-    },
-    "NSE:ICICIBANK": {
-      "qty": 12,
-      "avg": 1347.96954,
-      "sl": 1329.4,
-      "tp": 1381.5999999999997,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:30:41+00:00"
-    },
-    "NSE:INFY": {
-      "qty": 15,
-      "avg": 1041.90834,
-      "sl": 1027.0,
-      "tp": 1070.0499999999997,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:30:41+00:00"
-    }
-  },
-  "realized": 0.0,
-  "fees": 24.05455995,
-  "trades": 3,
-  "wins": 0,
+  "cash": 50449.049026675006,
+  "positions": {},
+  "realized": 497.40684999999985,
+  "fees": 48.357823325,
+  "trades": 6,
+  "wins": 3,
   "losses": 0,
   "memory": {
     "day": "2026-10-13",
