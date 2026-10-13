@@ -100,3 +100,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T09:05:25+00:00,vwap_reversion,NSE:AXISBANK,BUY,13,1264.0528,8.22,-101.87,0,close,stop-loss,
 2026-10-13T09:15:43+00:00,ema_crossover,NSE:SUNPHARMA,SELL,9,1759.648,7.92,-31.36,0,close,opposite EMA cross,
 2026-10-13T09:15:44+00:00,rsi2_scalper,NSE:RELIANCE,SELL,14,1161.4677,8.13,-8.13,-14,open,RSI2 96 in downtrend,
+2026-10-13T09:20:30+00:00,bb_squeeze,NSE:ICICIBANK,SELL,12,1358.4283,8.15,142.56,0,close,target,
