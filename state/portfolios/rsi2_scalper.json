@@ -1,36 +1,19 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 50257.20509198501,
-  "positions": {
-    "NSE:SBIN": {
-      "qty": -17,
-      "avg": 943.9111800000001,
-      "sl": 951.6528000000001,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T08:00:53+00:00"
-    },
-    "NSE:TCS": {
-      "qty": 7,
-      "avg": 2243.84868,
-      "sl": 2225.4528,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T08:30:41+00:00"
-    }
-  },
-  "realized": -1.8835699999926874,
-  "fees": 80.460638015,
-  "trades": 10,
-  "wins": 2,
-  "losses": 2,
+  "cash": 49920.298580525014,
+  "positions": {},
+  "realized": 16.692450000008193,
+  "fees": 96.393869475,
+  "trades": 12,
+  "wins": 3,
+  "losses": 3,
   "memory": {
     "held": {
       "NSE:RELIANCE": 4,
-      "NSE:SBIN": 3,
+      "NSE:SBIN": 4,
       "NSE:BHARTIARTL": 4,
-      "NSE:TCS": 1
+      "NSE:TCS": 2
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "hourly_macd_swing",
   "initial": 50000.0,
-  "cash": 34297.11410081,
+  "cash": 17861.41551839,
   "positions": {
     "NSE:TCS": {
       "qty": 7,
@@ -10,11 +10,19 @@
       "tp": 2362.391069161764,
       "trail_pct": null,
       "opened": "2026-10-13T05:00:50+00:00"
+    },
+    "NSE:AXISBANK": {
+      "qty": 13,
+      "avg": 1263.6526800000001,
+      "sl": 1245.454109539293,
+      "tp": 1299.8917809214136,
+      "trail_pct": null,
+      "opened": "2026-10-13T09:00:55+00:00"
     }
   },
   "realized": 0.0,
-  "fees": 7.847519189999999,
-  "trades": 1,
+  "fees": 16.06126161,
+  "trades": 2,
   "wins": 0,
   "losses": 0,
   "memory": {}
