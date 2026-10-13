@@ -1,11 +1,20 @@
 {
   "strategy": "nifty_buy_hold",
   "initial": 50000.0,
-  "cash": 50000.0,
-  "positions": {},
+  "cash": 719.442819392003,
+  "positions": {
+    "NSE:NIFTYBEES": {
+      "qty": 192,
+      "avg": 256.541298,
+      "sl": null,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:15:34+00:00"
+    }
+  },
   "realized": 0.0,
-  "fees": 0.0,
-  "trades": 0,
+  "fees": 24.627964608,
+  "trades": 1,
   "wins": 0,
   "losses": 0,
   "memory": {}

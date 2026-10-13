@@ -1,11 +1,28 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 50000.0,
-  "positions": {},
+  "cash": 18001.86377742501,
+  "positions": {
+    "NSE:HDFCBANK": {
+      "qty": 23,
+      "avg": 714.8929499999999,
+      "sl": 710.7458396986483,
+      "tp": 722.7583206027034,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:15:34+00:00"
+    },
+    "NSE:TCS": {
+      "qty": 7,
+      "avg": 2219.9438999999998,
+      "sl": 2195.3186538664245,
+      "tp": 2264.5626922671513,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:15:34+00:00"
+    }
+  },
   "realized": 0.0,
-  "fees": 0.0,
-  "trades": 0,
+  "fees": 15.991072574999997,
+  "trades": 2,
   "wins": 0,
   "losses": 0,
   "memory": {}

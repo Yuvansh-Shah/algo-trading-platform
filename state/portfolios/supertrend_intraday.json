@@ -1,11 +1,36 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 50000.0,
-  "positions": {},
+  "cash": 1788.8209672550092,
+  "positions": {
+    "NSE:HDFCBANK": {
+      "qty": 23,
+      "avg": 714.8929499999999,
+      "sl": 701.7612570273784,
+      "tp": 740.7274859452432,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:15:34+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": 12,
+      "avg": 1345.8691199999998,
+      "sl": 1331.2584558848787,
+      "tp": 1374.2830882302424,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:15:35+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 15,
+      "avg": 1039.60788,
+      "sl": 1017.1184207733355,
+      "tp": 1081.4131584533288,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:15:35+00:00"
+    }
+  },
   "realized": 0.0,
-  "fees": 0.0,
-  "trades": 0,
+  "fees": 24.093542745,
+  "trades": 3,
   "wins": 0,
   "losses": 0,
   "memory": {}
