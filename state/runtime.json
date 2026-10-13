@@ -22,7 +22,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50078.55
+    "equity": 50054.55
   },
   "connors_rsi2": {
     "market": "NSE",
@@ -47,7 +47,7 @@
       "date": "2026-10-13",
       "start_equity": 48398.25
     },
-    "equity": 48463.73
+    "equity": 48452.7
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -72,7 +72,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50123.8
+    "equity": 50132.85
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -111,7 +111,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50076.56
+    "equity": 50122.16
   },
   "hourly_macd_swing": {
     "market": "NSE",
@@ -139,7 +139,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50083.71
+    "equity": 50127.66
   },
   "momentum_rotation": {
     "market": "NSE",
@@ -161,7 +161,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50180.56,
+    "equity": 50169.04,
     "started": true,
     "last_bar": "2026-10-13",
     "last_run": "2026-10-13T04:15:27+00:00"
@@ -178,7 +178,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50037.03
+    "equity": 50044.83
   },
   "rsi2_scalper": {
     "market": "NSE",
@@ -192,7 +192,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 49844.73
+    "equity": 49865.23
   },
   "supertrend_intraday": {
     "market": "NSE",
@@ -206,7 +206,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50066.97
+    "equity": 50080.92
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -220,7 +220,7 @@
       "date": "2026-10-13",
       "start_equity": 49989.84
     },
-    "equity": 50468.56
+    "equity": 50513.76
   },
   "tv_rating_swing": {
     "market": "NSE",
@@ -245,7 +245,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 49979.01
+    "equity": 50034.96
   },
   "vwap_reversion": {
     "market": "NSE",
@@ -259,10 +259,10 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50023.99
+    "equity": 50037.89
   },
   "_meta": {
-    "last_engine_run": "2026-10-13T04:45:27+00:00",
+    "last_engine_run": "2026-10-13T04:50:30+00:00",
     "last_summary": "2026-10-12"
   }
 }
