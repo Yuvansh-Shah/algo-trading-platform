@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_pullback",
   "initial": 50000.0,
-  "cash": 82218.153607925,
+  "cash": 98234.53589068502,
   "positions": {
     "NSE:RELIANCE": {
       "qty": -14,
@@ -18,11 +18,19 @@
       "tp": 1746.3075351374323,
       "trail_pct": null,
       "opened": "2026-10-13T07:00:55+00:00"
+    },
+    "NSE:SBIN": {
+      "qty": -17,
+      "avg": 942.61144,
+      "sl": 945.2591691949261,
+      "tp": 937.8816616101476,
+      "trail_pct": null,
+      "opened": "2026-10-13T07:30:44+00:00"
     }
   },
   "realized": 245.0190300000039,
-  "fees": 79.35364207500001,
-  "trades": 10,
+  "fees": 87.36583931500002,
+  "trades": 11,
   "wins": 2,
   "losses": 2,
   "memory": {}

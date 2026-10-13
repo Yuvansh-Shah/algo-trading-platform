@@ -79,3 +79,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T07:15:37+00:00,rsi2_scalper,NSE:RELIANCE,SELL,14,1157.4685,8.1,-8.1,-14,open,RSI2 91 in downtrend,
 2026-10-13T07:15:25+00:00,tv_rating_scalper,NSE:TCS,SELL,7,2258.7482,7.91,263.72,0,close,target,
 2026-10-13T07:15:25+00:00,vwap_pullback,NSE:INFY,SELL,15,1055.6888,7.92,198.79,0,close,target,
+2026-10-13T07:30:44+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,12,1349.7699,8.1,-8.1,12,open,TV 15m +0.56 / 1h +0.31,
+2026-10-13T07:30:44+00:00,vwap_pullback,NSE:SBIN,SELL,17,942.6114,8.01,-8.01,-17,open,rally rejected at VWAP in downtrend,
