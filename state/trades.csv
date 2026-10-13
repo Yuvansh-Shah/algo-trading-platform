@@ -104,3 +104,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T09:25:24+00:00,vwap_pullback,NSE:SUNPHARMA,BUY,9,1763.2526,7.93,-62.87,0,close,stop-loss,
 2026-10-13T09:25:24+00:00,vwap_reversion,NSE:ICICIBANK,BUY,12,1360.272,8.16,-84.28,0,close,stop-loss,
 2026-10-13T09:30:37+00:00,vwap_pullback,NSE:RELIANCE,BUY,14,1164.4328,8.15,-72.06,0,close,stop-loss,
+2026-10-13T09:40:33+00:00,donchian_turtle,NSE:AXISBANK,BUY,12,1272.9545,7.64,-7.64,12,open,20-day breakout > 1266.0,
+2026-10-13T09:40:34+00:00,momentum_rotation,NSE:KOTAKBANK,BUY,37,439.5379,8.13,-8.13,37,open,3M perf +15.8%,
+2026-10-13T09:40:34+00:00,momentum_rotation,NSE:HCLTECH,BUY,12,1314.1628,7.88,-7.88,12,open,3M perf +13.6%,
+2026-10-13T09:40:35+00:00,momentum_rotation,NSE:TCS,BUY,7,2256.3512,7.9,-7.9,7,open,3M perf +3.8%,
+2026-10-13T09:40:26+00:00,vwap_pullback,NSE:ITC,BUY,63,260.202,8.2,-68.29,0,close,stop-loss,

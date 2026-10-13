@@ -1,11 +1,36 @@
 {
   "strategy": "momentum_rotation",
   "initial": 50000.0,
-  "cash": 50000.0,
-  "positions": {},
+  "cash": 2148.7727932249945,
+  "positions": {
+    "NSE:KOTAKBANK": {
+      "qty": 37,
+      "avg": 439.53789,
+      "sl": 386.716,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T09:40:34+00:00"
+    },
+    "NSE:HCLTECH": {
+      "qty": 12,
+      "avg": 1314.16278,
+      "sl": 1156.2320000000002,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T09:40:34+00:00"
+    },
+    "NSE:TCS": {
+      "qty": 7,
+      "avg": 2256.35118,
+      "sl": 1985.192,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T09:40:35+00:00"
+    }
+  },
   "realized": 0.0,
-  "fees": 0.0,
-  "trades": 0,
+  "fees": 23.913656775,
+  "trades": 3,
   "wins": 0,
   "losses": 0,
   "memory": {}
