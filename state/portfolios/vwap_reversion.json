@@ -1,11 +1,20 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 50054.64617000001,
-  "positions": {},
+  "cash": 34107.18916637001,
+  "positions": {
+    "NSE:BHARTIARTL": {
+      "qty": 9,
+      "avg": 1771.05414,
+      "sl": 1762.9263672623595,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T06:00:54+00:00"
+    }
+  },
   "realized": 87.04176000000302,
-  "fees": 32.39559,
-  "trades": 4,
+  "fees": 40.365333629999995,
+  "trades": 5,
   "wins": 2,
   "losses": 0,
   "memory": {}
