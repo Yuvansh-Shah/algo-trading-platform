@@ -1,7 +1,7 @@
 {
   "strategy": "bb_squeeze",
   "initial": 50000.0,
-  "cash": 17771.552649410005,
+  "cash": 33724.579305830004,
   "positions": {
     "NSE:ICICIBANK": {
       "qty": 12,
@@ -10,20 +10,12 @@
       "tp": 1358.208791949909,
       "trail_pct": null,
       "opened": "2026-10-13T04:15:28+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": 9,
-      "avg": 1784.6568599999998,
-      "sl": 1774.8834714097527,
-      "tp": 1800.7330571804944,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:15:32+00:00"
     }
   },
-  "realized": 0.0,
-  "fees": 16.106170589999998,
-  "trades": 2,
+  "realized": -100.9045799999983,
+  "fees": 24.08667417,
+  "trades": 3,
   "wins": 0,
-  "losses": 0,
+  "losses": 1,
   "memory": {}
 }
