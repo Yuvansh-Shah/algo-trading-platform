@@ -74,3 +74,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T06:55:20+00:00,vwap_pullback,NSE:TCS,SELL,7,2249.2501,7.87,197.27,0,close,target,
 2026-10-13T07:00:55+00:00,macd_adx,NSE:SBIN,SELL,17,942.1115,8.01,-8.01,-17,open,"MACD down, ADX 23",
 2026-10-13T07:00:55+00:00,vwap_pullback,NSE:SUNPHARMA,SELL,9,1757.1485,7.91,-7.91,-9,open,rally rejected at VWAP in downtrend,
+2026-10-13T07:15:25+00:00,ema_crossover,NSE:INFY,SELL,15,1055.6888,7.92,233.3,0,close,target,
+2026-10-13T07:15:36+00:00,macd_adx,NSE:RELIANCE,BUY,14,1157.9315,8.11,-78.98,0,close,MACD reversed,
+2026-10-13T07:15:37+00:00,rsi2_scalper,NSE:RELIANCE,SELL,14,1157.4685,8.1,-8.1,-14,open,RSI2 91 in downtrend,
+2026-10-13T07:15:25+00:00,tv_rating_scalper,NSE:TCS,SELL,7,2258.7482,7.91,263.72,0,close,target,
+2026-10-13T07:15:25+00:00,vwap_pullback,NSE:INFY,SELL,15,1055.6888,7.92,198.79,0,close,target,

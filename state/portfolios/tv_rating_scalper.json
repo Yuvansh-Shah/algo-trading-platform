@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 34612.37392612501,
+  "cash": 50415.70542756501,
   "positions": {
-    "NSE:TCS": {
-      "qty": 7,
-      "avg": 2219.9438999999998,
-      "sl": 2201.744,
-      "tp": 2255.012,
-      "trail_pct": null,
-      "opened": "2026-10-13T04:15:35+00:00"
-    },
     "NSE:HDFCBANK": {
       "qty": 23,
       "avg": 711.79233,
@@ -28,10 +20,10 @@
       "opened": "2026-10-13T06:30:40+00:00"
     }
   },
-  "realized": 453.6597000000065,
-  "fees": 70.626203875,
-  "trades": 9,
-  "wins": 2,
+  "realized": 725.2895200000057,
+  "fees": 78.531822435,
+  "trades": 10,
+  "wins": 3,
   "losses": 1,
   "memory": {}
 }

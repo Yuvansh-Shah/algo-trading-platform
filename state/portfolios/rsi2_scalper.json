@@ -1,16 +1,25 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 49947.817546555,
-  "positions": {},
+  "cash": 66144.273707335,
+  "positions": {
+    "NSE:RELIANCE": {
+      "qty": -14,
+      "avg": 1157.46846,
+      "sl": 1166.9616,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-13T07:15:37+00:00"
+    }
+  },
   "realized": -3.8021299999936673,
-  "fees": 48.380323444999995,
-  "trades": 6,
+  "fees": 56.482602664999995,
+  "trades": 7,
   "wins": 2,
   "losses": 1,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 4,
+      "NSE:RELIANCE": 0,
       "NSE:SBIN": 4,
       "NSE:BHARTIARTL": 4
     }
