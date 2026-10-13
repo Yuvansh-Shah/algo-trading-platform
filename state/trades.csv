@@ -17,3 +17,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-09T10:26:14+00:00,crypto_supertrend,BINANCE:ETHUSDT,BUY,8.697906,2500.49,10.87,-10.87,8.697906,open,Supertrend up,
 2026-10-12T17:23:48+00:00,crypto_supertrend,BINANCE:BTCUSDT,SELL,0.263176,82569.4828,10.87,-36.41,0.0,close,Supertrend turned down,
 2026-10-12T17:23:49+00:00,crypto_supertrend,BINANCE:ETHUSDT,SELL,8.697906,2515.5068,10.94,119.67,0.0,close,Supertrend turned down,
+2026-10-13T03:55:39+00:00,tv_rating_scalper,NSE:LT,SELL,4,3626.7745,7.25,-7.25,-4,open,TV 15m -0.54 / 1h -0.54,

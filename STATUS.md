@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 13 Oct 2026 09:20 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 13 Oct 2026 09:25 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -19,10 +19,10 @@ _Updated 13 Oct 2026 09:20 IST · paper trading · every bot started with ₹50,
 | 13 | **orb_breakout** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 14 | **rsi2_scalper** | scalp 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
 | 15 | **supertrend_intraday** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 16 | **tv_rating_scalper** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 17 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 18 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
-| 19 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
+| 16 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
+| 17 | **vwap_pullback** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
+| 18 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | +0.00% | 0 | – | – | 0.0% | 0 | ✅ |
+| 19 | **tv_rating_scalper** | intraday 15m | -0.02% | -10 | +0 | -0.02% | 0 | – | – | -0.0% | 1 | ✅ |
 | 20 | **crypto_supertrend** | crypto 1h | -3.20% | -1,602 | +0 | -3.20% | 9 | 22 | 0.12 | -3.6% | 0 | ✅ |
 
 <details><summary>What each bot does</summary>
@@ -44,22 +44,25 @@ _Updated 13 Oct 2026 09:20 IST · paper trading · every bot started with ₹50,
 | orb_breakout | 15-min opening range breakout, long/short, stop at other side, 2R target |
 | rsi2_scalper | RSI(2)<10 above EMA50 (or >90 below), exit on snap-back or after 4 bars |
 | supertrend_intraday | Supertrend 10/3 flips on 15m, stop at the Supertrend line, 2R |
-| tv_rating_scalper | TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral |
 | tv_rating_swing | NIFTY 50 names rated STRONG BUY (1D) + BUY (1W) by TradingView; 7% trailing stop |
 | vwap_pullback | Trend (EMA20>EMA50) + pullback that holds VWAP, 1 ATR stop, 2R target |
 | vwap_reversion | Fade 2-sigma stretches from VWAP, exit back at VWAP |
+| tv_rating_scalper | TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral |
 | crypto_supertrend | BTC/ETH long while 1h Supertrend 10/3 is up (checked in NSE hours only, USDT) |
 
 </details>
 
 ## Open positions
 
-_None_
+| Bot | Symbol | Qty | Avg | Stop | Target | Opened |
+|---|---|---:|---:|---:|---:|---|
+| tv_rating_scalper | NSE:LT | -4 | 3,626.77 | 3,656.52 | 3,569.46 | 13 Oct 09:25 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 13 Oct 09:25 | tv_rating_scalper | SELL | 4 | NSE:LT | 3,626.77 |  | TV 15m -0.54 / 1h -0.54 |
 | 12 Oct 22:53 | crypto_supertrend | SELL | 8.69791 | BINANCE:ETHUSDT | 2,515.51 | +120 | Supertrend turned down |
 | 12 Oct 22:53 | crypto_supertrend | SELL | 0.263176 | BINANCE:BTCUSDT | 82,569.48 | -36 | Supertrend turned down |
 | 09 Oct 15:56 | crypto_supertrend | BUY | 8.69791 | BINANCE:ETHUSDT | 2,500.49 |  | Supertrend up |
