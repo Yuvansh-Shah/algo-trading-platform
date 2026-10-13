@@ -41,3 +41,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T04:15:35+00:00,vwap_pullback,NSE:HDFCBANK,BUY,23,714.8929,8.22,-8.22,23,open,pullback held VWAP in uptrend,
 2026-10-13T04:15:35+00:00,vwap_pullback,NSE:INFY,BUY,15,1039.6079,7.8,-7.8,15,open,pullback held VWAP in uptrend,
 2026-10-13T04:15:35+00:00,vwap_pullback,NSE:TCS,BUY,7,2219.9439,7.77,-7.77,7,open,pullback held VWAP in uptrend,
+2026-10-13T04:20:22+00:00,vwap_pullback,NSE:INFY,SELL,15,1033.2933,7.75,-102.47,0,close,stop-loss,
