@@ -1,29 +1,29 @@
 # 🏆 Bot Leaderboard
 
-_Updated 13 Oct 2026 09:50 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 13 Oct 2026 09:55 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 🥇 | **tv_rating_scalper** | intraday 15m | +0.38% | +190 | +200 | +0.34% | 1 | 100 | ∞ | -0.4% | 3 | ✅ |
-| 🥈 | **nifty_buy_hold** | benchmark 1D | +0.04% | +21 | +21 | +0.00% | 0 | – | – | -0.1% | 1 | ✅ |
-| 🥉 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 4 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 5 | **donchian_turtle** | swing 1D | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 6 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 7 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 8 | **gap_and_go** | intraday 15m | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 9 | **hourly_macd_swing** | swing 1h | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 10 | **momentum_rotation** | positional 1D | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 11 | **orb_breakout** | intraday 15m | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 12 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 13 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | -0.04% | 0 | – | – | 0.0% | 0 | ✅ |
-| 14 | **bb_squeeze** | intraday 15m | -0.06% | -28 | -28 | -0.10% | 0 | – | – | -0.1% | 2 | ✅ |
-| 15 | **rsi2_scalper** | scalp 15m | -0.15% | -74 | -74 | -0.19% | 0 | – | – | -0.1% | 3 | ✅ |
-| 16 | **macd_adx** | intraday 15m | -0.21% | -104 | -104 | -0.25% | 0 | – | – | -0.2% | 2 | ✅ |
-| 17 | **supertrend_intraday** | intraday 15m | -0.21% | -107 | -107 | -0.26% | 0 | – | – | -0.2% | 3 | ✅ |
-| 18 | **ema_crossover** | intraday 15m | -0.41% | -204 | -204 | -0.45% | 0 | – | – | -0.4% | 3 | ✅ |
-| 19 | **vwap_pullback** | intraday 15m | -0.43% | -214 | -214 | -0.47% | 1 | 0 | 0.00 | -0.4% | 2 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -3.17% | -1,586 | +16 | -3.21% | 9 | 22 | 0.12 | -3.6% | 2 | ✅ |
+| 🥇 | **tv_rating_scalper** | intraday 15m | +0.36% | +178 | +189 | +0.23% | 1 | 100 | ∞ | -0.4% | 3 | ✅ |
+| 🥈 | **nifty_buy_hold** | benchmark 1D | +0.13% | +63 | +63 | +0.00% | 0 | – | – | -0.1% | 1 | ✅ |
+| 🥉 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 4 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 5 | **donchian_turtle** | swing 1D | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 6 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 7 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 8 | **gap_and_go** | intraday 15m | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 9 | **hourly_macd_swing** | swing 1h | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 10 | **momentum_rotation** | positional 1D | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 11 | **orb_breakout** | intraday 15m | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 12 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 13 | **vwap_reversion** | intraday 15m | +0.00% | +0 | +0 | -0.13% | 0 | – | – | 0.0% | 0 | ✅ |
+| 14 | **bb_squeeze** | intraday 15m | -0.02% | -8 | -8 | -0.14% | 0 | – | – | -0.1% | 2 | ✅ |
+| 15 | **rsi2_scalper** | scalp 15m | -0.20% | -100 | -100 | -0.33% | 0 | – | – | -0.2% | 3 | ✅ |
+| 16 | **macd_adx** | intraday 15m | -0.22% | -112 | -112 | -0.35% | 0 | – | – | -0.2% | 2 | ✅ |
+| 17 | **supertrend_intraday** | intraday 15m | -0.29% | -147 | -147 | -0.42% | 0 | – | – | -0.3% | 3 | ✅ |
+| 18 | **ema_crossover** | intraday 15m | -0.43% | -216 | -216 | -0.56% | 0 | – | – | -0.4% | 3 | ✅ |
+| 19 | **vwap_pullback** | intraday 15m | -0.44% | -222 | -222 | -0.57% | 1 | 0 | 0.00 | -0.4% | 2 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -3.10% | -1,552 | +50 | -3.23% | 9 | 22 | 0.12 | -3.6% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
