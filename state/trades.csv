@@ -72,3 +72,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T06:45:31+00:00,ema_crossover,NSE:KOTAKBANK,SELL,37,440.4119,8.15,-8.15,-37,open,"EMA9<21, RSI 41",
 2026-10-13T06:45:33+00:00,vwap_reversion,NSE:KOTAKBANK,BUY,37,440.5881,8.15,-8.15,37,open,-2.2 sigma below VWAP,
 2026-10-13T06:55:20+00:00,vwap_pullback,NSE:TCS,SELL,7,2249.2501,7.87,197.27,0,close,target,
+2026-10-13T07:00:55+00:00,macd_adx,NSE:SBIN,SELL,17,942.1115,8.01,-8.01,-17,open,"MACD down, ADX 23",
+2026-10-13T07:00:55+00:00,vwap_pullback,NSE:SUNPHARMA,SELL,9,1757.1485,7.91,-7.91,-9,open,rally rejected at VWAP in downtrend,

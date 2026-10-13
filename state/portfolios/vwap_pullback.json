@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_pullback",
   "initial": 50000.0,
-  "cash": 50584.309642325,
+  "cash": 66390.73897407501,
   "positions": {
     "NSE:INFY": {
       "qty": 15,
@@ -18,11 +18,19 @@
       "tp": 1152.7694788221138,
       "trail_pct": null,
       "opened": "2026-10-13T05:15:31+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": -9,
+      "avg": 1757.1485,
+      "sl": 1762.3462324312839,
+      "tp": 1746.3075351374323,
+      "trail_pct": null,
+      "opened": "2026-10-13T07:00:55+00:00"
     }
   },
   "realized": 38.31183000000203,
-  "fees": 63.528807675,
-  "trades": 8,
+  "fees": 71.43597592500001,
+  "trades": 9,
   "wins": 1,
   "losses": 2,
   "memory": {}
