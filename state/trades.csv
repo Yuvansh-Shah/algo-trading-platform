@@ -68,3 +68,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T06:30:40+00:00,vwap_reversion,NSE:BHARTIARTL,SELL,9,1778.2443,8.0,56.71,0,close,back to VWAP,
 2026-10-13T06:35:22+00:00,ema_crossover,NSE:HDFCBANK,SELL,23,710.058,8.17,-119.37,0,close,stop-loss,
 2026-10-13T06:35:22+00:00,macd_adx,NSE:HDFCBANK,SELL,23,710.058,8.17,-119.37,0,close,stop-loss,
+2026-10-13T06:45:29+00:00,bb_squeeze,NSE:KOTAKBANK,SELL,37,440.4119,8.15,-8.15,-37,open,squeeze breakout down,
+2026-10-13T06:45:31+00:00,ema_crossover,NSE:KOTAKBANK,SELL,37,440.4119,8.15,-8.15,-37,open,"EMA9<21, RSI 41",
+2026-10-13T06:45:33+00:00,vwap_reversion,NSE:KOTAKBANK,BUY,37,440.5881,8.15,-8.15,37,open,-2.2 sigma below VWAP,
