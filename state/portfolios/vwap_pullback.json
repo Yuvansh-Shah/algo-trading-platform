@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_pullback",
   "initial": 50000.0,
-  "cash": 17891.59831857501,
+  "cash": 2255.15890602501,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 23,
@@ -18,11 +18,19 @@
       "tp": 2249.175128178101,
       "trail_pct": null,
       "opened": "2026-10-13T04:15:35+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 15,
+      "avg": 1041.90834,
+      "sl": 1035.8161090112908,
+      "tp": 1052.4177819774181,
+      "trail_pct": null,
+      "opened": "2026-10-13T04:30:42+00:00"
     }
   },
   "realized": -94.71869999999967,
-  "fees": 31.537831425,
-  "trades": 4,
+  "fees": 39.352143975,
+  "trades": 5,
   "wins": 0,
   "losses": 1,
   "memory": {}
