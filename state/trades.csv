@@ -97,3 +97,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-13T09:00:55+00:00,hourly_macd_swing,NSE:AXISBANK,BUY,13,1263.6527,8.21,-8.21,13,open,1h MACD bull cross above EMA200,
 2026-10-13T09:00:58+00:00,rsi2_scalper,NSE:TCS,SELL,7,2253.2493,7.89,57.92,0,close,RSI2 snapped back (80),
 2026-10-13T09:00:58+00:00,rsi2_scalper,NSE:SBIN,BUY,17,946.6893,8.05,-55.27,0,close,time stop (1h),
+2026-10-13T09:05:25+00:00,vwap_reversion,NSE:AXISBANK,BUY,13,1264.0528,8.22,-101.87,0,close,stop-loss,

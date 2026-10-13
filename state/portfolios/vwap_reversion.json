@@ -1,16 +1,8 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 66340.67497653,
+  "cash": 49899.772753590005,
   "positions": {
-    "NSE:AXISBANK": {
-      "qty": -13,
-      "avg": 1256.8485799999999,
-      "sl": 1263.4797111909882,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T07:45:36+00:00"
-    },
     "NSE:KOTAKBANK": {
       "qty": 37,
       "avg": 438.0876,
@@ -28,10 +20,10 @@
       "opened": "2026-10-13T08:30:42+00:00"
     }
   },
-  "realized": 52.75212000000215,
-  "fees": 89.01740347,
-  "trades": 11,
+  "realized": -40.90222000000017,
+  "fees": 97.23374641000001,
+  "trades": 12,
   "wins": 3,
-  "losses": 1,
+  "losses": 2,
   "memory": {}
 }

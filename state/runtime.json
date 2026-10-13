@@ -22,7 +22,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50041.52
+    "equity": 50056.77
   },
   "connors_rsi2": {
     "market": "NSE",
@@ -47,7 +47,7 @@
       "date": "2026-10-13",
       "start_equity": 48398.25
     },
-    "equity": 48509.13
+    "equity": 48430.02
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -72,7 +72,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50357.92
+    "equity": 50363.82
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -111,7 +111,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50380.46
+    "equity": 50371.41
   },
   "hourly_macd_swing": {
     "market": "NSE",
@@ -125,7 +125,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50061.52
+    "equity": 50062.52
   },
   "macd_adx": {
     "market": "NSE",
@@ -161,7 +161,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50207.44,
+    "equity": 50253.52,
     "started": true,
     "last_bar": "2026-10-13",
     "last_run": "2026-10-13T04:15:27+00:00"
@@ -178,7 +178,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50192.43
+    "equity": 50205.48
   },
   "rsi2_scalper": {
     "market": "NSE",
@@ -206,7 +206,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50227.42
+    "equity": 50225.97
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -220,7 +220,7 @@
       "date": "2026-10-13",
       "start_equity": 49989.84
     },
-    "equity": 50578.4
+    "equity": 50586.7
   },
   "tv_rating_swing": {
     "market": "NSE",
@@ -245,7 +245,7 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 50059.7
+    "equity": 50028.05
   },
   "vwap_reversion": {
     "market": "NSE",
@@ -259,10 +259,10 @@
       "date": "2026-10-13",
       "start_equity": 50000.0
     },
-    "equity": 49895.17
+    "equity": 49854.67
   },
   "_meta": {
-    "last_engine_run": "2026-10-13T09:00:40+00:00",
+    "last_engine_run": "2026-10-13T09:05:25+00:00",
     "last_summary": "2026-10-12"
   }
 }
