@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 18081.033494540003,
+  "cash": 1701.624292745004,
   "positions": {
     "NSE:INFY": {
       "qty": 16,
@@ -18,11 +18,19 @@
       "tp": 2255.012,
       "trail_pct": null,
       "opened": "2026-10-13T04:15:35+00:00"
+    },
+    "NSE:HDFCBANK": {
+      "qty": 23,
+      "avg": 711.79233,
+      "sl": 705.9567999999999,
+      "tp": 723.0364,
+      "trail_pct": null,
+      "opened": "2026-10-13T05:15:31+00:00"
     }
   },
   "realized": 169.9177800000025,
-  "fees": 45.976985459999995,
-  "trades": 6,
+  "fees": 54.162597254999994,
+  "trades": 7,
   "wins": 1,
   "losses": 1,
   "memory": {}

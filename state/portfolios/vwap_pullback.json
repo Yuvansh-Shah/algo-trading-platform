@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_pullback",
   "initial": 50000.0,
-  "cash": 18617.398953395008,
+  "cash": 34847.431597535004,
   "positions": {
     "NSE:TCS": {
       "qty": 7,
@@ -18,11 +18,19 @@
       "tp": 1052.4177819774181,
       "trail_pct": null,
       "opened": "2026-10-13T04:30:42+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": -14,
+      "avg": 1159.86798,
+      "sl": 1163.615260588943,
+      "tp": 1152.7694788221138,
+      "trail_pct": null,
+      "opened": "2026-10-13T05:15:31+00:00"
     }
   },
   "realized": -166.8312899999986,
-  "fees": 47.537356605,
-  "trades": 6,
+  "fees": 55.656432465,
+  "trades": 7,
   "wins": 0,
   "losses": 2,
   "memory": {}
