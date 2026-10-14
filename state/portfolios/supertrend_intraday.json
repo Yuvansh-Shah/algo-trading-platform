@@ -1,11 +1,28 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 50489.51148073501,
-  "positions": {},
+  "cash": 50459.82657506001,
+  "positions": {
+    "NSE:AXISBANK": {
+      "qty": -13,
+      "avg": 1259.64802,
+      "sl": 1278.6916061864033,
+      "tp": 1222.6167876271934,
+      "trail_pct": null,
+      "opened": "2026-10-14T04:15:38+00:00"
+    },
+    "NSE:KOTAKBANK": {
+      "qty": 37,
+      "avg": 442.93857,
+      "sl": 435.90708876652207,
+      "tp": 456.8858224669558,
+      "trail_pct": null,
+      "opened": "2026-10-14T04:15:38+00:00"
+    }
+  },
   "realized": 537.967550000004,
-  "fees": 48.456069265,
-  "trades": 6,
+  "fees": 64.83814493999999,
+  "trades": 8,
   "wins": 2,
   "losses": 1,
   "memory": {}

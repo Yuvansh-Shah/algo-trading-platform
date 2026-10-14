@@ -1,11 +1,20 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 49878.59668685001,
-  "positions": {},
+  "cash": 33609.014321030016,
+  "positions": {
+    "NSE:TCS": {
+      "qty": 7,
+      "avg": 2323.06452,
+      "sl": 2298.2474550905267,
+      "tp": 2363.505089818946,
+      "trail_pct": null,
+      "opened": "2026-10-14T04:15:37+00:00"
+    }
+  },
   "realized": -57.1866599999953,
-  "fees": 64.21665315,
-  "trades": 8,
+  "fees": 72.34737897,
+  "trades": 9,
   "wins": 1,
   "losses": 3,
   "memory": {}
