@@ -1,21 +1,12 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 33535.06196953002,
-  "positions": {
-    "NSE:AXISBANK": {
-      "qty": 13,
-      "avg": 1260.05196,
-      "sl": 1249.7215999999999,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T06:15:36+00:00"
-    }
-  },
-  "realized": 101.62222000001066,
-  "fees": 185.88477046999995,
-  "trades": 23,
-  "wins": 5,
+  "cash": 49945.16849169002,
+  "positions": {},
+  "realized": 139.26242000001207,
+  "fees": 194.09392830999994,
+  "trades": 24,
+  "wins": 6,
   "losses": 6,
   "memory": {
     "held": {
@@ -23,7 +14,7 @@
       "NSE:SBIN": 4,
       "NSE:BHARTIARTL": 4,
       "NSE:TCS": 2,
-      "NSE:AXISBANK": 3,
+      "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2
     }
