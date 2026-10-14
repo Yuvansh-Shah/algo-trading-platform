@@ -1,16 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 1153.0420190600198,
+  "cash": 17246.72016455502,
   "positions": {
-    "NSE:SBIN": {
-      "qty": 17,
-      "avg": 947.58948,
-      "sl": 939.8208,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T05:30:38+00:00"
-    },
     "NSE:INFY": {
       "qty": 15,
       "avg": 1082.26641,
@@ -28,20 +20,20 @@
       "opened": "2026-10-14T06:15:36+00:00"
     }
   },
-  "realized": 46.420470000007526,
-  "fees": 169.68566093999996,
-  "trades": 21,
+  "realized": 39.12832000000776,
+  "fees": 177.73652544499996,
+  "trades": 22,
   "wins": 4,
-  "losses": 5,
+  "losses": 6,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
-      "NSE:SBIN": 3,
+      "NSE:SBIN": 4,
       "NSE:BHARTIARTL": 4,
       "NSE:TCS": 2,
-      "NSE:AXISBANK": 0,
+      "NSE:AXISBANK": 1,
       "NSE:ICICIBANK": 4,
-      "NSE:INFY": 0
+      "NSE:INFY": 1
     }
   }
 }

@@ -171,3 +171,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T06:15:36+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,9,1749.85,7.87,-7.87,-9,open,TV 15m -0.60 / 1h -0.42,
 2026-10-14T06:15:37+00:00,vwap_pullback,NSE:TCS,SELL,7,2301.2397,8.05,-120.92,0,close,lost VWAP,
 2026-10-14T06:15:37+00:00,vwap_pullback,NSE:KOTAKBANK,BUY,36,443.3887,7.98,-7.98,36,open,pullback held VWAP in uptrend,
+2026-10-14T06:30:37+00:00,rsi2_scalper,NSE:SBIN,SELL,17,947.1605,8.05,-15.34,0,close,time stop (1h),
