@@ -53,7 +53,7 @@
       "date": "2026-10-14",
       "start_equity": 48538.97
     },
-    "equity": 48591.93
+    "equity": 48594.64
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -280,7 +280,7 @@
     "equity": 49796.28
   },
   "_meta": {
-    "last_engine_run": "2026-10-14T03:45:30+00:00",
+    "last_engine_run": "2026-10-14T03:50:24+00:00",
     "last_summary": "2026-10-13"
   }
 }
