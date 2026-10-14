@@ -1,21 +1,13 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 1196.3913648550042,
+  "cash": 17541.393485500004,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 14,
       "avg": 1171.83432,
       "sl": 1162.7,
       "tp": 1186.7,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:30:46+00:00"
-    },
-    "NSE:HDFCBANK": {
-      "qty": 23,
-      "avg": 717.74352,
-      "sl": 711.35,
-      "tp": 730.6999999999998,
       "trail_pct": null,
       "opened": "2026-10-14T04:30:46+00:00"
     },
@@ -28,11 +20,11 @@
       "opened": "2026-10-14T05:00:50+00:00"
     }
   },
-  "realized": 497.40684999999985,
-  "fees": 72.971845145,
-  "trades": 9,
+  "realized": 342.48459999999864,
+  "fees": 81.14843450000001,
+  "trades": 10,
   "wins": 3,
-  "losses": 0,
+  "losses": 1,
   "memory": {
     "day": "2026-10-14",
     "traded": [

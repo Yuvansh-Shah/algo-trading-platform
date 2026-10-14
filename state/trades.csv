@@ -193,3 +193,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T07:45:39+00:00,vwap_pullback,NSE:SBIN,BUY,17,950.7901,8.08,-8.08,17,open,pullback held VWAP in uptrend,
 2026-10-14T07:45:29+00:00,vwap_reversion,NSE:SUNPHARMA,SELL,9,1734.3531,7.8,-102.27,0,close,stop-loss,
 2026-10-14T07:45:39+00:00,vwap_reversion,NSE:SUNPHARMA,BUY,9,1735.0469,7.81,-7.81,9,open,-2.6 sigma below VWAP,
+2026-10-14T07:50:26+00:00,ema_crossover,NSE:KOTAKBANK,SELL,37,440.3619,8.15,-110.88,0,close,stop-loss,
+2026-10-14T07:50:26+00:00,orb_breakout,NSE:HDFCBANK,SELL,23,711.0078,8.18,-163.1,0,close,stop-loss,
+2026-10-14T07:50:26+00:00,vwap_pullback,NSE:SUNPHARMA,BUY,9,1730.346,7.79,116.46,0,close,target,
