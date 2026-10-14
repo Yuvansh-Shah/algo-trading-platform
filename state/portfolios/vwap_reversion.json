@@ -1,29 +1,37 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 81218.72071651001,
+  "cash": 1459.2201561400198,
   "positions": {
-    "NSE:BHARTIARTL": {
-      "qty": -9,
-      "avg": 1815.1369,
-      "sl": 1824.473426697116,
+    "NSE:HDFCBANK": {
+      "qty": 23,
+      "avg": 709.89195,
+      "sl": 705.7826935288103,
       "tp": null,
       "trail_pct": null,
-      "opened": "2026-10-14T05:45:38+00:00"
+      "opened": "2026-10-14T08:00:55+00:00"
     },
-    "NSE:RELIANCE": {
-      "qty": -13,
-      "avg": 1184.8629799999999,
-      "sl": 1190.6522914502434,
+    "NSE:KOTAKBANK": {
+      "qty": 37,
+      "avg": 439.73792999999995,
+      "sl": 437.4549268233435,
       "tp": null,
       "trail_pct": null,
-      "opened": "2026-10-14T07:30:42+00:00"
+      "opened": "2026-10-14T08:00:55+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1727.14536,
+      "sl": 1717.5264217891754,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-14T08:00:55+00:00"
     }
   },
-  "realized": -344.7458199999951,
-  "fees": 175.98430349000003,
-  "trades": 22,
-  "wins": 4,
+  "realized": -182.80921999999396,
+  "fees": 215.84412386000002,
+  "trades": 27,
+  "wins": 6,
   "losses": 6,
   "memory": {}
 }
