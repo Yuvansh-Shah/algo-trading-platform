@@ -1,21 +1,12 @@
 {
   "strategy": "bb_squeeze",
   "initial": 50000.0,
-  "cash": 65556.892065315,
-  "positions": {
-    "NSE:SUNPHARMA": {
-      "qty": -9,
-      "avg": 1752.54942,
-      "sl": 1761.0760646218025,
-      "tp": 1736.847870756395,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:15:36+00:00"
-    }
-  },
-  "realized": -111.58320999999245,
-  "fees": 104.46950468500002,
-  "trades": 13,
-  "wins": 2,
+  "cash": 49918.351182554994,
+  "positions": {},
+  "realized": 30.63605000000763,
+  "fees": 112.28486744500002,
+  "trades": 14,
+  "wins": 3,
   "losses": 4,
   "memory": {}
 }

@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 65707.55711212,
+  "cash": 65685.69989212001,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": -9,
@@ -11,14 +11,6 @@
       "trail_pct": null,
       "opened": "2026-10-14T05:45:38+00:00"
     },
-    "NSE:SUNPHARMA": {
-      "qty": 9,
-      "avg": 1744.8489,
-      "sl": 1735.5789614092864,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T07:01:00+00:00"
-    },
     "NSE:RELIANCE": {
       "qty": -13,
       "avg": 1184.8629799999999,
@@ -26,12 +18,20 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-14T07:30:42+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1735.04694,
+      "sl": 1728.5284541488013,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-14T07:45:39+00:00"
     }
   },
-  "realized": -175.6520199999975,
-  "fees": 152.60160788000002,
-  "trades": 19,
+  "realized": -270.11457999999584,
+  "fees": 168.21390788000002,
+  "trades": 21,
   "wins": 4,
-  "losses": 4,
+  "losses": 5,
   "memory": {}
 }
