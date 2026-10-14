@@ -1,11 +1,20 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 49613.95496491001,
-  "positions": {},
+  "cash": 33382.04895785501,
+  "positions": {
+    "NSE:SBIN": {
+      "qty": 17,
+      "avg": 954.34083,
+      "sl": 947.9417004340376,
+      "tp": 961.6165991319249,
+      "trail_pct": null,
+      "opened": "2026-10-14T07:00:58+00:00"
+    }
+  },
   "realized": -289.51285999999607,
-  "fees": 96.53217509,
-  "trades": 12,
+  "fees": 104.644072145,
+  "trades": 13,
   "wins": 1,
   "losses": 5,
   "memory": {}

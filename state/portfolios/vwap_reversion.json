@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 81440.61785217,
+  "cash": 65729.12593212,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": -9,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-14T06:45:34+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1744.8489,
+      "sl": 1735.5789614092864,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-14T07:01:00+00:00"
     }
   },
   "realized": -90.20535999999925,
-  "fees": 129.34348783000002,
-  "trades": 16,
+  "fees": 137.19530788000003,
+  "trades": 17,
   "wins": 4,
   "losses": 3,
   "memory": {}
