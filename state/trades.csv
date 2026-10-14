@@ -159,3 +159,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T05:25:21+00:00,tv_rating_scalper,NSE:SBIN,SELL,17,947.3105,8.05,-148.82,0,close,stop-loss,
 2026-10-14T05:30:38+00:00,rsi2_scalper,NSE:SBIN,BUY,17,947.5895,8.05,-8.05,17,open,RSI2 4 in uptrend,
 2026-10-14T05:35:21+00:00,bb_squeeze,NSE:ITC,SELL,63,259.998,8.19,-74.61,0,close,stop-loss,
+2026-10-14T05:45:37+00:00,macd_adx,NSE:SBIN,SELL,17,946.5107,8.05,-8.05,-17,open,"MACD down, ADX 23",
+2026-10-14T05:45:38+00:00,rsi2_scalper,NSE:ICICIBANK,SELL,12,1349.4301,8.1,-36.18,0,close,time stop (1h),
+2026-10-14T05:45:38+00:00,tv_rating_scalper,NSE:BHARTIARTL,BUY,9,1815.8631,8.17,-8.17,9,open,TV 15m +0.51 / 1h +0.42,
+2026-10-14T05:45:38+00:00,vwap_reversion,NSE:BHARTIARTL,SELL,9,1815.1369,8.17,-8.17,-9,open,2.0 sigma above VWAP,

@@ -1,16 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 17598.956845235014,
+  "cash": 33784.02098487502,
   "positions": {
-    "NSE:ICICIBANK": {
-      "qty": 12,
-      "avg": 1351.7703,
-      "sl": 1340.688,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:45:31+00:00"
-    },
     "NSE:SBIN": {
       "qty": 17,
       "avg": 947.58948,
@@ -20,19 +12,19 @@
       "opened": "2026-10-14T05:30:38+00:00"
     }
   },
-  "realized": 74.50335000000473,
-  "fees": 145.28174476499998,
-  "trades": 18,
+  "realized": 46.420470000007526,
+  "fees": 153.37832512499998,
+  "trades": 19,
   "wins": 4,
-  "losses": 4,
+  "losses": 5,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
-      "NSE:SBIN": 0,
+      "NSE:SBIN": 1,
       "NSE:BHARTIARTL": 4,
       "NSE:TCS": 2,
       "NSE:AXISBANK": 3,
-      "NSE:ICICIBANK": 3
+      "NSE:ICICIBANK": 4
     }
   }
 }
