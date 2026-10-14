@@ -1,7 +1,7 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 17266.58649065003,
+  "cash": 33757.88614593503,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": 9,
@@ -10,31 +10,23 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-14T08:00:55+00:00"
-    },
-    "NSE:ITC": {
-      "qty": 63,
-      "avg": 261.50228999999996,
-      "sl": 259.35839999999996,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T08:20:34+00:00"
     }
   },
-  "realized": 262.8821700000135,
-  "fees": 242.79628934999994,
-  "trades": 30,
-  "wins": 8,
+  "realized": 287.7873300000152,
+  "fees": 251.04606406499994,
+  "trades": 31,
+  "wins": 9,
   "losses": 6,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
       "NSE:SBIN": 4,
-      "NSE:BHARTIARTL": 2,
+      "NSE:BHARTIARTL": 3,
       "NSE:TCS": 3,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
-      "NSE:ITC": 1
+      "NSE:ITC": 2
     }
   }
 }

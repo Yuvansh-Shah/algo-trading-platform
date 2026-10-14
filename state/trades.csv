@@ -219,3 +219,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T08:30:42+00:00,vwap_pullback,NSE:ITC,BUY,62,261.3523,8.1,-8.1,62,open,pullback held VWAP in uptrend,
 2026-10-14T08:35:21+00:00,ema_crossover,NSE:LT,BUY,4,3627.5254,7.26,-93.04,0,close,stop-loss,
 2026-10-14T08:40:27+00:00,macd_adx,NSE:SBIN,BUY,17,951.7903,8.09,-82.55,0,close,stop-loss,
+2026-10-14T08:45:36+00:00,macd_adx,NSE:RELIANCE,BUY,13,1185.6371,7.71,-7.71,13,open,"MACD up, ADX 34",
+2026-10-14T08:45:36+00:00,rsi2_scalper,NSE:ITC,SELL,63,261.8976,8.25,16.66,0,close,RSI2 snapped back (90),
+2026-10-14T08:45:37+00:00,supertrend_intraday,NSE:KOTAKBANK,SELL,37,439.1122,8.12,-149.7,0,close,Supertrend reversed,
