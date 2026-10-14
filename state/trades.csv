@@ -144,3 +144,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T04:15:39+00:00,vwap_pullback,NSE:INFY,BUY,15,1080.8161,8.11,-8.11,15,open,pullback held VWAP in uptrend,
 2026-10-14T04:15:39+00:00,vwap_pullback,NSE:TCS,BUY,7,2323.0645,8.13,-8.13,7,open,pullback held VWAP in uptrend,
 2026-10-14T04:15:39+00:00,vwap_pullback,NSE:LT,SELL,4,3646.6705,7.29,-7.29,-4,open,rally rejected at VWAP in downtrend,
+2026-10-14T04:20:26+00:00,vwap_pullback,NSE:TCS,SELL,7,2301.9395,8.06,-155.93,0,close,stop-loss,
