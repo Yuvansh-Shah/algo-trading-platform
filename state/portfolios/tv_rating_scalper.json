@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 1939.89580750001,
+  "cash": 33781.29440387001,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 23,
@@ -11,14 +11,6 @@
       "trail_pct": null,
       "opened": "2026-10-14T03:55:34+00:00"
     },
-    "NSE:TCS": {
-      "qty": 7,
-      "avg": 2323.06452,
-      "sl": 2304.0191999999997,
-      "tp": 2359.7616,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:15:39+00:00"
-    },
     "NSE:BHARTIARTL": {
       "qty": 9,
       "avg": 1815.8631,
@@ -26,12 +18,20 @@
       "tp": 1844.548,
       "trail_pct": null,
       "opened": "2026-10-14T05:45:38+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": -9,
+      "avg": 1749.84996,
+      "sl": 1764.2016,
+      "tp": 1722.1968,
+      "trail_pct": null,
+      "opened": "2026-10-14T06:15:36+00:00"
     }
   },
-  "realized": 1098.224860000006,
-  "fees": 167.93293250000002,
-  "trades": 21,
+  "realized": 945.4508400000047,
+  "fees": 183.86159613,
+  "trades": 23,
   "wins": 6,
-  "losses": 3,
+  "losses": 4,
   "memory": {}
 }
