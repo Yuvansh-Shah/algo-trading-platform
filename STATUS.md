@@ -1,36 +1,36 @@
 # 🏆 Bot Leaderboard
 
-_Updated 14 Oct 2026 10:30 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 14 Oct 2026 10:35 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 🥇 | **tv_rating_scalper** | intraday 15m | +2.00% | +1,001 | +311 | +1.30% | 8 | 75 | 6.33 | -0.5% | 3 | ✅ |
-| 🥈 | **gap_and_go** | intraday 15m | +1.96% | +979 | +504 | +1.26% | 2 | 100 | ∞ | -0.5% | 2 | ✅ |
-| 🥉 | **momentum_rotation** | positional 1D | +1.67% | +836 | +686 | +0.97% | 0 | – | – | -0.8% | 3 | ✅ |
-| 4 | **hourly_macd_swing** | swing 1h | +1.14% | +572 | +346 | +0.44% | 0 | – | – | -0.5% | 2 | ✅ |
-| 5 | **ema_crossover** | intraday 15m | +0.79% | +394 | +53 | +0.09% | 5 | 60 | 3.53 | -0.4% | 2 | ✅ |
-| 6 | **supertrend_intraday** | intraday 15m | +0.77% | +385 | -105 | +0.07% | 3 | 67 | 31.05 | -0.4% | 3 | ✅ |
-| 7 | **nifty_buy_hold** | benchmark 1D | +0.70% | +351 | -134 | +0.00% | 0 | – | – | -0.3% | 1 | ✅ |
-| 8 | **orb_breakout** | intraday 15m | +0.68% | +342 | -107 | -0.02% | 3 | 100 | ∞ | -0.6% | 3 | ✅ |
-| 9 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -0.70% | 0 | – | – | 0.0% | 0 | ✅ |
-| 10 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -0.70% | 0 | – | – | 0.0% | 0 | ✅ |
-| 11 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -0.70% | 0 | – | – | 0.0% | 0 | ✅ |
-| 12 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -0.70% | 0 | – | – | 0.0% | 0 | ✅ |
-| 13 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | -0.70% | 0 | – | – | 0.0% | 0 | ✅ |
-| 14 | **donchian_turtle** | swing 1D | -0.11% | -57 | +44 | -0.82% | 0 | – | – | -0.3% | 1 | ✅ |
-| 15 | **rsi2_scalper** | scalp 15m | -0.18% | -89 | +59 | -0.88% | 8 | 50 | 1.06 | -0.4% | 1 | ✅ |
-| 16 | **bb_squeeze** | intraday 15m | -0.27% | -137 | -168 | -0.98% | 5 | 40 | 0.69 | -0.5% | 2 | ✅ |
-| 17 | **macd_adx** | intraday 15m | -0.35% | -175 | -53 | -1.05% | 4 | 25 | 0.63 | -0.8% | 1 | ✅ |
-| 18 | **vwap_reversion** | intraday 15m | -0.41% | -204 | +0 | -1.11% | 7 | 57 | 0.50 | -0.6% | 0 | ✅ |
-| 19 | **vwap_pullback** | intraday 15m | -0.50% | -249 | -134 | -1.20% | 10 | 20 | 0.59 | -1.1% | 3 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -2.94% | -1,468 | -7 | -3.64% | 9 | 22 | 0.12 | -3.6% | 2 | ✅ |
+| 🥇 | **gap_and_go** | intraday 15m | +1.98% | +989 | +513 | +1.21% | 2 | 100 | ∞ | -0.5% | 2 | ✅ |
+| 🥈 | **tv_rating_scalper** | intraday 15m | +1.96% | +982 | +293 | +1.20% | 8 | 75 | 6.33 | -0.5% | 3 | ✅ |
+| 🥉 | **momentum_rotation** | positional 1D | +1.68% | +841 | +692 | +0.91% | 0 | – | – | -0.8% | 3 | ✅ |
+| 4 | **hourly_macd_swing** | swing 1h | +1.15% | +575 | +349 | +0.38% | 0 | – | – | -0.5% | 2 | ✅ |
+| 5 | **ema_crossover** | intraday 15m | +0.83% | +413 | +71 | +0.06% | 5 | 60 | 3.53 | -0.4% | 2 | ✅ |
+| 6 | **supertrend_intraday** | intraday 15m | +0.81% | +405 | -84 | +0.04% | 3 | 67 | 31.05 | -0.4% | 3 | ✅ |
+| 7 | **nifty_buy_hold** | benchmark 1D | +0.77% | +384 | -102 | +0.00% | 0 | – | – | -0.3% | 1 | ✅ |
+| 8 | **orb_breakout** | intraday 15m | +0.69% | +343 | -106 | -0.08% | 3 | 100 | ∞ | -0.6% | 3 | ✅ |
+| 9 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -0.77% | 0 | – | – | 0.0% | 0 | ✅ |
+| 10 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -0.77% | 0 | – | – | 0.0% | 0 | ✅ |
+| 11 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -0.77% | 0 | – | – | 0.0% | 0 | ✅ |
+| 12 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -0.77% | 0 | – | – | 0.0% | 0 | ✅ |
+| 13 | **tv_rating_swing** | swing 1D | +0.00% | +0 | +0 | -0.77% | 0 | – | – | 0.0% | 0 | ✅ |
+| 14 | **donchian_turtle** | swing 1D | -0.11% | -56 | +46 | -0.88% | 0 | – | – | -0.3% | 1 | ✅ |
+| 15 | **rsi2_scalper** | scalp 15m | -0.18% | -92 | +55 | -0.95% | 8 | 50 | 1.06 | -0.4% | 1 | ✅ |
+| 16 | **bb_squeeze** | intraday 15m | -0.26% | -128 | -159 | -1.02% | 5 | 40 | 0.69 | -0.5% | 2 | ✅ |
+| 17 | **macd_adx** | intraday 15m | -0.35% | -173 | -52 | -1.11% | 4 | 25 | 0.63 | -0.8% | 1 | ✅ |
+| 18 | **vwap_reversion** | intraday 15m | -0.41% | -204 | +0 | -1.18% | 7 | 57 | 0.50 | -0.6% | 0 | ✅ |
+| 19 | **vwap_pullback** | intraday 15m | -0.48% | -238 | -124 | -1.24% | 10 | 20 | 0.59 | -1.1% | 3 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -3.04% | -1,520 | -59 | -3.81% | 9 | 22 | 0.12 | -3.6% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
 | Bot | Strategy |
 |---|---|
-| tv_rating_scalper | TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral |
 | gap_and_go | Gap >0.8% + first 15m candle confirms + break of its high/low, 2R |
+| tv_rating_scalper | TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral |
 | momentum_rotation | Hold top-3 NIFTY 50 by 3M return (above SMA50, TV rating > 0); rotate out below top 10 |
 | hourly_macd_swing | 1h MACD crosses above signal while above EMA200; exit on cross down; 2/4 ATR |
 | ema_crossover | EMA 9/21 cross + RSI>50 + above VWAP (mirror for shorts), 1.5/3 ATR |
@@ -56,11 +56,11 @@ _Updated 14 Oct 2026 10:30 IST · paper trading · every bot started with ₹50,
 
 | Bot | Symbol | Qty | Avg | Stop | Target | Opened |
 |---|---|---:|---:|---:|---:|---|
+| gap_and_go | NSE:INFY | 15 | 1,073.91 | 1,027.00 | 1,129.30 | 14 Oct 09:25 |
+| gap_and_go | NSE:TCS | 7 | 2,274.45 | 2,155.00 | 2,482.00 | 14 Oct 09:25 |
 | tv_rating_scalper | NSE:HDFCBANK | 23 | 712.44 | 706.60 | 723.70 | 14 Oct 09:25 |
 | tv_rating_scalper | NSE:SBIN | 17 | 955.59 | 947.76 | 970.69 | 14 Oct 09:25 |
 | tv_rating_scalper | NSE:TCS | 7 | 2,323.06 | 2,304.02 | 2,359.76 | 14 Oct 09:45 |
-| gap_and_go | NSE:INFY | 15 | 1,073.91 | 1,027.00 | 1,129.30 | 14 Oct 09:25 |
-| gap_and_go | NSE:TCS | 7 | 2,274.45 | 2,155.00 | 2,482.00 | 14 Oct 09:25 |
 | momentum_rotation | NSE:KOTAKBANK | 37 | 439.54 | 386.72 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:HCLTECH | 12 | 1,314.16 | 1,156.23 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:TCS | 7 | 2,256.35 | 1,985.19 | – | 13 Oct 15:10 |
