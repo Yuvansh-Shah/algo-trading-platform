@@ -1,7 +1,7 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 17518.810695955006,
+  "cash": 1196.3913648550042,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 14,
@@ -18,18 +18,27 @@
       "tp": 730.6999999999998,
       "trail_pct": null,
       "opened": "2026-10-14T04:30:46+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 15,
+      "avg": 1087.6174800000001,
+      "sl": 1069.45,
+      "tp": 1122.5500000000002,
+      "trail_pct": null,
+      "opened": "2026-10-14T05:00:50+00:00"
     }
   },
   "realized": 497.40684999999985,
-  "fees": 64.814714045,
-  "trades": 8,
+  "fees": 72.971845145,
+  "trades": 9,
   "wins": 3,
   "losses": 0,
   "memory": {
     "day": "2026-10-14",
     "traded": [
       "NSE:RELIANCE",
-      "NSE:HDFCBANK"
+      "NSE:HDFCBANK",
+      "NSE:INFY"
     ]
   }
 }
