@@ -1,24 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 1378.2405733950254,
+  "cash": 17266.58649065003,
   "positions": {
-    "NSE:TCS": {
-      "qty": 7,
-      "avg": 2294.25876,
-      "sl": 2275.4496000000004,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T07:30:42+00:00"
-    },
-    "NSE:INFY": {
-      "qty": 15,
-      "avg": 1080.2660099999998,
-      "sl": 1071.4096,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T07:45:38+00:00"
-    },
     "NSE:BHARTIARTL": {
       "qty": 9,
       "avg": 1808.76168,
@@ -26,22 +10,31 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-14T08:00:55+00:00"
+    },
+    "NSE:ITC": {
+      "qty": 63,
+      "avg": 261.50228999999996,
+      "sl": 259.35839999999996,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-14T08:20:34+00:00"
     }
   },
-  "realized": 139.26242000001207,
-  "fees": 218.36525660499993,
-  "trades": 27,
-  "wins": 6,
+  "realized": 262.8821700000135,
+  "fees": 242.79628934999994,
+  "trades": 30,
+  "wins": 8,
   "losses": 6,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
       "NSE:SBIN": 4,
-      "NSE:BHARTIARTL": 0,
-      "NSE:TCS": 2,
+      "NSE:BHARTIARTL": 1,
+      "NSE:TCS": 3,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
-      "NSE:INFY": 1
+      "NSE:INFY": 2,
+      "NSE:ITC": 0
     }
   }
 }
