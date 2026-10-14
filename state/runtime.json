@@ -53,7 +53,7 @@
       "date": "2026-10-14",
       "start_equity": 48538.97
     },
-    "equity": 48239.9
+    "equity": 48266.65
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -64,7 +64,7 @@
       "date": "2026-10-14",
       "start_equity": 49898.11
     },
-    "equity": 49922.11,
+    "equity": 49938.91,
     "started": true,
     "last_bar": "2026-10-14",
     "last_run": "2026-10-14T09:40:27+00:00"
@@ -137,7 +137,7 @@
       "date": "2026-10-14",
       "start_equity": 50225.72
     },
-    "equity": 50269.6
+    "equity": 50258.4
   },
   "macd_adx": {
     "market": "NSE",
@@ -162,7 +162,7 @@
       "date": "2026-10-14",
       "start_equity": 50149.77
     },
-    "equity": 50415.97,
+    "equity": 50353.97,
     "started": true,
     "last_bar": "2026-10-14",
     "last_run": "2026-10-14T09:40:27+00:00"
@@ -176,7 +176,7 @@
       "date": "2026-10-14",
       "start_equity": 50485.84
     },
-    "equity": 50199.76,
+    "equity": 50201.68,
     "started": true,
     "last_bar": "2026-10-14",
     "last_run": "2026-10-14T04:15:29+00:00"
@@ -246,7 +246,7 @@
       "date": "2026-10-14",
       "start_equity": 50000.0
     },
-    "equity": 49982.95,
+    "equity": 49993.95,
     "started": true,
     "last_bar": "2026-10-14",
     "last_run": "2026-10-14T09:35:23+00:00"
@@ -280,7 +280,7 @@
     "equity": 49514.51
   },
   "_meta": {
-    "last_engine_run": "2026-10-14T09:50:21+00:00",
+    "last_engine_run": "2026-10-14T09:55:23+00:00",
     "last_summary": "2026-10-13"
   }
 }
