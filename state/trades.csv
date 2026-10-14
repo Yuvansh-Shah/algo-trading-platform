@@ -133,3 +133,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T03:55:34+00:00,tv_rating_scalper,NSE:SBIN,BUY,17,955.5911,8.12,-8.12,17,open,TV 15m +0.56 / 1h +0.34,
 2026-10-14T04:00:41+00:00,bb_squeeze,NSE:SUNPHARMA,SELL,9,1755.2489,7.9,-144.74,0,close,stop-loss,
 2026-10-14T04:00:49+00:00,bb_squeeze,NSE:SUNPHARMA,BUY,9,1755.9511,7.9,-7.9,9,open,squeeze breakout up,
+2026-10-14T04:05:25+00:00,bb_squeeze,NSE:SUNPHARMA,SELL,9,1754.749,7.9,-18.72,0,close,stop-loss,
+2026-10-14T04:05:25+00:00,tv_rating_scalper,NSE:TCS,SELL,7,2332.2335,8.16,396.29,0,close,target,
