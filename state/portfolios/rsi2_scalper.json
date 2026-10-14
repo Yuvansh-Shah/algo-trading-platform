@@ -1,16 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 17246.72016455502,
+  "cash": 33535.06196953002,
   "positions": {
-    "NSE:INFY": {
-      "qty": 15,
-      "avg": 1082.26641,
-      "sl": 1073.3935999999999,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T06:15:36+00:00"
-    },
     "NSE:AXISBANK": {
       "qty": 13,
       "avg": 1260.05196,
@@ -20,10 +12,10 @@
       "opened": "2026-10-14T06:15:36+00:00"
     }
   },
-  "realized": 39.12832000000776,
-  "fees": 177.73652544499996,
-  "trades": 22,
-  "wins": 4,
+  "realized": 101.62222000001066,
+  "fees": 185.88477046999995,
+  "trades": 23,
+  "wins": 5,
   "losses": 6,
   "memory": {
     "held": {
@@ -31,9 +23,9 @@
       "NSE:SBIN": 4,
       "NSE:BHARTIARTL": 4,
       "NSE:TCS": 2,
-      "NSE:AXISBANK": 1,
+      "NSE:AXISBANK": 2,
       "NSE:ICICIBANK": 4,
-      "NSE:INFY": 1
+      "NSE:INFY": 2
     }
   }
 }
