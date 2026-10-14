@@ -1,7 +1,7 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 50279.111088170015,
+  "cash": 65656.44095698002,
   "positions": {
     "NSE:KOTAKBANK": {
       "qty": -37,
@@ -10,20 +10,12 @@
       "tp": 437.10291927405274,
       "trail_pct": null,
       "opened": "2026-10-14T07:45:37+00:00"
-    },
-    "NSE:RELIANCE": {
-      "qty": 13,
-      "avg": 1185.63708,
-      "sl": 1179.1179875786484,
-      "tp": 1198.8640248427034,
-      "trail_pct": null,
-      "opened": "2026-10-14T08:45:36+00:00"
     }
   },
-  "realized": -487.73489999999424,
-  "fees": 144.70635183,
-  "trades": 18,
+  "realized": -515.994559999994,
+  "fees": 152.39886302,
+  "trades": 19,
   "wins": 1,
-  "losses": 7,
+  "losses": 8,
   "memory": {}
 }
