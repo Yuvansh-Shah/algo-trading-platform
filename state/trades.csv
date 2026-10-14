@@ -181,3 +181,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T07:01:00+00:00,vwap_reversion,NSE:SUNPHARMA,BUY,9,1744.8489,7.85,-7.85,9,open,-2.2 sigma below VWAP,
 2026-10-14T07:15:30+00:00,rsi2_scalper,NSE:AXISBANK,SELL,13,1262.9474,8.21,29.43,0,close,RSI2 snapped back (81),
 2026-10-14T07:25:26+00:00,vwap_reversion,NSE:RELIANCE,BUY,13,1185.337,7.7,-93.15,0,close,stop-loss,
+2026-10-14T07:30:42+00:00,rsi2_scalper,NSE:TCS,BUY,7,2294.2588,8.03,-8.03,7,open,RSI2 4 in uptrend,
+2026-10-14T07:30:42+00:00,vwap_reversion,NSE:RELIANCE,SELL,13,1184.863,7.7,-7.7,-13,open,3.6 sigma above VWAP,
