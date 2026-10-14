@@ -1,21 +1,12 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 65656.44095698002,
-  "positions": {
-    "NSE:KOTAKBANK": {
-      "qty": -37,
-      "avg": 441.21174,
-      "sl": 443.7735403629736,
-      "tp": 437.10291927405274,
-      "trail_pct": null,
-      "opened": "2026-10-14T07:45:37+00:00"
-    }
-  },
-  "realized": -515.994559999994,
-  "fees": 152.39886302,
-  "trades": 19,
-  "wins": 1,
+  "cash": 49448.35161230502,
+  "positions": {},
+  "realized": -391.1495299999919,
+  "fees": 160.498857695,
+  "trades": 20,
+  "wins": 2,
   "losses": 8,
   "memory": {}
 }

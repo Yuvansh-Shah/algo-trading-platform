@@ -1,37 +1,12 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 1459.2201561400198,
-  "positions": {
-    "NSE:HDFCBANK": {
-      "qty": 23,
-      "avg": 709.89195,
-      "sl": 705.7826935288103,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T08:00:55+00:00"
-    },
-    "NSE:KOTAKBANK": {
-      "qty": 37,
-      "avg": 439.73792999999995,
-      "sl": 437.4549268233435,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T08:00:55+00:00"
-    },
-    "NSE:SUNPHARMA": {
-      "qty": 9,
-      "avg": 1727.14536,
-      "sl": 1717.5264217891754,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-14T08:00:55+00:00"
-    }
-  },
-  "realized": -182.80921999999396,
-  "fees": 215.84412386000002,
-  "trades": 27,
-  "wins": 6,
-  "losses": 6,
+  "cash": 49514.51270003502,
+  "positions": {},
+  "realized": -245.60350999998758,
+  "fees": 239.88378996500003,
+  "trades": 30,
+  "wins": 7,
+  "losses": 8,
   "memory": {}
 }

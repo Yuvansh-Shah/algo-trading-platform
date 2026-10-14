@@ -1,29 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 82905.5019419,
-  "positions": {
-    "NSE:AXISBANK": {
-      "qty": -13,
-      "avg": 1259.64802,
-      "sl": 1278.6916061864033,
-      "tp": 1222.6167876271934,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:15:38+00:00"
-    },
-    "NSE:ICICIBANK": {
-      "qty": -12,
-      "avg": 1351.2297,
-      "sl": 1365.8572153273199,
-      "tp": 1322.7855693453603,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:45:31+00:00"
-    }
-  },
-  "realized": 396.3903800000037,
-  "fees": 81.06909809999999,
-  "trades": 10,
-  "wins": 2,
-  "losses": 2,
+  "cash": 50305.49464418,
+  "positions": {},
+  "realized": 402.8556000000058,
+  "fees": 97.36095581999999,
+  "trades": 12,
+  "wins": 3,
+  "losses": 3,
   "memory": {}
 }

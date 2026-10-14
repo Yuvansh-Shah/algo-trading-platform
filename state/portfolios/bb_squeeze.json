@@ -1,21 +1,12 @@
 {
   "strategy": "bb_squeeze",
   "initial": 50000.0,
-  "cash": 33496.112016479994,
-  "positions": {
-    "NSE:INFY": {
-      "qty": 15,
-      "avg": 1094.26881,
-      "sl": 1085.279537452952,
-      "tp": 1108.7409250940957,
-      "trail_pct": null,
-      "opened": "2026-10-14T09:00:48+00:00"
-    }
-  },
-  "realized": 30.63605000000763,
-  "fees": 120.49188352000002,
-  "trades": 15,
+  "cash": 49875.88978060499,
+  "positions": {},
+  "realized": 4.575650000006419,
+  "fees": 128.68586939500003,
+  "trades": 16,
   "wins": 3,
-  "losses": 4,
+  "losses": 5,
   "memory": {}
 }

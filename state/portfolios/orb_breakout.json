@@ -1,29 +1,12 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 17541.393485500004,
-  "positions": {
-    "NSE:RELIANCE": {
-      "qty": 14,
-      "avg": 1171.83432,
-      "sl": 1162.7,
-      "tp": 1186.7,
-      "trail_pct": null,
-      "opened": "2026-10-14T04:30:46+00:00"
-    },
-    "NSE:INFY": {
-      "qty": 15,
-      "avg": 1087.6174800000001,
-      "sl": 1069.45,
-      "tp": 1122.5500000000002,
-      "trail_pct": null,
-      "opened": "2026-10-14T05:00:50+00:00"
-    }
-  },
-  "realized": 342.48459999999864,
-  "fees": 81.14843450000001,
-  "trades": 10,
-  "wins": 3,
+  "cash": 50456.19028428501,
+  "positions": {},
+  "realized": 553.8043499999976,
+  "fees": 97.61406571500001,
+  "trades": 12,
+  "wins": 5,
   "losses": 1,
   "memory": {
     "day": "2026-10-14",
