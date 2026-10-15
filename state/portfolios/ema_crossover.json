@@ -1,16 +1,8 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 953.6192033600128,
+  "cash": 17700.789649250015,
   "positions": {
-    "NSE:BHARTIARTL": {
-      "qty": 9,
-      "avg": 1829.3658,
-      "sl": 1820.3516918686976,
-      "tp": 1855.5966162626046,
-      "trail_pct": null,
-      "opened": "2026-10-15T04:15:38+00:00"
-    },
     "NSE:HDFCBANK": {
       "qty": 23,
       "avg": 717.24342,
@@ -28,10 +20,10 @@
       "opened": "2026-10-15T04:30:36+00:00"
     }
   },
-  "realized": 449.7641400000077,
-  "fees": 199.98767664000002,
-  "trades": 25,
-  "wins": 5,
+  "realized": 741.0201600000073,
+  "fees": 208.36545075,
+  "trades": 26,
+  "wins": 6,
   "losses": 6,
   "memory": {}
 }

@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 1249.2527617900178,
+  "cash": 17972.44000528002,
   "positions": {
-    "NSE:AXISBANK": {
-      "qty": 13,
-      "avg": 1267.2534,
-      "sl": 1256.864,
-      "tp": 1287.272,
-      "trail_pct": null,
-      "opened": "2026-10-15T03:55:38+00:00"
-    },
     "NSE:ITC": {
       "qty": 63,
       "avg": 262.5525,
@@ -28,10 +20,10 @@
       "opened": "2026-10-15T04:15:42+00:00"
     }
   },
-  "realized": 842.5376200000037,
-  "fees": 263.32083821,
-  "trades": 33,
-  "wins": 8,
+  "realized": 1099.796440000002,
+  "fees": 271.68661471999997,
+  "trades": 34,
+  "wins": 9,
   "losses": 7,
   "memory": {}
 }
