@@ -1,7 +1,7 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 35012.03959178002,
+  "cash": 19115.91850328002,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": 8,
@@ -10,25 +10,33 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-15T08:45:36+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1765.353,
+      "sl": 1750.8799999999999,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T09:15:36+00:00"
     }
   },
   "realized": 252.27264000001878,
-  "fees": 361.25784822,
-  "trades": 45,
+  "fees": 369.20193672000005,
+  "trades": 46,
   "wins": 13,
   "losses": 9,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
       "NSE:SBIN": 2,
-      "NSE:BHARTIARTL": 1,
+      "NSE:BHARTIARTL": 2,
       "NSE:TCS": 2,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
       "NSE:KOTAKBANK": 3,
-      "NSE:SUNPHARMA": 1
+      "NSE:SUNPHARMA": 0
     }
   }
 }
