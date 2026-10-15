@@ -314,3 +314,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T07:30:41+00:00,rsi2_scalper,NSE:KOTAKBANK,SELL,37,444.711,8.23,88.81,0,close,RSI2 snapped back (82),
 2026-10-15T07:30:41+00:00,rsi2_scalper,NSE:SUNPHARMA,SELL,9,1767.6464,7.95,69.4,0,close,RSI2 snapped back (77),
 2026-10-15T07:30:42+00:00,vwap_pullback,NSE:AXISBANK,BUY,12,1290.6581,7.74,-7.74,12,open,pullback held VWAP in uptrend,
+2026-10-15T07:45:37+00:00,macd_adx,NSE:ITC,BUY,61,265.4031,8.09,-8.09,61,open,"MACD up, ADX 33",
