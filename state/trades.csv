@@ -274,3 +274,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T04:30:36+00:00,ema_crossover,NSE:ICICIBANK,BUY,12,1361.2722,8.17,-8.17,12,open,"EMA9>21, RSI 71",
 2026-10-15T04:30:37+00:00,orb_breakout,NSE:INFY,BUY,15,1114.1728,8.36,-8.36,15,open,ORB up > 1113.0,
 2026-10-15T04:30:37+00:00,orb_breakout,NSE:SBIN,SELL,17,948.3603,8.06,-8.06,-17,open,ORB down < 949.3,
+2026-10-15T04:35:23+00:00,hourly_macd_swing,NSE:TCS,SELL,7,2367.6264,8.29,870.06,0,close,target,
