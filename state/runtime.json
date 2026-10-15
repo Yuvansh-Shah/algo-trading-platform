@@ -64,7 +64,7 @@
       "date": "2026-10-15",
       "start_equity": 49920.91
     },
-    "equity": 50136.87,
+    "equity": 50143.27,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T09:40:26+00:00"
@@ -137,7 +137,7 @@
       "date": "2026-10-15",
       "start_equity": 50578.67
     },
-    "equity": 51321.71
+    "equity": 51307.31
   },
   "macd_adx": {
     "market": "NSE",
@@ -162,7 +162,7 @@
       "date": "2026-10-15",
       "start_equity": 50986.22
     },
-    "equity": 51578.12,
+    "equity": 51552.62,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T09:40:26+00:00"
@@ -176,7 +176,7 @@
       "date": "2026-10-15",
       "start_equity": 50213.2
     },
-    "equity": 50946.64,
+    "equity": 50921.68,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T04:15:29+00:00"
@@ -246,7 +246,7 @@
       "date": "2026-10-15",
       "start_equity": 50198.95
     },
-    "equity": 50611.61,
+    "equity": 50652.61,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T09:35:24+00:00"
@@ -280,7 +280,7 @@
     "equity": 49689.94
   },
   "_meta": {
-    "last_engine_run": "2026-10-15T09:45:25+00:00",
+    "last_engine_run": "2026-10-15T09:50:27+00:00",
     "last_summary": "2026-10-14"
   }
 }
