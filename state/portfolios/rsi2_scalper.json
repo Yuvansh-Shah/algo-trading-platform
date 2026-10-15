@@ -1,28 +1,28 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 35739.37116248002,
+  "cash": 35012.03959178002,
   "positions": {
-    "NSE:TCS": {
-      "qty": 6,
-      "avg": 2357.4714,
-      "sl": 2338.144,
+    "NSE:BHARTIARTL": {
+      "qty": 8,
+      "avg": 1859.8718999999999,
+      "sl": 1844.624,
       "tp": null,
       "trail_pct": null,
-      "opened": "2026-10-15T08:15:36+00:00"
+      "opened": "2026-10-15T08:45:36+00:00"
     }
   },
-  "realized": 230.93484000001763,
-  "fees": 346.73527752,
-  "trades": 43,
-  "wins": 12,
+  "realized": 252.27264000001878,
+  "fees": 361.25784822,
+  "trades": 45,
+  "wins": 13,
   "losses": 9,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
       "NSE:SBIN": 2,
-      "NSE:BHARTIARTL": 4,
-      "NSE:TCS": 1,
+      "NSE:BHARTIARTL": 0,
+      "NSE:TCS": 2,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,

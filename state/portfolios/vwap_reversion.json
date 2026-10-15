@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 80373.66138662503,
+  "cash": 96196.57917002503,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": -8,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-15T08:15:37+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": -13,
+      "avg": 1217.7564,
+      "sl": 1225.2848584609105,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T08:45:37+00:00"
     }
   },
   "realized": -192.2271299999888,
-  "fees": 316.133843375,
-  "trades": 40,
+  "fees": 324.04925997500004,
+  "trades": 41,
   "wins": 9,
   "losses": 10,
   "memory": {}

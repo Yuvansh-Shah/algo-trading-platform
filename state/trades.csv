@@ -323,3 +323,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T08:30:37+00:00,bb_squeeze,NSE:TCS,SELL,6,2356.5286,7.07,12.48,0,close,back to mid band,
 2026-10-15T08:40:31+00:00,bb_squeeze,NSE:RELIANCE,SELL,13,1215.4569,7.9,196.42,0,close,target,
 2026-10-15T08:40:31+00:00,vwap_reversion,NSE:RELIANCE,BUY,13,1215.9431,7.9,-137.7,0,close,stop-loss,
+2026-10-15T08:45:35+00:00,macd_adx,NSE:ITC,SELL,61,264.847,8.08,-42.0,0,close,MACD reversed,
+2026-10-15T08:45:35+00:00,rsi2_scalper,NSE:TCS,SELL,6,2361.0277,7.08,14.25,0,close,RSI2 snapped back (71),
+2026-10-15T08:45:36+00:00,rsi2_scalper,NSE:BHARTIARTL,BUY,8,1859.8719,7.44,-7.44,8,open,RSI2 5 in uptrend,
+2026-10-15T08:45:37+00:00,vwap_reversion,NSE:RELIANCE,SELL,13,1217.7564,7.92,-7.92,-13,open,3.2 sigma above VWAP,
