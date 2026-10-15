@@ -296,3 +296,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T05:25:21+00:00,tv_rating_scalper,NSE:BHARTIARTL,SELL,9,1846.0307,8.31,-150.88,0,close,stop-loss,
 2026-10-15T05:30:43+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,37,443.8388,8.21,-8.21,37,open,TV 15m +0.60 / 1h +0.47,
 2026-10-15T05:45:33+00:00,vwap_reversion,NSE:INFY,BUY,14,1111.9223,7.78,163.06,0,close,back to VWAP,
+2026-10-15T05:50:23+00:00,vwap_pullback,NSE:HDFCBANK,SELL,22,721.6556,7.94,93.53,0,close,target,
