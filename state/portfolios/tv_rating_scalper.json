@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 1207.2108799300186,
+  "cash": 17813.180221690018,
   "positions": {
     "NSE:ITC": {
       "qty": 63,
@@ -18,20 +18,12 @@
       "tp": 1381.0488,
       "trail_pct": null,
       "opened": "2026-10-15T04:15:42+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": 9,
-      "avg": 1861.8723,
-      "sl": 1846.608,
-      "tp": 1891.284,
-      "trail_pct": null,
-      "opened": "2026-10-15T04:45:38+00:00"
     }
   },
-  "realized": 1099.796440000002,
-  "fees": 280.06504006999995,
-  "trades": 35,
+  "realized": 957.2222200000037,
+  "fees": 288.37217831,
+  "trades": 36,
   "wins": 9,
-  "losses": 7,
+  "losses": 8,
   "memory": {}
 }
