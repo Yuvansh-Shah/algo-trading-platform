@@ -310,3 +310,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T07:15:37+00:00,rsi2_scalper,NSE:SUNPHARMA,BUY,9,1759.0517,7.92,-7.92,9,open,RSI2 7 in uptrend,
 2026-10-15T07:15:41+00:00,vwap_reversion,NSE:ICICIBANK,SELL,11,1376.7246,7.57,-7.57,-11,open,2.0 sigma above VWAP,
 2026-10-15T07:20:25+00:00,vwap_pullback,NSE:RELIANCE,SELL,13,1210.1579,7.87,127.57,0,close,target,
+2026-10-15T07:25:24+00:00,orb_breakout,NSE:SBIN,BUY,17,959.7419,8.16,-201.65,0,close,stop-loss,
