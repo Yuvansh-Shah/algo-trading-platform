@@ -1,7 +1,7 @@
 {
   "strategy": "hourly_macd_swing",
   "initial": 50000.0,
-  "cash": 17666.170033479997,
+  "cash": 1287.911636799994,
   "positions": {
     "NSE:AXISBANK": {
       "qty": 13,
@@ -18,11 +18,19 @@
       "tp": 738.0283774605806,
       "trail_pct": null,
       "opened": "2026-10-15T05:00:53+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": 12,
+      "avg": 1364.17278,
+      "sl": 1347.3604634540538,
+      "tp": 1397.2790730918923,
+      "trail_pct": null,
+      "opened": "2026-10-15T06:00:44+00:00"
     }
   },
   "realized": 757.3994800000005,
-  "fees": 49.02232652,
-  "trades": 6,
+  "fees": 57.2073632,
+  "trades": 7,
   "wins": 1,
   "losses": 1,
   "memory": {}

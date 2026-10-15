@@ -1,16 +1,8 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 78820.68236488501,
+  "cash": 80292.17435412502,
   "positions": {
-    "NSE:TCS": {
-      "qty": -6,
-      "avg": 2379.42402,
-      "sl": 2401.8884531365284,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-15T04:45:38+00:00"
-    },
     "NSE:BHARTIARTL": {
       "qty": -8,
       "avg": 1861.1277,
@@ -18,12 +10,20 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-15T04:45:39+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": -13,
+      "avg": 1205.95876,
+      "sl": 1215.4079849651118,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T06:00:50+00:00"
     }
   },
-  "realized": -74.76444999999006,
-  "fees": 270.118905115,
-  "trades": 34,
-  "wins": 8,
+  "realized": 10.742030000009947,
+  "fees": 285.053155875,
+  "trades": 36,
+  "wins": 9,
   "losses": 8,
   "memory": {}
 }
