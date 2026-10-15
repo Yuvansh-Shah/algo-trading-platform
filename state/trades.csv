@@ -311,3 +311,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T07:15:41+00:00,vwap_reversion,NSE:ICICIBANK,SELL,11,1376.7246,7.57,-7.57,-11,open,2.0 sigma above VWAP,
 2026-10-15T07:20:25+00:00,vwap_pullback,NSE:RELIANCE,SELL,13,1210.1579,7.87,127.57,0,close,target,
 2026-10-15T07:25:24+00:00,orb_breakout,NSE:SBIN,BUY,17,959.7419,8.16,-201.65,0,close,stop-loss,
+2026-10-15T07:30:41+00:00,rsi2_scalper,NSE:KOTAKBANK,SELL,37,444.711,8.23,88.81,0,close,RSI2 snapped back (82),
+2026-10-15T07:30:41+00:00,rsi2_scalper,NSE:SUNPHARMA,SELL,9,1767.6464,7.95,69.4,0,close,RSI2 snapped back (77),
+2026-10-15T07:30:42+00:00,vwap_pullback,NSE:AXISBANK,BUY,12,1290.6581,7.74,-7.74,12,open,pullback held VWAP in uptrend,
