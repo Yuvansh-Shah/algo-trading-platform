@@ -331,3 +331,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T09:15:36+00:00,rsi2_scalper,NSE:SUNPHARMA,BUY,9,1765.353,7.94,-7.94,9,open,RSI2 10 in uptrend,
 2026-10-15T09:35:26+00:00,tv_rating_swing,NSE:AXISBANK,BUY,13,1286.6573,8.36,-8.36,13,open,"TV STRONG BUY +0.56, RSI 62",
 2026-10-15T09:35:26+00:00,tv_rating_swing,NSE:ICICIBANK,BUY,12,1383.9767,8.3,-8.3,12,open,"TV STRONG BUY +0.54, RSI 57",
+2026-10-15T09:40:33+00:00,donchian_turtle,NSE:ICICIBANK,BUY,11,1384.8769,7.62,-7.62,11,open,20-day breakout > 1364.6,
+2026-10-15T09:40:33+00:00,donchian_turtle,NSE:INFY,BUY,14,1109.8719,7.77,-7.77,14,open,20-day breakout > 1096.4,

@@ -14,7 +14,7 @@
     "NSE:AXISBANK": {
       "qty": 13,
       "avg": 1286.6572800000001,
-      "sl": null,
+      "sl": 1196.166,
       "tp": null,
       "trail_pct": 7,
       "opened": "2026-10-15T09:35:26+00:00"
@@ -22,7 +22,7 @@
     "NSE:ICICIBANK": {
       "qty": 12,
       "avg": 1383.97674,
-      "sl": null,
+      "sl": 1287.957,
       "tp": null,
       "trail_pct": 7,
       "opened": "2026-10-15T09:35:26+00:00"
