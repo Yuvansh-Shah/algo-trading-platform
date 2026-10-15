@@ -1,16 +1,8 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 96196.57917002503,
+  "cash": 81350.19248642503,
   "positions": {
-    "NSE:BHARTIARTL": {
-      "qty": -8,
-      "avg": 1861.1277,
-      "sl": 1876.7000718325253,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-15T04:45:39+00:00"
-    },
     "NSE:HDFCBANK": {
       "qty": -22,
       "avg": 726.9545800000001,
@@ -28,10 +20,10 @@
       "opened": "2026-10-15T08:45:37+00:00"
     }
   },
-  "realized": -192.2271299999888,
-  "fees": 324.04925997500004,
-  "trades": 41,
-  "wins": 9,
+  "realized": -142.1727299999879,
+  "fees": 331.468743575,
+  "trades": 42,
+  "wins": 10,
   "losses": 10,
   "memory": {}
 }
