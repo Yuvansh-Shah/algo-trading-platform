@@ -47,8 +47,8 @@
     "style": "crypto",
     "description": "BTC/ETH long while 1h Supertrend 10/3 is up (checked in NSE hours only, USDT)",
     "started": true,
-    "last_bar": "497793",
-    "last_run": "2026-10-15T09:00:45+00:00",
+    "last_bar": "497794",
+    "last_run": "2026-10-15T10:00:44+00:00",
     "day": {
       "date": "2026-10-15",
       "start_equity": 46489.19
@@ -280,7 +280,7 @@
     "equity": 49689.94
   },
   "_meta": {
-    "last_engine_run": "2026-10-15T09:55:21+00:00",
+    "last_engine_run": "2026-10-15T10:00:44+00:00",
     "last_summary": "2026-10-14"
   }
 }
