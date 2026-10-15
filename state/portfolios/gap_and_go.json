@@ -1,18 +1,26 @@
 {
   "strategy": "gap_and_go",
   "initial": 50000.0,
-  "cash": 50908.09230973001,
-  "positions": {},
+  "cash": 34411.55116123,
+  "positions": {
+    "NSE:INFY": {
+      "qty": 15,
+      "avg": 1099.2198,
+      "sl": 1069.45,
+      "tp": 1131.85,
+      "trail_pct": null,
+      "opened": "2026-10-15T03:55:30+00:00"
+    }
+  },
   "realized": 971.8120600000047,
-  "fees": 63.719750270000006,
-  "trades": 8,
+  "fees": 71.96389877000001,
+  "trades": 9,
   "wins": 4,
   "losses": 0,
   "memory": {
-    "day": "2026-10-14",
+    "day": "2026-10-15",
     "traded": [
-      "NSE:INFY",
-      "NSE:TCS"
+      "NSE:INFY"
     ]
   }
 }

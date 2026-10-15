@@ -1,19 +1,26 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 50456.19028428501,
-  "positions": {},
+  "cash": 33973.65893718501,
+  "positions": {
+    "NSE:AXISBANK": {
+      "qty": 13,
+      "avg": 1267.2534,
+      "sl": 1259.3,
+      "tp": 1306.4,
+      "trail_pct": null,
+      "opened": "2026-10-15T03:55:37+00:00"
+    }
+  },
   "realized": 553.8043499999976,
-  "fees": 97.61406571500001,
-  "trades": 12,
+  "fees": 105.85121281500001,
+  "trades": 13,
   "wins": 5,
   "losses": 1,
   "memory": {
-    "day": "2026-10-14",
+    "day": "2026-10-15",
     "traded": [
-      "NSE:RELIANCE",
-      "NSE:HDFCBANK",
-      "NSE:INFY"
+      "NSE:AXISBANK"
     ]
   }
 }

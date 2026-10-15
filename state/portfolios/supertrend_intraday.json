@@ -1,11 +1,20 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 50305.49464418,
-  "positions": {},
+  "cash": 33822.96329708,
+  "positions": {
+    "NSE:AXISBANK": {
+      "qty": 13,
+      "avg": 1267.2534,
+      "sl": 1255.5020765408676,
+      "tp": 1313.9958469182648,
+      "trail_pct": null,
+      "opened": "2026-10-15T03:55:38+00:00"
+    }
+  },
   "realized": 402.8556000000058,
-  "fees": 97.36095581999999,
-  "trades": 12,
+  "fees": 105.59810291999999,
+  "trades": 13,
   "wins": 3,
   "losses": 3,
   "memory": {}
