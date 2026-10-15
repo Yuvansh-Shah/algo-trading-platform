@@ -29,14 +29,14 @@
     "held": {
       "NSE:RELIANCE": 1,
       "NSE:SBIN": 2,
-      "NSE:BHARTIARTL": 2,
+      "NSE:BHARTIARTL": 3,
       "NSE:TCS": 2,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
       "NSE:KOTAKBANK": 3,
-      "NSE:SUNPHARMA": 0
+      "NSE:SUNPHARMA": 1
     }
   }
 }
