@@ -329,3 +329,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T08:45:37+00:00,vwap_reversion,NSE:RELIANCE,SELL,13,1217.7564,7.92,-7.92,-13,open,3.2 sigma above VWAP,
 2026-10-15T09:00:59+00:00,vwap_reversion,NSE:BHARTIARTL,BUY,8,1854.8709,7.42,42.63,0,close,back to VWAP,
 2026-10-15T09:15:36+00:00,rsi2_scalper,NSE:SUNPHARMA,BUY,9,1765.353,7.94,-7.94,9,open,RSI2 10 in uptrend,
+2026-10-15T09:35:26+00:00,tv_rating_swing,NSE:AXISBANK,BUY,13,1286.6573,8.36,-8.36,13,open,"TV STRONG BUY +0.56, RSI 62",
+2026-10-15T09:35:26+00:00,tv_rating_swing,NSE:ICICIBANK,BUY,12,1383.9767,8.3,-8.3,12,open,"TV STRONG BUY +0.54, RSI 57",
