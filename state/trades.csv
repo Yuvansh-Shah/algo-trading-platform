@@ -255,3 +255,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T03:55:38+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,13,1267.2534,8.24,-8.24,13,open,TV 15m +0.56 / 1h +0.60,
 2026-10-15T03:55:38+00:00,tv_rating_scalper,NSE:ICICIBANK,SELL,12,1341.8316,8.05,-8.05,-12,open,TV 15m -0.54 / 1h -0.33,
 2026-10-15T04:00:56+00:00,tv_rating_scalper,NSE:ITC,BUY,63,262.5525,8.27,-8.27,63,open,TV 15m +0.69 / 1h +0.29,
+2026-10-15T04:05:19+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,12,1359.5719,8.16,-221.04,0,close,stop-loss,
