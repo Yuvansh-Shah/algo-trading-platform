@@ -307,3 +307,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T06:55:25+00:00,macd_adx,NSE:ICICIBANK,SELL,12,1372.6254,8.24,148.41,0,close,target,
 2026-10-15T07:00:54+00:00,macd_adx,NSE:TCS,SELL,6,2362.5274,7.09,48.45,0,close,MACD reversed,
 2026-10-15T07:05:20+00:00,ema_crossover,NSE:ICICIBANK,SELL,12,1374.725,8.25,153.19,0,close,target,
+2026-10-15T07:15:37+00:00,rsi2_scalper,NSE:SUNPHARMA,BUY,9,1759.0517,7.92,-7.92,9,open,RSI2 7 in uptrend,
+2026-10-15T07:15:41+00:00,vwap_reversion,NSE:ICICIBANK,SELL,11,1376.7246,7.57,-7.57,-11,open,2.0 sigma above VWAP,

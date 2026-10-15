@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 80292.17435412502,
+  "cash": 95428.57296882501,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": -8,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-15T06:00:50+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": -11,
+      "avg": 1376.7246,
+      "sl": 1382.8037541014996,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T07:15:41+00:00"
     }
   },
   "realized": 10.742030000009947,
-  "fees": 285.053155875,
-  "trades": 36,
+  "fees": 292.625141175,
+  "trades": 37,
   "wins": 9,
   "losses": 8,
   "memory": {}

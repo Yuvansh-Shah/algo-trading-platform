@@ -1,7 +1,7 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 33383.70885255002,
+  "cash": 17544.32745972002,
   "positions": {
     "NSE:KOTAKBANK": {
       "qty": 37,
@@ -10,11 +10,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-15T06:45:36+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1759.05174,
+      "sl": 1744.6304,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T07:15:37+00:00"
     }
   },
   "realized": 56.545220000016116,
-  "fees": 315.56556744999995,
-  "trades": 39,
+  "fees": 323.48130027999997,
+  "trades": 40,
   "wins": 10,
   "losses": 9,
   "memory": {
@@ -27,8 +35,8 @@
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
-      "NSE:KOTAKBANK": 1,
-      "NSE:SUNPHARMA": 4
+      "NSE:KOTAKBANK": 2,
+      "NSE:SUNPHARMA": 0
     }
   }
 }
