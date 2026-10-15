@@ -36,15 +36,15 @@
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
-      "NSE:SBIN": 0,
+      "NSE:SBIN": 1,
       "NSE:BHARTIARTL": 4,
       "NSE:TCS": 3,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
-      "NSE:KOTAKBANK": 0,
-      "NSE:SUNPHARMA": 0
+      "NSE:KOTAKBANK": 1,
+      "NSE:SUNPHARMA": 1
     }
   }
 }

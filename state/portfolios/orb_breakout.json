@@ -1,7 +1,7 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 33973.65893718501,
+  "cash": 33366.77465879501,
   "positions": {
     "NSE:AXISBANK": {
       "qty": 13,
@@ -10,17 +10,35 @@
       "tp": 1306.4,
       "trail_pct": null,
       "opened": "2026-10-15T03:55:37+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 15,
+      "avg": 1114.17279,
+      "sl": 1095.8,
+      "tp": 1150.2500000000002,
+      "trail_pct": null,
+      "opened": "2026-10-15T04:30:37+00:00"
+    },
+    "NSE:SBIN": {
+      "qty": -17,
+      "avg": 948.36029,
+      "sl": 957.3,
+      "tp": 931.6500000000001,
+      "trail_pct": null,
+      "opened": "2026-10-15T04:30:37+00:00"
     }
   },
   "realized": 553.8043499999976,
-  "fees": 105.85121281500001,
-  "trades": 13,
+  "fees": 122.26857120500001,
+  "trades": 15,
   "wins": 5,
   "losses": 1,
   "memory": {
     "day": "2026-10-15",
     "traded": [
-      "NSE:AXISBANK"
+      "NSE:AXISBANK",
+      "NSE:INFY",
+      "NSE:SBIN"
     ]
   }
 }
