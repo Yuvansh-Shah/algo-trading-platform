@@ -246,3 +246,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-14T09:45:32+00:00,vwap_reversion,NSE:HDFCBANK,SELL,23,709.5581,8.16,-15.84,0,close,intraday square-off,
 2026-10-14T09:45:32+00:00,vwap_reversion,NSE:KOTAKBANK,SELL,37,437.6625,8.1,-84.89,0,close,intraday square-off,
 2026-10-14T09:45:32+00:00,vwap_reversion,NSE:SUNPHARMA,SELL,9,1729.554,7.78,13.89,0,close,intraday square-off,
+2026-10-15T03:30:33+00:00,crypto_supertrend,BINANCE:BTCUSDT,SELL,0.261364,81038.1791,10.59,-613.65,0.0,close,Supertrend turned down,
+2026-10-15T03:30:33+00:00,crypto_supertrend,BINANCE:ETHUSDT,SELL,8.680919,2363.0373,10.26,-1273.63,0.0,close,Supertrend turned down,

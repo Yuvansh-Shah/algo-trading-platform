@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 14 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 15 Oct 2026 09:00 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 14 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,
 | 17 | **vwap_pullback** | intraday 15m | -0.85% | -425 | -311 | -1.25% | 19 | 32 | 0.74 | -1.7% | 0 | ✅ |
 | 18 | **vwap_reversion** | intraday 15m | -0.97% | -485 | -282 | -1.37% | 15 | 47 | 0.46 | -1.2% | 0 | ✅ |
 | 19 | **macd_adx** | intraday 15m | -1.10% | -552 | -430 | -1.51% | 10 | 20 | 0.36 | -1.4% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -3.36% | -1,682 | -221 | -3.77% | 9 | 22 | 0.12 | -3.8% | 2 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -7.02% | -3,511 | +0 | -7.42% | 11 | 18 | 0.06 | -7.1% | 0 | ✅ |
 
 <details><summary>What each bot does</summary>
 
@@ -63,13 +63,13 @@ _Updated 14 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,
 | nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
 | tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,468.93 | – | 14 Oct 15:05 |
 | donchian_turtle | NSE:AXISBANK | 12 | 1,272.95 | 1,220.87 | – | 13 Oct 15:10 |
-| crypto_supertrend | BINANCE:BTCUSDT | 0.261364 | 83,345.55 | – | – | 13 Oct 09:30 |
-| crypto_supertrend | BINANCE:ETHUSDT | 8.68092 | 2,508.57 | – | – | 13 Oct 09:30 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 15 Oct 09:00 | crypto_supertrend | SELL | 8.68092 | BINANCE:ETHUSDT | 2,363.04 | -1,274 | Supertrend turned down |
+| 15 Oct 09:00 | crypto_supertrend | SELL | 0.261364 | BINANCE:BTCUSDT | 81,038.18 | -614 | Supertrend turned down |
 | 14 Oct 15:15 | vwap_reversion | SELL | 9 | NSE:SUNPHARMA | 1,729.55 | +14 | intraday square-off |
 | 14 Oct 15:15 | vwap_reversion | SELL | 37 | NSE:KOTAKBANK | 437.66 | -85 | intraday square-off |
 | 14 Oct 15:15 | vwap_reversion | SELL | 23 | NSE:HDFCBANK | 709.56 | -16 | intraday square-off |
@@ -98,5 +98,3 @@ _Updated 14 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,
 | 14 Oct 14:15 | rsi2_scalper | SELL | 63 | NSE:ITC | 261.90 | +17 | RSI2 snapped back (90) |
 | 14 Oct 14:15 | macd_adx | BUY | 13 | NSE:RELIANCE | 1,185.64 |  | MACD up, ADX 34 |
 | 14 Oct 14:10 | macd_adx | BUY | 17 | NSE:SBIN | 951.79 | -83 | stop-loss |
-| 14 Oct 14:05 | ema_crossover | BUY | 4 | NSE:LT | 3,627.53 | -93 | stop-loss |
-| 14 Oct 14:00 | vwap_pullback | BUY | 62 | NSE:ITC | 261.35 |  | pullback held VWAP in uptrend |
