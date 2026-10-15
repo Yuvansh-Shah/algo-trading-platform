@@ -1,11 +1,20 @@
 {
   "strategy": "bb_squeeze",
   "initial": 50000.0,
-  "cash": 49875.88978060499,
-  "positions": {},
+  "cash": 35749.20660892499,
+  "positions": {
+    "NSE:TCS": {
+      "qty": 6,
+      "avg": 2353.27056,
+      "sl": 2337.115758532769,
+      "tp": 2401.2684829344616,
+      "trail_pct": null,
+      "opened": "2026-10-15T04:15:33+00:00"
+    }
+  },
   "realized": 4.575650000006419,
-  "fees": 128.68586939500003,
-  "trades": 16,
+  "fees": 135.74568107500002,
+  "trades": 17,
   "wins": 3,
   "losses": 5,
   "memory": {}
