@@ -290,3 +290,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T05:00:53+00:00,hourly_macd_swing,NSE:HDFCBANK,BUY,23,720.344,8.28,-8.28,23,open,1h MACD bull cross above EMA200,
 2026-10-15T05:00:40+00:00,vwap_pullback,NSE:RELIANCE,SELL,13,1199.2601,7.8,152.4,0,close,target,
 2026-10-15T05:00:59+00:00,vwap_pullback,NSE:RELIANCE,BUY,13,1199.7399,7.8,-7.8,13,open,pullback held VWAP in uptrend,
+2026-10-15T05:15:36+00:00,bb_squeeze,NSE:SBIN,BUY,17,955.6911,8.12,-8.12,17,open,squeeze breakout up,
+2026-10-15T05:15:40+00:00,rsi2_scalper,NSE:KOTAKBANK,BUY,37,441.4883,8.17,-53.54,0,close,time stop (1h),
+2026-10-15T05:15:40+00:00,rsi2_scalper,NSE:SUNPHARMA,BUY,9,1758.7517,7.91,-133.02,0,close,time stop (1h),
