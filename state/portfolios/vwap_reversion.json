@@ -1,11 +1,36 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 49514.51270003502,
-  "positions": {},
+  "cash": 94395.37858126502,
+  "positions": {
+    "NSE:INFY": {
+      "qty": -14,
+      "avg": 1124.12513,
+      "sl": 1134.9318088941357,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T04:45:38+00:00"
+    },
+    "NSE:TCS": {
+      "qty": -6,
+      "avg": 2379.42402,
+      "sl": 2401.8884531365284,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T04:45:38+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": -8,
+      "avg": 1861.1277,
+      "sl": 1876.7000718325253,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-15T04:45:39+00:00"
+    }
+  },
   "realized": -245.60350999998758,
-  "fees": 239.88378996500003,
-  "trades": 30,
+  "fees": 262.335448735,
+  "trades": 33,
   "wins": 7,
   "losses": 8,
   "memory": {}

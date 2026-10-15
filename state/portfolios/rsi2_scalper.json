@@ -1,16 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 65758.09767546003,
+  "cash": 81929.07168369002,
   "positions": {
-    "NSE:SBIN": {
-      "qty": 17,
-      "avg": 950.1899999999999,
-      "sl": 942.4,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-15T04:15:40+00:00"
-    },
     "NSE:KOTAKBANK": {
       "qty": -37,
       "avg": 440.26193,
@@ -28,23 +20,23 @@
       "opened": "2026-10-15T04:15:40+00:00"
     }
   },
-  "realized": 201.19311000001522,
-  "fees": 283.2154845399999,
-  "trades": 35,
-  "wins": 9,
+  "realized": 227.02665000001576,
+  "fees": 291.3050163099999,
+  "trades": 36,
+  "wins": 10,
   "losses": 7,
   "memory": {
     "held": {
       "NSE:RELIANCE": 1,
-      "NSE:SBIN": 1,
+      "NSE:SBIN": 2,
       "NSE:BHARTIARTL": 4,
       "NSE:TCS": 3,
       "NSE:AXISBANK": 4,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
-      "NSE:KOTAKBANK": 1,
-      "NSE:SUNPHARMA": 1
+      "NSE:KOTAKBANK": 2,
+      "NSE:SUNPHARMA": 2
     }
   }
 }
