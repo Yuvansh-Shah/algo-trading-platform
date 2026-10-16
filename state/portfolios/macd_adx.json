@@ -1,21 +1,12 @@
 {
   "strategy": "macd_adx",
   "initial": 50000.0,
-  "cash": 33446.47061795003,
-  "positions": {
-    "NSE:ITC": {
-      "qty": 62,
-      "avg": 262.85256,
-      "sl": 261.75656199147664,
-      "tp": 265.3368760170467,
-      "trail_pct": null,
-      "opened": "2026-10-16T07:45:34+00:00"
-    }
-  },
-  "realized": 52.6365000000074,
-  "fees": 309.30716205,
-  "trades": 39,
+  "cash": 49666.71012111003,
+  "positions": {},
+  "realized": -15.868539999992151,
+  "fees": 317.42133889,
+  "trades": 40,
   "wins": 7,
-  "losses": 12,
+  "losses": 13,
   "memory": {}
 }

@@ -1,21 +1,12 @@
 {
   "strategy": "bb_squeeze",
   "initial": 50000.0,
-  "cash": 34598.95724640001,
-  "positions": {
-    "NSE:ICICIBANK": {
-      "qty": 11,
-      "avg": 1390.5780599999998,
-      "sl": 1382.7857698930588,
-      "tp": 1404.428460213882,
-      "trail_pct": null,
-      "opened": "2026-10-16T06:15:31+00:00"
-    }
-  },
-  "realized": 156.06116000001026,
-  "fees": 260.7452536,
-  "trades": 33,
-  "wins": 7,
+  "cash": 49921.12574969001,
+  "positions": {},
+  "realized": 189.53592000001464,
+  "fees": 268.41017031,
+  "trades": 34,
+  "wins": 8,
   "losses": 9,
   "memory": {}
 }

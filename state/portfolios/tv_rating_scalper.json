@@ -1,29 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 18040.957129805014,
-  "positions": {
-    "NSE:INFY": {
-      "qty": 14,
-      "avg": 1154.88093,
-      "sl": 1145.4128,
-      "tp": 1173.1244000000002,
-      "trail_pct": null,
-      "opened": "2026-10-16T04:30:50+00:00"
-    },
-    "NSE:SBIN": {
-      "qty": 17,
-      "avg": 960.192,
-      "sl": 952.3199999999999,
-      "tp": 975.36,
-      "trail_pct": null,
-      "opened": "2026-10-16T08:15:35+00:00"
-    }
-  },
-  "realized": 966.1928100000048,
-  "fees": 433.63866019499994,
-  "trades": 54,
-  "wins": 12,
-  "losses": 14,
+  "cash": 50568.175384805014,
+  "positions": {},
+  "realized": 1018.0857900000059,
+  "fees": 449.91040519499995,
+  "trades": 56,
+  "wins": 13,
+  "losses": 15,
   "memory": {}
 }
