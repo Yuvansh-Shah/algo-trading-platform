@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 16 Oct 2026 09:10 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 16 Oct 2026 09:15 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 16 Oct 2026 09:10 IST · paper trading · every bot started with ₹50,
 | 17 | **rsi2_scalper** | scalp 15m | -0.52% | -261 | -203 | -2.38% | 24 | 54 | 0.89 | -0.5% | 0 | ✅ |
 | 18 | **vwap_reversion** | intraday 15m | -0.62% | -310 | +175 | -2.47% | 22 | 55 | 0.85 | -1.3% | 0 | ✅ |
 | 19 | **macd_adx** | intraday 15m | -0.77% | -384 | +168 | -2.62% | 14 | 36 | 0.65 | -1.4% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -7.37% | -3,683 | -143 | -9.22% | 11 | 18 | 0.06 | -7.4% | 2 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -7.28% | -3,640 | -100 | -9.13% | 11 | 18 | 0.06 | -7.4% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
