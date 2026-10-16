@@ -1,7 +1,7 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 98400.38132394,
+  "cash": 83722.11225714,
   "positions": {
     "NSE:RELIANCE": {
       "qty": -14,
@@ -18,20 +18,12 @@
       "tp": 928.8579385807077,
       "trail_pct": null,
       "opened": "2026-10-16T04:15:35+00:00"
-    },
-    "NSE:LT": {
-      "qty": -4,
-      "avg": 3613.7771000000002,
-      "sl": 3673.576844799534,
-      "tp": 3492.746310400933,
-      "trail_pct": null,
-      "opened": "2026-10-16T04:15:35+00:00"
     }
   },
-  "realized": 1145.4945800000028,
-  "fees": 170.72623606,
-  "trades": 21,
+  "realized": 929.6693800000035,
+  "fees": 178.06170286,
+  "trades": 22,
   "wins": 6,
-  "losses": 3,
+  "losses": 4,
   "memory": {}
 }
