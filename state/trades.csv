@@ -433,3 +433,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T08:00:53+00:00,rsi2_scalper,NSE:RELIANCE,SELL,13,1211.9576,7.88,63.83,0,close,RSI2 snapped back (87),
 2026-10-16T08:00:53+00:00,rsi2_scalper,NSE:KOTAKBANK,SELL,36,444.811,8.01,-25.22,0,close,time stop (1h),
 2026-10-16T08:00:54+00:00,vwap_pullback,NSE:SBIN,BUY,17,959.8919,8.16,-8.16,17,open,pullback held VWAP in uptrend,
+2026-10-16T08:05:22+00:00,vwap_pullback,NSE:RELIANCE,SELL,13,1214.557,7.89,144.42,0,close,target,
