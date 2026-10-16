@@ -1,11 +1,28 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 49689.942652615035,
-  "positions": {},
+  "cash": 80391.93927496503,
+  "positions": {
+    "NSE:INFY": {
+      "qty": -14,
+      "avg": 1154.4190700000001,
+      "sl": 1164.7208887373063,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T04:30:51+00:00"
+    },
+    "NSE:TCS": {
+      "qty": -6,
+      "avg": 2425.91472,
+      "sl": 2443.0537288179194,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T04:30:51+00:00"
+    }
+  },
   "realized": 37.233610000016654,
-  "fees": 347.29095738500007,
-  "trades": 44,
+  "fees": 362.6496350350001,
+  "trades": 46,
   "wins": 12,
   "losses": 10,
   "memory": {}

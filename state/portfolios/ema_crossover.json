@@ -1,7 +1,7 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 81852.24606610501,
+  "cash": 97582.22894020501,
   "positions": {
     "NSE:LT": {
       "qty": -4,
@@ -18,11 +18,19 @@
       "tp": 259.6919711620155,
       "trail_pct": null,
       "opened": "2026-10-16T04:15:34+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": -9,
+      "avg": 1748.6502,
+      "sl": 1759.6376663822011,
+      "tp": 1732.224667235598,
+      "trail_pct": null,
+      "opened": "2026-10-16T04:30:41+00:00"
     }
   },
   "realized": 1100.3365500000118,
-  "fees": 256.287603895,
-  "trades": 32,
+  "fees": 264.15652979500004,
+  "trades": 33,
   "wins": 9,
   "losses": 6,
   "memory": {}

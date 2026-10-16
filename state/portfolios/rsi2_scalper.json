@@ -27,11 +27,11 @@
   "losses": 11,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 0,
+      "NSE:RELIANCE": 1,
       "NSE:SBIN": 2,
       "NSE:BHARTIARTL": 3,
       "NSE:TCS": 2,
-      "NSE:AXISBANK": 0,
+      "NSE:AXISBANK": 1,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
