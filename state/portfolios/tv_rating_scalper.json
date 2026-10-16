@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 34520.523884415015,
+  "cash": 50190.14903247501,
   "positions": {
     "NSE:INFY": {
       "qty": 14,
@@ -10,14 +10,6 @@
       "tp": 1173.1244000000002,
       "trail_pct": null,
       "opened": "2026-10-16T04:30:50+00:00"
-    },
-    "NSE:RELIANCE": {
-      "qty": 13,
-      "avg": 1212.34242,
-      "sl": 1202.4032,
-      "tp": 1231.4936,
-      "trail_pct": null,
-      "opened": "2026-10-16T05:15:34+00:00"
     },
     "NSE:SUNPHARMA": {
       "qty": -9,
@@ -28,10 +20,10 @@
       "opened": "2026-10-16T07:00:55+00:00"
     }
   },
-  "realized": 1085.197130000003,
-  "fees": 409.73336558499994,
-  "trades": 51,
+  "realized": 1002.2095500000034,
+  "fees": 417.57209752499995,
+  "trades": 52,
   "wins": 12,
-  "losses": 12,
+  "losses": 13,
   "memory": {}
 }

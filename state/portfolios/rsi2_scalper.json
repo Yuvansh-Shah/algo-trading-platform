@@ -1,7 +1,7 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 17763.67118679002,
+  "cash": 2072.0931987300173,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 22,
@@ -18,16 +18,24 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-16T07:00:55+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": 13,
+      "avg": 1206.44124,
+      "sl": 1196.5504,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T07:30:45+00:00"
     }
   },
   "realized": 284.4806600000211,
-  "fees": 431.59291321,
-  "trades": 54,
+  "fees": 439.43478127000003,
+  "trades": 55,
   "wins": 15,
   "losses": 11,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 3,
+      "NSE:RELIANCE": 0,
       "NSE:SBIN": 2,
       "NSE:BHARTIARTL": 3,
       "NSE:TCS": 2,
@@ -35,9 +43,9 @@
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
-      "NSE:KOTAKBANK": 1,
+      "NSE:KOTAKBANK": 2,
       "NSE:SUNPHARMA": 1,
-      "NSE:HDFCBANK": 2
+      "NSE:HDFCBANK": 3
     }
   }
 }
