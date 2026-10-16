@@ -354,3 +354,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T09:45:28+00:00,vwap_reversion,NSE:RELIANCE,BUY,13,1206.3412,7.84,140.56,0,close,intraday square-off,
 2026-10-16T03:30:35+00:00,crypto_supertrend,BINANCE:BTCUSDT,BUY,0.255042,82042.4352,10.46,-10.46,0.255042,open,Supertrend up,
 2026-10-16T03:30:35+00:00,crypto_supertrend,BINANCE:ETHUSDT,BUY,8.571336,2440.428,10.46,-10.46,8.571336,open,Supertrend up,
+2026-10-16T03:55:25+00:00,bb_squeeze,NSE:INFY,SELL,14,1127.2745,7.89,-7.89,-14,open,squeeze breakout down,
+2026-10-16T03:55:27+00:00,bb_squeeze,NSE:LT,SELL,4,3644.271,7.29,-7.29,-4,open,squeeze breakout down,
+2026-10-16T03:55:36+00:00,tv_rating_scalper,NSE:LT,SELL,4,3644.271,7.29,-7.29,-4,open,TV 15m -0.51 / 1h -0.47,

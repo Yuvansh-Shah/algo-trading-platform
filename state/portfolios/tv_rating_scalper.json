@@ -1,11 +1,20 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 50994.35908177503,
-  "positions": {},
+  "cash": 65564.15453977503,
+  "positions": {
+    "NSE:LT": {
+      "qty": -4,
+      "avg": 3644.271,
+      "sl": 3674.16,
+      "tp": 3586.68,
+      "trail_pct": null,
+      "opened": "2026-10-16T03:55:36+00:00"
+    }
+  },
   "realized": 1332.4954100000054,
-  "fees": 338.13632822499994,
-  "trades": 42,
+  "fees": 345.42487022499995,
+  "trades": 43,
   "wins": 12,
   "losses": 9,
   "memory": {}
