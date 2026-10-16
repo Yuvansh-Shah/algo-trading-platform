@@ -1,20 +1,37 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 49738.870487720014,
-  "positions": {},
+  "cash": 18776.709043670016,
+  "positions": {
+    "NSE:RELIANCE": {
+      "qty": 13,
+      "avg": 1198.7397,
+      "sl": 1188.912,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T04:15:34+00:00"
+    },
+    "NSE:AXISBANK": {
+      "qty": 12,
+      "avg": 1280.2559999999999,
+      "sl": 1269.76,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T04:15:34+00:00"
+    }
+  },
   "realized": 123.39156000001844,
-  "fees": 384.52107228000006,
-  "trades": 48,
+  "fees": 399.99441633000004,
+  "trades": 50,
   "wins": 13,
   "losses": 11,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 1,
+      "NSE:RELIANCE": 0,
       "NSE:SBIN": 2,
       "NSE:BHARTIARTL": 3,
       "NSE:TCS": 2,
-      "NSE:AXISBANK": 4,
+      "NSE:AXISBANK": 0,
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
