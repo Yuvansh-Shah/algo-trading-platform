@@ -1,7 +1,7 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 33802.09182951002,
+  "cash": 17763.67118679002,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 22,
@@ -10,11 +10,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-16T06:45:33+00:00"
+    },
+    "NSE:KOTAKBANK": {
+      "qty": 36,
+      "avg": 445.28904,
+      "sl": 441.6384,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T07:00:55+00:00"
     }
   },
   "realized": 284.4806600000211,
-  "fees": 423.57771049,
-  "trades": 53,
+  "fees": 431.59291321,
+  "trades": 54,
   "wins": 15,
   "losses": 11,
   "memory": {
@@ -27,9 +35,9 @@
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
-      "NSE:KOTAKBANK": 3,
+      "NSE:KOTAKBANK": 0,
       "NSE:SUNPHARMA": 1,
-      "NSE:HDFCBANK": 0
+      "NSE:HDFCBANK": 1
     }
   }
 }

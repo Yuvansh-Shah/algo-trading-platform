@@ -408,3 +408,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T06:30:41+00:00,vwap_reversion,NSE:LT,SELL,4,3666.2666,7.33,-7.33,-4,open,2.3 sigma above VWAP,
 2026-10-16T06:45:33+00:00,rsi2_scalper,NSE:HDFCBANK,BUY,22,729.946,8.03,-8.03,22,open,RSI2 4 in uptrend,
 2026-10-16T06:45:34+00:00,vwap_reversion,NSE:INFY,BUY,14,1149.3798,8.05,62.5,0,close,back to VWAP,
+2026-10-16T07:00:55+00:00,rsi2_scalper,NSE:KOTAKBANK,BUY,36,445.289,8.02,-8.02,36,open,RSI2 10 in uptrend,
+2026-10-16T07:00:55+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,37,445.111,8.23,-66.63,0,close,15m rating faded (-0.05),
+2026-10-16T07:00:55+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,9,1752.6494,7.89,-7.89,-9,open,TV 15m -0.56 / 1h -0.45,

@@ -19,13 +19,13 @@
     "style": "intraday",
     "description": "BB width at a 30-bar low, then a close outside the band; exit at mid band",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50099.84
     },
-    "equity": 50036.83
+    "equity": 50035.53
   },
   "connors_rsi2": {
     "market": "NSE",
@@ -47,13 +47,13 @@
     "style": "crypto",
     "description": "BTC/ETH long while 1h Supertrend 10/3 is up (checked in NSE hours only, USDT)",
     "started": true,
-    "last_bar": "497814",
-    "last_run": "2026-10-16T06:00:37+00:00",
+    "last_bar": "497815",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 46459.9
     },
-    "equity": 46599.99
+    "equity": 46584.97
   },
   "donchian_turtle": {
     "market": "NSE",
@@ -64,7 +64,7 @@
       "date": "2026-10-16",
       "start_equity": 50539.67
     },
-    "equity": 50814.97,
+    "equity": 50853.77,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T09:40:26+00:00"
@@ -75,13 +75,13 @@
     "style": "intraday",
     "description": "EMA 9/21 cross + RSI>50 + above VWAP (mirror for shorts), 1.5/3 ATR",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50859.55
     },
-    "equity": 50445.23
+    "equity": 50464.23
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -103,8 +103,8 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50000.0
@@ -117,13 +117,13 @@
     "style": "intraday",
     "description": "Gap >0.8% + first 15m candle confirms + break of its high/low, 2R",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50873.33
     },
-    "equity": 50836.41
+    "equity": 50867.31
   },
   "hourly_macd_swing": {
     "market": "NSE",
@@ -131,13 +131,13 @@
     "style": "swing",
     "description": "1h MACD crosses above signal while above EMA200; exit on cross down; 2/4 ATR",
     "started": true,
-    "last_bar": "497814",
-    "last_run": "2026-10-16T06:00:37+00:00",
+    "last_bar": "497815",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 51539.61
     },
-    "equity": 51496.56
+    "equity": 51508.86
   },
   "macd_adx": {
     "market": "NSE",
@@ -145,13 +145,13 @@
     "style": "intraday",
     "description": "MACD histogram crosses zero with ADX>20 and EMA50 trend; exit on opposite cross",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 49616.23
     },
-    "equity": 49793.58
+    "equity": 49824.48
   },
   "momentum_rotation": {
     "market": "NSE",
@@ -162,7 +162,7 @@
       "date": "2026-10-16",
       "start_equity": 51744.67
     },
-    "equity": 52133.27,
+    "equity": 52141.27,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T09:40:26+00:00"
@@ -176,7 +176,7 @@
       "date": "2026-10-16",
       "start_equity": 50929.36
     },
-    "equity": 51336.4,
+    "equity": 51334.48,
     "started": true,
     "last_bar": "2026-10-16",
     "last_run": "2026-10-16T04:15:27+00:00"
@@ -187,13 +187,13 @@
     "style": "intraday",
     "description": "15-min opening range breakout, long/short, stop at other side, 2R target",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50386.8
     },
-    "equity": 50181.14
+    "equity": 50163.74
   },
   "rsi2_scalper": {
     "market": "NSE",
@@ -201,13 +201,13 @@
     "style": "scalp",
     "description": "RSI(2)<10 above EMA50 (or >90 below), exit on snap-back or after 4 bars",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 49738.87
     },
-    "equity": 49845.59
+    "equity": 49821.17
   },
   "supertrend_intraday": {
     "market": "NSE",
@@ -215,13 +215,13 @@
     "style": "intraday",
     "description": "Supertrend 10/3 flips on 15m, stop at the Supertrend line, 2R",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50998.48
     },
-    "equity": 50479.91
+    "equity": 50462.36
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -229,13 +229,13 @@
     "style": "intraday",
     "description": "TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50984.15
     },
-    "equity": 50624.6
+    "equity": 50614.32
   },
   "tv_rating_swing": {
     "market": "NSE",
@@ -246,7 +246,7 @@
       "date": "2026-10-16",
       "start_equity": 51478.01
     },
-    "equity": 52114.41,
+    "equity": 52174.21,
     "started": true,
     "last_bar": "2026-10-15",
     "last_run": "2026-10-15T09:35:24+00:00"
@@ -257,13 +257,13 @@
     "style": "intraday",
     "description": "Trend (EMA20>EMA50) + pullback that holds VWAP, 1 ATR stop, 2R target",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 50107.67
     },
-    "equity": 50433.62
+    "equity": 50437.92
   },
   "vwap_reversion": {
     "market": "NSE",
@@ -271,16 +271,16 @@
     "style": "intraday",
     "description": "Fade 2-sigma stretches from VWAP, exit back at VWAP",
     "started": true,
-    "last_bar": "1991259",
-    "last_run": "2026-10-16T06:45:25+00:00",
+    "last_bar": "1991260",
+    "last_run": "2026-10-16T07:00:40+00:00",
     "day": {
       "date": "2026-10-16",
       "start_equity": 49689.94
     },
-    "equity": 49786.82
+    "equity": 49764.22
   },
   "_meta": {
-    "last_engine_run": "2026-10-16T06:55:19+00:00",
+    "last_engine_run": "2026-10-16T07:00:40+00:00",
     "last_summary": "2026-10-15"
   }
 }

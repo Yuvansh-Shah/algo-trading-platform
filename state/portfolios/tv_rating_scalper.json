@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 2293.6952394750206,
+  "cash": 34520.523884415015,
   "positions": {
-    "NSE:KOTAKBANK": {
-      "qty": 37,
-      "avg": 446.68932,
-      "sl": 443.0272,
-      "tp": 453.7456,
-      "trail_pct": null,
-      "opened": "2026-10-16T04:00:56+00:00"
-    },
     "NSE:INFY": {
       "qty": 14,
       "avg": 1154.88093,
@@ -26,12 +18,20 @@
       "tp": 1231.4936,
       "trail_pct": null,
       "opened": "2026-10-16T05:15:34+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": -9,
+      "avg": 1752.6494,
+      "sl": 1767.0240000000001,
+      "tp": 1724.952,
+      "trail_pct": null,
+      "opened": "2026-10-16T07:00:55+00:00"
     }
   },
-  "realized": 1143.596450000004,
-  "fees": 393.611890525,
-  "trades": 49,
+  "realized": 1085.197130000003,
+  "fees": 409.73336558499994,
+  "trades": 51,
   "wins": 12,
-  "losses": 11,
+  "losses": 12,
   "memory": {}
 }
