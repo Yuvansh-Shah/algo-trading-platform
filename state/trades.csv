@@ -400,3 +400,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T05:15:33+00:00,ema_crossover,NSE:AXISBANK,BUY,12,1287.5575,7.73,-7.73,12,open,"EMA9>21, RSI 56",
 2026-10-16T05:15:34+00:00,tv_rating_scalper,NSE:LT,BUY,4,3654.1307,7.31,-46.75,0,close,15m rating faded (+0.11),
 2026-10-16T05:15:34+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,13,1212.3424,7.88,-7.88,13,open,TV 15m +0.51 / 1h +0.42,
+2026-10-16T05:30:43+00:00,vwap_reversion,NSE:KOTAKBANK,BUY,36,449.0898,8.08,64.63,0,close,back to VWAP,

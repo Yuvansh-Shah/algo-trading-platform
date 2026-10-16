@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 96623.77065928503,
+  "cash": 80448.45424288503,
   "positions": {
     "NSE:INFY": {
       "qty": -14,
@@ -18,20 +18,12 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-16T04:30:51+00:00"
-    },
-    "NSE:KOTAKBANK": {
-      "qty": -36,
-      "avg": 451.10976,
-      "sl": 454.27122101922856,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-16T05:00:58+00:00"
     }
   },
-  "realized": 37.233610000016654,
-  "fees": 370.76961071500006,
-  "trades": 47,
-  "wins": 12,
+  "realized": 109.95217000001759,
+  "fees": 378.85322711500004,
+  "trades": 48,
+  "wins": 13,
   "losses": 10,
   "memory": {}
 }
