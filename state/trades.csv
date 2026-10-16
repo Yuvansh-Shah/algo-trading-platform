@@ -401,3 +401,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T05:15:34+00:00,tv_rating_scalper,NSE:LT,BUY,4,3654.1307,7.31,-46.75,0,close,15m rating faded (+0.11),
 2026-10-16T05:15:34+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,13,1212.3424,7.88,-7.88,13,open,TV 15m +0.51 / 1h +0.42,
 2026-10-16T05:30:43+00:00,vwap_reversion,NSE:KOTAKBANK,BUY,36,449.0898,8.08,64.63,0,close,back to VWAP,
+2026-10-16T06:15:31+00:00,bb_squeeze,NSE:ICICIBANK,BUY,11,1390.5781,7.65,-7.65,11,open,squeeze breakout up,
+2026-10-16T06:15:36+00:00,ema_crossover,NSE:LT,BUY,4,3664.6328,7.33,-7.33,4,open,"EMA9>21, RSI 55",
+2026-10-16T06:15:36+00:00,macd_adx,NSE:HDFCBANK,SELL,22,730.3539,8.03,-30.97,0,close,MACD reversed,
