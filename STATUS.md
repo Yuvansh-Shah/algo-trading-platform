@@ -1,29 +1,29 @@
 # 🏆 Bot Leaderboard
 
-_Updated 16 Oct 2026 15:05 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 16 Oct 2026 15:10 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 🥇 | **momentum_rotation** | positional 1D | +4.73% | +2,367 | +623 | +1.95% | 0 | – | – | -1.3% | 3 | ✅ |
-| 🥈 | **tv_rating_swing** | swing 1D | +4.17% | +2,085 | +607 | +1.39% | 0 | – | – | -0.4% | 3 | ✅ |
-| 🥉 | **hourly_macd_swing** | swing 1h | +2.91% | +1,457 | -82 | +0.13% | 4 | 75 | 11.42 | -0.9% | 1 | ✅ |
-| 4 | **nifty_buy_hold** | benchmark 1D | +2.78% | +1,390 | +461 | +0.00% | 0 | – | – | -0.8% | 1 | ✅ |
-| 5 | **gap_and_go** | intraday 15m | +2.19% | +1,094 | +220 | -0.59% | 6 | 83 | 6.87 | -1.0% | 2 | ✅ |
-| 6 | **donchian_turtle** | swing 1D | +1.80% | +902 | +362 | -0.98% | 0 | – | – | -0.5% | 3 | ✅ |
-| 7 | **tv_rating_scalper** | intraday 15m | +1.12% | +558 | -426 | -1.66% | 26 | 46 | 1.51 | -1.4% | 2 | ✅ |
-| 8 | **vwap_pullback** | intraday 15m | +0.90% | +449 | +341 | -1.88% | 31 | 48 | 1.51 | -1.7% | 2 | ✅ |
-| 9 | **supertrend_intraday** | intraday 15m | +0.75% | +376 | -623 | -2.03% | 10 | 60 | 2.77 | -1.6% | 3 | ✅ |
-| 10 | **ema_crossover** | intraday 15m | +0.69% | +345 | -515 | -2.09% | 20 | 45 | 1.54 | -1.3% | 1 | ✅ |
-| 11 | **orb_breakout** | intraday 15m | +0.52% | +259 | -128 | -2.26% | 9 | 67 | 2.02 | -1.5% | 3 | ✅ |
+| 🥇 | **momentum_rotation** | positional 1D | +4.78% | +2,392 | +648 | +2.01% | 0 | – | – | -1.3% | 3 | ✅ |
+| 🥈 | **tv_rating_swing** | swing 1D | +4.20% | +2,099 | +621 | +1.42% | 0 | – | – | -0.4% | 3 | ✅ |
+| 🥉 | **hourly_macd_swing** | swing 1h | +2.89% | +1,445 | -95 | +0.11% | 4 | 75 | 11.42 | -0.9% | 1 | ✅ |
+| 4 | **nifty_buy_hold** | benchmark 1D | +2.78% | +1,388 | +459 | +0.00% | 0 | – | – | -0.8% | 1 | ✅ |
+| 5 | **gap_and_go** | intraday 15m | +2.23% | +1,117 | +244 | -0.54% | 6 | 83 | 6.87 | -1.0% | 2 | ✅ |
+| 6 | **donchian_turtle** | swing 1D | +1.85% | +924 | +384 | -0.93% | 0 | – | – | -0.5% | 3 | ✅ |
+| 7 | **tv_rating_scalper** | intraday 15m | +1.16% | +581 | -403 | -1.61% | 26 | 46 | 1.51 | -1.4% | 2 | ✅ |
+| 8 | **vwap_pullback** | intraday 15m | +0.95% | +473 | +365 | -1.83% | 31 | 48 | 1.51 | -1.7% | 2 | ✅ |
+| 9 | **supertrend_intraday** | intraday 15m | +0.76% | +379 | -620 | -2.02% | 10 | 60 | 2.77 | -1.6% | 3 | ✅ |
+| 10 | **ema_crossover** | intraday 15m | +0.71% | +354 | -506 | -2.07% | 20 | 45 | 1.54 | -1.3% | 1 | ✅ |
+| 11 | **orb_breakout** | intraday 15m | +0.57% | +284 | -103 | -2.21% | 9 | 67 | 2.02 | -1.5% | 3 | ✅ |
 | 12 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -2.78% | 0 | – | – | 0.0% | 0 | ✅ |
 | 13 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -2.78% | 0 | – | – | 0.0% | 0 | ✅ |
 | 14 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -2.78% | 0 | – | – | 0.0% | 0 | ✅ |
 | 15 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -2.78% | 0 | – | – | 0.0% | 0 | ✅ |
-| 16 | **bb_squeeze** | intraday 15m | -0.07% | -34 | -134 | -2.85% | 16 | 44 | 1.04 | -0.6% | 1 | ✅ |
+| 16 | **bb_squeeze** | intraday 15m | -0.09% | -43 | -143 | -2.86% | 16 | 44 | 1.04 | -0.6% | 1 | ✅ |
 | 17 | **rsi2_scalper** | scalp 15m | -0.42% | -211 | +50 | -3.20% | 30 | 57 | 1.04 | -0.8% | 0 | ✅ |
-| 18 | **vwap_reversion** | intraday 15m | -0.51% | -257 | +53 | -3.30% | 27 | 59 | 1.01 | -1.3% | 2 | ✅ |
-| 19 | **macd_adx** | intraday 15m | -0.59% | -294 | +90 | -3.37% | 19 | 37 | 0.89 | -1.4% | 1 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -6.81% | -3,405 | +135 | -9.59% | 11 | 18 | 0.06 | -7.4% | 2 | ✅ |
+| 18 | **vwap_reversion** | intraday 15m | -0.54% | -270 | +40 | -3.32% | 27 | 59 | 1.01 | -1.3% | 2 | ✅ |
+| 19 | **macd_adx** | intraday 15m | -0.61% | -303 | +80 | -3.38% | 19 | 37 | 0.89 | -1.4% | 1 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -6.80% | -3,400 | +140 | -9.58% | 11 | 18 | 0.06 | -7.4% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
