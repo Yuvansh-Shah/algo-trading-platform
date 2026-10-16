@@ -446,3 +446,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T09:00:57+00:00,vwap_reversion,NSE:HDFCBANK,BUY,22,725.9452,7.99,-7.99,22,open,-2.3 sigma below VWAP,
 2026-10-16T09:00:57+00:00,vwap_reversion,NSE:LT,BUY,4,3643.0285,7.29,85.67,0,close,back to VWAP,
 2026-10-16T09:05:26+00:00,vwap_pullback,NSE:AXISBANK,SELL,12,1281.8436,7.69,-75.06,0,close,stop-loss,
+2026-10-16T09:15:27+00:00,bb_squeeze,NSE:INFY,SELL,14,1151.2697,8.06,104.52,0,close,back to mid band,
