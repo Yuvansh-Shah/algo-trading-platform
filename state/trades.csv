@@ -357,3 +357,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T03:55:25+00:00,bb_squeeze,NSE:INFY,SELL,14,1127.2745,7.89,-7.89,-14,open,squeeze breakout down,
 2026-10-16T03:55:27+00:00,bb_squeeze,NSE:LT,SELL,4,3644.271,7.29,-7.29,-4,open,squeeze breakout down,
 2026-10-16T03:55:36+00:00,tv_rating_scalper,NSE:LT,SELL,4,3644.271,7.29,-7.29,-4,open,TV 15m -0.51 / 1h -0.47,
+2026-10-16T04:00:41+00:00,bb_squeeze,NSE:INFY,BUY,14,1127.4754,7.89,-10.71,0,close,stop-loss,
+2026-10-16T04:00:44+00:00,bb_squeeze,NSE:INFY,SELL,14,1127.0246,7.89,-7.89,-14,open,squeeze breakout down,
+2026-10-16T04:00:56+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,12,1393.7787,8.36,-8.36,12,open,TV 15m +0.65 / 1h +0.45,
+2026-10-16T04:00:56+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,37,446.6893,8.26,-8.26,37,open,TV 15m +0.60 / 1h +0.49,
