@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 79025.86835483502,
+  "cash": 63278.35123118502,
   "positions": {
     "NSE:LT": {
       "qty": -4,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-16T07:15:36+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 9,
+      "avg": 1748.8497,
+      "sl": 1738.9125085037294,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T07:45:35+00:00"
     }
   },
   "realized": 69.65717000001843,
-  "fees": 408.91461516500004,
-  "trades": 52,
+  "fees": 416.78443881500004,
+  "trades": 53,
   "wins": 14,
   "losses": 11,
   "memory": {}
