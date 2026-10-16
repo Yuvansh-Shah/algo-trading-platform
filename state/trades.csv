@@ -394,3 +394,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T05:00:57+00:00,rsi2_scalper,NSE:RELIANCE,SELL,13,1206.1587,7.84,88.61,0,close,RSI2 snapped back (83),
 2026-10-16T05:00:57+00:00,rsi2_scalper,NSE:AXISBANK,SELL,12,1285.6428,7.71,56.93,0,close,RSI2 snapped back (79),
 2026-10-16T05:00:58+00:00,vwap_reversion,NSE:KOTAKBANK,SELL,36,451.1098,8.12,-8.12,-36,open,3.3 sigma above VWAP,
+2026-10-16T05:05:25+00:00,ema_crossover,NSE:SUNPHARMA,BUY,9,1761.9523,7.93,-127.65,0,close,stop-loss,
