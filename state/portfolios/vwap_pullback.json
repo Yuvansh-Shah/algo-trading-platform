@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_pullback",
   "initial": 50000.0,
-  "cash": 19716.76968857502,
+  "cash": 4072.0244651950197,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 22,
@@ -18,11 +18,19 @@
       "tp": 2441.2874054782674,
       "trail_pct": null,
       "opened": "2026-10-16T04:15:35+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": 13,
+      "avg": 1202.84052,
+      "sl": 1197.2065223236477,
+      "tp": 1214.5869553527045,
+      "trail_pct": null,
+      "opened": "2026-10-16T04:45:37+00:00"
     }
   },
   "realized": 688.4040100000072,
-  "fees": 442.12964142500016,
-  "trades": 56,
+  "fees": 449.9481048050002,
+  "trades": 57,
   "wins": 13,
   "losses": 14,
   "memory": {}

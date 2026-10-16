@@ -386,3 +386,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T04:30:51+00:00,vwap_reversion,NSE:INFY,SELL,14,1154.4191,8.08,-8.08,-14,open,3.2 sigma above VWAP,
 2026-10-16T04:30:51+00:00,vwap_reversion,NSE:TCS,SELL,6,2425.9147,7.28,-7.28,-6,open,2.3 sigma above VWAP,
 2026-10-16T04:35:23+00:00,vwap_pullback,NSE:INFY,SELL,14,1155.3689,8.09,161.88,0,close,target,
+2026-10-16T04:45:27+00:00,ema_crossover,NSE:LT,BUY,4,3635.527,7.27,-94.27,0,close,stop-loss,
+2026-10-16T04:45:34+00:00,ema_crossover,NSE:AXISBANK,SELL,13,1278.2443,8.31,-8.31,-13,open,"EMA9<21, RSI 44",
+2026-10-16T04:45:35+00:00,gap_and_go,NSE:TCS,BUY,6,2428.9857,7.29,-7.29,6,open,gap up +1.0% and go,
+2026-10-16T04:45:35+00:00,macd_adx,NSE:HDFCBANK,BUY,22,731.3963,8.05,-8.05,22,open,"MACD up, ADX 41",
+2026-10-16T04:45:37+00:00,vwap_pullback,NSE:RELIANCE,BUY,13,1202.8405,7.82,-7.82,13,open,pullback held VWAP in uptrend,
