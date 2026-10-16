@@ -352,3 +352,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-15T09:45:27+00:00,vwap_pullback,NSE:AXISBANK,SELL,12,1286.5426,7.72,-57.1,0,close,intraday square-off,
 2026-10-15T09:45:28+00:00,vwap_reversion,NSE:HDFCBANK,BUY,22,725.5451,7.98,23.03,0,close,intraday square-off,
 2026-10-15T09:45:28+00:00,vwap_reversion,NSE:RELIANCE,BUY,13,1206.3412,7.84,140.56,0,close,intraday square-off,
+2026-10-16T03:30:35+00:00,crypto_supertrend,BINANCE:BTCUSDT,BUY,0.255042,82042.4352,10.46,-10.46,0.255042,open,Supertrend up,
+2026-10-16T03:30:35+00:00,crypto_supertrend,BINANCE:ETHUSDT,BUY,8.571336,2440.428,10.46,-10.46,8.571336,open,Supertrend up,

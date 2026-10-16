@@ -1,6 +1,6 @@
 # 🏆 Bot Leaderboard
 
-_Updated 15 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 16 Oct 2026 09:00 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ _Updated 15 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,
 | 17 | **rsi2_scalper** | scalp 15m | -0.52% | -261 | -203 | -2.38% | 24 | 54 | 0.89 | -0.5% | 0 | ✅ |
 | 18 | **vwap_reversion** | intraday 15m | -0.62% | -310 | +175 | -2.47% | 22 | 55 | 0.85 | -1.3% | 0 | ✅ |
 | 19 | **macd_adx** | intraday 15m | -0.77% | -384 | +168 | -2.62% | 14 | 36 | 0.65 | -1.4% | 0 | ✅ |
-| 20 | **crypto_supertrend** | crypto 1h | -7.02% | -3,511 | +0 | -8.88% | 11 | 18 | 0.06 | -7.1% | 0 | ✅ |
+| 20 | **crypto_supertrend** | crypto 1h | -7.08% | -3,540 | +0 | -8.94% | 11 | 18 | 0.06 | -7.1% | 2 | ✅ |
 
 <details><summary>What each bot does</summary>
 
@@ -69,11 +69,15 @@ _Updated 15 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,
 | donchian_turtle | NSE:AXISBANK | 12 | 1,272.95 | 1,220.87 | – | 13 Oct 15:10 |
 | donchian_turtle | NSE:ICICIBANK | 11 | 1,384.88 | 1,334.46 | – | 15 Oct 15:10 |
 | donchian_turtle | NSE:INFY | 14 | 1,109.87 | 1,049.88 | – | 15 Oct 15:10 |
+| crypto_supertrend | BINANCE:BTCUSDT | 0.255042 | 82,042.44 | – | – | 16 Oct 09:00 |
+| crypto_supertrend | BINANCE:ETHUSDT | 8.57134 | 2,440.43 | – | – | 16 Oct 09:00 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 16 Oct 09:00 | crypto_supertrend | BUY | 8.57134 | BINANCE:ETHUSDT | 2,440.43 |  | Supertrend up |
+| 16 Oct 09:00 | crypto_supertrend | BUY | 0.255042 | BINANCE:BTCUSDT | 82,042.44 |  | Supertrend up |
 | 15 Oct 15:15 | vwap_reversion | BUY | 13 | NSE:RELIANCE | 1,206.34 | +141 | intraday square-off |
 | 15 Oct 15:15 | vwap_reversion | BUY | 22 | NSE:HDFCBANK | 725.55 | +23 | intraday square-off |
 | 15 Oct 15:15 | vwap_pullback | SELL | 12 | NSE:AXISBANK | 1,286.54 | -57 | intraday square-off |
@@ -102,5 +106,3 @@ _Updated 15 Oct 2026 15:55 IST · paper trading · every bot started with ₹50,
 | 15 Oct 14:15 | vwap_reversion | SELL | 13 | NSE:RELIANCE | 1,217.76 |  | 3.2 sigma above VWAP |
 | 15 Oct 14:15 | rsi2_scalper | BUY | 8 | NSE:BHARTIARTL | 1,859.87 |  | RSI2 5 in uptrend |
 | 15 Oct 14:15 | rsi2_scalper | SELL | 6 | NSE:TCS | 2,361.03 | +14 | RSI2 snapped back (71) |
-| 15 Oct 14:15 | macd_adx | SELL | 61 | NSE:ITC | 264.85 | -42 | MACD reversed |
-| 15 Oct 14:10 | vwap_reversion | BUY | 13 | NSE:RELIANCE | 1,215.94 | -138 | stop-loss |
