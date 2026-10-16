@@ -1,24 +1,8 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 3420.679215730017,
+  "cash": 35173.43989323002,
   "positions": {
-    "NSE:KOTAKBANK": {
-      "qty": 36,
-      "avg": 445.28904,
-      "sl": 441.6384,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-16T07:00:55+00:00"
-    },
-    "NSE:RELIANCE": {
-      "qty": 13,
-      "avg": 1206.44124,
-      "sl": 1196.5504,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-16T07:30:45+00:00"
-    },
     "NSE:LT": {
       "qty": 4,
       "avg": 3653.43054,
@@ -28,14 +12,14 @@
       "opened": "2026-10-16T07:45:35+00:00"
     }
   },
-  "realized": 203.27338000002374,
-  "fees": 454.73044427,
-  "trades": 57,
-  "wins": 15,
-  "losses": 12,
+  "realized": 257.77682000002255,
+  "fees": 470.61476677,
+  "trades": 59,
+  "wins": 16,
+  "losses": 13,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 1,
+      "NSE:RELIANCE": 2,
       "NSE:SBIN": 2,
       "NSE:BHARTIARTL": 3,
       "NSE:TCS": 2,
@@ -43,10 +27,10 @@
       "NSE:ICICIBANK": 4,
       "NSE:INFY": 2,
       "NSE:ITC": 2,
-      "NSE:KOTAKBANK": 3,
+      "NSE:KOTAKBANK": 4,
       "NSE:SUNPHARMA": 1,
       "NSE:HDFCBANK": 4,
-      "NSE:LT": 0
+      "NSE:LT": 1
     }
   }
 }

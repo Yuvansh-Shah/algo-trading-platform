@@ -429,3 +429,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T07:45:35+00:00,rsi2_scalper,NSE:LT,BUY,4,3653.4305,7.31,-7.31,4,open,RSI2 8 in uptrend,
 2026-10-16T07:45:27+00:00,vwap_pullback,NSE:HDFCBANK,SELL,22,726.2547,7.99,-75.99,0,close,stop-loss,
 2026-10-16T07:45:35+00:00,vwap_reversion,NSE:SUNPHARMA,BUY,9,1748.8497,7.87,-7.87,9,open,-2.0 sigma below VWAP,
+2026-10-16T08:00:52+00:00,macd_adx,NSE:SBIN,SELL,17,959.3581,8.15,-45.29,0,close,MACD reversed,
+2026-10-16T08:00:53+00:00,rsi2_scalper,NSE:RELIANCE,SELL,13,1211.9576,7.88,63.83,0,close,RSI2 snapped back (87),
+2026-10-16T08:00:53+00:00,rsi2_scalper,NSE:KOTAKBANK,SELL,36,444.811,8.01,-25.22,0,close,time stop (1h),
+2026-10-16T08:00:54+00:00,vwap_pullback,NSE:SBIN,BUY,17,959.8919,8.16,-8.16,17,open,pullback held VWAP in uptrend,
