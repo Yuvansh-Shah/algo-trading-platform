@@ -385,3 +385,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T04:30:50+00:00,tv_rating_scalper,NSE:INFY,BUY,14,1154.8809,8.08,-8.08,14,open,TV 15m +0.60 / 1h +0.69,
 2026-10-16T04:30:51+00:00,vwap_reversion,NSE:INFY,SELL,14,1154.4191,8.08,-8.08,-14,open,3.2 sigma above VWAP,
 2026-10-16T04:30:51+00:00,vwap_reversion,NSE:TCS,SELL,6,2425.9147,7.28,-7.28,-6,open,2.3 sigma above VWAP,
+2026-10-16T04:35:23+00:00,vwap_pullback,NSE:INFY,SELL,14,1155.3689,8.09,161.88,0,close,target,
