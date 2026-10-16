@@ -406,3 +406,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T06:15:36+00:00,macd_adx,NSE:HDFCBANK,SELL,22,730.3539,8.03,-30.97,0,close,MACD reversed,
 2026-10-16T06:30:40+00:00,supertrend_intraday,NSE:LT,BUY,4,3667.7334,7.34,-223.16,0,close,Supertrend reversed,
 2026-10-16T06:30:41+00:00,vwap_reversion,NSE:LT,SELL,4,3666.2666,7.33,-7.33,-4,open,2.3 sigma above VWAP,
+2026-10-16T06:45:33+00:00,rsi2_scalper,NSE:HDFCBANK,BUY,22,729.946,8.03,-8.03,22,open,RSI2 4 in uptrend,
+2026-10-16T06:45:34+00:00,vwap_reversion,NSE:INFY,BUY,14,1149.3798,8.05,62.5,0,close,back to VWAP,
