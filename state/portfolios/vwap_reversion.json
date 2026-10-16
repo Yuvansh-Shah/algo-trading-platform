@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 64333.15898453502,
+  "cash": 79025.86835483502,
   "positions": {
     "NSE:LT": {
       "qty": -4,
@@ -10,11 +10,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-16T06:30:41+00:00"
+    },
+    "NSE:TCS": {
+      "qty": -6,
+      "avg": 2450.0099,
+      "sl": 2469.4053234137796,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T07:15:36+00:00"
     }
   },
   "realized": 69.65717000001843,
-  "fees": 401.56458546500005,
-  "trades": 51,
+  "fees": 408.91461516500004,
+  "trades": 52,
   "wins": 14,
   "losses": 11,
   "memory": {}

@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_pullback",
   "initial": 50000.0,
-  "cash": 18725.16155153502,
+  "cash": 3267.9475268950227,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 22,
@@ -18,11 +18,19 @@
       "tp": 1214.5869553527045,
       "trail_pct": null,
       "opened": "2026-10-16T04:45:37+00:00"
+    },
+    "NSE:AXISBANK": {
+      "qty": 12,
+      "avg": 1287.45744,
+      "sl": 1282.1986171930916,
+      "tp": 1296.6027656138167,
+      "trail_pct": null,
+      "opened": "2026-10-16T07:15:35+00:00"
     }
   },
   "realized": 864.9751300000069,
-  "fees": 457.27833846500016,
-  "trades": 58,
+  "fees": 465.00308310500014,
+  "trades": 59,
   "wins": 14,
   "losses": 14,
   "memory": {}
