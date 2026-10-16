@@ -395,3 +395,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T05:00:57+00:00,rsi2_scalper,NSE:AXISBANK,SELL,12,1285.6428,7.71,56.93,0,close,RSI2 snapped back (79),
 2026-10-16T05:00:58+00:00,vwap_reversion,NSE:KOTAKBANK,SELL,36,451.1098,8.12,-8.12,-36,open,3.3 sigma above VWAP,
 2026-10-16T05:05:25+00:00,ema_crossover,NSE:SUNPHARMA,BUY,9,1761.9523,7.93,-127.65,0,close,stop-loss,
+2026-10-16T05:15:31+00:00,bb_squeeze,NSE:LT,BUY,4,3654.1307,7.31,-46.75,0,close,back to mid band,
+2026-10-16T05:15:25+00:00,ema_crossover,NSE:AXISBANK,BUY,13,1287.5575,8.37,-129.44,0,close,stop-loss,
+2026-10-16T05:15:33+00:00,ema_crossover,NSE:AXISBANK,BUY,12,1287.5575,7.73,-7.73,12,open,"EMA9>21, RSI 56",
+2026-10-16T05:15:34+00:00,tv_rating_scalper,NSE:LT,BUY,4,3654.1307,7.31,-46.75,0,close,15m rating faded (+0.11),
+2026-10-16T05:15:34+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,13,1212.3424,7.88,-7.88,13,open,TV 15m +0.51 / 1h +0.42,
