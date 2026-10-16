@@ -1,16 +1,8 @@
 {
   "strategy": "hourly_macd_swing",
   "initial": 50000.0,
-  "cash": 18050.970954279997,
+  "cash": 34736.484584,
   "positions": {
-    "NSE:AXISBANK": {
-      "qty": 13,
-      "avg": 1267.2534,
-      "sl": 1254.5925569213346,
-      "tp": 1315.8148861573309,
-      "trail_pct": null,
-      "opened": "2026-10-15T03:55:34+00:00"
-    },
     "NSE:HDFCBANK": {
       "qty": 23,
       "avg": 720.3440400000001,
@@ -20,10 +12,10 @@
       "opened": "2026-10-15T05:00:53+00:00"
     }
   },
-  "realized": 1158.7711600000016,
-  "fees": 65.59308572,
-  "trades": 8,
-  "wins": 2,
+  "realized": 1378.3375200000032,
+  "fees": 73.940016,
+  "trades": 9,
+  "wins": 3,
   "losses": 1,
   "memory": {}
 }

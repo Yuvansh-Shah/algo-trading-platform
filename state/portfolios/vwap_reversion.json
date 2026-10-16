@@ -1,16 +1,8 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 79073.98812185501,
+  "cash": 48515.80930817501,
   "positions": {
-    "NSE:LT": {
-      "qty": -4,
-      "avg": 3666.2666,
-      "sl": 3688.512513228582,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-16T06:30:41+00:00"
-    },
     "NSE:TCS": {
       "qty": -6,
       "avg": 2450.0099,
@@ -18,12 +10,20 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-16T07:15:36+00:00"
+    },
+    "NSE:HDFCBANK": {
+      "qty": 22,
+      "avg": 725.94516,
+      "sl": 722.7213517140976,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-16T09:00:57+00:00"
     }
   },
-  "realized": 133.54853000001896,
-  "fees": 424.686208145,
-  "trades": 54,
-  "wins": 15,
+  "realized": 226.50109000001868,
+  "fees": 439.95766182500006,
+  "trades": 56,
+  "wins": 16,
   "losses": 11,
   "memory": {}
 }
