@@ -464,3 +464,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-16T09:45:28+00:00,vwap_pullback,NSE:INFY,SELL,14,1160.2679,8.12,108.6,0,close,intraday square-off,
 2026-10-16T09:45:29+00:00,vwap_reversion,NSE:TCS,BUY,6,2462.5924,7.39,-82.88,0,close,intraday square-off,
 2026-10-16T09:45:29+00:00,vwap_reversion,NSE:HDFCBANK,SELL,22,725.3549,7.98,-20.96,0,close,intraday square-off,
+2026-10-19T03:55:31+00:00,gap_and_go,NSE:INFY,BUY,14,1157.1814,8.1,-8.1,14,open,gap up +1.9% and go,
+2026-10-19T03:55:31+00:00,gap_and_go,NSE:TCS,BUY,6,2458.4916,7.38,-7.38,6,open,gap up +1.0% and go,
+2026-10-19T03:55:38+00:00,tv_rating_scalper,NSE:INFY,BUY,14,1157.1814,8.1,-8.1,14,open,TV 15m +0.56 / 1h +0.58,
+2026-10-19T03:55:38+00:00,tv_rating_scalper,NSE:TCS,BUY,6,2458.4916,7.38,-7.38,6,open,TV 15m +0.56 / 1h +0.54,
+2026-10-19T03:55:38+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,13,1265.153,8.22,-8.22,13,open,TV 15m +0.51 / 1h +0.47,
