@@ -1,47 +1,39 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 3805.8327207100156,
+  "cash": 18881.702523620017,
   "positions": {
-    "NSE:INFY": {
-      "qty": 14,
-      "avg": 1140.228,
-      "sl": 1130.8799999999999,
+    "NSE:RELIANCE": {
+      "qty": 13,
+      "avg": 1211.3422199999998,
+      "sl": 1201.4112,
       "tp": null,
       "trail_pct": null,
-      "opened": "2026-10-19T06:15:40+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": 8,
-      "avg": 1894.9789199999998,
-      "sl": 1879.4432,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-19T06:15:40+00:00"
+      "opened": "2026-10-19T07:15:36+00:00"
     },
     "NSE:TCS": {
       "qty": 6,
-      "avg": 2472.89448,
-      "sl": 2452.6208,
+      "avg": 2452.79046,
+      "sl": 2432.6816000000003,
       "tp": null,
       "trail_pct": null,
-      "opened": "2026-10-19T06:30:40+00:00"
+      "opened": "2026-10-19T07:15:36+00:00"
     }
   },
-  "realized": 267.1294600000235,
-  "fees": 500.90649929000006,
-  "trades": 63,
+  "realized": -115.17821999997363,
+  "fees": 538.9276363800001,
+  "trades": 68,
   "wins": 17,
-  "losses": 13,
+  "losses": 16,
   "memory": {
     "held": {
-      "NSE:RELIANCE": 2,
+      "NSE:RELIANCE": 0,
       "NSE:SBIN": 2,
       "NSE:BHARTIARTL": 3,
-      "NSE:TCS": 2,
+      "NSE:TCS": 0,
       "NSE:AXISBANK": 3,
       "NSE:ICICIBANK": 4,
-      "NSE:INFY": 3,
+      "NSE:INFY": 4,
       "NSE:ITC": 2,
       "NSE:KOTAKBANK": 4,
       "NSE:SUNPHARMA": 1,
