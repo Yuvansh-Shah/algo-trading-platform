@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 80682.56447135501,
+  "cash": 64270.93272634002,
   "positions": {
     "NSE:RELIANCE": {
       "qty": -13,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-19T04:30:45+00:00"
+    },
+    "NSE:HDFCBANK": {
+      "qty": 23,
+      "avg": 713.19261,
+      "sl": 708.1757743726176,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-19T05:45:36+00:00"
     }
   },
   "realized": 285.3597700000217,
-  "fees": 486.41733864500003,
-  "trades": 62,
+  "fees": 494.61905366,
+  "trades": 63,
   "wins": 17,
   "losses": 13,
   "memory": {}
