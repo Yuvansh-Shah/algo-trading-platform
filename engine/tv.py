@@ -11,6 +11,7 @@ account (layouts, indicators, alerts, watchlists all stay untouched).
 from __future__ import annotations
 
 import json
+import os
 import random
 import re
 import string
@@ -198,8 +199,18 @@ def ohlcv(symbol: str, interval: str = "1D", bars: int = 300, tries: int = 3,
     key = (symbol, interval)
     if use_cache and key in _OHLCV_CACHE and len(_OHLCV_CACHE[key]) >= bars:
         return _OHLCV_CACHE[key].tail(bars)
+    disk = os.environ.get("TV_CACHE_DIR")  # optional on-disk cache for repeated backtests
+    path = os.path.join(disk, re.sub(r"[^A-Za-z0-9]+", "_", f"{symbol}_{interval}") + ".pkl") if disk else None
+    if use_cache and path and os.path.exists(path):
+        df = pd.read_pickle(path)
+        if len(df) >= bars:
+            _OHLCV_CACHE[key] = df
+            return df.tail(bars)
     df = _fetch_ohlcv(symbol, interval, max(bars, 500), tries)
     _OHLCV_CACHE[key] = df
+    if path:
+        os.makedirs(disk, exist_ok=True)
+        df.to_pickle(path)
     return df.tail(bars)
 
 
@@ -239,7 +250,7 @@ def _fetch_ohlcv(symbol: str, interval: str, bars: int, tries: int) -> pd.DataFr
             return df.astype(float)
         except ValueError:
             raise
-        except Exception as e:  # network hiccup -> retry
+        except Exception as e:  # network hiccup -> retry (much longer pause when rate limited)
             last_err = e
-            time.sleep(2 + random.random() * 2)
+            time.sleep((30 if "429" in str(e) else 2) + random.random() * 3)
     raise RuntimeError(f"OHLCV fetch failed for {symbol} {interval}: {last_err}")

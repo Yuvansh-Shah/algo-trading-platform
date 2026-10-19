@@ -45,6 +45,7 @@ class Strategy:
     allow_short: bool = False
     run_at: str | None = None        # for 1D bots: local market time to run, e.g. "15:10"
     live: bool = False               # forward orders to live webhook (see config.yaml)
+    fees_pct: float | None = None    # per-side cost override (default: by market / intraday vs delivery)
     style: str = "custom"            # leaderboard label: intraday / scalp / swing / positional / benchmark
     description: str = ""            # one line shown on the leaderboard
 

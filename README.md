@@ -14,22 +14,26 @@ Runs your trading bots in the cloud **for free**. Your computer can be off.
    └─ claude/mcp_strategies/*.md -> signals/inbox/*.json -> executed by strategies/external_signals.py
 ```
 
-## The bot arena 🏆
+## The bot arena
 
-20 paper bots, **₹50,000 each**, trading NSE from the open, ranked live in
-**[STATUS.md](STATUS.md)** (and `dashboard/index.html`). After each close your phone gets the top 5 / bottom 3.
-**[BACKTESTS.md](BACKTESTS.md)** has how each one did over the last 120 days.
+Paper bots, **₹50,000 each**, trading NSE, ranked live in **[STATUS.md](STATUS.md)** (and
+`dashboard/index.html`). After each close your phone gets the top 5 and bottom 3.
+**[BACKTESTS.md](BACKTESTS.md)** has the 19 Oct 2026 review: what was tested, what was retired and why.
 
-| Style | Bots |
+| Style | Active bots |
 |---|---|
-| Intraday (15m, auto square-off 15:15) | `orb_breakout`, `vwap_pullback`, `vwap_reversion`, `ema_crossover`, `supertrend_intraday`, `bb_squeeze`, `macd_adx`, `gap_and_go`, `tv_rating_scalper` |
-| Scalp / very short hold (≤1h) | `rsi2_scalper` |
-| Short-term swing (days) | `connors_rsi2`, `donchian_turtle`, `ema_trend_swing`, `bb_reversion_daily`, `hourly_macd_swing`, `tv_rating_swing` |
-| Positional | `momentum_rotation` (top-3 NIFTY 50 by 3M strength) |
-| Reference | `nifty_buy_hold` (benchmark every bot must beat), `crypto_supertrend`, `external_signals` (Claude + MCP) |
+| Intraday (15m, entries 09:30-11:00 with the NIFTY trend, square-off 15:15) | `ema_crossover`, `supertrend_intraday`, `tv_rating_scalper` |
+| Swing (days) | `bb_reversion_daily`, `tv_rating_swing` |
+| Positional (weeks to months) | `momentum_rotation` (top-3 NIFTY 50 by 3M strength), `dual_momentum` (strongest of NIFTY / Bank / Next 50 / Gold ETFs, else cash) |
+| Reference | `nifty_buy_hold` (benchmark every bot must beat), `external_signals` (Claude + MCP) |
 
-Intraday bots trade 12 liquid NIFTY 50 names (`engine/bots.py → NIFTY_LIQUID`), long and short,
-max 3 positions of ~33% each, no leverage. Re-run the historical race any time: `python -m engine.backtest --all`.
+Retired on 19 Oct 2026 (still shown on the leaderboard): `orb_breakout`, `vwap_pullback`, `vwap_reversion`,
+`rsi2_scalper`, `macd_adx`, `bb_squeeze`, `gap_and_go`, `connors_rsi2`, `donchian_turtle`, `ema_trend_swing`,
+`hourly_macd_swing`, `crypto_supertrend`. Bring one back with `enabled: true` in `config.yaml`.
+
+Costs are modelled per side: 0.05% intraday, 0.11% for trades held overnight (0.1% STT on both buy
+and sell), plus 0.02% slippage. Test a change on history before switching it on:
+`python -m engine.backtest <bot> --days 280` (set `TV_CACHE_DIR` to reuse downloaded bars).
 
 ## Daily use
 

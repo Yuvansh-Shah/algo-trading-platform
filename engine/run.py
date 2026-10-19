@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 import yaml
 
 from . import markets, notify, report
-from .broker import LiveForwarder, PaperBroker, Portfolio
+from .broker import LiveForwarder, PaperBroker, Portfolio, fee_pct_for
 from .loader import ROOT, load_strategies
 from .strategy import INTERVAL_MIN, Context, Strategy
 
@@ -151,19 +151,27 @@ def main(argv=None):
     for s in strategies:
         o = overrides.get(s.name) or {}
         enabled = o.get("enabled", s.enabled)
+        pf_path = STATE / "portfolios" / f"{s.name}.json"
         if not enabled:
-            continue
+            # retired bot: stays on the leaderboard (marked retired); open positions get closed
+            if pf_path.exists():
+                runtime.setdefault(s.name, {})["retired"] = True
+                if not load_json(pf_path, {}).get("positions"):
+                    continue
+            else:
+                continue
+        else:
+            runtime.setdefault(s.name, {}).pop("retired", None)
         for k in ("capital", "interval", "symbols", "intraday", "live", "run_at"):
             if k in o:
                 setattr(s, k, o[k])
         market = market_for(s)
         rt = runtime.setdefault(s.name, {})
-        pf_path = STATE / "portfolios" / f"{s.name}.json"
         pf = (Portfolio.from_json(load_json(pf_path, {})) if pf_path.exists()
               else Portfolio(s.name, float(s.capital), float(s.capital)))
         trades: list[dict] = []
         live = LiveForwarder(cfg.get("live")) if (s.live and cfg.get("live", {}).get("enabled")) else None
-        broker = PaperBroker(pf, cfg.get("fees_pct", 0.05), cfg.get("slippage_pct", 0.02),
+        broker = PaperBroker(pf, fee_pct_for(s, market, cfg), cfg.get("slippage_pct", 0.02),
                              s.allow_short, trades, live)
         ctx = Context(s, broker, market, signals=signals.get(s.name, []),
                       notifier=lambda m, t: notify.send(m, t))
@@ -190,6 +198,9 @@ def main(argv=None):
                 markets.minutes_to_close(market) <= s.square_off_minutes
             if s.intraday and pf.positions and (closing or stale):
                 ctx.close_all("intraday square-off")
+            if not enabled:  # retired with open positions -> flatten, no new trades
+                ctx.close_all("bot retired")
+                closing = True
             # 3) strategy logic on each new closed bar
             key = bar_key(s, market, now)
             due = args.force or (key is not None and rt.get("last_bar") != key)

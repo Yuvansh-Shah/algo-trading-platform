@@ -37,6 +37,18 @@ class Portfolio:
         return cls(**d)
 
 
+def fee_pct_for(strategy, market: str, cfg: dict | None = None) -> float:
+    """Per-side cost by trade type. Delivery (overnight) NSE trades pay 0.1% STT each way."""
+    cfg = cfg or {}
+    if getattr(strategy, "fees_pct", None) is not None:
+        return strategy.fees_pct
+    if market == "CRYPTO":
+        return cfg.get("crypto_fees_pct", 0.10)
+    if market in ("NSE", "BSE") and not strategy.intraday:
+        return cfg.get("delivery_fees_pct", 0.11)
+    return cfg.get("fees_pct", 0.05)
+
+
 class PaperBroker:
     def __init__(self, pf: Portfolio, fees_pct: float = 0.05, slippage_pct: float = 0.02,
                  allow_short: bool = False, trade_log: list | None = None, live=None):

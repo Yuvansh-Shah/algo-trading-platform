@@ -2,7 +2,9 @@
 
 # Paper-trading cost model (applied per side). ~0.05% covers Indian brokerage + STT + charges
 # for delivery/intraday reasonably; raise it for F&O or illiquid stocks.
-fees_pct: 0.05
+fees_pct: 0.05            # intraday equity (brokerage + STT on sell + exchange + GST + stamp)
+delivery_fees_pct: 0.11   # held overnight: STT is 0.1% on BOTH buy and sell for delivery trades
+crypto_fees_pct: 0.10     # typical exchange taker fee
 slippage_pct: 0.02
 
 notify:
@@ -11,9 +13,22 @@ notify:
 
 # Per-bot overrides without editing the bot file (name = file name in strategies/).
 # Keys: enabled, capital, interval, symbols, intraday, live, run_at
-strategies: {}
-  # example: ema_crossover: {enabled: false}
-  # example: connors_rsi2:  {capital: 100000}
+# Retired 2026-10-19 after the walk-forward review (see BACKTESTS.md): no edge before fees on
+# Jan-Oct 2026 data, or lost money on 2024-2026 data. They stay on the leaderboard, marked retired;
+# any open positions are closed at the next market open.
+strategies:
+  vwap_pullback:      {enabled: false}
+  vwap_reversion:     {enabled: false}
+  rsi2_scalper:       {enabled: false}
+  macd_adx:           {enabled: false}
+  bb_squeeze:         {enabled: false}
+  gap_and_go:         {enabled: false}
+  orb_breakout:       {enabled: false}
+  connors_rsi2:       {enabled: false}
+  donchian_turtle:    {enabled: false}
+  ema_trend_swing:    {enabled: false}
+  hourly_macd_swing:  {enabled: false}
+  crypto_supertrend:  {enabled: false}
 
 # LIVE ORDERS - off. When enabled, bots with `live: true` also POST each order to the
 # LIVE_WEBHOOK_URL secret (e.g. a broker/bridge that accepts TradingView-style webhooks).

@@ -9,7 +9,11 @@ Public repo = unlimited minutes. State lives in `state/` and is committed back b
 
 - Bots: one file per bot in `strategies/` (copy `strategies/_template.py`). API is documented
   at the top of that template and in `engine/strategy.py`.
-- Backtest before enabling: `python -m engine.backtest <bot_name>`.
+- Backtest before enabling: `python -m engine.backtest <bot_name> --days 280`. Judge on a window the
+  change was not tuned on (`engine.backtest.run(..., overrides=..., start=..., end=...)`), never on one live week.
+  Set `TV_CACHE_DIR` when running many tests, or TradingView rate-limits (HTTP 429).
+- `BACKTESTS.md` is the hand-written strategy review (last: 19 Oct 2026). Retired bots are `enabled: false`
+  in `config.yaml`; they stay on the leaderboard and any open positions are closed at the next open.
 - Enable/disable/override bots in `config.yaml` → `strategies:`.
 - Data: `engine/tv.py` calls TradingView's public logged-out endpoints (same ones the
   TradingView MCP uses). NSE/BSE data is ~15 min delayed; crypto is real-time.

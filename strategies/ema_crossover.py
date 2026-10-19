@@ -4,14 +4,15 @@ from engine.bots import SignalBot
 
 
 class EmaCrossover(SignalBot):
-    description = "EMA 9/21 cross + RSI>50 + above VWAP (mirror for shorts), 1.5/3 ATR"
+    description = "EMA 9/21 cross + RSI + VWAP, with the NIFTY trend, entries before 11:00; 1.5/3 ATR"
     style = "intraday"
     interval = "15m"
     intraday = True
     allow_short = True
     sl_atr = 1.5
     tp_atr = 3
-    no_entry_after = "14:45"
+    no_entry_after = "11:00"   # afternoon entries lost money in every test
+    regime = "nifty_trend"     # longs only when NIFTY is above its 20-day EMA, shorts only below
 
     def entry(self, ctx, sym, df):
         f, s = ta.ema(df.close, 9), ta.ema(df.close, 21)

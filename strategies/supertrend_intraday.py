@@ -4,13 +4,14 @@ from engine.bots import SignalBot
 
 
 class SupertrendIntraday(SignalBot):
-    description = "Supertrend 10/3 flips on 15m, stop at the Supertrend line, 2R"
+    description = "Supertrend 10/3 flips on 15m with the NIFTY trend, entries before 11:00; 2R"
     style = "intraday"
     interval = "15m"
     intraday = True
     allow_short = True
     rr = 2
-    no_entry_after = "14:30"
+    no_entry_after = "11:00"   # afternoon entries lost money in every test
+    regime = "nifty_trend"     # longs only when NIFTY is above its 20-day EMA, shorts only below
 
     def entry(self, ctx, sym, df):
         st, d = ta.supertrend(df, 10, 3)

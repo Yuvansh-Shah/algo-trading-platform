@@ -2,7 +2,7 @@
 
     python -m engine.backtest ema_crossover             # one bot, last 120 days
     python -m engine.backtest ema_crossover --days 180
-    python -m engine.backtest --all                     # every bot, same period -> BACKTESTS.md
+    python -m engine.backtest --all                     # every bot, same period -> backtests/LEADERBOARD.md
 
 Orders placed on a bar's close fill at the NEXT bar's open (no look-ahead). Stops/targets
 are checked against each bar's high/low. Results -> backtests/<bot>_trades.csv + _equity.csv
@@ -18,7 +18,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 
 from . import markets, tv
-from .broker import PaperBroker, Portfolio
+from .broker import PaperBroker, Portfolio, fee_pct_for
 from .loader import ROOT, load_strategies
 from .strategy import INTERVAL_MIN, Context, NotAvailableInBacktest
 
@@ -65,12 +65,16 @@ class BacktestData:
         return float("nan")
 
 
-def run(name: str, days: int = 120, capital: float | None = None, fees_pct=0.05, slippage_pct=0.02,
-        quiet=True) -> dict:
+def run(name: str, days: int = 120, capital: float | None = None, fees_pct=None, slippage_pct=0.02,
+        quiet=True, overrides: dict | None = None, start=None, end=None, keep_trades=False) -> dict:
+    """overrides: attributes to set on the bot for this test (e.g. {"allow_short": False}).
+    start/end: evaluate only this window (warm-up data before `start` is still used)."""
     strategies, errors = load_strategies([name])
     if not strategies:
         raise SystemExit(f"bot {name!r} not found. {errors}")
     s = strategies[0]
+    for k, v in (overrides or {}).items():
+        setattr(s, k, v)
     base = {"bot": s.name, "style": s.style, "interval": s.interval}
     if not s.symbols:
         return {**base, "status": "live-only (uses the live screener)"}
@@ -80,11 +84,13 @@ def run(name: str, days: int = 120, capital: float | None = None, fees_pct=0.05,
     for sym in s.symbols:
         data.frame(sym, s.interval)
     timeline = data.frame(s.symbols[0], s.interval).index
-    start = pd.Timestamp(datetime.now(timezone.utc) - timedelta(days=days))
+    start = pd.Timestamp(start) if start is not None else pd.Timestamp(datetime.now(timezone.utc) - timedelta(days=days))
     first = max(int(timeline.searchsorted(start)), 30)
+    last = len(timeline) if end is None else int(timeline.searchsorted(pd.Timestamp(end)))
     pf = Portfolio(s.name, capital or s.capital, capital or s.capital)
     trades: list[dict] = []
-    broker = PaperBroker(pf, fees_pct, slippage_pct, s.allow_short, trades)
+    broker = PaperBroker(pf, fees_pct if fees_pct is not None else fee_pct_for(s, market), slippage_pct,
+                         s.allow_short, trades)
     pending: list[tuple] = []
     curve = []
 
@@ -96,7 +102,7 @@ def run(name: str, days: int = 120, capital: float | None = None, fees_pct=0.05,
     frames = {sym: data.frame(sym, s.interval) for sym in s.symbols}
     try:
         s.on_start(ctx)
-        for i in range(first, len(timeline)):
+        for i in range(first, last):
             t = timeline[i]
             when = t.isoformat()
             row = {sym: df.loc[t] for sym, df in frames.items() if t in df.index}
@@ -129,7 +135,7 @@ def run(name: str, days: int = 120, capital: float | None = None, fees_pct=0.05,
     stats = {
         **base, "status": "ok", "symbols": len(s.symbols),
         "from": timeline[first].tz_convert(ist).strftime("%d %b %Y"),
-        "to": timeline[-1].tz_convert(ist).strftime("%d %b %Y"),
+        "to": timeline[last - 1].tz_convert(ist).strftime("%d %b %Y"),
         "start_equity": round(pf.initial), "end_equity": round(eq.iloc[-1]),
         "return_pct": round((eq.iloc[-1] / pf.initial - 1) * 100, 2),
         "max_drawdown_pct": round((eq / eq.cummax() - 1).min() * 100, 2),
@@ -139,6 +145,8 @@ def run(name: str, days: int = 120, capital: float | None = None, fees_pct=0.05,
         "avg_trade": round(sum(closes) / len(closes)) if closes else None,
         "fees_paid": round(pf.fees),
     }
+    if keep_trades:
+        stats["trades"] = trades
     out = ROOT / "backtests"
     out.mkdir(exist_ok=True)
     if trades:
@@ -170,7 +178,8 @@ def write_board(results: list[dict], days: int):
     if other:
         L += ["", "**Not backtestable** (they use live TradingView snapshots — ratings/screener — which have no history):", ""]
         L += [f"- {r['bot']} — {r['status']}" for r in other]
-    (ROOT / "BACKTESTS.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+    (ROOT / "backtests").mkdir(exist_ok=True)  # BACKTESTS.md is the hand-written review; keep it
+    (ROOT / "backtests" / "LEADERBOARD.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     return L
 
 

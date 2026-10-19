@@ -1,10 +1,10 @@
 """Trades the TradingView 15m technical rating (same data as the MCP get_technicals_rating), with 1h confirmation."""
 from engine import Strategy
-from engine.bots import NIFTY_LIQUID
+from engine.bots import NIFTY_LIQUID, nifty_bullish
 
 
 class TvRatingScalper(Strategy):
-    description = "TradingView 15m STRONG BUY/SELL + 1h agreement; exit when 15m turns neutral"
+    description = "TradingView 15m STRONG BUY/SELL + 1h agreement, with the NIFTY trend, entries before 11:00"
     style = "intraday"
     symbols = NIFTY_LIQUID
     interval = "15m"
@@ -20,15 +20,16 @@ class TvRatingScalper(Strategy):
             q = ctx.position(sym)
             if r15 is not None and ((q > 0 and r15 <= 0) or (q < 0 and r15 >= 0)):
                 ctx.close(sym, reason=f"15m rating faded ({r15:+.2f})")
-        if ctx.local_time > "14:30":
+        if ctx.local_time > "11:00":  # afternoon entries lost money across every intraday bot tested
             return
+        bull = nifty_bullish(ctx)
         ranked = sorted(snap.items(), key=lambda kv: abs(kv[1].get("Recommend.All|15") or 0), reverse=True)
         for sym, row in ranked:
             if len(ctx.positions()) >= self.max_positions or ctx.position(sym):
                 continue
             r15, r60 = row.get("Recommend.All|15") or 0, row.get("Recommend.All|60") or 0
             why = f"TV 15m {r15:+.2f} / 1h {r60:+.2f}"
-            if r15 >= 0.5 and r60 >= 0.1:
+            if bull and r15 >= 0.5 and r60 >= 0.1:
                 ctx.buy(sym, pct=33, sl_pct=0.8, tp_pct=1.6, reason=why)
-            elif r15 <= -0.5 and r60 <= -0.1:
+            elif not bull and r15 <= -0.5 and r60 <= -0.1:
                 ctx.sell(sym, pct=33, sl_pct=0.8, tp_pct=1.6, reason=why)

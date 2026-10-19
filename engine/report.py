@@ -9,7 +9,6 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-MEDALS = {1: "🥇", 2: "🥈", 3: "🥉"}
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -62,8 +61,9 @@ def leaderboard(state: Path) -> list[dict]:
             "avg": sum(pnls) / len(pnls) if pnls else None, "mdd": 100 * mdd,
             "open": len(pf["positions"]), "last_run": rt.get("last_run"),
             "error": (rt.get("last_error") or {}).get("msg"), "positions": pf["positions"],
+            "retired": bool(rt.get("retired")),
         })
-    rows.sort(key=lambda r: (r["ret"], r["trades"] > 0), reverse=True)
+    rows.sort(key=lambda r: (not r["retired"], r["ret"], r["trades"] > 0), reverse=True)
     bench = next((r["ret"] for r in rows if r["style"] == "benchmark"), None)
     for i, r in enumerate(rows, 1):
         r["rank"] = i
@@ -78,13 +78,13 @@ def build(state: Path, root: Path):
     now = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %b %Y %H:%M IST")
     f2 = lambda v, fmt: "–" if v is None else ("∞" if v == float("inf") else format(v, fmt))
 
-    L = ["# 🏆 Bot Leaderboard", "",
+    L = ["# Bot leaderboard", "",
          f"_Updated {now} · paper trading · every bot started with ₹50,000 (crypto in USDT)_", "",
          "| # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |",
          "|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
     for r in rows:
-        health = "❌ " + r["error"][:50] if r["error"] else "✅"
-        L.append(f"| {MEDALS.get(r['rank'], r['rank'])} | **{r['bot']}** | {r['style']} {r['interval']} | "
+        health = "retired" if r["retired"] else ("error: " + r["error"][:50] if r["error"] else "ok")
+        L.append(f"| {r['rank']} | **{r['bot']}** | {r['style']} {r['interval']} | "
                  f"{r['ret']:+.2f}% | {r['pnl']:+,.0f} | {r['today']:+,.0f} | "
                  f"{f2(r['vs_bench'], '+.2f')}{'%' if r['vs_bench'] is not None else ''} | {r['trades']} | "
                  f"{f2(r['win'], '.0f')} | {f2(r['pf'], '.2f')} | {r['mdd']:.1f}% | {r['open']} | {health} |")

@@ -18,6 +18,7 @@
   th { font-weight:600; color:var(--mute); font-size:12px; cursor:pointer; user-select:none; }
   td.n, th.n { text-align:right; }
   tr.bench td { background:var(--hl); }
+  tr.retired td { opacity:.5; }
   .up { color:var(--up); } .down { color:var(--down); }
   .scroll { overflow-x:auto; }
   .tag { font-size:11px; padding:2px 6px; border-radius:6px; border:1px solid var(--line); color:var(--mute); }
@@ -26,7 +27,7 @@
 </head>
 <body>
 <main>
-  <h1>🏆 Bot leaderboard</h1>
+  <h1>Bot leaderboard</h1>
   <div class="mute" id="updated"></div>
   <h2>Ranking</h2>
   <div class="card scroll"><table id="board"></table></div>
@@ -40,7 +41,7 @@ const D = /*__DATA__*/null;
 const fmt = (n, d = 0) => n == null ? '–' : Number(n).toLocaleString('en-IN', {maximumFractionDigits: d, minimumFractionDigits: d});
 const sgn = (n, d = 2, suf = '') => n == null ? '–' : `<span class="${n >= 0 ? 'up' : 'down'}">${n >= 0 ? '+' : ''}${fmt(n, d)}${suf}</span>`;
 document.getElementById('updated').textContent = 'Updated ' + D.updated + ' · paper trading · ₹50,000 per bot';
-const medal = r => ({1: '🥇', 2: '🥈', 3: '🥉'})[r] || r;
+const medal = r => r;
 const cols = [
   ['rank', '#', r => medal(r.rank), 1], ['bot', 'Bot', r => `<b>${r.bot}</b>`],
   ['style', 'Style', r => `<span class="tag">${r.style} ${r.interval}</span>`],
@@ -48,14 +49,14 @@ const cols = [
   ['today', 'Today', r => sgn(r.today, 0), 1], ['vs_bench', 'vs NIFTY', r => sgn(r.vs_bench, 2, '%'), 1],
   ['trades', 'Trades', r => r.trades, 1], ['win', 'Win %', r => fmt(r.win), 1],
   ['pf', 'Profit f.', r => fmt(r.pf, 2), 1], ['mdd', 'Max DD', r => fmt(r.mdd, 1) + '%', 1],
-  ['open', 'Open', r => r.open, 1], ['description', 'Strategy', r => `<span class="desc">${r.error ? '❌ ' + r.error : r.description}</span>`],
+  ['open', 'Open', r => r.open, 1], ['description', 'Strategy', r => `<span class="desc">${r.retired ? 'retired: ' + r.description : (r.error ? 'error: ' + r.error : r.description)}</span>`],
 ];
 let sortKey = 'rank', asc = true;
 function drawBoard() {
   const rows = D.board.slice().sort((a, b) => ((a[sortKey] ?? -1e9) > (b[sortKey] ?? -1e9) ? 1 : -1) * (asc ? 1 : -1));
   document.getElementById('board').innerHTML =
     '<tr>' + cols.map(([k, h, , n]) => `<th class="${n ? 'n' : ''}" data-k="${k}">${h}</th>`).join('') + '</tr>' +
-    rows.map(r => `<tr class="${r.style === 'benchmark' ? 'bench' : ''}">` +
+    rows.map(r => `<tr class="${r.style === 'benchmark' ? 'bench' : (r.retired ? 'retired' : '')}">` +
       cols.map(([, , f, n]) => `<td class="${n ? 'n' : ''}">${f(r)}</td>`).join('') + '</tr>').join('');
   document.querySelectorAll('#board th').forEach(th => th.onclick = () => {
     asc = sortKey === th.dataset.k ? !asc : th.dataset.k === 'rank'; sortKey = th.dataset.k; drawBoard(); });
