@@ -516,3 +516,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T06:00:58+00:00,vwap_reversion,NSE:TCS,BUY,6,2474.9949,7.42,109.61,0,close,back to VWAP,
 2026-10-19T06:15:40+00:00,rsi2_scalper,NSE:INFY,BUY,14,1140.228,7.98,-7.98,14,open,RSI2 4 in uptrend,
 2026-10-19T06:15:40+00:00,rsi2_scalper,NSE:BHARTIARTL,BUY,8,1894.9789,7.58,-7.58,8,open,RSI2 5 in uptrend,
+2026-10-19T06:30:39+00:00,macd_adx,NSE:SBIN,SELL,16,969.3061,7.75,-59.57,0,close,MACD reversed,
+2026-10-19T06:30:40+00:00,rsi2_scalper,NSE:TCS,BUY,6,2472.8945,7.42,-7.42,6,open,RSI2 7 in uptrend,
+2026-10-19T06:30:40+00:00,vwap_reversion,NSE:RELIANCE,BUY,13,1219.2438,7.93,58.52,0,close,back to VWAP,
+2026-10-19T06:30:40+00:00,vwap_reversion,NSE:SBIN,BUY,17,969.6939,8.24,-8.24,17,open,-2.0 sigma below VWAP,
+2026-10-19T06:30:40+00:00,vwap_reversion,NSE:SUNPHARMA,BUY,9,1747.7495,7.86,-7.86,9,open,-2.1 sigma below VWAP,
