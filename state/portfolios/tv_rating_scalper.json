@@ -1,37 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 68024.69534284502,
-  "positions": {
-    "NSE:TCS": {
-      "qty": 6,
-      "avg": 2458.4916,
-      "sl": 2438.336,
-      "tp": 2497.328,
-      "trail_pct": null,
-      "opened": "2026-10-19T03:55:38+00:00"
-    },
-    "NSE:AXISBANK": {
-      "qty": -13,
-      "avg": 1245.65082,
-      "sl": 1255.8672000000001,
-      "tp": 1225.9656,
-      "trail_pct": null,
-      "opened": "2026-10-19T04:00:57+00:00"
-    },
-    "NSE:HDFCBANK": {
-      "qty": -23,
-      "avg": 710.45788,
-      "sl": 716.2848,
-      "tp": 699.2304,
-      "trail_pct": null,
-      "opened": "2026-10-19T07:01:00+00:00"
-    }
-  },
-  "realized": 780.0486900000091,
-  "fees": 538.395647155,
-  "trades": 67,
-  "wins": 14,
-  "losses": 18,
+  "cash": 50330.08625169003,
+  "positions": {},
+  "realized": 892.0960400000123,
+  "fees": 562.00978831,
+  "trades": 70,
+  "wins": 16,
+  "losses": 19,
   "memory": {}
 }
