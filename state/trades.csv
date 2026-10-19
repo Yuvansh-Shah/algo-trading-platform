@@ -523,3 +523,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T06:30:40+00:00,vwap_reversion,NSE:SUNPHARMA,BUY,9,1747.7495,7.86,-7.86,9,open,-2.1 sigma below VWAP,
 2026-10-19T06:40:27+00:00,bb_squeeze,NSE:SBIN,SELL,16,967.4565,7.74,-89.15,0,close,stop-loss,
 2026-10-19T06:50:25+00:00,vwap_pullback,NSE:RELIANCE,SELL,13,1214.757,7.9,-139.04,0,close,stop-loss,
+2026-10-19T07:00:43+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,13,1210.7578,7.87,-191.0,0,close,stop-loss,
+2026-10-19T07:01:00+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,23,710.4579,8.17,-8.17,-23,open,TV 15m -0.51 / 1h -0.45,
