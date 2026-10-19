@@ -534,3 +534,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T08:15:32+00:00,ema_crossover,NSE:LT,SELL,4,3652.5693,7.31,-59.96,0,close,opposite EMA cross,
 2026-10-19T08:15:32+00:00,rsi2_scalper,NSE:RELIANCE,SELL,13,1204.559,7.83,-96.01,0,close,time stop (1h),
 2026-10-19T08:15:32+00:00,rsi2_scalper,NSE:TCS,SELL,6,2451.5096,7.35,-15.04,0,close,time stop (1h),
+2026-10-19T08:30:37+00:00,ema_crossover,NSE:TCS,SELL,6,2452.3094,7.36,-7.36,-6,open,"EMA9<21, RSI 47",
