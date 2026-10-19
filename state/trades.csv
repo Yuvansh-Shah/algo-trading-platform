@@ -509,3 +509,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T05:00:47+00:00,ema_crossover,NSE:LT,BUY,4,3665.733,7.33,-7.33,4,open,"EMA9>21, RSI 57",
 2026-10-19T05:00:48+00:00,hourly_macd_swing,NSE:HDFCBANK,SELL,23,712.4575,8.19,-189.58,0,close,1h MACD bear cross,
 2026-10-19T05:15:36+00:00,macd_adx,NSE:TCS,SELL,6,2479.504,7.44,-103.41,0,close,MACD reversed,
+2026-10-19T05:30:39+00:00,ema_crossover,NSE:ICICIBANK,SELL,11,1384.523,7.61,-7.61,-11,open,"EMA9<21, RSI 43",
+2026-10-19T05:30:40+00:00,vwap_reversion,NSE:SBIN,BUY,16,973.5947,7.79,139.55,0,close,back to VWAP,

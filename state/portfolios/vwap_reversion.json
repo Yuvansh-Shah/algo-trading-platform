@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 96267.86810879501,
+  "cash": 80682.56447135501,
   "positions": {
     "NSE:RELIANCE": {
       "qty": -13,
@@ -18,20 +18,12 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-19T04:30:45+00:00"
-    },
-    "NSE:SBIN": {
-      "qty": -16,
-      "avg": 982.8034,
-      "sl": 988.2242548321715,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-19T04:30:45+00:00"
     }
   },
-  "realized": 138.02025000002033,
-  "fees": 478.62858120500005,
-  "trades": 61,
-  "wins": 16,
+  "realized": 285.3597700000217,
+  "fees": 486.41733864500003,
+  "trades": 62,
+  "wins": 17,
   "losses": 13,
   "memory": {}
 }
