@@ -514,3 +514,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T05:45:34+00:00,ema_crossover,NSE:INFY,SELL,14,1143.3213,8.0,-8.0,-14,open,"EMA9<21, RSI 48",
 2026-10-19T05:45:36+00:00,vwap_reversion,NSE:HDFCBANK,BUY,23,713.1926,8.2,-8.2,23,open,-2.1 sigma below VWAP,
 2026-10-19T06:00:58+00:00,vwap_reversion,NSE:TCS,BUY,6,2474.9949,7.42,109.61,0,close,back to VWAP,
+2026-10-19T06:15:40+00:00,rsi2_scalper,NSE:INFY,BUY,14,1140.228,7.98,-7.98,14,open,RSI2 4 in uptrend,
+2026-10-19T06:15:40+00:00,rsi2_scalper,NSE:BHARTIARTL,BUY,8,1894.9789,7.58,-7.58,8,open,RSI2 5 in uptrend,

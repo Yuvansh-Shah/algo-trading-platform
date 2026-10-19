@@ -1,22 +1,39 @@
 {
   "strategy": "rsi2_scalper",
   "initial": 50000.0,
-  "cash": 49789.203155830015,
-  "positions": {},
+  "cash": 18650.618284150016,
+  "positions": {
+    "NSE:INFY": {
+      "qty": 14,
+      "avg": 1140.228,
+      "sl": 1130.8799999999999,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-19T06:15:40+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": 8,
+      "avg": 1894.9789199999998,
+      "sl": 1879.4432,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-10-19T06:15:40+00:00"
+    }
+  },
   "realized": 267.1294600000235,
-  "fees": 477.92630417000004,
-  "trades": 60,
+  "fees": 493.48781585000006,
+  "trades": 62,
   "wins": 17,
   "losses": 13,
   "memory": {
     "held": {
       "NSE:RELIANCE": 2,
       "NSE:SBIN": 2,
-      "NSE:BHARTIARTL": 3,
+      "NSE:BHARTIARTL": 0,
       "NSE:TCS": 2,
       "NSE:AXISBANK": 3,
       "NSE:ICICIBANK": 4,
-      "NSE:INFY": 2,
+      "NSE:INFY": 0,
       "NSE:ITC": 2,
       "NSE:KOTAKBANK": 4,
       "NSE:SUNPHARMA": 1,
