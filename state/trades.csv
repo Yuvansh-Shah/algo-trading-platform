@@ -484,3 +484,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T04:15:38+00:00,vwap_pullback,NSE:TCS,BUY,6,2459.6918,7.38,-7.38,6,open,pullback held VWAP in uptrend,
 2026-10-19T04:15:38+00:00,vwap_pullback,NSE:SBIN,BUY,17,972.5445,8.27,-8.27,17,open,pullback held VWAP in uptrend,
 2026-10-19T04:15:38+00:00,vwap_pullback,NSE:AXISBANK,SELL,13,1226.3547,7.97,-7.97,-13,open,rally rejected at VWAP in downtrend,
+2026-10-19T04:25:19+00:00,ema_crossover,NSE:KOTAKBANK,BUY,37,445.8392,8.25,-99.93,0,close,stop-loss,

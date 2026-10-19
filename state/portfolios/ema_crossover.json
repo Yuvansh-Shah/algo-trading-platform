@@ -1,21 +1,12 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 66757.56119371,
-  "positions": {
-    "NSE:KOTAKBANK": {
-      "qty": -37,
-      "avg": 443.36131,
-      "sl": 445.49833470561225,
-      "tp": 436.0533305887755,
-      "trail_pct": null,
-      "opened": "2026-10-19T04:15:36+00:00"
-    }
-  },
-  "realized": 695.7199500000193,
-  "fees": 342.52722629000004,
-  "trades": 43,
+  "cash": 50253.26461943501,
+  "positions": {},
+  "realized": 604.0398700000187,
+  "fees": 350.775250565,
+  "trades": 44,
   "wins": 10,
-  "losses": 11,
+  "losses": 12,
   "memory": {}
 }
