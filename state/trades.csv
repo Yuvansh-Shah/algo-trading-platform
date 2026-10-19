@@ -538,3 +538,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T09:10:25+00:00,vwap_reversion,NSE:SUNPHARMA,SELL,9,1736.6526,7.81,-107.69,0,close,stop-loss,
 2026-10-19T09:30:35+00:00,ema_crossover,NSE:TCS,BUY,6,2465.9931,7.4,-89.5,0,close,opposite EMA cross,
 2026-10-19T09:30:36+00:00,vwap_reversion,NSE:SBIN,SELL,17,972.6054,8.27,41.23,0,close,back to VWAP,
+2026-10-19T09:35:24+00:00,tv_rating_swing,NSE:AXISBANK,SELL,13,1233.3533,8.02,-700.97,0,close,TV rating turned SELL (-0.51),
+2026-10-19T09:35:24+00:00,tv_rating_swing,NSE:DRREDDY,BUY,13,1241.8483,8.07,-8.07,13,open,"TV STRONG BUY +0.54, RSI 60",

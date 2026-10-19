@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_swing",
   "initial": 50000.0,
-  "cash": 848.012768239998,
+  "cash": 721.488437840002,
   "positions": {
     "NSE:TECHM": {
       "qty": 10,
@@ -11,14 +11,6 @@
       "trail_pct": 7,
       "opened": "2026-10-14T09:35:25+00:00"
     },
-    "NSE:AXISBANK": {
-      "qty": 13,
-      "avg": 1286.6572800000001,
-      "sl": 1201.095,
-      "tp": null,
-      "trail_pct": 7,
-      "opened": "2026-10-15T09:35:26+00:00"
-    },
     "NSE:ICICIBANK": {
       "qty": 12,
       "avg": 1383.97674,
@@ -26,12 +18,20 @@
       "tp": null,
       "trail_pct": 7,
       "opened": "2026-10-15T09:35:26+00:00"
+    },
+    "NSE:DRREDDY": {
+      "qty": 13,
+      "avg": 1241.8483199999998,
+      "sl": null,
+      "tp": null,
+      "trail_pct": 7,
+      "opened": "2026-10-19T09:35:24+00:00"
     }
   },
-  "realized": 0.0,
-  "fees": 24.56371176,
-  "trades": 3,
+  "realized": -692.9520000000011,
+  "fees": 40.652522160000004,
+  "trades": 5,
   "wins": 0,
-  "losses": 0,
+  "losses": 1,
   "memory": {}
 }
