@@ -1,21 +1,12 @@
 {
   "strategy": "hourly_macd_swing",
   "initial": 50000.0,
-  "cash": 34736.484584,
-  "positions": {
-    "NSE:HDFCBANK": {
-      "qty": 23,
-      "avg": 720.3440400000001,
-      "sl": 710.6108112697098,
-      "tp": 738.0283774605806,
-      "trail_pct": null,
-      "opened": "2026-10-15T05:00:53+00:00"
-    }
-  },
-  "realized": 1378.3375200000032,
-  "fees": 73.940016,
-  "trades": 9,
+  "cash": 51114.81336298,
+  "positions": {},
+  "realized": 1196.9466400000024,
+  "fees": 82.13327702,
+  "trades": 10,
   "wins": 3,
-  "losses": 1,
+  "losses": 2,
   "memory": {}
 }
