@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 35191.99437504502,
+  "cash": 35960.35289416502,
   "positions": {
     "NSE:TCS": {
       "qty": 6,
@@ -11,14 +11,6 @@
       "trail_pct": null,
       "opened": "2026-10-19T03:55:38+00:00"
     },
-    "NSE:SBIN": {
-      "qty": 17,
-      "avg": 964.1928,
-      "sl": 956.288,
-      "tp": 979.424,
-      "trail_pct": null,
-      "opened": "2026-10-19T04:00:57+00:00"
-    },
     "NSE:AXISBANK": {
       "qty": -13,
       "avg": 1245.65082,
@@ -26,12 +18,20 @@
       "tp": 1225.9656,
       "trail_pct": null,
       "opened": "2026-10-19T04:00:57+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": 13,
+      "avg": 1224.8449199999998,
+      "sl": 1214.8031999999998,
+      "tp": 1244.1935999999998,
+      "trail_pct": null,
+      "opened": "2026-10-19T04:30:43+00:00"
     }
   },
-  "realized": 646.8010500000054,
-  "fees": 506.040134955,
-  "trades": 63,
-  "wins": 13,
+  "realized": 963.181250000005,
+  "fees": 522.355455835,
+  "trades": 65,
+  "wins": 14,
   "losses": 17,
   "memory": {}
 }

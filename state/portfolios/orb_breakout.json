@@ -1,19 +1,26 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 50282.84536078502,
-  "positions": {},
+  "cash": 34543.83418798502,
+  "positions": {
+    "NSE:SBIN": {
+      "qty": 16,
+      "avg": 983.1966,
+      "sl": 960.7,
+      "tp": 1024.6,
+      "trail_pct": null,
+      "opened": "2026-10-19T04:30:42+00:00"
+    }
+  },
   "realized": 479.2772299999937,
-  "fees": 196.43186921500003,
-  "trades": 24,
+  "fees": 204.29744201500003,
+  "trades": 25,
   "wins": 7,
   "losses": 5,
   "memory": {
-    "day": "2026-10-16",
+    "day": "2026-10-19",
     "traded": [
-      "NSE:INFY",
-      "NSE:AXISBANK",
-      "NSE:ITC"
+      "NSE:SBIN"
     ]
   }
 }
