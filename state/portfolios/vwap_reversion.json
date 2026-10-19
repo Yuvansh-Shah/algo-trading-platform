@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 1324.7949661300172,
+  "cash": 16946.85342943002,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 23,
@@ -18,20 +18,12 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-19T06:30:40+00:00"
-    },
-    "NSE:SUNPHARMA": {
-      "qty": 9,
-      "avg": 1747.74948,
-      "sl": 1737.5510414440753,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-19T06:30:40+00:00"
     }
   },
-  "realized": 468.84301000002307,
-  "fees": 526.07639387,
-  "trades": 67,
+  "realized": 368.9710900000246,
+  "fees": 533.8913305699999,
+  "trades": 68,
   "wins": 19,
-  "losses": 13,
+  "losses": 14,
   "memory": {}
 }
