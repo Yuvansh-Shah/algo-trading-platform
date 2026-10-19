@@ -1,7 +1,7 @@
 {
   "strategy": "vwap_reversion",
   "initial": 50000.0,
-  "cash": 16946.85342943002,
+  "cash": 33472.87876319002,
   "positions": {
     "NSE:HDFCBANK": {
       "qty": 23,
@@ -10,20 +10,12 @@
       "tp": null,
       "trail_pct": null,
       "opened": "2026-10-19T05:45:36+00:00"
-    },
-    "NSE:SBIN": {
-      "qty": 17,
-      "avg": 969.6939,
-      "sl": 963.5131716582515,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-19T06:30:40+00:00"
     }
   },
-  "realized": 368.9710900000246,
-  "fees": 533.8913305699999,
-  "trades": 68,
-  "wins": 19,
+  "realized": 418.4672700000237,
+  "fees": 542.1584768099999,
+  "trades": 69,
+  "wins": 20,
   "losses": 14,
   "memory": {}
 }
