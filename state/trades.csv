@@ -497,3 +497,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T04:30:44+00:00,vwap_reversion,NSE:RELIANCE,SELL,13,1224.3551,7.96,-7.96,-13,open,2.7 sigma above VWAP,
 2026-10-19T04:30:45+00:00,vwap_reversion,NSE:TCS,SELL,6,2494.501,7.48,-7.48,-6,open,3.0 sigma above VWAP,
 2026-10-19T04:30:45+00:00,vwap_reversion,NSE:SBIN,SELL,16,982.8034,7.86,-7.86,-16,open,4.3 sigma above VWAP,
+2026-10-19T04:35:22+00:00,vwap_pullback,NSE:AXISBANK,BUY,13,1238.0476,8.05,-160.05,0,close,stop-loss,
