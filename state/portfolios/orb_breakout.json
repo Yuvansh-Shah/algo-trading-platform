@@ -1,7 +1,7 @@
 {
   "strategy": "orb_breakout",
   "initial": 50000.0,
-  "cash": 34543.83418798502,
+  "cash": 64978.81782361503,
   "positions": {
     "NSE:SBIN": {
       "qty": 16,
@@ -10,17 +10,35 @@
       "tp": 1024.6,
       "trail_pct": null,
       "opened": "2026-10-19T04:30:42+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": -11,
+      "avg": 1388.6222200000002,
+      "sl": 1411.8,
+      "tp": 1341.9,
+      "trail_pct": null,
+      "opened": "2026-10-19T04:45:32+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": -8,
+      "avg": 1896.92054,
+      "sl": 1929.6,
+      "tp": 1832.1,
+      "trail_pct": null,
+      "opened": "2026-10-19T04:45:32+00:00"
     }
   },
   "realized": 479.2772299999937,
-  "fees": 204.29744201500003,
-  "trades": 25,
+  "fees": 219.52254638500006,
+  "trades": 27,
   "wins": 7,
   "losses": 5,
   "memory": {
     "day": "2026-10-19",
     "traded": [
-      "NSE:SBIN"
+      "NSE:SBIN",
+      "NSE:ICICIBANK",
+      "NSE:BHARTIARTL"
     ]
   }
 }
