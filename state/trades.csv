@@ -469,3 +469,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T03:55:38+00:00,tv_rating_scalper,NSE:INFY,BUY,14,1157.1814,8.1,-8.1,14,open,TV 15m +0.56 / 1h +0.58,
 2026-10-19T03:55:38+00:00,tv_rating_scalper,NSE:TCS,BUY,6,2458.4916,7.38,-7.38,6,open,TV 15m +0.56 / 1h +0.54,
 2026-10-19T03:55:38+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,13,1265.153,8.22,-8.22,13,open,TV 15m +0.51 / 1h +0.47,
+2026-10-19T04:00:42+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,13,1245.6508,8.1,-261.62,0,close,stop-loss,
+2026-10-19T04:00:57+00:00,tv_rating_scalper,NSE:INFY,SELL,14,1148.7702,8.04,-125.8,0,close,15m rating faded (-0.02),
+2026-10-19T04:00:57+00:00,tv_rating_scalper,NSE:SBIN,BUY,17,964.1928,8.2,-8.2,17,open,TV 15m +0.65 / 1h +0.47,
+2026-10-19T04:00:57+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,13,1245.6508,8.1,-8.1,-13,open,TV 15m -0.65 / 1h -0.49,
