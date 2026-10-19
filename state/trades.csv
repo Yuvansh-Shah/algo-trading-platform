@@ -521,3 +521,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T06:30:40+00:00,vwap_reversion,NSE:RELIANCE,BUY,13,1219.2438,7.93,58.52,0,close,back to VWAP,
 2026-10-19T06:30:40+00:00,vwap_reversion,NSE:SBIN,BUY,17,969.6939,8.24,-8.24,17,open,-2.0 sigma below VWAP,
 2026-10-19T06:30:40+00:00,vwap_reversion,NSE:SUNPHARMA,BUY,9,1747.7495,7.86,-7.86,9,open,-2.1 sigma below VWAP,
+2026-10-19T06:40:27+00:00,bb_squeeze,NSE:SBIN,SELL,16,967.4565,7.74,-89.15,0,close,stop-loss,

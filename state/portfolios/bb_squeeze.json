@@ -1,21 +1,12 @@
 {
   "strategy": "bb_squeeze",
   "initial": 50000.0,
-  "cash": 34036.76949672001,
-  "positions": {
-    "NSE:SBIN": {
-      "qty": 16,
-      "avg": 972.54447,
-      "sl": 967.9123409281264,
-      "tp": 984.0753181437472,
-      "trail_pct": null,
-      "opened": "2026-10-19T04:15:31+00:00"
-    }
-  },
-  "realized": -95.06817999998447,
-  "fees": 307.45080328000006,
-  "trades": 39,
+  "cash": 49508.33336496001,
+  "positions": {},
+  "realized": -176.47617999998573,
+  "fees": 315.1904550400001,
+  "trades": 40,
   "wins": 8,
-  "losses": 11,
+  "losses": 12,
   "memory": {}
 }
