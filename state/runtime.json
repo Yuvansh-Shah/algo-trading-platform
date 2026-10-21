@@ -170,7 +170,7 @@
       "date": "2026-10-21",
       "start_equity": 52811.42
     },
-    "equity": 52960.42,
+    "equity": 52971.37,
     "started": true,
     "last_bar": "2026-10-19",
     "last_run": "2026-10-19T09:40:25+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-10-21",
       "start_equity": 50869.84
     },
-    "equity": 51006.16,
+    "equity": 51079.12,
     "started": true,
     "last_bar": "2026-10-21",
     "last_run": "2026-10-21T04:15:29+00:00"
@@ -256,7 +256,7 @@
       "date": "2026-10-21",
       "start_equity": 51730.49
     },
-    "equity": 51956.69,
+    "equity": 51944.69,
     "started": true,
     "last_bar": "2026-10-19",
     "last_run": "2026-10-19T09:35:23+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-10-21T05:45:33+00:00",
+    "last_engine_run": "2026-10-21T05:50:27+00:00",
     "last_summary": "2026-10-20"
   },
   "dual_momentum": {
