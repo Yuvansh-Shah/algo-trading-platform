@@ -1,37 +1,12 @@
 {
   "strategy": "donchian_turtle",
   "initial": 50000.0,
-  "cash": 3929.6687261900024,
-  "positions": {
-    "NSE:AXISBANK": {
-      "qty": 12,
-      "avg": 1272.95454,
-      "sl": 1220.8652498786896,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-13T09:40:33+00:00"
-    },
-    "NSE:ICICIBANK": {
-      "qty": 11,
-      "avg": 1384.87692,
-      "sl": 1334.4550422501395,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-15T09:40:33+00:00"
-    },
-    "NSE:INFY": {
-      "qty": 14,
-      "avg": 1109.87193,
-      "sl": 1049.8768416943253,
-      "tp": null,
-      "trail_pct": null,
-      "opened": "2026-10-15T09:40:33+00:00"
-    }
-  },
-  "realized": 0.0,
-  "fees": 23.02365381,
-  "trades": 3,
-  "wins": 0,
-  "losses": 0,
+  "cash": 50395.09529188801,
+  "positions": {},
+  "realized": 469.2872,
+  "fees": 74.191908112,
+  "trades": 6,
+  "wins": 2,
+  "losses": 1,
   "memory": {}
 }

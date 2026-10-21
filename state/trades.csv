@@ -559,3 +559,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-19T09:45:25+00:00,vwap_reversion,NSE:HDFCBANK,SELL,23,711.7076,8.18,-42.34,0,close,intraday square-off,
 2026-10-19T17:49:55+00:00,crypto_supertrend,BINANCE:BTCUSDT,SELL,0.255042,81845.6376,20.87,-71.07,0.0,close,bot retired,
 2026-10-19T17:49:55+00:00,crypto_supertrend,BINANCE:ETHUSDT,SELL,8.571336,2394.8609,20.53,-411.1,0.0,close,bot retired,
+2026-10-21T03:55:26+00:00,donchian_turtle,NSE:AXISBANK,SELL,12,1240.7518,16.38,-402.81,0,close,bot retired,
+2026-10-21T03:55:26+00:00,donchian_turtle,NSE:ICICIBANK,SELL,11,1405.7188,17.01,212.25,0,close,bot retired,
+2026-10-21T03:55:26+00:00,donchian_turtle,NSE:INFY,SELL,14,1154.619,17.78,608.68,0,close,bot retired,
