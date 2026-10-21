@@ -1,11 +1,11 @@
 # Bot leaderboard
 
-_Updated 21 Oct 2026 13:35 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 21 Oct 2026 13:40 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **momentum_rotation** | positional 1D | +5.52% | +2,759 | -53 | +4.32% | 0 | – | – | -1.6% | 3 | ok |
-| 2 | **tv_rating_swing** | swing 1D | +3.59% | +1,794 | +64 | +2.39% | 1 | 0 | 0.00 | -2.2% | 3 | ok |
+| 1 | **momentum_rotation** | positional 1D | +5.54% | +2,768 | -43 | +4.33% | 0 | – | – | -1.6% | 3 | ok |
+| 2 | **tv_rating_swing** | swing 1D | +3.57% | +1,786 | +55 | +2.37% | 1 | 0 | 0.00 | -2.2% | 3 | ok |
 | 3 | **nifty_buy_hold** | benchmark 1D | +1.20% | +601 | -269 | +0.00% | 0 | – | – | -1.7% | 1 | ok |
 | 4 | **supertrend_intraday** | intraday 15m | +0.92% | +462 | +0 | -0.28% | 16 | 50 | 1.67 | -1.9% | 0 | ok |
 | 5 | **tv_rating_scalper** | intraday 15m | +0.66% | +330 | +0 | -0.54% | 35 | 46 | 1.28 | -2.0% | 0 | ok |
@@ -61,7 +61,7 @@ _Updated 21 Oct 2026 13:35 IST · paper trading · every bot started with ₹50,
 | momentum_rotation | NSE:KOTAKBANK | 37 | 439.54 | 386.72 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:HCLTECH | 12 | 1,314.16 | 1,156.23 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:TCS | 7 | 2,256.35 | 1,985.19 | – | 13 Oct 15:10 |
-| tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,700.97 | – | 14 Oct 15:05 |
+| tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,701.43 | – | 14 Oct 15:05 |
 | tv_rating_swing | NSE:ICICIBANK | 12 | 1,383.98 | 1,309.72 | – | 15 Oct 15:05 |
 | tv_rating_swing | NSE:DRREDDY | 13 | 1,241.85 | 1,161.38 | – | 19 Oct 15:05 |
 | nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
