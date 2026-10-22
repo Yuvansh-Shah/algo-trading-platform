@@ -1,14 +1,14 @@
 # Bot leaderboard
 
-_Updated 22 Oct 2026 09:30 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 22 Oct 2026 09:35 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **momentum_rotation** | positional 1D | +5.69% | +2,846 | -119 | +5.08% | 0 | – | – | -1.6% | 3 | ok |
-| 2 | **tv_rating_swing** | swing 1D | +3.28% | +1,638 | +10 | +2.66% | 1 | 0 | 0.00 | -2.2% | 3 | ok |
+| 1 | **momentum_rotation** | positional 1D | +5.89% | +2,947 | -17 | +5.28% | 0 | – | – | -1.6% | 3 | ok |
+| 2 | **tv_rating_swing** | swing 1D | +3.48% | +1,742 | +115 | +2.87% | 1 | 0 | 0.00 | -2.2% | 3 | ok |
 | 3 | **supertrend_intraday** | intraday 15m | +0.92% | +462 | +0 | +0.31% | 16 | 50 | 1.67 | -1.9% | 0 | ok |
 | 4 | **nifty_buy_hold** | benchmark 1D | +0.61% | +307 | -250 | +0.00% | 0 | – | – | -2.2% | 1 | ok |
-| 5 | **tv_rating_scalper** | intraday 15m | +0.59% | +297 | -33 | -0.02% | 35 | 46 | 1.28 | -2.0% | 3 | ok |
+| 5 | **tv_rating_scalper** | intraday 15m | +0.39% | +196 | -134 | -0.22% | 35 | 46 | 1.28 | -2.0% | 3 | ok |
 | 6 | **ema_crossover** | intraday 15m | +0.26% | +132 | +0 | -0.35% | 27 | 41 | 1.27 | -1.7% | 0 | ok |
 | 7 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -0.61% | 0 | – | – | 0.0% | 0 | ok |
 | 8 | **dual_momentum** | positional 1D | +0.00% | +0 | +0 | -0.61% | 0 | – | – | 0.0% | 0 | ok |
@@ -61,7 +61,7 @@ _Updated 22 Oct 2026 09:30 IST · paper trading · every bot started with ₹50,
 | momentum_rotation | NSE:KOTAKBANK | 37 | 439.54 | 386.72 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:HCLTECH | 12 | 1,314.16 | 1,156.23 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:TCS | 7 | 2,256.35 | 1,985.19 | – | 13 Oct 15:10 |
-| tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,707.29 | – | 14 Oct 15:05 |
+| tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,712.22 | – | 14 Oct 15:05 |
 | tv_rating_swing | NSE:ICICIBANK | 12 | 1,383.98 | 1,309.72 | – | 15 Oct 15:05 |
 | tv_rating_swing | NSE:DRREDDY | 13 | 1,241.85 | 1,161.38 | – | 19 Oct 15:05 |
 | nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
