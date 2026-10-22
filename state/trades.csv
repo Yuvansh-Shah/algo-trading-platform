@@ -562,3 +562,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-21T03:55:26+00:00,donchian_turtle,NSE:AXISBANK,SELL,12,1240.7518,16.38,-402.81,0,close,bot retired,
 2026-10-21T03:55:26+00:00,donchian_turtle,NSE:ICICIBANK,SELL,11,1405.7188,17.01,212.25,0,close,bot retired,
 2026-10-21T03:55:26+00:00,donchian_turtle,NSE:INFY,SELL,14,1154.619,17.78,608.68,0,close,bot retired,
+2026-10-22T04:00:50+00:00,tv_rating_scalper,NSE:LT,SELL,4,3607.6783,7.22,-7.22,-4,open,TV 15m -0.65 / 1h -0.38,
+2026-10-22T04:00:50+00:00,tv_rating_scalper,NSE:ITC,SELL,63,259.5981,8.18,-8.18,-63,open,TV 15m -0.65 / 1h -0.56,
+2026-10-22T04:00:50+00:00,tv_rating_scalper,NSE:SBIN,SELL,17,950.4099,8.08,-8.08,-17,open,TV 15m -0.56 / 1h -0.51,
