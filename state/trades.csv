@@ -565,3 +565,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-22T04:00:50+00:00,tv_rating_scalper,NSE:LT,SELL,4,3607.6783,7.22,-7.22,-4,open,TV 15m -0.65 / 1h -0.38,
 2026-10-22T04:00:50+00:00,tv_rating_scalper,NSE:ITC,SELL,63,259.5981,8.18,-8.18,-63,open,TV 15m -0.65 / 1h -0.56,
 2026-10-22T04:00:50+00:00,tv_rating_scalper,NSE:SBIN,SELL,17,950.4099,8.08,-8.08,-17,open,TV 15m -0.56 / 1h -0.51,
+2026-10-22T04:25:24+00:00,tv_rating_scalper,NSE:SBIN,BUY,17,958.8417,8.15,-151.49,0,close,stop-loss,

@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 97248.97472186504,
+  "cash": 80940.51515716004,
   "positions": {
     "NSE:LT": {
       "qty": -4,
@@ -18,20 +18,12 @@
       "tp": 255.49559999999997,
       "trail_pct": null,
       "opened": "2026-10-22T04:00:50+00:00"
-    },
-    "NSE:SBIN": {
-      "qty": -17,
-      "avg": 950.40988,
-      "sl": 958.2048,
-      "tp": 935.3904,
-      "trail_pct": null,
-      "opened": "2026-10-22T04:00:50+00:00"
     }
   },
-  "realized": 892.0960400000123,
-  "fees": 585.4809681349999,
-  "trades": 73,
+  "realized": 748.7545900000133,
+  "fees": 593.6311228399999,
+  "trades": 74,
   "wins": 16,
-  "losses": 19,
+  "losses": 20,
   "memory": {}
 }
