@@ -582,3 +582,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-23T05:00:49+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,13,1200.6598,7.8,-7.8,-13,open,TV 15m -0.56 / 1h -0.47,
 2026-10-23T05:30:44+00:00,supertrend_intraday,NSE:INFY,SELL,14,1158.7682,8.11,-8.11,-14,open,Supertrend flipped down,
 2026-10-23T07:15:22+00:00,ema_crossover,NSE:SBIN,BUY,17,951.7903,8.09,186.0,0,close,target,
+2026-10-23T08:30:42+00:00,ema_crossover,NSE:AXISBANK,BUY,13,1211.9423,7.88,-154.55,0,close,stop-loss,
+2026-10-23T08:30:42+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,13,1211.9423,7.88,-154.55,0,close,stop-loss,
+2026-10-23T08:30:49+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,14,1185.137,8.3,-143.71,0,close,15m rating faded (+0.07),
+2026-10-23T08:30:49+00:00,tv_rating_scalper,NSE:LT,BUY,4,3646.8292,7.29,-106.71,0,close,15m rating faded (+0.38),
