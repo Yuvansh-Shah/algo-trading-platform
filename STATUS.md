@@ -4,10 +4,10 @@ _Updated 23 Oct 2026 12:56 IST · paper trading · every bot started with ₹50,
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **momentum_rotation** | positional 1D | +5.71% | +2,857 | -888 | +5.89% | 0 | – | – | -2.4% | 3 | ok |
-| 2 | **tv_rating_swing** | swing 1D | +2.42% | +1,212 | -808 | +2.60% | 1 | 0 | 0.00 | -2.2% | 3 | ok |
-| 3 | **supertrend_intraday** | intraday 15m | +1.42% | +711 | +248 | +1.60% | 16 | 50 | 1.67 | -1.9% | 3 | ok |
-| 4 | **ema_crossover** | intraday 15m | +0.86% | +428 | +295 | +1.04% | 27 | 41 | 1.27 | -1.7% | 3 | ok |
+| 1 | **momentum_rotation** | positional 1D | +5.73% | +2,864 | -881 | +5.91% | 0 | – | – | -2.4% | 3 | ok |
+| 2 | **tv_rating_swing** | swing 1D | +2.42% | +1,210 | -810 | +2.60% | 1 | 0 | 0.00 | -2.2% | 3 | ok |
+| 3 | **supertrend_intraday** | intraday 15m | +1.41% | +705 | +243 | +1.59% | 16 | 50 | 1.67 | -1.9% | 3 | ok |
+| 4 | **ema_crossover** | intraday 15m | +0.83% | +415 | +283 | +1.01% | 28 | 43 | 1.42 | -1.7% | 2 | ok |
 | 5 | **tv_rating_scalper** | intraday 15m | +0.05% | +25 | -19 | +0.23% | 40 | 42 | 1.12 | -2.6% | 3 | ok |
 | 6 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | +0.18% | 0 | – | – | 0.0% | 0 | ok |
 | 7 | **dual_momentum** | positional 1D | +0.00% | +0 | +0 | +0.18% | 0 | – | – | 0.0% | 0 | ok |
