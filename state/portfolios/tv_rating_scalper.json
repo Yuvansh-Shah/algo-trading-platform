@@ -1,11 +1,20 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 50055.19545298004,
-  "positions": {},
+  "cash": 66354.47959405003,
+  "positions": {
+    "NSE:ITC": {
+      "qty": -63,
+      "avg": 258.84821999999997,
+      "sl": 260.97119999999995,
+      "tp": 254.75759999999997,
+      "trail_pct": null,
+      "opened": "2026-10-23T03:55:32+00:00"
+    }
+  },
   "realized": 679.9129600000113,
-  "fees": 624.7175070199999,
-  "trades": 78,
+  "fees": 632.8712259499998,
+  "trades": 79,
   "wins": 17,
   "losses": 22,
   "memory": {}
