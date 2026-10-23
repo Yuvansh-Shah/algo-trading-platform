@@ -580,3 +580,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-23T05:00:46+00:00,ema_crossover,NSE:AXISBANK,SELL,13,1200.6598,7.8,-7.8,-13,open,"EMA9<21, RSI 41",
 2026-10-23T05:00:49+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,14,1175.4649,8.23,-8.23,-14,open,TV 15m -0.56 / 1h -0.56,
 2026-10-23T05:00:49+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,13,1200.6598,7.8,-7.8,-13,open,TV 15m -0.56 / 1h -0.47,
+2026-10-23T05:30:44+00:00,supertrend_intraday,NSE:INFY,SELL,14,1158.7682,8.11,-8.11,-14,open,Supertrend flipped down,
