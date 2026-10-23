@@ -576,3 +576,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-23T04:45:31+00:00,supertrend_intraday,NSE:KOTAKBANK,SELL,38,434.3131,8.25,-8.25,-38,open,Supertrend flipped down,
 2026-10-23T04:45:31+00:00,supertrend_intraday,NSE:LT,SELL,4,3621.9755,7.24,-7.24,-4,open,Supertrend flipped down,
 2026-10-23T04:45:32+00:00,tv_rating_scalper,NSE:LT,SELL,4,3621.9755,7.24,-7.24,-4,open,TV 15m -0.51 / 1h -0.56,
+2026-10-23T05:00:46+00:00,ema_crossover,NSE:SBIN,SELL,17,963.2073,8.19,-8.19,-17,open,"EMA9<21, RSI 44",
+2026-10-23T05:00:46+00:00,ema_crossover,NSE:AXISBANK,SELL,13,1200.6598,7.8,-7.8,-13,open,"EMA9<21, RSI 41",
+2026-10-23T05:00:49+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,14,1175.4649,8.23,-8.23,-14,open,TV 15m -0.56 / 1h -0.56,
+2026-10-23T05:00:49+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,13,1200.6598,7.8,-7.8,-13,open,TV 15m -0.56 / 1h -0.47,
