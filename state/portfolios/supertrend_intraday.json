@@ -1,11 +1,28 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 50462.15384261,
-  "positions": {},
+  "cash": 81438.45834241,
+  "positions": {
+    "NSE:KOTAKBANK": {
+      "qty": -38,
+      "avg": 434.31311999999997,
+      "sl": 440.760024589251,
+      "tp": 422.1299508214981,
+      "trail_pct": null,
+      "opened": "2026-10-23T04:45:31+00:00"
+    },
+    "NSE:LT": {
+      "qty": -4,
+      "avg": 3621.97546,
+      "sl": 3681.6724212386507,
+      "tp": 3511.6551575226986,
+      "trail_pct": null,
+      "opened": "2026-10-23T04:45:31+00:00"
+    }
+  },
   "realized": 722.1153600000126,
-  "fees": 259.96151739,
-  "trades": 32,
+  "fees": 275.45741759,
+  "trades": 34,
   "wins": 8,
   "losses": 8,
   "memory": {}

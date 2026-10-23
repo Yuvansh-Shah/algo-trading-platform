@@ -573,3 +573,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-23T03:55:32+00:00,tv_rating_scalper,NSE:ITC,SELL,63,258.8482,8.15,-8.15,-63,open,TV 15m -0.51 / 1h -0.26,
 2026-10-23T04:15:35+00:00,tv_rating_scalper,NSE:ITC,BUY,63,259.5519,8.18,-52.51,0,close,15m rating faded (+0.11),
 2026-10-23T04:30:47+00:00,ema_crossover,NSE:LT,SELL,4,3646.2706,7.29,-7.29,-4,open,"EMA9<21, RSI 45",
+2026-10-23T04:45:31+00:00,supertrend_intraday,NSE:KOTAKBANK,SELL,38,434.3131,8.25,-8.25,-38,open,Supertrend flipped down,
+2026-10-23T04:45:31+00:00,supertrend_intraday,NSE:LT,SELL,4,3621.9755,7.24,-7.24,-4,open,Supertrend flipped down,
+2026-10-23T04:45:32+00:00,tv_rating_scalper,NSE:LT,SELL,4,3621.9755,7.24,-7.24,-4,open,TV 15m -0.51 / 1h -0.56,
