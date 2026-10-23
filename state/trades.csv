@@ -586,3 +586,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-23T08:30:42+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,13,1211.9423,7.88,-154.55,0,close,stop-loss,
 2026-10-23T08:30:49+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,14,1185.137,8.3,-143.71,0,close,15m rating faded (+0.07),
 2026-10-23T08:30:49+00:00,tv_rating_scalper,NSE:LT,BUY,4,3646.8292,7.29,-106.71,0,close,15m rating faded (+0.38),
+2026-10-23T09:00:51+00:00,ema_crossover,NSE:LT,BUY,4,3651.1301,7.3,-26.74,0,close,opposite EMA cross,
