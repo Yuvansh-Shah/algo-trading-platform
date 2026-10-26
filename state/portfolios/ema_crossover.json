@@ -1,11 +1,20 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 50113.809802695025,
-  "positions": {},
+  "cash": 65712.88436369502,
+  "positions": {
+    "NSE:INFY": {
+      "qty": -14,
+      "avg": 1114.777,
+      "sl": 1167.6783580822644,
+      "tp": 1126.643283835471,
+      "trail_pct": null,
+      "opened": "2026-10-26T03:55:26+00:00"
+    }
+  },
   "realized": 587.4813500000267,
-  "fees": 473.67154730500005,
-  "trades": 60,
+  "fees": 481.4749863050001,
+  "trades": 61,
   "wins": 12,
   "losses": 18,
   "memory": {}
