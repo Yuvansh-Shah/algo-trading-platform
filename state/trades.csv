@@ -597,3 +597,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:INFY,SELL,14,1132.4235,7.93,-7.93,-14,open,TV 15m -0.52 / 1h -0.16,
 2026-10-26T04:05:24+00:00,ema_crossover,NSE:INFY,BUY,14,1115.323,7.81,-15.45,0,close,target,
 2026-10-26T04:15:34+00:00,tv_rating_scalper,NSE:SBIN,SELL,17,948.1103,8.06,-8.06,-17,open,TV 15m -0.51 / 1h -0.56,
+2026-10-26T04:50:25+00:00,tv_rating_scalper,NSE:INFY,BUY,14,1142.2784,8.0,-145.97,0,close,stop-loss,
