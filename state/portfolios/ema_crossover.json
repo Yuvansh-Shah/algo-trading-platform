@@ -1,11 +1,20 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 50090.55482255502,
-  "positions": {},
+  "cash": 65310.49492561502,
+  "positions": {
+    "NSE:ICICIBANK": {
+      "qty": -11,
+      "avg": 1384.32308,
+      "sl": 1394.3594766389836,
+      "tp": 1364.7810467220327,
+      "trail_pct": null,
+      "opened": "2026-10-26T05:30:37+00:00"
+    }
+  },
   "realized": 579.8370700000299,
-  "fees": 489.28224744500005,
-  "trades": 62,
+  "fees": 496.89602438500003,
+  "trades": 63,
   "wins": 12,
   "losses": 19,
   "memory": {}
