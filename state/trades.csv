@@ -592,3 +592,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-23T09:45:27+00:00,supertrend_intraday,NSE:INFY,BUY,14,1159.3318,8.12,-16.01,0,close,intraday square-off,
 2026-10-26T03:55:26+00:00,ema_crossover,NSE:INFY,SELL,14,1114.777,7.8,-7.8,-14,open,"EMA9<21, RSI 44",
 2026-10-26T03:55:31+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,9,1752.0495,7.88,-7.88,-9,open,TV 15m -0.51 / 1h -0.31,
+2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,9,1757.9515,7.91,-61.03,0,close,15m rating faded (+0.60),
+2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,23,689.4121,7.93,-7.93,-23,open,TV 15m -0.60 / 1h -0.47,
+2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:INFY,SELL,14,1132.4235,7.93,-7.93,-14,open,TV 15m -0.52 / 1h -0.16,
