@@ -599,3 +599,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-26T04:15:34+00:00,tv_rating_scalper,NSE:SBIN,SELL,17,948.1103,8.06,-8.06,-17,open,TV 15m -0.51 / 1h -0.56,
 2026-10-26T04:50:25+00:00,tv_rating_scalper,NSE:INFY,BUY,14,1142.2784,8.0,-145.97,0,close,stop-loss,
 2026-10-26T05:30:37+00:00,ema_crossover,NSE:ICICIBANK,SELL,11,1384.3231,7.61,-7.61,-11,open,"EMA9<21, RSI 45",
+2026-10-26T07:15:43+00:00,tv_rating_scalper,NSE:SBIN,BUY,17,955.6911,8.12,-137.0,0,close,15m rating faded (+0.02),
