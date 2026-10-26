@@ -595,3 +595,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,9,1757.9515,7.91,-61.03,0,close,15m rating faded (+0.60),
 2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,23,689.4121,7.93,-7.93,-23,open,TV 15m -0.60 / 1h -0.47,
 2026-10-26T04:00:46+00:00,tv_rating_scalper,NSE:INFY,SELL,14,1132.4235,7.93,-7.93,-14,open,TV 15m -0.52 / 1h -0.16,
+2026-10-26T04:05:24+00:00,ema_crossover,NSE:INFY,BUY,14,1115.323,7.81,-15.45,0,close,target,
