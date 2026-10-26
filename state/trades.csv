@@ -601,3 +601,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-26T05:30:37+00:00,ema_crossover,NSE:ICICIBANK,SELL,11,1384.3231,7.61,-7.61,-11,open,"EMA9<21, RSI 45",
 2026-10-26T07:15:43+00:00,tv_rating_scalper,NSE:SBIN,BUY,17,955.6911,8.12,-137.0,0,close,15m rating faded (+0.02),
 2026-10-26T07:45:33+00:00,ema_crossover,NSE:ICICIBANK,BUY,11,1389.5779,7.64,-65.45,0,close,opposite EMA cross,
+2026-10-26T09:45:28+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,23,688.2876,7.92,17.95,0,close,intraday square-off,
