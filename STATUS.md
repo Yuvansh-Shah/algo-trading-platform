@@ -1,17 +1,17 @@
 # Bot leaderboard
 
-_Updated 27 Oct 2026 13:55 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 27 Oct 2026 14:00 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **momentum_rotation** | positional 1D | +5.86% | +2,929 | -72 | +4.94% | 0 | – | – | -3.0% | 3 | ok |
-| 2 | **tv_rating_swing** | swing 1D | +4.60% | +2,302 | -87 | +3.69% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
-| 3 | **nifty_buy_hold** | benchmark 1D | +0.91% | +457 | -67 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
-| 4 | **supertrend_intraday** | intraday 15m | +0.91% | +454 | -76 | -0.01% | 19 | 47 | 1.71 | -1.9% | 1 | ok |
+| 1 | **momentum_rotation** | positional 1D | +5.82% | +2,909 | -92 | +4.90% | 0 | – | – | -3.0% | 3 | ok |
+| 2 | **tv_rating_swing** | swing 1D | +4.50% | +2,250 | -139 | +3.59% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
+| 3 | **supertrend_intraday** | intraday 15m | +0.92% | +458 | -72 | +0.00% | 19 | 47 | 1.71 | -1.9% | 1 | ok |
+| 4 | **nifty_buy_hold** | benchmark 1D | +0.91% | +457 | -67 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
 | 5 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -0.91% | 0 | – | – | 0.0% | 0 | ok |
 | 6 | **dual_momentum** | positional 1D | +0.00% | +0 | +0 | -0.91% | 0 | – | – | 0.0% | 0 | ok |
 | 7 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -0.91% | 0 | – | – | 0.0% | 0 | ok |
-| 8 | **ema_crossover** | intraday 15m | -0.78% | -390 | -407 | -1.69% | 34 | 35 | 0.96 | -2.8% | 1 | ok |
+| 8 | **ema_crossover** | intraday 15m | -0.76% | -379 | -396 | -1.67% | 34 | 35 | 0.96 | -2.8% | 1 | ok |
 | 9 | **tv_rating_scalper** | intraday 15m | -2.04% | -1,018 | -227 | -2.95% | 49 | 37 | 0.82 | -4.3% | 0 | ok |
 | 10 | **hourly_macd_swing** | swing 1h | +2.23% | +1,115 | -490 | +1.32% | 5 | 60 | 4.63 | -0.9% | 0 | retired |
 | 11 | **gap_and_go** | intraday 15m | +1.40% | +701 | -391 | +0.49% | 10 | 80 | 2.36 | -1.2% | 0 | retired |
@@ -32,8 +32,8 @@ _Updated 27 Oct 2026 13:55 IST · paper trading · every bot started with ₹50,
 |---|---|
 | momentum_rotation | Hold top-3 NIFTY 50 by 3M return (above SMA50, TV rating > 0); rotate out below top 10 |
 | tv_rating_swing | NIFTY 50 names rated STRONG BUY (1D) + BUY (1W) by TradingView; 7% trailing stop |
-| nifty_buy_hold | Benchmark - 100% NIFTY 50 ETF (NIFTYBEES), buy once and hold |
 | supertrend_intraday | Supertrend 10/3 flips on 15m with the NIFTY trend, entries before 11:00; 2R |
+| nifty_buy_hold | Benchmark - 100% NIFTY 50 ETF (NIFTYBEES), buy once and hold |
 | bb_reversion_daily | Close below lower BB(20,2) while above SMA200 -> buy; exit at the middle band |
 | dual_momentum | Monthly: hold the strongest of NIFTY / Bank NIFTY / Next 50 / Gold ETFs by 6M return, else cash |
 | external_signals | Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies) |
@@ -64,8 +64,8 @@ _Updated 27 Oct 2026 13:55 IST · paper trading · every bot started with ₹50,
 | tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,712.22 | – | 14 Oct 15:05 |
 | tv_rating_swing | NSE:ICICIBANK | 12 | 1,383.98 | 1,309.72 | – | 15 Oct 15:05 |
 | tv_rating_swing | NSE:DRREDDY | 13 | 1,241.85 | 1,230.11 | – | 19 Oct 15:05 |
-| nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
 | supertrend_intraday | NSE:RELIANCE | -14 | 1,187.96 | 1,204.52 | 1,154.96 | 27 Oct 10:45 |
+| nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
 | ema_crossover | NSE:TCS | -6 | 2,492.60 | 2,515.65 | 2,453.71 | 27 Oct 09:45 |
 
 ## Last 30 fills
