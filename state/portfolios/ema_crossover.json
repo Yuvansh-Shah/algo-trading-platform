@@ -1,21 +1,12 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 64600.02994109502,
-  "positions": {
-    "NSE:TCS": {
-      "qty": -6,
-      "avg": 2492.60138,
-      "sl": 2515.647378485378,
-      "tp": 2453.7052430292442,
-      "trail_pct": null,
-      "opened": "2026-10-27T04:15:27+00:00"
-    }
-  },
-  "realized": 187.93555000003073,
-  "fees": 543.5138889049999,
-  "trades": 69,
+  "cash": 49546.89861683502,
+  "positions": {},
+  "realized": 97.93531000003134,
+  "fees": 551.036693165,
+  "trades": 70,
   "wins": 12,
-  "losses": 22,
+  "losses": 23,
   "memory": {}
 }
