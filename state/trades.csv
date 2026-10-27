@@ -603,3 +603,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-26T07:45:33+00:00,ema_crossover,NSE:ICICIBANK,BUY,11,1389.5779,7.64,-65.45,0,close,opposite EMA cross,
 2026-10-26T09:45:28+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,23,688.2876,7.92,17.95,0,close,intraday square-off,
 2026-10-27T04:15:27+00:00,ema_crossover,NSE:TCS,SELL,6,2492.6014,7.48,-7.48,-6,open,"EMA9<21, RSI 34",
+2026-10-27T04:30:36+00:00,ema_crossover,NSE:INFY,SELL,14,1134.773,7.94,-7.94,-14,open,"EMA9<21, RSI 39",
+2026-10-27T04:30:40+00:00,tv_rating_scalper,NSE:INFY,SELL,14,1134.773,7.94,-7.94,-14,open,TV 15m -0.54 / 1h -0.22,
