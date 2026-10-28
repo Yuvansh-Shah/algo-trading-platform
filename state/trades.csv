@@ -623,3 +623,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-28T04:15:36+00:00,supertrend_intraday,NSE:INFY,SELL,14,1111.9776,7.78,-7.78,-14,open,Supertrend flipped down,
 2026-10-28T04:15:36+00:00,supertrend_intraday,NSE:AXISBANK,SELL,13,1201.0597,7.81,-7.81,-13,open,Supertrend flipped down,
 2026-10-28T04:15:36+00:00,supertrend_intraday,NSE:BHARTIARTL,SELL,8,1940.2119,7.76,-7.76,-8,open,Supertrend flipped down,
+2026-10-28T04:30:36+00:00,ema_crossover,NSE:RELIANCE,BUY,13,1199.1398,7.79,-149.2,0,close,stop-loss,
+2026-10-28T04:30:36+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,24,678.7857,8.15,-191.03,0,close,stop-loss,
