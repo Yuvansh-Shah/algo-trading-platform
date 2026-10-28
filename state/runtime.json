@@ -79,13 +79,13 @@
     "style": "intraday",
     "description": "EMA 9/21 cross + RSI + VWAP, with the NIFTY trend, entries before 11:00; 1.5/3 ATR",
     "started": true,
-    "last_bar": "1992421",
-    "last_run": "2026-10-28T09:15:27+00:00",
+    "last_bar": "1992422",
+    "last_run": "2026-10-28T09:30:32+00:00",
     "day": {
       "date": "2026-10-28",
       "start_equity": 49546.9
     },
-    "equity": 49429.99
+    "equity": 49426.49
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -108,8 +108,8 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1992421",
-    "last_run": "2026-10-28T09:15:27+00:00",
+    "last_bar": "1992422",
+    "last_run": "2026-10-28T09:30:32+00:00",
     "day": {
       "date": "2026-10-28",
       "start_equity": 50000.0
@@ -170,7 +170,7 @@
       "date": "2026-10-28",
       "start_equity": 52228.77
     },
-    "equity": 52229.77,
+    "equity": 52333.32,
     "started": true,
     "last_bar": "2026-10-27",
     "last_run": "2026-10-27T09:40:31+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-10-28",
       "start_equity": 50541.52
     },
-    "equity": 50445.52,
+    "equity": 50518.48,
     "started": true,
     "last_bar": "2026-10-28",
     "last_run": "2026-10-28T04:15:28+00:00"
@@ -225,13 +225,13 @@
     "style": "intraday",
     "description": "Supertrend 10/3 flips on 15m with the NIFTY trend, entries before 11:00; 2R",
     "started": true,
-    "last_bar": "1992421",
-    "last_run": "2026-10-28T09:15:27+00:00",
+    "last_bar": "1992422",
+    "last_run": "2026-10-28T09:30:32+00:00",
     "day": {
       "date": "2026-10-28",
       "start_equity": 50402.77
     },
-    "equity": 50022.69
+    "equity": 49995.99
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -239,8 +239,8 @@
     "style": "intraday",
     "description": "TradingView 15m STRONG BUY/SELL + 1h agreement, with the NIFTY trend, entries before 11:00",
     "started": true,
-    "last_bar": "1992421",
-    "last_run": "2026-10-28T09:15:27+00:00",
+    "last_bar": "1992422",
+    "last_run": "2026-10-28T09:30:32+00:00",
     "day": {
       "date": "2026-10-28",
       "start_equity": 48970.58
@@ -256,7 +256,7 @@
       "date": "2026-10-28",
       "start_equity": 51951.49
     },
-    "equity": 52356.19,
+    "equity": 52434.09,
     "started": true,
     "last_bar": "2026-10-27",
     "last_run": "2026-10-27T09:35:26+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-10-28T09:25:19+00:00",
+    "last_engine_run": "2026-10-28T09:30:32+00:00",
     "last_summary": "2026-10-27"
   },
   "dual_momentum": {
