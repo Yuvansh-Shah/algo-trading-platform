@@ -632,3 +632,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-28T07:15:34+00:00,tv_rating_scalper,NSE:ITC,BUY,62,256.6013,7.95,19.78,0,close,15m rating faded (+0.05),
 2026-10-28T07:45:33+00:00,supertrend_intraday,NSE:AXISBANK,BUY,13,1218.1436,7.92,-230.01,0,close,Supertrend reversed,
 2026-10-28T09:00:59+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,11,1378.9757,7.58,-77.44,0,close,15m rating faded (+0.11),
+2026-10-28T09:10:26+00:00,ema_crossover,NSE:RELIANCE,BUY,13,1161.5323,7.55,226.86,0,close,target,
