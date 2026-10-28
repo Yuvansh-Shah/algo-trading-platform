@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 79803.03156940502,
+  "cash": 95950.22223525502,
   "positions": {
     "NSE:ITC": {
       "qty": -62,
@@ -18,11 +18,19 @@
       "tp": 1350.9336,
       "trail_pct": null,
       "opened": "2026-10-28T04:00:49+00:00"
+    },
+    "NSE:SBIN": {
+      "qty": -17,
+      "avg": 950.3099,
+      "sl": 958.104,
+      "tp": 935.292,
+      "trail_pct": null,
+      "opened": "2026-10-28T04:45:39+00:00"
     }
   },
   "realized": -417.8477299999827,
-  "fees": 815.0122805949999,
-  "trades": 102,
+  "fees": 823.0899147449999,
+  "trades": 103,
   "wins": 18,
   "losses": 32,
   "memory": {}
