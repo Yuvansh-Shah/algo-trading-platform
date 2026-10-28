@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 63799.37917742002,
-  "positions": {
-    "NSE:ICICIBANK": {
-      "qty": -11,
-      "avg": 1372.62542,
-      "sl": 1383.8832,
-      "tp": 1350.9336,
-      "trail_pct": null,
-      "opened": "2026-10-28T04:00:49+00:00"
-    }
-  },
-  "realized": -460.3431399999822,
-  "fees": 839.1573025799999,
-  "trades": 105,
+  "cash": 48623.061670850024,
+  "positions": {},
+  "realized": -530.1966599999823,
+  "fees": 846.7416691499999,
+  "trades": 106,
   "wins": 19,
-  "losses": 33,
+  "losses": 34,
   "memory": {}
 }
