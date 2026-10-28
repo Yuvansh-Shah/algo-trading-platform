@@ -85,7 +85,7 @@
       "date": "2026-10-28",
       "start_equity": 49546.9
     },
-    "equity": 49402.69
+    "equity": 49388.26
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -108,8 +108,8 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1992422",
-    "last_run": "2026-10-28T09:30:32+00:00",
+    "last_bar": "1992423",
+    "last_run": "2026-10-28T09:45:28+00:00",
     "day": {
       "date": "2026-10-28",
       "start_equity": 50000.0
@@ -170,7 +170,7 @@
       "date": "2026-10-28",
       "start_equity": 52228.77
     },
-    "equity": 52346.62,
+    "equity": 52381.87,
     "started": true,
     "last_bar": "2026-10-28",
     "last_run": "2026-10-28T09:40:28+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-10-28",
       "start_equity": 50541.52
     },
-    "equity": 50533.84,
+    "equity": 50524.24,
     "started": true,
     "last_bar": "2026-10-28",
     "last_run": "2026-10-28T04:15:28+00:00"
@@ -231,7 +231,7 @@
       "date": "2026-10-28",
       "start_equity": 50402.77
     },
-    "equity": 49956.19
+    "equity": 49948.4
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -256,7 +256,7 @@
       "date": "2026-10-28",
       "start_equity": 51951.49
     },
-    "equity": 52490.49,
+    "equity": 52471.89,
     "started": true,
     "last_bar": "2026-10-28",
     "last_run": "2026-10-28T09:35:25+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-10-28T09:40:28+00:00",
+    "last_engine_run": "2026-10-28T09:45:28+00:00",
     "last_summary": "2026-10-27"
   },
   "dual_momentum": {

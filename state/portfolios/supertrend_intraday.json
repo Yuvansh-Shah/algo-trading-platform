@@ -1,29 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 81238.79397359,
-  "positions": {
-    "NSE:INFY": {
-      "qty": -14,
-      "avg": 1111.97756,
-      "sl": 1148.865493364123,
-      "tp": 1042.3190132717536,
-      "trail_pct": null,
-      "opened": "2026-10-28T04:15:36+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": -8,
-      "avg": 1940.21188,
-      "sl": 1982.0459330371395,
-      "tp": 1850.2081339257206,
-      "trail_pct": null,
-      "opened": "2026-10-28T04:15:36+00:00"
-    }
-  },
-  "realized": 504.4879200000124,
-  "fees": 355.07482640999996,
-  "trades": 44,
+  "cash": 49948.40289674,
+  "positions": {},
+  "realized": 319.11510000001647,
+  "fees": 370.71220325999997,
+  "trades": 46,
   "wins": 9,
-  "losses": 12,
+  "losses": 14,
   "memory": {}
 }
