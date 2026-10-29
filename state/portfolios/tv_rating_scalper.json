@@ -1,11 +1,20 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 48623.061670850024,
-  "positions": {},
+  "cash": 64240.62328370002,
+  "positions": {
+    "NSE:HDFCBANK": {
+      "qty": -23,
+      "avg": 679.3641,
+      "sl": 684.936,
+      "tp": 668.628,
+      "trail_pct": null,
+      "opened": "2026-10-29T04:00:50+00:00"
+    }
+  },
   "realized": -530.1966599999823,
-  "fees": 846.7416691499999,
-  "trades": 106,
+  "fees": 854.5543562999999,
+  "trades": 107,
   "wins": 19,
   "losses": 34,
   "memory": {}
