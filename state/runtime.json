@@ -108,8 +108,8 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1992518",
-    "last_run": "2026-10-29T09:30:35+00:00",
+    "last_bar": "1992519",
+    "last_run": "2026-10-29T09:45:28+00:00",
     "day": {
       "date": "2026-10-29",
       "start_equity": 50000.0
@@ -170,7 +170,7 @@
       "date": "2026-10-29",
       "start_equity": 52785.37
     },
-    "equity": 53307.67,
+    "equity": 53268.52,
     "started": true,
     "last_bar": "2026-10-29",
     "last_run": "2026-10-29T09:40:25+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-10-29",
       "start_equity": 50560.72
     },
-    "equity": 50994.64,
+    "equity": 50981.2,
     "started": true,
     "last_bar": "2026-10-29",
     "last_run": "2026-10-29T04:15:29+00:00"
@@ -256,7 +256,7 @@
       "date": "2026-10-29",
       "start_equity": 52492.99
     },
-    "equity": 52507.49,
+    "equity": 52475.89,
     "started": true,
     "last_bar": "2026-10-29",
     "last_run": "2026-10-29T09:35:20+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-10-29T09:40:25+00:00",
+    "last_engine_run": "2026-10-29T09:45:28+00:00",
     "last_summary": "2026-10-28"
   },
   "dual_momentum": {
