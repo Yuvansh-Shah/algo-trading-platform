@@ -79,8 +79,8 @@
     "style": "intraday",
     "description": "EMA 9/21 cross + RSI + VWAP, with the NIFTY trend, entries before 11:00; 1.5/3 ATR",
     "started": true,
-    "last_bar": "1992513",
-    "last_run": "2026-10-29T08:15:31+00:00",
+    "last_bar": "1992514",
+    "last_run": "2026-10-29T08:30:37+00:00",
     "day": {
       "date": "2026-10-29",
       "start_equity": 49388.26
@@ -108,8 +108,8 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1992513",
-    "last_run": "2026-10-29T08:15:31+00:00",
+    "last_bar": "1992514",
+    "last_run": "2026-10-29T08:30:37+00:00",
     "day": {
       "date": "2026-10-29",
       "start_equity": 50000.0
@@ -170,7 +170,7 @@
       "date": "2026-10-29",
       "start_equity": 52785.37
     },
-    "equity": 53017.42,
+    "equity": 53038.52,
     "started": true,
     "last_bar": "2026-10-28",
     "last_run": "2026-10-28T09:40:28+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-10-29",
       "start_equity": 50560.72
     },
-    "equity": 50818.0,
+    "equity": 50810.32,
     "started": true,
     "last_bar": "2026-10-29",
     "last_run": "2026-10-29T04:15:29+00:00"
@@ -225,8 +225,8 @@
     "style": "intraday",
     "description": "Supertrend 10/3 flips on 15m with the NIFTY trend, entries before 11:00; 2R",
     "started": true,
-    "last_bar": "1992513",
-    "last_run": "2026-10-29T08:15:31+00:00",
+    "last_bar": "1992514",
+    "last_run": "2026-10-29T08:30:37+00:00",
     "day": {
       "date": "2026-10-29",
       "start_equity": 49948.4
@@ -239,8 +239,8 @@
     "style": "intraday",
     "description": "TradingView 15m STRONG BUY/SELL + 1h agreement, with the NIFTY trend, entries before 11:00",
     "started": true,
-    "last_bar": "1992513",
-    "last_run": "2026-10-29T08:15:31+00:00",
+    "last_bar": "1992514",
+    "last_run": "2026-10-29T08:30:37+00:00",
     "day": {
       "date": "2026-10-29",
       "start_equity": 48623.06
@@ -256,7 +256,7 @@
       "date": "2026-10-29",
       "start_equity": 52492.99
     },
-    "equity": 52422.09,
+    "equity": 52388.99,
     "started": true,
     "last_bar": "2026-10-28",
     "last_run": "2026-10-28T09:35:25+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-10-29T08:25:24+00:00",
+    "last_engine_run": "2026-10-29T08:30:37+00:00",
     "last_summary": "2026-10-28"
   },
   "dual_momentum": {
