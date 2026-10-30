@@ -1,21 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 34178.970440900004,
-  "positions": {
-    "NSE:BHARTIARTL": {
-      "qty": 8,
-      "avg": 1970.1939599999998,
-      "sl": 1952.7032889772431,
-      "tp": 2013.5934220455138,
-      "trail_pct": null,
-      "opened": "2026-10-30T04:15:40+00:00"
-    }
-  },
-  "realized": 319.11510000001647,
-  "fees": 378.5929791,
-  "trades": 47,
+  "cash": 49892.76465338,
+  "positions": {},
+  "realized": 279.21846000001744,
+  "fees": 386.45380661999997,
+  "trades": 48,
   "wins": 9,
-  "losses": 14,
+  "losses": 15,
   "memory": {}
 }
