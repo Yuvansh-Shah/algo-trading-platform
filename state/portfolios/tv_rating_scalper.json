@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 3165.255867655016,
+  "cash": 18831.083675335016,
   "positions": {
     "NSE:INFY": {
       "qty": 13,
@@ -18,20 +18,12 @@
       "tp": 1806.6512,
       "trail_pct": null,
       "opened": "2026-10-30T04:00:45+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": 8,
-      "avg": 1976.69526,
-      "sl": 1960.4895999999999,
-      "tp": 2007.9207999999999,
-      "trail_pct": null,
-      "opened": "2026-10-30T04:00:45+00:00"
     }
   },
-  "realized": -699.5734099999797,
-  "fees": 900.9256823449999,
-  "trades": 113,
+  "realized": -839.4708499999804,
+  "fees": 908.7625146649999,
+  "trades": 114,
   "wins": 19,
-  "losses": 36,
+  "losses": 37,
   "memory": {}
 }
