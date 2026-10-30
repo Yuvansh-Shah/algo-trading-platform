@@ -639,3 +639,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-10-29T04:00:50+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,23,679.3641,7.81,-7.81,-23,open,TV 15m -0.60 / 1h -0.47,
 2026-10-29T05:15:27+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,23,685.8872,7.89,-157.92,0,close,stop-loss,
 2026-10-30T03:55:29+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,13,1221.2442,7.94,-7.94,13,open,TV 15m +0.56 / 1h +0.20,
+2026-10-30T04:00:45+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,13,1219.756,7.93,-27.28,0,close,15m rating faded (-0.29),
+2026-10-30T04:00:45+00:00,tv_rating_scalper,NSE:INFY,BUY,13,1168.6337,7.6,-7.6,13,open,TV 15m +0.69 / 1h +0.60,
+2026-10-30T04:00:45+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1778.5556,7.11,-7.11,8,open,TV 15m +0.60 / 1h +0.47,
+2026-10-30T04:00:45+00:00,tv_rating_scalper,NSE:BHARTIARTL,BUY,8,1976.6953,7.91,-7.91,8,open,TV 15m +0.56 / 1h +0.56,
