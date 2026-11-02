@@ -662,3 +662,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-02T04:15:36+00:00,supertrend_intraday,NSE:SBIN,BUY,16,977.5455,7.82,-7.82,16,open,Supertrend flipped up,
 2026-11-02T04:15:36+00:00,supertrend_intraday,NSE:BHARTIARTL,BUY,8,1992.9985,7.97,-7.97,8,open,Supertrend flipped up,
 2026-11-02T04:25:24+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,13,1239.1521,8.05,261.16,0,close,target,
+2026-11-02T04:30:38+00:00,tv_rating_scalper,NSE:ITC,BUY,60,269.1538,8.07,-8.07,60,open,TV 15m +0.56 / 1h +0.60,
