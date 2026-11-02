@@ -1,29 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 17832.911261810004,
-  "positions": {
-    "NSE:RELIANCE": {
-      "qty": 13,
-      "avg": 1228.3456199999998,
-      "sl": 1191.1991393365838,
-      "tp": 1307.3017213268326,
-      "trail_pct": null,
-      "opened": "2026-11-02T04:15:36+00:00"
-    },
-    "NSE:BHARTIARTL": {
-      "qty": 8,
-      "avg": 1992.9985199999999,
-      "sl": 1965.8397932174257,
-      "tp": 2047.0204135651488,
-      "trail_pct": null,
-      "opened": "2026-11-02T04:15:36+00:00"
-    }
-  },
-  "realized": 163.38534000001812,
-  "fees": 417.99285819,
-  "trades": 52,
-  "wins": 9,
-  "losses": 16,
+  "cash": 50044.25075520001,
+  "positions": {},
+  "realized": 478.357340000024,
+  "fees": 434.1065848,
+  "trades": 54,
+  "wins": 10,
+  "losses": 17,
   "memory": {}
 }
