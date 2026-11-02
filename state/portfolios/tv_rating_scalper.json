@@ -1,11 +1,36 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 48740.179335440014,
-  "positions": {},
+  "cash": 952.3464800000183,
+  "positions": {
+    "NSE:RELIANCE": {
+      "qty": 13,
+      "avg": 1218.44364,
+      "sl": 1208.4544,
+      "tp": 1237.6912,
+      "trail_pct": null,
+      "opened": "2026-11-02T04:00:45+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": 8,
+      "avg": 1991.99832,
+      "sl": 1975.6671999999999,
+      "tp": 2023.4656,
+      "trail_pct": null,
+      "opened": "2026-11-02T04:00:45+00:00"
+    },
+    "NSE:HDFCBANK": {
+      "qty": 23,
+      "avg": 695.139,
+      "sl": 689.4399999999999,
+      "tp": 706.12,
+      "trail_pct": null,
+      "opened": "2026-11-02T04:00:45+00:00"
+    }
+  },
   "realized": -321.0916199999824,
-  "fees": 938.7290445599999,
-  "trades": 118,
+  "fees": 962.6110199999998,
+  "trades": 121,
   "wins": 22,
   "losses": 37,
   "memory": {}
