@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 16892.761737420024,
+  "cash": 32772.33983649002,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": 8,
@@ -10,20 +10,12 @@
       "tp": 2023.4656,
       "trail_pct": null,
       "opened": "2026-11-02T04:00:45+00:00"
-    },
-    "NSE:HDFCBANK": {
-      "qty": 23,
-      "avg": 695.139,
-      "sl": 689.4399999999999,
-      "tp": 706.12,
-      "trail_pct": null,
-      "opened": "2026-11-02T04:00:45+00:00"
     }
   },
-  "realized": -196.3121799999783,
-  "fees": 986.7425225799999,
-  "trades": 124,
+  "realized": -296.98731999997983,
+  "fees": 994.68628351,
+  "trades": 125,
   "wins": 23,
-  "losses": 38,
+  "losses": 39,
   "memory": {}
 }
