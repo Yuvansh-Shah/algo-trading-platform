@@ -670,3 +670,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-02T08:15:34+00:00,supertrend_intraday,NSE:SBIN,SELL,16,970.3059,7.76,-123.6,0,close,Supertrend reversed,
 2026-11-02T08:55:22+00:00,ema_crossover,NSE:BHARTIARTL,SELL,8,1981.2037,7.92,-102.28,0,close,stop-loss,
 2026-11-02T09:15:34+00:00,tv_rating_scalper,NSE:BHARTIARTL,SELL,8,1980.3039,7.92,-101.48,0,close,15m rating faded (+0.00),
+2026-11-02T09:40:34+00:00,dual_momentum,NSE:BANKBEES,BUY,86,569.3238,53.86,-53.86,86,open,strongest 6M return +0.6%,

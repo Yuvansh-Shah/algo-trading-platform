@@ -1,14 +1,23 @@
 {
   "strategy": "dual_momentum",
   "initial": 50000.0,
-  "cash": 50000.0,
-  "positions": {},
+  "cash": 984.2915525467979,
+  "positions": {
+    "NSE:BANKBEES": {
+      "qty": 86,
+      "avg": 569.323842,
+      "sl": null,
+      "tp": null,
+      "trail_pct": null,
+      "opened": "2026-11-02T09:40:34+00:00"
+    }
+  },
   "realized": 0.0,
-  "fees": 0.0,
-  "trades": 0,
+  "fees": 53.8580354532,
+  "trades": 1,
   "wins": 0,
   "losses": 0,
   "memory": {
-    "month": "2026-10"
+    "month": "2026-11"
   }
 }
