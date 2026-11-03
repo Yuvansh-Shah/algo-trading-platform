@@ -676,3 +676,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-03T03:55:30+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,12,1288.1576,7.73,-7.73,12,open,TV 15m +0.51 / 1h +0.40,
 2026-11-03T03:55:30+00:00,tv_rating_scalper,NSE:LT,BUY,4,3959.6918,7.92,-7.92,4,open,TV 15m +0.51 / 1h +0.49,
 2026-11-03T04:00:49+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,22,712.7925,7.84,-7.84,22,open,TV 15m +0.65 / 1h +0.60,
+2026-11-03T04:15:33+00:00,ema_crossover,NSE:BHARTIARTL,BUY,8,2004.4008,8.02,-8.02,8,open,"EMA9>21, RSI 70",
+2026-11-03T04:15:35+00:00,supertrend_intraday,NSE:ICICIBANK,BUY,11,1401.7803,7.71,-7.71,11,open,Supertrend flipped up,
+2026-11-03T04:15:35+00:00,supertrend_intraday,NSE:TCS,BUY,6,2522.1043,7.57,-7.57,6,open,Supertrend flipped up,
+2026-11-03T04:15:35+00:00,supertrend_intraday,NSE:AXISBANK,BUY,13,1225.445,7.97,-7.97,13,open,Supertrend flipped up,

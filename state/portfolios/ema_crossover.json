@@ -1,11 +1,20 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 49365.403346125015,
-  "positions": {},
+  "cash": 33322.17934292502,
+  "positions": {
+    "NSE:BHARTIARTL": {
+      "qty": 8,
+      "avg": 2004.4008,
+      "sl": 1993.8740098151013,
+      "tp": 2024.2519803697974,
+      "trail_pct": null,
+      "opened": "2026-11-03T04:15:33+00:00"
+    }
+  },
   "realized": 41.0080900000429,
-  "fees": 675.6047438749998,
-  "trades": 86,
+  "fees": 683.6223470749999,
+  "trades": 87,
   "wins": 14,
   "losses": 29,
   "memory": {}
