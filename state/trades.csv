@@ -683,3 +683,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-03T04:30:36+00:00,ema_crossover,NSE:ICICIBANK,BUY,11,1404.3808,7.72,-7.72,11,open,"EMA9>21, RSI 74",
 2026-11-03T04:30:38+00:00,ema_crossover,NSE:AXISBANK,BUY,13,1224.9449,7.96,-7.96,13,open,"EMA9>21, RSI 69",
 2026-11-03T04:30:34+00:00,tv_rating_scalper,NSE:LT,SELL,4,3926.2146,7.85,-141.76,0,close,stop-loss,
+2026-11-03T05:00:51+00:00,tv_rating_scalper,NSE:ITC,BUY,60,266.3533,7.99,-7.99,60,open,TV 15m +0.56 / 1h +0.42,
