@@ -686,3 +686,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-03T05:00:51+00:00,tv_rating_scalper,NSE:ITC,BUY,60,266.3533,7.99,-7.99,60,open,TV 15m +0.56 / 1h +0.42,
 2026-11-03T05:45:33+00:00,supertrend_intraday,NSE:TCS,SELL,6,2486.5026,7.46,-221.07,0,close,Supertrend reversed,
 2026-11-03T06:15:29+00:00,ema_crossover,NSE:BHARTIARTL,SELL,8,2024.595,8.1,153.46,0,close,target,
+2026-11-03T07:15:39+00:00,ema_crossover,NSE:ICICIBANK,SELL,11,1420.5158,7.81,169.67,0,close,target,
