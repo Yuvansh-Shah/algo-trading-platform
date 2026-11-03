@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 17294.54309201002,
+  "cash": 1605.2667141800193,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 12,
@@ -18,11 +18,19 @@
       "tp": 4022.2424,
       "trail_pct": null,
       "opened": "2026-11-03T03:55:30+00:00"
+    },
+    "NSE:HDFCBANK": {
+      "qty": 22,
+      "avg": 712.7925299999999,
+      "sl": 706.9488,
+      "tp": 724.0524,
+      "trail_pct": null,
+      "opened": "2026-11-03T04:00:49+00:00"
     }
   },
   "realized": -390.5429999999793,
-  "fees": 1018.25582799,
-  "trades": 128,
+  "fees": 1026.0965458199998,
+  "trades": 129,
   "wins": 23,
   "losses": 40,
   "memory": {}
