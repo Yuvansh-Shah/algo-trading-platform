@@ -689,3 +689,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-03T07:15:39+00:00,ema_crossover,NSE:ICICIBANK,SELL,11,1420.5158,7.81,169.67,0,close,target,
 2026-11-03T08:05:20+00:00,ema_crossover,NSE:AXISBANK,SELL,13,1239.1521,8.05,176.64,0,close,target,
 2026-11-03T09:25:33+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,22,724.3551,7.97,246.41,0,close,target,
+2026-11-03T09:45:28+00:00,supertrend_intraday,NSE:ICICIBANK,SELL,11,1422.9154,7.83,224.66,0,close,intraday square-off,
+2026-11-03T09:45:28+00:00,supertrend_intraday,NSE:AXISBANK,SELL,13,1229.654,7.99,46.72,0,close,intraday square-off,
+2026-11-03T09:45:27+00:00,tv_rating_scalper,NSE:ITC,SELL,60,271.9456,8.16,327.38,0,close,target,
+2026-11-03T09:45:28+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,12,1297.4405,7.78,103.61,0,close,intraday square-off,

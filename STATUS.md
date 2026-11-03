@@ -1,18 +1,18 @@
 # Bot leaderboard
 
-_Updated 03 Nov 2026 15:10 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 03 Nov 2026 15:15 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **momentum_rotation** | positional 1D | +7.63% | +3,814 | -393 | +2.54% | 0 | – | – | -4.4% | 3 | ok |
-| 2 | **tv_rating_swing** | swing 1D | +6.38% | +3,189 | +17 | +1.29% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
+| 1 | **momentum_rotation** | positional 1D | +7.62% | +3,808 | -398 | +2.53% | 0 | – | – | -4.4% | 3 | ok |
+| 2 | **tv_rating_swing** | swing 1D | +6.50% | +3,249 | +77 | +1.41% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
 | 3 | **nifty_buy_hold** | benchmark 1D | +5.09% | +2,544 | +772 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
 | 4 | **dual_momentum** | positional 1D | +0.70% | +348 | +449 | -4.39% | 0 | – | – | -0.4% | 1 | ok |
-| 5 | **supertrend_intraday** | intraday 15m | +0.13% | +67 | +23 | -4.95% | 28 | 36 | 1.02 | -2.5% | 2 | ok |
+| 5 | **supertrend_intraday** | intraday 15m | +0.14% | +71 | +27 | -4.95% | 30 | 40 | 1.16 | -2.5% | 0 | ok |
 | 6 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -5.09% | 0 | – | – | 0.0% | 0 | ok |
 | 7 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -5.09% | 0 | – | – | 0.0% | 0 | ok |
 | 8 | **ema_crossover** | intraday 15m | -0.32% | -159 | +476 | -5.41% | 46 | 37 | 1.07 | -3.6% | 0 | ok |
-| 9 | **tv_rating_scalper** | intraday 15m | -1.97% | -986 | +429 | -7.06% | 65 | 37 | 0.83 | -5.8% | 2 | ok |
+| 9 | **tv_rating_scalper** | intraday 15m | -1.78% | -889 | +526 | -6.87% | 67 | 39 | 0.92 | -5.8% | 0 | ok |
 | 10 | **hourly_macd_swing** | swing 1h | +2.23% | +1,115 | -490 | -2.86% | 5 | 60 | 4.63 | -0.9% | 0 | retired |
 | 11 | **gap_and_go** | intraday 15m | +1.40% | +701 | -391 | -3.69% | 10 | 80 | 2.36 | -1.2% | 0 | retired |
 | 12 | **vwap_pullback** | intraday 15m | +0.98% | +491 | +32 | -4.11% | 41 | 51 | 1.48 | -1.7% | 0 | retired |
@@ -66,15 +66,15 @@ _Updated 03 Nov 2026 15:10 IST · paper trading · every bot started with ₹50,
 | tv_rating_swing | NSE:DRREDDY | 13 | 1,241.85 | 1,267.50 | – | 19 Oct 15:05 |
 | nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
 | dual_momentum | NSE:BANKBEES | 86 | 569.32 | – | – | 02 Nov 15:10 |
-| supertrend_intraday | NSE:ICICIBANK | 11 | 1,401.78 | 1,385.45 | 1,433.59 | 03 Nov 09:45 |
-| supertrend_intraday | NSE:AXISBANK | 13 | 1,225.45 | 1,204.95 | 1,266.30 | 03 Nov 09:45 |
-| tv_rating_scalper | NSE:RELIANCE | 12 | 1,288.16 | 1,277.60 | 1,308.51 | 03 Nov 09:25 |
-| tv_rating_scalper | NSE:ITC | 60 | 266.35 | 264.17 | 270.56 | 03 Nov 10:30 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 03 Nov 15:15 | tv_rating_scalper | SELL | 12 | NSE:RELIANCE | 1,297.44 | +104 | intraday square-off |
+| 03 Nov 15:15 | tv_rating_scalper | SELL | 60 | NSE:ITC | 271.95 | +327 | target |
+| 03 Nov 15:15 | supertrend_intraday | SELL | 13 | NSE:AXISBANK | 1,229.65 | +47 | intraday square-off |
+| 03 Nov 15:15 | supertrend_intraday | SELL | 11 | NSE:ICICIBANK | 1,422.92 | +225 | intraday square-off |
 | 03 Nov 14:55 | tv_rating_scalper | SELL | 22 | NSE:HDFCBANK | 724.36 | +246 | target |
 | 03 Nov 13:35 | ema_crossover | SELL | 13 | NSE:AXISBANK | 1,239.15 | +177 | target |
 | 03 Nov 12:45 | ema_crossover | SELL | 11 | NSE:ICICIBANK | 1,420.52 | +170 | target |
@@ -101,7 +101,3 @@ _Updated 03 Nov 2026 15:10 IST · paper trading · every bot started with ₹50,
 | 02 Nov 12:30 | ema_crossover | SELL | 13 | NSE:RELIANCE | 1,258.95 | +390 | target |
 | 02 Nov 12:00 | tv_rating_scalper | SELL | 23 | NSE:HDFCBANK | 690.76 | -109 | 15m rating faded (-0.11) |
 | 02 Nov 11:20 | tv_rating_scalper | SELL | 60 | NSE:ITC | 266.75 | -152 | stop-loss |
-| 02 Nov 10:00 | tv_rating_scalper | BUY | 60 | NSE:ITC | 269.15 |  | TV 15m +0.56 / 1h +0.60 |
-| 02 Nov 09:55 | tv_rating_scalper | SELL | 13 | NSE:RELIANCE | 1,239.15 | +261 | target |
-| 02 Nov 09:45 | supertrend_intraday | BUY | 8 | NSE:BHARTIARTL | 1,993.00 |  | Supertrend flipped up |
-| 02 Nov 09:45 | supertrend_intraday | BUY | 16 | NSE:SBIN | 977.55 |  | Supertrend flipped up |
