@@ -85,7 +85,7 @@
       "date": "2026-11-03",
       "start_equity": 49365.4
     },
-    "equity": 49772.14
+    "equity": 49789.04
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -170,7 +170,7 @@
       "date": "2026-11-03",
       "start_equity": 54206.37
     },
-    "equity": 53640.87,
+    "equity": 53651.27,
     "started": true,
     "last_bar": "2026-11-02",
     "last_run": "2026-11-02T09:40:26+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-11-03",
       "start_equity": 51772.24
     },
-    "equity": 52498.0,
+    "equity": 52511.44,
     "started": true,
     "last_bar": "2026-11-03",
     "last_run": "2026-11-03T04:15:27+00:00"
@@ -231,7 +231,7 @@
       "date": "2026-11-03",
       "start_equity": 50044.25
     },
-    "equity": 50102.87
+    "equity": 50129.07
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -245,7 +245,7 @@
       "date": "2026-11-03",
       "start_equity": 48584.94
     },
-    "equity": 48730.19
+    "equity": 48727.29
   },
   "tv_rating_swing": {
     "market": "NSE",
@@ -256,7 +256,7 @@
       "date": "2026-11-03",
       "start_equity": 53172.49
     },
-    "equity": 53131.19,
+    "equity": 53145.19,
     "started": true,
     "last_bar": "2026-11-02",
     "last_run": "2026-11-02T09:35:26+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-11-03T07:35:21+00:00",
+    "last_engine_run": "2026-11-03T07:40:25+00:00",
     "last_summary": "2026-11-02"
   },
   "dual_momentum": {
@@ -304,7 +304,7 @@
       "date": "2026-11-03",
       "start_equity": 49899.37
     },
-    "equity": 50477.29,
+    "equity": 50503.09,
     "started": true,
     "last_bar": "2026-11-02",
     "last_run": "2026-11-02T09:40:26+00:00"
