@@ -1,21 +1,12 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 33740.54288918502,
-  "positions": {
-    "NSE:AXISBANK": {
-      "qty": 13,
-      "avg": 1224.94494,
-      "sl": 1217.8657170831198,
-      "tp": 1239.2685658337605,
-      "trail_pct": null,
-      "opened": "2026-11-03T04:30:38+00:00"
-    }
-  },
-  "realized": 380.04691000004584,
-  "fees": 715.2198008149999,
-  "trades": 91,
-  "wins": 16,
+  "cash": 49841.46596040502,
+  "positions": {},
+  "realized": 564.7402500000472,
+  "fees": 723.2742895949999,
+  "trades": 92,
+  "wins": 17,
   "losses": 29,
   "memory": {}
 }
