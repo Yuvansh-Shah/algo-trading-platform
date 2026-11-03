@@ -673,3 +673,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-02T09:40:34+00:00,dual_momentum,NSE:BANKBEES,BUY,86,569.3238,53.86,-53.86,86,open,strongest 6M return +0.6%,
 2026-11-02T09:45:29+00:00,supertrend_intraday,NSE:RELIANCE,SELL,13,1259.648,8.19,398.74,0,close,intraday square-off,
 2026-11-02T09:45:29+00:00,supertrend_intraday,NSE:BHARTIARTL,SELL,8,1981.5036,7.93,-99.89,0,close,intraday square-off,
+2026-11-03T03:55:30+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,12,1288.1576,7.73,-7.73,12,open,TV 15m +0.51 / 1h +0.40,
+2026-11-03T03:55:30+00:00,tv_rating_scalper,NSE:LT,BUY,4,3959.6918,7.92,-7.92,4,open,TV 15m +0.51 / 1h +0.49,
