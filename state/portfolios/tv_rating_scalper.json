@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33843.10356863503,
-  "positions": {
-    "NSE:RELIANCE": {
-      "qty": 12,
-      "avg": 1302.16038,
-      "sl": 1291.4848000000002,
-      "tp": 1322.7304000000001,
-      "trail_pct": null,
-      "opened": "2026-11-04T03:55:32+00:00"
-    }
-  },
-  "realized": 607.061710000032,
-  "fees": 1138.0335813649997,
-  "trades": 143,
-  "wins": 28,
+  "cash": 49645.63562999503,
+  "positions": {},
+  "realized": 791.5744300000326,
+  "fees": 1145.9388000049996,
+  "trades": 144,
+  "wins": 29,
   "losses": 43,
   "memory": {}
 }

@@ -706,3 +706,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-04T06:45:24+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,9,1786.6426,8.04,-167.5,0,close,stop-loss,
 2026-11-04T09:40:35+00:00,momentum_rotation,NSE:TCS,SELL,7,2433.8131,18.74,1223.49,0,close,dropped out of top 10 momentum,
 2026-11-04T09:40:35+00:00,momentum_rotation,NSE:DRREDDY,BUY,12,1365.273,18.02,-18.02,12,open,3M perf +16.3%,
+2026-11-04T09:45:29+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,12,1317.5364,7.91,176.61,0,close,intraday square-off,
