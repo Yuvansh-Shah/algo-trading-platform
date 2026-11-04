@@ -703,3 +703,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-04T05:30:37+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,9,1804.3608,8.12,-8.12,9,open,TV 15m +0.51 / 1h +0.56,
 2026-11-04T05:45:26+00:00,ema_crossover,NSE:LT,SELL,4,3939.412,7.88,-129.41,0,close,stop-loss,
 2026-11-04T05:50:23+00:00,tv_rating_scalper,NSE:LT,SELL,4,3935.3128,7.87,-145.79,0,close,stop-loss,
+2026-11-04T06:45:24+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,9,1786.6426,8.04,-167.5,0,close,stop-loss,
