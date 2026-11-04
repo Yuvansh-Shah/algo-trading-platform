@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 2037.9795658950297,
+  "cash": 17771.36006033503,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 12,
@@ -10,14 +10,6 @@
       "tp": 1322.7304000000001,
       "trail_pct": null,
       "opened": "2026-11-04T03:55:32+00:00"
-    },
-    "NSE:LT": {
-      "qty": 4,
-      "avg": 3969.7938,
-      "sl": 3937.248,
-      "tp": 4032.504,
-      "trail_pct": null,
-      "opened": "2026-11-04T04:15:34+00:00"
     },
     "NSE:SUNPHARMA": {
       "qty": 9,
@@ -28,10 +20,10 @@
       "opened": "2026-11-04T05:30:37+00:00"
     }
   },
-  "realized": 904.449590000029,
-  "fees": 1122.1230641049997,
-  "trades": 141,
+  "realized": 766.5255100000302,
+  "fees": 1129.9936896649997,
+  "trades": 142,
   "wins": 28,
-  "losses": 41,
+  "losses": 42,
   "memory": {}
 }
