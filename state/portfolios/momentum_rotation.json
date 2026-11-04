@@ -1,7 +1,7 @@
 {
   "strategy": "momentum_rotation",
   "initial": 50000.0,
-  "cash": 2148.7727932249945,
+  "cash": 2765.4268084470023,
   "positions": {
     "NSE:KOTAKBANK": {
       "qty": 37,
@@ -19,19 +19,19 @@
       "trail_pct": null,
       "opened": "2026-10-13T09:40:34+00:00"
     },
-    "NSE:TCS": {
-      "qty": 7,
-      "avg": 2256.35118,
-      "sl": 1985.192,
+    "NSE:DRREDDY": {
+      "qty": 12,
+      "avg": 1365.273,
+      "sl": 1201.2,
       "tp": null,
       "trail_pct": null,
-      "opened": "2026-10-13T09:40:35+00:00"
+      "opened": "2026-11-04T09:40:35+00:00"
     }
   },
-  "realized": 0.0,
-  "fees": 23.913656775,
-  "trades": 3,
-  "wins": 0,
+  "realized": 1242.2337200000006,
+  "fees": 60.675621553000006,
+  "trades": 5,
+  "wins": 1,
   "losses": 0,
   "memory": {}
 }
