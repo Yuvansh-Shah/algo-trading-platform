@@ -693,3 +693,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-03T09:45:28+00:00,supertrend_intraday,NSE:AXISBANK,SELL,13,1229.654,7.99,46.72,0,close,intraday square-off,
 2026-11-03T09:45:27+00:00,tv_rating_scalper,NSE:ITC,SELL,60,271.9456,8.16,327.38,0,close,target,
 2026-11-03T09:45:28+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,12,1297.4405,7.78,103.61,0,close,intraday square-off,
+2026-11-04T03:55:32+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,12,1302.1604,7.81,-7.81,12,open,TV 15m +0.56 / 1h +0.51,
+2026-11-04T03:55:32+00:00,tv_rating_scalper,NSE:ITC,BUY,59,272.9546,8.05,-8.05,59,open,TV 15m +0.56 / 1h +0.60,
+2026-11-04T03:55:32+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,9,1770.254,7.97,-7.97,9,open,TV 15m +0.56 / 1h +0.27,
