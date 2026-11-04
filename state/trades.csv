@@ -699,3 +699,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-04T04:05:30+00:00,tv_rating_scalper,NSE:ITC,SELL,59,280.194,8.27,418.86,0,close,target,
 2026-11-04T04:15:31+00:00,ema_crossover,NSE:LT,BUY,4,3969.7938,7.94,-7.94,4,open,"EMA9>21, RSI 70",
 2026-11-04T04:15:34+00:00,tv_rating_scalper,NSE:LT,BUY,4,3969.7938,7.94,-7.94,4,open,TV 15m +0.65 / 1h +0.51,
+2026-11-04T05:30:29+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,9,1803.6392,8.12,292.35,0,close,target,
+2026-11-04T05:30:37+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,9,1804.3608,8.12,-8.12,9,open,TV 15m +0.51 / 1h +0.56,
