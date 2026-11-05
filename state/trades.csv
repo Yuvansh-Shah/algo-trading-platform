@@ -715,3 +715,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:ICICIBANK,BUY,11,1456.4912,8.01,-8.01,11,open,Supertrend flipped up,
 2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:INFY,BUY,14,1152.5305,8.07,-8.07,14,open,Supertrend flipped up,
 2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:TCS,BUY,6,2479.9959,7.44,-7.44,6,open,Supertrend flipped up,
+2026-11-05T04:30:41+00:00,ema_crossover,NSE:TCS,BUY,6,2500.4,7.5,-7.5,6,open,"EMA9>21, RSI 71",
