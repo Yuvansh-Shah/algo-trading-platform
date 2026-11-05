@@ -717,3 +717,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:TCS,BUY,6,2479.9959,7.44,-7.44,6,open,Supertrend flipped up,
 2026-11-05T04:30:41+00:00,ema_crossover,NSE:TCS,BUY,6,2500.4,7.5,-7.5,6,open,"EMA9>21, RSI 71",
 2026-11-05T04:40:27+00:00,ema_crossover,NSE:INFY,SELL,14,1169.3661,8.19,238.72,0,close,target,
+2026-11-05T05:40:27+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,21,749.8,7.87,-147.55,0,close,stop-loss,
