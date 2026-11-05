@@ -710,3 +710,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-05T04:00:48+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,12,1261.1522,7.57,-7.57,12,open,TV 15m +0.69 / 1h +0.65,
 2026-11-05T04:00:48+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,21,756.4513,7.94,-7.94,21,open,TV 15m +0.65 / 1h +0.65,
 2026-11-05T04:00:49+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,11,1452.2904,7.99,-7.99,11,open,TV 15m +0.65 / 1h +0.65,
+2026-11-05T04:15:28+00:00,ema_crossover,NSE:INFY,BUY,14,1151.7303,8.06,-8.06,14,open,"EMA9>21, RSI 73",
+2026-11-05T04:15:31+00:00,ema_crossover,NSE:LT,BUY,4,4039.8078,8.08,-8.08,4,open,"EMA9>21, RSI 78",
+2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:ICICIBANK,BUY,11,1456.4912,8.01,-8.01,11,open,Supertrend flipped up,
+2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:INFY,BUY,14,1152.5305,8.07,-8.07,14,open,Supertrend flipped up,
+2026-11-05T04:15:33+00:00,supertrend_intraday,NSE:TCS,BUY,6,2479.9959,7.44,-7.44,6,open,Supertrend flipped up,
