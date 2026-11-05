@@ -707,3 +707,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-04T09:40:35+00:00,momentum_rotation,NSE:TCS,SELL,7,2433.8131,18.74,1223.49,0,close,dropped out of top 10 momentum,
 2026-11-04T09:40:35+00:00,momentum_rotation,NSE:DRREDDY,BUY,12,1365.273,18.02,-18.02,12,open,3M perf +16.3%,
 2026-11-04T09:45:29+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,12,1317.5364,7.91,176.61,0,close,intraday square-off,
+2026-11-05T04:00:48+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,12,1261.1522,7.57,-7.57,12,open,TV 15m +0.69 / 1h +0.65,
+2026-11-05T04:00:48+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,21,756.4513,7.94,-7.94,21,open,TV 15m +0.65 / 1h +0.65,
+2026-11-05T04:00:49+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,11,1452.2904,7.99,-7.99,11,open,TV 15m +0.65 / 1h +0.65,

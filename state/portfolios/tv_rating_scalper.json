@@ -1,11 +1,36 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 49645.63562999503,
-  "positions": {},
+  "cash": 2627.6413614850335,
+  "positions": {
+    "NSE:AXISBANK": {
+      "qty": 12,
+      "avg": 1261.15218,
+      "sl": 1250.8128000000002,
+      "tp": 1281.0744000000002,
+      "trail_pct": null,
+      "opened": "2026-11-05T04:00:48+00:00"
+    },
+    "NSE:HDFCBANK": {
+      "qty": 21,
+      "avg": 756.4512599999999,
+      "sl": 750.2496,
+      "tp": 768.4008,
+      "trail_pct": null,
+      "opened": "2026-11-05T04:00:48+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": 11,
+      "avg": 1452.2903999999999,
+      "sl": 1440.384,
+      "tp": 1475.232,
+      "trail_pct": null,
+      "opened": "2026-11-05T04:00:49+00:00"
+    }
+  },
   "realized": 791.5744300000326,
-  "fees": 1145.9388000049996,
-  "trades": 144,
+  "fees": 1169.4360485149996,
+  "trades": 147,
   "wins": 29,
   "losses": 43,
   "memory": {}
