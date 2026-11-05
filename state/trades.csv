@@ -721,3 +721,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-05T07:00:37+00:00,ema_crossover,NSE:TCS,SELL,6,2475.5048,7.43,-156.8,0,close,stop-loss,
 2026-11-05T07:15:35+00:00,tv_rating_scalper,NSE:ICICIBANK,SELL,11,1477.0045,8.12,263.73,0,close,target,
 2026-11-05T09:20:26+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,12,1282.8434,7.7,252.6,0,close,target,
+2026-11-05T09:45:29+00:00,ema_crossover,NSE:LT,SELL,4,4042.3914,8.08,2.25,0,close,intraday square-off,
+2026-11-05T09:45:29+00:00,supertrend_intraday,NSE:ICICIBANK,SELL,11,1498.2003,8.24,450.56,0,close,intraday square-off,
+2026-11-05T09:45:29+00:00,supertrend_intraday,NSE:INFY,SELL,14,1162.8674,8.14,136.58,0,close,intraday square-off,
+2026-11-05T09:45:29+00:00,supertrend_intraday,NSE:TCS,SELL,6,2498.0003,7.49,100.53,0,close,intraday square-off,

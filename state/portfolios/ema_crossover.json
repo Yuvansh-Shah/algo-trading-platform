@@ -1,21 +1,12 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 33603.16382428502,
-  "positions": {
-    "NSE:LT": {
-      "qty": 4,
-      "avg": 4039.8078,
-      "sl": 4009.977885277197,
-      "tp": 4100.944229445607,
-      "trail_pct": null,
-      "opened": "2026-11-05T04:15:31+00:00"
-    }
-  },
-  "realized": 540.7427300000483,
-  "fees": 778.3477057149998,
-  "trades": 99,
-  "wins": 18,
+  "cash": 49764.64448156502,
+  "positions": {},
+  "realized": 551.0769700000484,
+  "fees": 786.4324884349999,
+  "trades": 100,
+  "wins": 19,
   "losses": 31,
   "memory": {}
 }
