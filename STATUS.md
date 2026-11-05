@@ -1,18 +1,18 @@
 # Bot leaderboard
 
-_Updated 05 Nov 2026 13:20 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 05 Nov 2026 13:26 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **tv_rating_swing** | swing 1D | +8.84% | +4,422 | +164 | +0.42% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
+| 1 | **tv_rating_swing** | swing 1D | +8.86% | +4,429 | +170 | +0.44% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
 | 2 | **nifty_buy_hold** | benchmark 1D | +8.42% | +4,211 | +1,112 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
-| 3 | **momentum_rotation** | positional 1D | +7.13% | +3,565 | -383 | -1.29% | 1 | 100 | ∞ | -4.4% | 3 | ok |
-| 4 | **dual_momentum** | positional 1D | +4.10% | +2,049 | +1,339 | -4.32% | 0 | – | – | -0.6% | 1 | ok |
-| 5 | **supertrend_intraday** | intraday 15m | +0.90% | +452 | +380 | -7.52% | 30 | 40 | 1.16 | -2.5% | 3 | ok |
+| 3 | **momentum_rotation** | positional 1D | +7.15% | +3,574 | -374 | -1.27% | 1 | 100 | ∞ | -4.4% | 3 | ok |
+| 4 | **dual_momentum** | positional 1D | +4.18% | +2,090 | +1,379 | -4.24% | 0 | – | – | -0.6% | 1 | ok |
+| 5 | **supertrend_intraday** | intraday 15m | +1.03% | +516 | +445 | -7.39% | 30 | 40 | 1.16 | -2.5% | 3 | ok |
 | 6 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -8.42% | 0 | – | – | 0.0% | 0 | ok |
 | 7 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -8.42% | 0 | – | – | 0.0% | 0 | ok |
-| 8 | **tv_rating_scalper** | intraday 15m | -0.17% | -85 | +270 | -8.59% | 74 | 41 | 1.07 | -5.8% | 1 | ok |
-| 9 | **ema_crossover** | intraday 15m | -0.43% | -215 | +81 | -8.85% | 49 | 37 | 1.05 | -3.6% | 1 | ok |
+| 8 | **tv_rating_scalper** | intraday 15m | -0.18% | -92 | +262 | -8.61% | 74 | 41 | 1.07 | -5.8% | 1 | ok |
+| 9 | **ema_crossover** | intraday 15m | -0.43% | -214 | +82 | -8.85% | 49 | 37 | 1.05 | -3.6% | 1 | ok |
 | 10 | **hourly_macd_swing** | swing 1h | +2.23% | +1,115 | -490 | -6.19% | 5 | 60 | 4.63 | -0.9% | 0 | retired |
 | 11 | **gap_and_go** | intraday 15m | +1.40% | +701 | -391 | -7.02% | 10 | 80 | 2.36 | -1.2% | 0 | retired |
 | 12 | **vwap_pullback** | intraday 15m | +0.98% | +491 | +32 | -7.44% | 41 | 51 | 1.48 | -1.7% | 0 | retired |
@@ -59,7 +59,7 @@ _Updated 05 Nov 2026 13:20 IST · paper trading · every bot started with ₹50,
 | Bot | Symbol | Qty | Avg | Stop | Target | Opened |
 |---|---|---:|---:|---:|---:|---|
 | tv_rating_swing | NSE:TECHM | 10 | 1,579.32 | 1,718.55 | – | 14 Oct 15:05 |
-| tv_rating_swing | NSE:ICICIBANK | 12 | 1,383.98 | 1,375.75 | – | 15 Oct 15:05 |
+| tv_rating_swing | NSE:ICICIBANK | 12 | 1,383.98 | 1,376.87 | – | 15 Oct 15:05 |
 | tv_rating_swing | NSE:DRREDDY | 13 | 1,241.85 | 1,281.26 | – | 19 Oct 15:05 |
 | nifty_buy_hold | NSE:NIFTYBEES | 192 | 256.54 | – | – | 13 Oct 09:45 |
 | momentum_rotation | NSE:KOTAKBANK | 37 | 439.54 | 386.72 | – | 13 Oct 15:10 |
