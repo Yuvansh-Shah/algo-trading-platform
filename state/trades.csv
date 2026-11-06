@@ -726,3 +726,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-05T09:45:29+00:00,supertrend_intraday,NSE:INFY,SELL,14,1162.8674,8.14,136.58,0,close,intraday square-off,
 2026-11-05T09:45:29+00:00,supertrend_intraday,NSE:TCS,SELL,6,2498.0003,7.49,100.53,0,close,intraday square-off,
 2026-11-06T03:55:33+00:00,tv_rating_scalper,NSE:LT,BUY,4,4024.8048,8.05,-8.05,4,open,TV 15m +0.51 / 1h +0.45,
+2026-11-06T04:00:44+00:00,tv_rating_scalper,NSE:LT,SELL,4,4008.7981,8.02,-72.04,0,close,15m rating faded (-0.16),
+2026-11-06T04:00:44+00:00,tv_rating_scalper,NSE:INFY,BUY,13,1191.2382,7.74,-7.74,13,open,TV 15m +0.69 / 1h +0.60,
+2026-11-06T04:00:44+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,10,1513.3026,7.57,-7.57,10,open,TV 15m +0.65 / 1h +0.45,
+2026-11-06T04:00:44+00:00,tv_rating_scalper,NSE:TCS,BUY,6,2534.2067,7.6,-7.6,6,open,TV 15m +0.65 / 1h +0.65,
