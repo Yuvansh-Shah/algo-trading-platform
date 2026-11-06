@@ -733,3 +733,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-06T04:45:33+00:00,ema_crossover,NSE:ITC,BUY,58,281.1562,8.15,-8.15,58,open,"EMA9>21, RSI 65",
 2026-11-06T05:25:19+00:00,tv_rating_scalper,NSE:INFY,SELL,13,1178.6642,7.66,-171.12,0,close,stop-loss,
 2026-11-06T05:45:28+00:00,tv_rating_scalper,NSE:TCS,SELL,6,2508.5982,7.53,-161.18,0,close,stop-loss,
+2026-11-06T06:05:23+00:00,ema_crossover,NSE:ITC,SELL,58,279.0442,8.09,-130.59,0,close,stop-loss,
