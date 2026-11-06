@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 4063.549278850036,
+  "cash": 19378.52282142004,
   "positions": {
-    "NSE:INFY": {
-      "qty": 13,
-      "avg": 1191.2382,
-      "sl": 1181.472,
-      "tp": 1210.056,
-      "trail_pct": null,
-      "opened": "2026-11-06T04:00:44+00:00"
-    },
     "NSE:ICICIBANK": {
       "qty": 10,
       "avg": 1513.3026,
@@ -28,10 +20,10 @@
       "opened": "2026-11-06T04:00:44+00:00"
     }
   },
-  "realized": 1120.0212400000357,
-  "fees": 1232.1089211499998,
-  "trades": 155,
+  "realized": 956.5595000000371,
+  "fees": 1239.7702385799998,
+  "trades": 156,
   "wins": 31,
-  "losses": 45,
+  "losses": 46,
   "memory": {}
 }
