@@ -741,3 +741,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-09T04:00:46+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,20,795.8091,7.96,-7.96,20,open,TV 15m +0.60 / 1h +0.60,
 2026-11-09T04:00:46+00:00,tv_rating_scalper,NSE:SBIN,BUY,15,1031.5063,7.74,-7.74,15,open,TV 15m +0.56 / 1h +0.60,
 2026-11-09T05:25:26+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,20,787.3925,7.87,-176.21,0,close,stop-loss,
+2026-11-09T09:40:33+00:00,momentum_rotation,NSE:HCLTECH,SELL,12,1404.3191,18.54,1063.34,0,close,dropped out of top 10 momentum,
+2026-11-09T09:40:33+00:00,momentum_rotation,NSE:ETERNAL,BUY,49,361.5723,19.49,-19.49,49,open,3M perf +16.4%,
