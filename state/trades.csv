@@ -743,3 +743,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-09T05:25:26+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,20,787.3925,7.87,-176.21,0,close,stop-loss,
 2026-11-09T09:40:33+00:00,momentum_rotation,NSE:HCLTECH,SELL,12,1404.3191,18.54,1063.34,0,close,dropped out of top 10 momentum,
 2026-11-09T09:40:33+00:00,momentum_rotation,NSE:ETERNAL,BUY,49,361.5723,19.49,-19.49,49,open,3M perf +16.4%,
+2026-11-09T09:45:27+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,8,1905.0189,7.62,-90.53,0,close,intraday square-off,
+2026-11-09T09:45:27+00:00,tv_rating_scalper,NSE:SBIN,SELL,15,1040.6418,7.8,129.23,0,close,intraday square-off,

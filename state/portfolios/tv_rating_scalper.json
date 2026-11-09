@@ -1,29 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 18523.412994690036,
-  "positions": {
-    "NSE:SUNPHARMA": {
-      "qty": 8,
-      "avg": 1915.383,
-      "sl": 1899.68,
-      "tp": 1945.64,
-      "trail_pct": null,
-      "opened": "2026-11-09T03:45:30+00:00"
-    },
-    "NSE:SBIN": {
-      "qty": 15,
-      "avg": 1031.5062599999999,
-      "sl": 1023.0495999999999,
-      "tp": 1047.8008,
-      "trail_pct": null,
-      "opened": "2026-11-09T04:00:46+00:00"
-    }
-  },
-  "realized": 621.5624600000388,
-  "fees": 1302.4915653099997,
-  "trades": 164,
-  "wins": 32,
-  "losses": 49,
+  "cash": 49357.766915285036,
+  "positions": {},
+  "realized": 675.6833700000423,
+  "fees": 1317.9164547149996,
+  "trades": 166,
+  "wins": 33,
+  "losses": 50,
   "memory": {}
 }
