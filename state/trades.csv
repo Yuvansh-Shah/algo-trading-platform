@@ -740,3 +740,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-09T04:00:39+00:00,tv_rating_scalper,NSE:INFY,SELL,14,1153.2693,8.07,-267.98,0,close,stop-loss,
 2026-11-09T04:00:46+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,20,795.8091,7.96,-7.96,20,open,TV 15m +0.60 / 1h +0.60,
 2026-11-09T04:00:46+00:00,tv_rating_scalper,NSE:SBIN,BUY,15,1031.5063,7.74,-7.74,15,open,TV 15m +0.56 / 1h +0.60,
+2026-11-09T05:25:26+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,20,787.3925,7.87,-176.21,0,close,stop-loss,

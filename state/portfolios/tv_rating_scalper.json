@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 2783.437119590035,
+  "cash": 18523.412994690036,
   "positions": {
     "NSE:SUNPHARMA": {
       "qty": 8,
@@ -10,14 +10,6 @@
       "tp": 1945.64,
       "trail_pct": null,
       "opened": "2026-11-09T03:45:30+00:00"
-    },
-    "NSE:HDFCBANK": {
-      "qty": 20,
-      "avg": 795.80913,
-      "sl": 789.2848,
-      "tp": 808.3804,
-      "trail_pct": null,
-      "opened": "2026-11-09T04:00:46+00:00"
     },
     "NSE:SBIN": {
       "qty": 15,
@@ -28,10 +20,10 @@
       "opened": "2026-11-09T04:00:46+00:00"
     }
   },
-  "realized": 789.8952600000393,
-  "fees": 1294.6176404099997,
-  "trades": 163,
+  "realized": 621.5624600000388,
+  "fees": 1302.4915653099997,
+  "trades": 164,
   "wins": 32,
-  "losses": 48,
+  "losses": 49,
   "memory": {}
 }
