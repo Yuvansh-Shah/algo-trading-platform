@@ -1,6 +1,6 @@
 # Bot leaderboard
 
-_Updated 10 Nov 2026 10:10 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 10 Nov 2026 10:15 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
