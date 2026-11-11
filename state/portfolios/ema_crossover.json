@@ -1,21 +1,12 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 33195.42554689502,
-  "positions": {
-    "NSE:ITC": {
-      "qty": 57,
-      "avg": 282.55649999999997,
-      "sl": 280.62478315814747,
-      "tp": 285.950433683705,
-      "trail_pct": null,
-      "opened": "2026-11-11T04:30:36+00:00"
-    }
-  },
-  "realized": 175.09253000005185,
-  "fees": 873.946483105,
-  "trades": 111,
-  "wins": 20,
+  "cash": 49400.57561854502,
+  "positions": {},
+  "realized": 282.62873000005436,
+  "fees": 882.053111455,
+  "trades": 112,
+  "wins": 21,
   "losses": 35,
   "memory": {}
 }

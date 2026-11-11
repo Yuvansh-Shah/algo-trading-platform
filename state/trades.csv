@@ -765,3 +765,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-11T07:30:39+00:00,supertrend_intraday,NSE:TCS,SELL,6,2462.0075,7.39,-208.34,0,close,Supertrend reversed,
 2026-11-11T08:00:45+00:00,supertrend_intraday,NSE:INFY,SELL,14,1147.6704,8.03,-211.9,0,close,Supertrend reversed,
 2026-11-11T08:00:45+00:00,supertrend_intraday,NSE:AXISBANK,SELL,12,1339.732,8.04,35.94,0,close,Supertrend reversed,
+2026-11-11T09:45:28+00:00,ema_crossover,NSE:ITC,SELL,57,284.4431,8.11,99.43,0,close,intraday square-off,
+2026-11-11T09:45:29+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,12,1332.9334,8.0,-18.0,0,close,intraday square-off,
