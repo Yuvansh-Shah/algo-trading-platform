@@ -745,3 +745,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-09T09:40:33+00:00,momentum_rotation,NSE:ETERNAL,BUY,49,361.5723,19.49,-19.49,49,open,3M perf +16.4%,
 2026-11-09T09:45:27+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,8,1905.0189,7.62,-90.53,0,close,intraday square-off,
 2026-11-09T09:45:27+00:00,tv_rating_scalper,NSE:SBIN,SELL,15,1040.6418,7.8,129.23,0,close,intraday square-off,
+2026-11-11T03:55:25+00:00,ema_crossover,NSE:AXISBANK,BUY,12,1330.166,7.98,-7.98,12,open,"EMA9>21, RSI 57",
+2026-11-11T03:55:28+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,12,1333.7667,8.0,-8.0,12,open,TV 15m +0.51 / 1h +0.47,
+2026-11-11T03:55:28+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,12,1330.166,7.98,-7.98,12,open,TV 15m +0.51 / 1h +0.38,
