@@ -250,7 +250,7 @@ def main(argv=None):
     if cfg.get("notify", {}).get("daily_summary", True) and ist.weekday() < 5 and \
             (ist.hour, ist.minute) >= (15, 35) and meta.get("last_summary") != ist.date().isoformat():
         save_json(STATE / "runtime.json", runtime)
-        board = report.leaderboard(STATE)
+        board = [r for r in report.leaderboard(STATE) if not r["retired"]]
         lines = [f"{r['rank']}. {r['bot']}: {r['ret']:+.2f}% (today {r['today']:+,.0f})" for r in board[:5]]
         if len(board) > 5:
             lines.append("...")

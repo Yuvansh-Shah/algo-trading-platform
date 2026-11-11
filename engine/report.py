@@ -55,7 +55,7 @@ def leaderboard(state: Path) -> list[dict]:
             "bot": name, "style": rt.get("style", ""), "market": rt.get("market", ""),
             "interval": rt.get("interval", ""), "description": rt.get("description", ""),
             "initial": pf["initial"], "equity": eq, "pnl": eq - pf["initial"],
-            "ret": 100 * (eq / pf["initial"] - 1), "today": eq - start,
+            "ret": 100 * (eq / pf["initial"] - 1), "today": 0.0 if rt.get("retired") else eq - start,
             "trades": len(pnls), "win": 100 * len(wins) / len(pnls) if pnls else None,
             "pf": sum(wins) / sum(losses) if losses and sum(losses) else (None if not wins else float("inf")),
             "avg": sum(pnls) / len(pnls) if pnls else None, "mdd": 100 * mdd,
