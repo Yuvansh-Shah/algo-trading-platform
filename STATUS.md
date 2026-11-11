@@ -1,18 +1,18 @@
 # Bot leaderboard
 
-_Updated 11 Nov 2026 13:15 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 11 Nov 2026 13:20 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | **nifty_buy_hold** | benchmark 1D | +12.22% | +6,108 | +666 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
-| 2 | **tv_rating_swing** | swing 1D | +10.77% | +5,383 | -1,096 | -1.45% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
-| 3 | **dual_momentum** | positional 1D | +10.52% | +5,262 | +1,232 | -1.69% | 0 | – | – | -0.8% | 1 | ok |
-| 4 | **momentum_rotation** | positional 1D | +8.35% | +4,174 | -343 | -3.87% | 2 | 100 | ∞ | -4.4% | 3 | ok |
-| 5 | **supertrend_intraday** | intraday 15m | +0.96% | +478 | -257 | -11.26% | 34 | 44 | 1.36 | -2.5% | 2 | ok |
+| 2 | **tv_rating_swing** | swing 1D | +10.82% | +5,410 | -1,068 | -1.39% | 1 | 0 | 0.00 | -2.3% | 3 | ok |
+| 3 | **dual_momentum** | positional 1D | +10.56% | +5,281 | +1,250 | -1.65% | 0 | – | – | -0.8% | 1 | ok |
+| 4 | **momentum_rotation** | positional 1D | +8.39% | +4,195 | -322 | -3.82% | 2 | 100 | ∞ | -4.4% | 3 | ok |
+| 5 | **supertrend_intraday** | intraday 15m | +0.94% | +470 | -265 | -11.27% | 34 | 44 | 1.36 | -2.5% | 2 | ok |
 | 6 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -12.22% | 0 | – | – | 0.0% | 0 | ok |
 | 7 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -12.22% | 0 | – | – | 0.0% | 0 | ok |
-| 8 | **tv_rating_scalper** | intraday 15m | -1.07% | -536 | +129 | -13.29% | 85 | 40 | 1.02 | -5.8% | 1 | ok |
-| 9 | **ema_crossover** | intraday 15m | -1.22% | -611 | -226 | -13.44% | 55 | 36 | 0.93 | -3.6% | 1 | ok |
+| 8 | **tv_rating_scalper** | intraday 15m | -1.05% | -526 | +138 | -13.27% | 85 | 40 | 1.02 | -5.8% | 1 | ok |
+| 9 | **ema_crossover** | intraday 15m | -1.21% | -605 | -220 | -13.43% | 55 | 36 | 0.93 | -3.6% | 1 | ok |
 | 10 | **hourly_macd_swing** | swing 1h | +2.23% | +1,115 | +0 | -9.99% | 5 | 60 | 4.63 | -0.9% | 0 | retired |
 | 11 | **gap_and_go** | intraday 15m | +1.40% | +701 | +0 | -10.81% | 10 | 80 | 2.36 | -1.2% | 0 | retired |
 | 12 | **vwap_pullback** | intraday 15m | +0.98% | +491 | +0 | -11.23% | 41 | 51 | 1.48 | -1.7% | 0 | retired |
