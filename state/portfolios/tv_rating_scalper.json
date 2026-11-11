@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 17374.59115920504,
+  "cash": 1278.330050705039,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 12,
@@ -18,11 +18,19 @@
       "tp": 1351.1784,
       "trail_pct": null,
       "opened": "2026-11-11T03:55:28+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": 10,
+      "avg": 1608.8217,
+      "sl": 1595.632,
+      "tp": 1634.236,
+      "trail_pct": null,
+      "opened": "2026-11-11T04:00:43+00:00"
     }
   },
   "realized": 675.6833700000423,
-  "fees": 1333.9000507949995,
-  "trades": 168,
+  "fees": 1341.9441592949995,
+  "trades": 169,
   "wins": 33,
   "losses": 50,
   "memory": {}
