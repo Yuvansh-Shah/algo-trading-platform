@@ -774,3 +774,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-12T04:15:34+00:00,supertrend_intraday,NSE:ICICIBANK,BUY,10,1590.318,7.95,-7.95,10,open,Supertrend flipped up,
 2026-11-12T04:15:35+00:00,supertrend_intraday,NSE:AXISBANK,BUY,12,1351.0702,8.11,-8.11,12,open,Supertrend flipped up,
 2026-11-12T04:15:35+00:00,supertrend_intraday,NSE:KOTAKBANK,BUY,33,490.3981,8.09,-8.09,33,open,Supertrend flipped up,
+2026-11-12T04:30:31+00:00,ema_crossover,NSE:HDFCBANK,BUY,20,810.9622,8.11,-8.11,20,open,"EMA9>21, RSI 56",
