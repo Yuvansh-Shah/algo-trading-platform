@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 32981.82912005503,
-  "positions": {
-    "NSE:KOTAKBANK": {
-      "qty": 33,
-      "avg": 487.99757999999997,
-      "sl": 483.99679999999995,
-      "tp": 495.7064,
-      "trail_pct": null,
-      "opened": "2026-11-12T04:00:41+00:00"
-    }
-  },
-  "realized": 491.9788900000474,
-  "fees": 1406.2296299449995,
-  "trades": 177,
+  "cash": 49033.33680133003,
+  "positions": {},
+  "realized": 447.59620000004816,
+  "fees": 1414.2593986699994,
+  "trades": 178,
   "wins": 34,
-  "losses": 54,
+  "losses": 55,
   "memory": {}
 }
