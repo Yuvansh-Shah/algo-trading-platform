@@ -779,3 +779,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-12T07:00:39+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,12,1334.733,8.01,-146.44,0,close,stop-loss,
 2026-11-12T07:45:34+00:00,ema_crossover,NSE:BHARTIARTL,SELL,7,2089.0821,7.31,-55.87,0,close,opposite EMA cross,
 2026-11-12T07:45:36+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,33,486.6526,8.03,-52.41,0,close,15m rating faded (-0.09),
+2026-11-12T09:45:26+00:00,ema_crossover,NSE:HDFCBANK,SELL,20,811.5877,8.12,4.39,0,close,intraday square-off,
+2026-11-12T09:45:26+00:00,supertrend_intraday,NSE:ICICIBANK,SELL,10,1586.6826,7.93,-44.29,0,close,intraday square-off,
+2026-11-12T09:45:26+00:00,supertrend_intraday,NSE:AXISBANK,SELL,12,1340.4319,8.04,-135.7,0,close,intraday square-off,
+2026-11-12T09:45:26+00:00,supertrend_intraday,NSE:KOTAKBANK,SELL,33,489.6521,8.08,-32.7,0,close,intraday square-off,

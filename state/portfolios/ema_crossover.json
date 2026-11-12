@@ -1,21 +1,12 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 33110.01580267503,
-  "positions": {
-    "NSE:HDFCBANK": {
-      "qty": 20,
-      "avg": 810.9621599999999,
-      "sl": 804.767942964635,
-      "tp": 823.1641140707297,
-      "trail_pct": null,
-      "opened": "2026-11-12T04:30:31+00:00"
-    }
-  },
-  "realized": 234.06959000005543,
-  "fees": 904.810587325,
-  "trades": 115,
-  "wins": 21,
+  "cash": 49333.652926175026,
+  "positions": {},
+  "realized": 246.57939000005797,
+  "fees": 912.926463825,
+  "trades": 116,
+  "wins": 22,
   "losses": 36,
   "memory": {}
 }
