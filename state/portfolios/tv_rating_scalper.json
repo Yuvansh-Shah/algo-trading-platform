@@ -1,11 +1,36 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 49402.424406485035,
-  "positions": {},
+  "cash": 976.6452372950334,
+  "positions": {
+    "NSE:ITC": {
+      "qty": 56,
+      "avg": 288.25764,
+      "sl": 285.89439999999996,
+      "tp": 292.8112,
+      "trail_pct": null,
+      "opened": "2026-11-12T04:00:41+00:00"
+    },
+    "NSE:KOTAKBANK": {
+      "qty": 33,
+      "avg": 487.99757999999997,
+      "sl": 483.99679999999995,
+      "tp": 495.7064,
+      "trail_pct": null,
+      "opened": "2026-11-12T04:00:41+00:00"
+    },
+    "NSE:AXISBANK": {
+      "qty": 12,
+      "avg": 1346.2692,
+      "sl": 1335.232,
+      "tp": 1367.536,
+      "trail_pct": null,
+      "opened": "2026-11-12T04:00:41+00:00"
+    }
+  },
   "realized": 768.4426500000443,
-  "fees": 1366.0182435149995,
-  "trades": 172,
+  "fees": 1390.2190327049996,
+  "trades": 175,
   "wins": 34,
   "losses": 52,
   "memory": {}
