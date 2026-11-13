@@ -789,3 +789,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-13T04:00:45+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,32,488.5523,7.82,-70.08,0,close,15m rating faded (-0.00),
 2026-11-13T04:00:45+00:00,tv_rating_scalper,NSE:BHARTIARTL,SELL,7,2085.0829,7.3,11.37,0,close,15m rating faded (-0.29),
 2026-11-13T04:10:28+00:00,tv_rating_scalper,NSE:SBIN,SELL,14,1077.2845,7.54,-188.61,0,close,stop-loss,
+2026-11-13T04:15:39+00:00,ema_crossover,NSE:BHARTIARTL,BUY,7,2092.4184,7.32,-7.32,7,open,"EMA9>21, RSI 54",
+2026-11-13T04:15:41+00:00,supertrend_intraday,NSE:SUNPHARMA,BUY,8,1900.58,7.6,-7.6,8,open,Supertrend flipped up,
+2026-11-13T04:15:41+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1900.58,7.6,-7.6,8,open,TV 15m +0.56 / 1h +0.45,

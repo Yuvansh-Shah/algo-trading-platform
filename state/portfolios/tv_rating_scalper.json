@@ -1,11 +1,20 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 48763.243810680025,
-  "positions": {},
+  "cash": 33551.00117052002,
+  "positions": {
+    "NSE:SUNPHARMA": {
+      "qty": 8,
+      "avg": 1900.58004,
+      "sl": 1884.9984,
+      "tp": 1930.6032,
+      "trail_pct": null,
+      "opened": "2026-11-13T04:15:41+00:00"
+    }
+  },
   "realized": 222.9267800000457,
-  "fees": 1459.6829693199993,
-  "trades": 184,
+  "fees": 1467.2852894799994,
+  "trades": 185,
   "wins": 35,
   "losses": 57,
   "memory": {}
