@@ -1,7 +1,7 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 34878.458721175026,
+  "cash": 22302.960774505027,
   "positions": {
     "NSE:SUNPHARMA": {
       "qty": 8,
@@ -10,11 +10,19 @@
       "tp": 1944.8290328348412,
       "trail_pct": null,
       "opened": "2026-11-13T04:15:41+00:00"
+    },
+    "NSE:LT": {
+      "qty": 3,
+      "avg": 4189.7377799999995,
+      "sl": 4136.599219076135,
+      "tp": 4282.70156184773,
+      "trail_pct": null,
+      "opened": "2026-11-13T04:45:31+00:00"
     }
   },
   "realized": 714.0217900000406,
-  "fees": 630.922748825,
-  "trades": 79,
+  "fees": 637.207355495,
+  "trades": 80,
   "wins": 16,
   "losses": 23,
   "memory": {}
