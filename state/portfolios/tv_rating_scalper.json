@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33837.54171333002,
-  "positions": {
-    "NSE:BHARTIARTL": {
-      "qty": 7,
-      "avg": 2099.61984,
-      "sl": 2082.4064,
-      "tp": 2132.7871999999998,
-      "trail_pct": null,
-      "opened": "2026-11-13T05:00:51+00:00"
-    }
-  },
-  "realized": 31.851200000046447,
-  "fees": 1496.9706066699994,
-  "trades": 189,
-  "wins": 35,
+  "cash": 48661.55911677002,
+  "positions": {},
+  "realized": 165.9454400000468,
+  "fees": 1504.3863232299993,
+  "trades": 190,
+  "wins": 36,
   "losses": 59,
   "memory": {}
 }
