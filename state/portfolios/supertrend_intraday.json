@@ -1,21 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 37434.762608745026,
-  "positions": {
-    "NSE:LT": {
-      "qty": 3,
-      "avg": 4189.7377799999995,
-      "sl": 4136.599219076135,
-      "tp": 4282.70156184773,
-      "trail_pct": null,
-      "opened": "2026-11-13T04:45:31+00:00"
-    }
-  },
-  "realized": 648.7529900000408,
-  "fees": 644.777041255,
-  "trades": 81,
+  "cash": 49825.38433867503,
+  "positions": {},
+  "realized": 476.359790000044,
+  "fees": 650.975451325,
+  "trades": 82,
   "wins": 16,
-  "losses": 24,
+  "losses": 25,
   "memory": {}
 }

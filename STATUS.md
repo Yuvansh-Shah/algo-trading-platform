@@ -1,30 +1,30 @@
 # Bot leaderboard
 
-_Updated 13 Nov 2026 14:00 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 13 Nov 2026 14:05 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **nifty_buy_hold** | benchmark 1D | +11.45% | +5,727 | -330 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
-| 2 | **dual_momentum** | positional 1D | +10.44% | +5,218 | -497 | -1.02% | 0 | – | – | -1.2% | 1 | ok |
-| 3 | **tv_rating_swing** | swing 1D | +10.39% | +5,194 | -100 | -1.07% | 1 | 0 | 0.00 | -2.4% | 3 | ok |
-| 4 | **momentum_rotation** | positional 1D | +8.45% | +4,224 | -196 | -3.01% | 2 | 100 | ∞ | -4.4% | 3 | ok |
-| 5 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -11.45% | 0 | – | – | 0.0% | 0 | ok |
-| 6 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -11.45% | 0 | – | – | 0.0% | 0 | ok |
-| 7 | **supertrend_intraday** | intraday 15m | -0.30% | -152 | -242 | -11.76% | 40 | 40 | 1.12 | -2.5% | 1 | ok |
-| 8 | **ema_crossover** | intraday 15m | -1.59% | -797 | -131 | -13.05% | 61 | 38 | 0.92 | -3.6% | 0 | ok |
-| 9 | **tv_rating_scalper** | intraday 15m | -2.66% | -1,329 | -331 | -14.11% | 94 | 37 | 0.90 | -5.8% | 1 | ok |
-| 10 | **hourly_macd_swing** | swing 1h | +2.23% | +1,115 | +0 | -9.23% | 5 | 60 | 4.63 | -0.9% | 0 | retired |
-| 11 | **gap_and_go** | intraday 15m | +1.40% | +701 | +0 | -10.05% | 10 | 80 | 2.36 | -1.2% | 0 | retired |
-| 12 | **vwap_pullback** | intraday 15m | +0.98% | +491 | +0 | -10.47% | 41 | 51 | 1.48 | -1.7% | 0 | retired |
-| 13 | **donchian_turtle** | swing 1D | +0.79% | +395 | +0 | -10.66% | 3 | 67 | 2.04 | -2.5% | 0 | retired |
-| 14 | **orb_breakout** | intraday 15m | +0.54% | +272 | +0 | -10.91% | 15 | 60 | 1.51 | -1.5% | 0 | retired |
-| 15 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -11.45% | 0 | – | – | 0.0% | 0 | retired |
-| 16 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -11.45% | 0 | – | – | 0.0% | 0 | retired |
-| 17 | **vwap_reversion** | intraday 15m | -0.33% | -166 | +0 | -11.79% | 35 | 57 | 1.09 | -1.3% | 0 | retired |
-| 18 | **bb_squeeze** | intraday 15m | -0.98% | -492 | +0 | -12.44% | 20 | 40 | 0.68 | -1.4% | 0 | retired |
-| 19 | **macd_adx** | intraday 15m | -1.02% | -512 | +0 | -12.48% | 22 | 32 | 0.71 | -1.4% | 0 | retired |
-| 20 | **rsi2_scalper** | scalp 15m | -1.53% | -765 | +0 | -12.99% | 35 | 49 | 0.61 | -1.5% | 0 | retired |
-| 21 | **crypto_supertrend** | crypto 1h | -8.03% | -4,014 | +0 | -19.48% | 13 | 15 | 0.05 | -8.1% | 0 | retired |
+| 1 | **nifty_buy_hold** | benchmark 1D | +11.38% | +5,689 | -369 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
+| 2 | **dual_momentum** | positional 1D | +10.38% | +5,191 | -525 | -1.00% | 0 | – | – | -1.2% | 1 | ok |
+| 3 | **tv_rating_swing** | swing 1D | +10.30% | +5,148 | -147 | -1.08% | 1 | 0 | 0.00 | -2.4% | 3 | ok |
+| 4 | **momentum_rotation** | positional 1D | +8.37% | +4,187 | -233 | -3.00% | 2 | 100 | ∞ | -4.4% | 3 | ok |
+| 5 | **bb_reversion_daily** | swing 1D | +0.00% | +0 | +0 | -11.38% | 0 | – | – | 0.0% | 0 | ok |
+| 6 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -11.38% | 0 | – | – | 0.0% | 0 | ok |
+| 7 | **supertrend_intraday** | intraday 15m | -0.35% | -175 | -265 | -11.73% | 41 | 39 | 1.05 | -2.5% | 0 | ok |
+| 8 | **ema_crossover** | intraday 15m | -1.59% | -797 | -131 | -12.97% | 61 | 38 | 0.92 | -3.6% | 0 | ok |
+| 9 | **tv_rating_scalper** | intraday 15m | -2.69% | -1,343 | -345 | -14.07% | 94 | 37 | 0.90 | -5.8% | 1 | ok |
+| 10 | **hourly_macd_swing** | swing 1h | +2.23% | +1,115 | +0 | -9.15% | 5 | 60 | 4.63 | -0.9% | 0 | retired |
+| 11 | **gap_and_go** | intraday 15m | +1.40% | +701 | +0 | -9.98% | 10 | 80 | 2.36 | -1.2% | 0 | retired |
+| 12 | **vwap_pullback** | intraday 15m | +0.98% | +491 | +0 | -10.40% | 41 | 51 | 1.48 | -1.7% | 0 | retired |
+| 13 | **donchian_turtle** | swing 1D | +0.79% | +395 | +0 | -10.59% | 3 | 67 | 2.04 | -2.5% | 0 | retired |
+| 14 | **orb_breakout** | intraday 15m | +0.54% | +272 | +0 | -10.83% | 15 | 60 | 1.51 | -1.5% | 0 | retired |
+| 15 | **connors_rsi2** | swing 1D | +0.00% | +0 | +0 | -11.38% | 0 | – | – | 0.0% | 0 | retired |
+| 16 | **ema_trend_swing** | swing 1D | +0.00% | +0 | +0 | -11.38% | 0 | – | – | 0.0% | 0 | retired |
+| 17 | **vwap_reversion** | intraday 15m | -0.33% | -166 | +0 | -11.71% | 35 | 57 | 1.09 | -1.3% | 0 | retired |
+| 18 | **bb_squeeze** | intraday 15m | -0.98% | -492 | +0 | -12.36% | 20 | 40 | 0.68 | -1.4% | 0 | retired |
+| 19 | **macd_adx** | intraday 15m | -1.02% | -512 | +0 | -12.40% | 22 | 32 | 0.71 | -1.4% | 0 | retired |
+| 20 | **rsi2_scalper** | scalp 15m | -1.53% | -765 | +0 | -12.91% | 35 | 49 | 0.61 | -1.5% | 0 | retired |
+| 21 | **crypto_supertrend** | crypto 1h | -8.03% | -4,014 | +0 | -19.41% | 13 | 15 | 0.05 | -8.1% | 0 | retired |
 
 <details><summary>What each bot does</summary>
 
@@ -66,13 +66,13 @@ _Updated 13 Nov 2026 14:00 IST · paper trading · every bot started with ₹50,
 | momentum_rotation | NSE:KOTAKBANK | 37 | 439.54 | 386.72 | – | 13 Oct 15:10 |
 | momentum_rotation | NSE:DRREDDY | 12 | 1,365.27 | 1,201.20 | – | 04 Nov 15:10 |
 | momentum_rotation | NSE:ETERNAL | 49 | 361.57 | 318.12 | – | 09 Nov 15:10 |
-| supertrend_intraday | NSE:LT | 3 | 4,189.74 | 4,136.60 | 4,282.70 | 13 Nov 10:15 |
 | tv_rating_scalper | NSE:BHARTIARTL | 7 | 2,099.62 | 2,082.41 | 2,132.79 | 13 Nov 10:30 |
 
 ## Last 30 fills
 
 | Time (IST) | Bot | Side | Qty | Symbol | Price | P&L | Reason |
 |---|---|---|---:|---|---:|---:|---|
+| 13 Nov 14:05 | supertrend_intraday | SELL | 3 | NSE:LT | 4,132.27 | -179 | stop-loss |
 | 13 Nov 12:55 | tv_rating_scalper | SELL | 11 | NSE:RELIANCE | 1,336.73 | -133 | stop-loss |
 | 13 Nov 12:30 | ema_crossover | SELL | 12 | NSE:RELIANCE | 1,338.73 | -121 | stop-loss |
 | 13 Nov 12:15 | tv_rating_scalper | SELL | 8 | NSE:SUNPHARMA | 1,892.42 | -73 | 15m rating faded (-0.07) |
@@ -102,4 +102,3 @@ _Updated 13 Nov 2026 14:00 IST · paper trading · every bot started with ₹50,
 | 12 Nov 12:30 | tv_rating_scalper | SELL | 12 | NSE:AXISBANK | 1,334.73 | -146 | stop-loss |
 | 12 Nov 12:20 | tv_rating_scalper | SELL | 56 | NSE:ITC | 285.79 | -146 | stop-loss |
 | 12 Nov 10:00 | ema_crossover | BUY | 20 | NSE:HDFCBANK | 810.96 |  | EMA9>21, RSI 56 |
-| 12 Nov 09:45 | supertrend_intraday | BUY | 33 | NSE:KOTAKBANK | 490.40 |  | Supertrend flipped up |

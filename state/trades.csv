@@ -803,3 +803,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-13T06:45:34+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,8,1892.4214,7.57,-72.84,0,close,15m rating faded (-0.07),
 2026-11-13T07:00:44+00:00,ema_crossover,NSE:RELIANCE,SELL,12,1338.7322,8.03,-121.28,0,close,stop-loss,
 2026-11-13T07:25:32+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,11,1336.7326,7.35,-133.16,0,close,stop-loss,
+2026-11-13T08:35:19+00:00,supertrend_intraday,NSE:LT,SELL,3,4132.2734,6.2,-178.59,0,close,stop-loss,
