@@ -1,11 +1,36 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 49033.33680133003,
-  "positions": {},
+  "cash": 3474.6634886500287,
+  "positions": {
+    "NSE:SBIN": {
+      "qty": 14,
+      "avg": 1090.218,
+      "sl": 1081.28,
+      "tp": 1107.44,
+      "trail_pct": null,
+      "opened": "2026-11-13T03:55:32+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": 7,
+      "avg": 2082.4164,
+      "sl": 2065.344,
+      "tp": 2115.312,
+      "trail_pct": null,
+      "opened": "2026-11-13T03:55:32+00:00"
+    },
+    "NSE:KOTAKBANK": {
+      "qty": 32,
+      "avg": 490.49807999999996,
+      "sl": 486.47679999999997,
+      "tp": 498.2464,
+      "trail_pct": null,
+      "opened": "2026-11-13T03:55:32+00:00"
+    }
+  },
   "realized": 447.59620000004816,
-  "fees": 1414.2593986699994,
-  "trades": 178,
+  "fees": 1437.0273513499992,
+  "trades": 181,
   "wins": 34,
   "losses": 55,
   "memory": {}
