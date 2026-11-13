@@ -792,3 +792,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-13T04:15:39+00:00,ema_crossover,NSE:BHARTIARTL,BUY,7,2092.4184,7.32,-7.32,7,open,"EMA9>21, RSI 54",
 2026-11-13T04:15:41+00:00,supertrend_intraday,NSE:SUNPHARMA,BUY,8,1900.58,7.6,-7.6,8,open,Supertrend flipped up,
 2026-11-13T04:15:41+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1900.58,7.6,-7.6,8,open,TV 15m +0.56 / 1h +0.45,
+2026-11-13T04:30:34+00:00,ema_crossover,NSE:INFY,BUY,14,1150.43,8.05,-8.05,14,open,"EMA9>21, RSI 56",

@@ -1,7 +1,7 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 34679.40066177503,
+  "cash": 18565.327091495026,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": 7,
@@ -10,11 +10,19 @@
       "tp": 2112.4123450058705,
       "trail_pct": null,
       "opened": "2026-11-13T04:15:39+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 14,
+      "avg": 1150.43004,
+      "sl": 1143.141425021325,
+      "tp": 1161.9171499573506,
+      "trail_pct": null,
+      "opened": "2026-11-13T04:30:34+00:00"
     }
   },
   "realized": 246.57939000005797,
-  "fees": 920.2499282250001,
-  "trades": 117,
+  "fees": 928.302938505,
+  "trades": 118,
   "wins": 22,
   "losses": 36,
   "memory": {}
