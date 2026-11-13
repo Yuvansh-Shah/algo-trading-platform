@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33688.80180218002,
-  "positions": {
-    "NSE:SBIN": {
-      "qty": 14,
-      "avg": 1090.218,
-      "sl": 1081.28,
-      "tp": 1107.44,
-      "trail_pct": null,
-      "opened": "2026-11-13T03:55:32+00:00"
-    }
-  },
-  "realized": 403.99578000004703,
-  "fees": 1452.1419778199993,
-  "trades": 183,
+  "cash": 48763.243810680025,
+  "positions": {},
+  "realized": 222.9267800000457,
+  "fees": 1459.6829693199993,
+  "trades": 184,
   "wins": 35,
-  "losses": 56,
+  "losses": 57,
   "memory": {}
 }

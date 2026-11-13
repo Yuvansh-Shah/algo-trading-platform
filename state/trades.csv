@@ -788,3 +788,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-13T03:55:32+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,32,490.4981,7.85,-7.85,32,open,TV 15m +0.51 / 1h +0.38,
 2026-11-13T04:00:45+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,32,488.5523,7.82,-70.08,0,close,15m rating faded (-0.00),
 2026-11-13T04:00:45+00:00,tv_rating_scalper,NSE:BHARTIARTL,SELL,7,2085.0829,7.3,11.37,0,close,15m rating faded (-0.29),
+2026-11-13T04:10:28+00:00,tv_rating_scalper,NSE:SBIN,SELL,14,1077.2845,7.54,-188.61,0,close,stop-loss,
