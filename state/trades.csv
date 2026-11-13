@@ -794,3 +794,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-13T04:15:41+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1900.58,7.6,-7.6,8,open,TV 15m +0.56 / 1h +0.45,
 2026-11-13T04:30:34+00:00,ema_crossover,NSE:INFY,BUY,14,1150.43,8.05,-8.05,14,open,"EMA9>21, RSI 56",
 2026-11-13T04:45:31+00:00,supertrend_intraday,NSE:LT,BUY,3,4189.7378,6.28,-6.28,3,open,Supertrend flipped up,
+2026-11-13T05:00:44+00:00,ema_crossover,NSE:RELIANCE,BUY,12,1348.1696,8.09,-8.09,12,open,"EMA9>21, RSI 65",
+2026-11-13T05:00:51+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,11,1348.1696,7.41,-7.41,11,open,TV 15m +0.56 / 1h +0.56,
+2026-11-13T05:00:51+00:00,tv_rating_scalper,NSE:BHARTIARTL,BUY,7,2099.6198,7.35,-7.35,7,open,TV 15m +0.56 / 1h +0.47,

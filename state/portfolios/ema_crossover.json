@@ -1,7 +1,7 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 18565.327091495026,
+  "cash": 2379.2031140150248,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": 7,
@@ -18,11 +18,19 @@
       "tp": 1161.9171499573506,
       "trail_pct": null,
       "opened": "2026-11-13T04:30:34+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": 12,
+      "avg": 1348.16958,
+      "sl": 1339.3166703879124,
+      "tp": 1363.266659224175,
+      "trail_pct": null,
+      "opened": "2026-11-13T05:00:44+00:00"
     }
   },
   "realized": 246.57939000005797,
-  "fees": 928.302938505,
-  "trades": 118,
+  "fees": 936.3919559850001,
+  "trades": 119,
   "wins": 22,
   "losses": 36,
   "memory": {}

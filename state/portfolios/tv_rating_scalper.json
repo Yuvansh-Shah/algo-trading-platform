@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33551.00117052002,
+  "cash": 4009.033308390024,
   "positions": {
     "NSE:SUNPHARMA": {
       "qty": 8,
@@ -10,11 +10,27 @@
       "tp": 1930.6032,
       "trail_pct": null,
       "opened": "2026-11-13T04:15:41+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": 11,
+      "avg": 1348.16958,
+      "sl": 1337.1168,
+      "tp": 1369.4664,
+      "trail_pct": null,
+      "opened": "2026-11-13T05:00:51+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": 7,
+      "avg": 2099.61984,
+      "sl": 2082.4064,
+      "tp": 2132.7871999999998,
+      "trail_pct": null,
+      "opened": "2026-11-13T05:00:51+00:00"
     }
   },
   "realized": 222.9267800000457,
-  "fees": 1467.2852894799994,
-  "trades": 185,
+  "fees": 1482.0488916099994,
+  "trades": 187,
   "wins": 35,
   "losses": 57,
   "memory": {}
