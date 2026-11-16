@@ -817,3 +817,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-16T04:30:43+00:00,ema_crossover,NSE:HDFCBANK,BUY,20,806.3612,8.06,-8.06,20,open,"EMA9>21, RSI 62",
 2026-11-16T04:30:44+00:00,ema_crossover,NSE:INFY,BUY,14,1155.8311,8.09,-8.09,14,open,"EMA9>21, RSI 70",
 2026-11-16T04:30:48+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,20,806.3612,8.06,-8.06,20,open,TV 15m +0.65 / 1h +0.38,
+2026-11-16T05:15:36+00:00,ema_crossover,NSE:INFY,SELL,14,1147.1705,8.03,-129.28,0,close,stop-loss,
