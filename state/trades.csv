@@ -819,3 +819,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-16T04:30:48+00:00,tv_rating_scalper,NSE:HDFCBANK,BUY,20,806.3612,8.06,-8.06,20,open,TV 15m +0.65 / 1h +0.38,
 2026-11-16T05:15:36+00:00,ema_crossover,NSE:INFY,SELL,14,1147.1705,8.03,-129.28,0,close,stop-loss,
 2026-11-16T05:30:41+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,11,1337.7324,7.36,-31.95,0,close,15m rating faded (-0.11),
+2026-11-16T06:00:44+00:00,ema_crossover,NSE:RELIANCE,SELL,12,1335.9328,8.02,-56.44,0,close,opposite EMA cross,
