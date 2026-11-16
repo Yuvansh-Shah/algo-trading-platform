@@ -822,3 +822,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-16T06:00:44+00:00,ema_crossover,NSE:RELIANCE,SELL,12,1335.9328,8.02,-56.44,0,close,opposite EMA cross,
 2026-11-16T06:45:52+00:00,ema_crossover,NSE:HDFCBANK,SELL,20,813.1373,8.13,127.39,0,close,target,
 2026-11-16T08:10:29+00:00,supertrend_intraday,NSE:INFY,SELL,14,1138.9722,7.97,-152.98,0,close,stop-loss,
+2026-11-16T09:45:30+00:00,supertrend_intraday,NSE:ICICIBANK,SELL,10,1579.2841,7.9,-75.23,0,close,intraday square-off,
+2026-11-16T09:45:30+00:00,supertrend_intraday,NSE:SBIN,SELL,14,1087.9324,7.62,-135.53,0,close,intraday square-off,
+2026-11-16T09:45:30+00:00,tv_rating_scalper,NSE:SBIN,SELL,14,1087.9324,7.62,-56.42,0,close,intraday square-off,
+2026-11-16T09:45:30+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,20,813.3873,8.13,132.39,0,close,intraday square-off,
