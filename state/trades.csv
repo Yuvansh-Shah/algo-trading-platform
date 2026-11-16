@@ -810,3 +810,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-16T03:55:28+00:00,supertrend_intraday,NSE:ICICIBANK,BUY,10,1586.0171,7.93,-7.93,10,open,Supertrend flipped up,
 2026-11-16T03:55:29+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,11,1339.9679,7.37,-7.37,11,open,TV 15m +0.51 / 1h +0.47,
 2026-11-16T03:55:29+00:00,tv_rating_scalper,NSE:BHARTIARTL,BUY,7,2129.2258,7.45,-7.45,7,open,TV 15m +0.51 / 1h +0.54,
+2026-11-16T04:00:50+00:00,tv_rating_scalper,NSE:SBIN,BUY,14,1091.4182,7.64,-7.64,14,open,TV 15m +0.69 / 1h +0.51,

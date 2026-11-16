@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 19002.509342940022,
+  "cash": 3715.0140552600224,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 11,
@@ -18,11 +18,19 @@
       "tp": 2162.8608000000004,
       "trail_pct": null,
       "opened": "2026-11-16T03:55:29+00:00"
+    },
+    "NSE:SBIN": {
+      "qty": 14,
+      "avg": 1091.41824,
+      "sl": 1082.4704,
+      "tp": 1108.6592,
+      "trail_pct": null,
+      "opened": "2026-11-16T04:00:50+00:00"
     }
   },
   "realized": 165.9454400000468,
-  "fees": 1519.2084370599994,
-  "trades": 192,
+  "fees": 1526.8483647399994,
+  "trades": 193,
   "wins": 36,
   "losses": 59,
   "memory": {}
