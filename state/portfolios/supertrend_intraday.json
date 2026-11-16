@@ -1,11 +1,20 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 49825.38433867503,
-  "positions": {},
+  "cash": 33957.28285297503,
+  "positions": {
+    "NSE:ICICIBANK": {
+      "qty": 10,
+      "avg": 1586.01714,
+      "sl": 1562.2132314580608,
+      "tp": 1608.373537083878,
+      "trail_pct": null,
+      "opened": "2026-11-16T03:55:28+00:00"
+    }
+  },
   "realized": 476.359790000044,
-  "fees": 650.975451325,
-  "trades": 82,
+  "fees": 658.905537025,
+  "trades": 83,
   "wins": 16,
   "losses": 25,
   "memory": {}

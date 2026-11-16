@@ -1,11 +1,28 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 48661.55911677002,
-  "positions": {},
+  "cash": 19002.509342940022,
+  "positions": {
+    "NSE:RELIANCE": {
+      "qty": 11,
+      "avg": 1339.96794,
+      "sl": 1328.9824,
+      "tp": 1361.1352000000002,
+      "trail_pct": null,
+      "opened": "2026-11-16T03:55:29+00:00"
+    },
+    "NSE:BHARTIARTL": {
+      "qty": 7,
+      "avg": 2129.2257600000003,
+      "sl": 2111.7696,
+      "tp": 2162.8608000000004,
+      "trail_pct": null,
+      "opened": "2026-11-16T03:55:29+00:00"
+    }
+  },
   "realized": 165.9454400000468,
-  "fees": 1504.3863232299993,
-  "trades": 190,
+  "fees": 1519.2084370599994,
+  "trades": 192,
   "wins": 36,
   "losses": 59,
   "memory": {}

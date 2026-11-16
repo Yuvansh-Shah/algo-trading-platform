@@ -1,11 +1,20 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 49202.508529625025,
-  "positions": {},
+  "cash": 33114.853441985026,
+  "positions": {
+    "NSE:RELIANCE": {
+      "qty": 12,
+      "avg": 1339.96794,
+      "sl": 1334.6680260447629,
+      "tp": 1352.1639479104745,
+      "trail_pct": null,
+      "opened": "2026-11-16T03:55:22+00:00"
+    }
+  },
   "realized": 162.32385000005513,
-  "fees": 959.815320375,
-  "trades": 122,
+  "fees": 967.8551280150001,
+  "trades": 123,
   "wins": 23,
   "losses": 38,
   "memory": {}
