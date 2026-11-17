@@ -843,3 +843,8 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-17T06:45:28+00:00,ema_crossover,NSE:AXISBANK,SELL,11,1368.1263,7.52,153.69,0,close,target,
 2026-11-17T07:00:41+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,11,1370.4259,7.54,230.68,0,close,target,
 2026-11-17T08:00:54+00:00,supertrend_intraday,NSE:TCS,SELL,6,2415.8167,7.25,24.76,0,close,Supertrend reversed,
+2026-11-17T09:45:25+00:00,ema_crossover,NSE:ICICIBANK,SELL,10,1607.4784,8.04,74.55,0,close,intraday square-off,
+2026-11-17T09:45:25+00:00,supertrend_intraday,NSE:LT,SELL,3,4174.365,6.26,27.74,0,close,intraday square-off,
+2026-11-17T09:45:25+00:00,supertrend_intraday,NSE:SUNPHARMA,SELL,8,1871.3257,7.49,-51.88,0,close,intraday square-off,
+2026-11-17T09:45:25+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,32,496.0008,7.94,32.12,0,close,intraday square-off,
+2026-11-17T09:45:25+00:00,tv_rating_scalper,NSE:ICICIBANK,SELL,10,1607.4784,8.04,74.55,0,close,intraday square-off,
