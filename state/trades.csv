@@ -833,3 +833,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-17T04:15:37+00:00,ema_crossover,NSE:LT,BUY,3,4163.0324,6.24,-6.24,3,open,"EMA9>21, RSI 68",
 2026-11-17T04:15:38+00:00,supertrend_intraday,NSE:TCS,BUY,6,2410.482,7.23,-7.23,6,open,Supertrend flipped up,
 2026-11-17T04:15:39+00:00,supertrend_intraday,NSE:LT,BUY,3,4163.0324,6.24,-6.24,3,open,Supertrend flipped up,
+2026-11-17T04:30:37+00:00,ema_crossover,NSE:RELIANCE,BUY,12,1340.368,8.04,-8.04,12,open,"EMA9>21, RSI 53",
