@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 2148.353677290026,
+  "cash": 2182.129742910027,
   "positions": {
-    "NSE:RELIANCE": {
-      "qty": 12,
-      "avg": 1339.2678,
-      "sl": 1328.288,
-      "tp": 1360.424,
-      "trail_pct": null,
-      "opened": "2026-11-17T03:55:32+00:00"
-    },
     "NSE:AXISBANK": {
       "qty": 11,
       "avg": 1348.7697,
@@ -26,12 +18,20 @@
       "tp": 502.5644,
       "trail_pct": null,
       "opened": "2026-11-17T04:00:44+00:00"
+    },
+    "NSE:ICICIBANK": {
+      "qty": 10,
+      "avg": 1599.2197800000001,
+      "sl": 1586.1088,
+      "tp": 1624.4824,
+      "trail_pct": null,
+      "opened": "2026-11-17T04:45:35+00:00"
     }
   },
-  "realized": 476.96270000004984,
-  "fees": 1588.9629627099994,
-  "trades": 201,
+  "realized": 447.74006000004897,
+  "fees": 1604.9800570899995,
+  "trades": 203,
   "wins": 38,
-  "losses": 61,
+  "losses": 62,
   "memory": {}
 }

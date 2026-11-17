@@ -834,3 +834,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-17T04:15:38+00:00,supertrend_intraday,NSE:TCS,BUY,6,2410.482,7.23,-7.23,6,open,Supertrend flipped up,
 2026-11-17T04:15:39+00:00,supertrend_intraday,NSE:LT,BUY,3,4163.0324,6.24,-6.24,3,open,Supertrend flipped up,
 2026-11-17T04:30:37+00:00,ema_crossover,NSE:RELIANCE,BUY,12,1340.368,8.04,-8.04,12,open,"EMA9>21, RSI 53",
+2026-11-17T04:45:29+00:00,ema_crossover,NSE:RELIANCE,SELL,12,1337.7324,8.03,-39.65,0,close,opposite EMA cross,
+2026-11-17T04:45:30+00:00,ema_crossover,NSE:ICICIBANK,BUY,10,1599.2198,8.0,-8.0,10,open,"EMA9>21, RSI 71",
+2026-11-17T04:45:35+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,12,1336.8326,8.02,-37.24,0,close,15m rating faded (-0.18),
+2026-11-17T04:45:35+00:00,tv_rating_scalper,NSE:ICICIBANK,BUY,10,1599.2198,8.0,-8.0,10,open,TV 15m +0.51 / 1h +0.47,
