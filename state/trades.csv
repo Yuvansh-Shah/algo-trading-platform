@@ -826,3 +826,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-16T09:45:30+00:00,supertrend_intraday,NSE:SBIN,SELL,14,1087.9324,7.62,-135.53,0,close,intraday square-off,
 2026-11-16T09:45:30+00:00,tv_rating_scalper,NSE:SBIN,SELL,14,1087.9324,7.62,-56.42,0,close,intraday square-off,
 2026-11-16T09:45:30+00:00,tv_rating_scalper,NSE:HDFCBANK,SELL,20,813.3873,8.13,132.39,0,close,intraday square-off,
+2026-11-17T03:55:32+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,12,1339.2678,8.04,-8.04,12,open,TV 15m +0.51 / 1h +0.47,
+2026-11-17T03:55:32+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,11,1348.7697,7.42,-7.42,11,open,TV 15m +0.51 / 1h +0.42,

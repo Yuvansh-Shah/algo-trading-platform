@@ -5,10 +5,10 @@
     "style": "swing",
     "description": "Close below lower BB(20,2) while above SMA200 -> buy; exit at the middle band",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 50128.8
+      "date": "2026-11-17",
+      "start_equity": 49888.8
     },
-    "equity": 49888.2,
+    "equity": 49888.8,
     "started": true,
     "last_bar": "2026-11-16",
     "last_run": "2026-11-16T09:40:36+00:00"
@@ -79,11 +79,11 @@
     "style": "intraday",
     "description": "EMA 9/21 cross + RSI + VWAP, with the NIFTY trend, entries before 11:00; 1.5/3 ATR",
     "started": true,
-    "last_bar": "1994246",
-    "last_run": "2026-11-16T09:30:36+00:00",
+    "last_bar": "1994319",
+    "last_run": "2026-11-17T03:55:24+00:00",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 49191.25
+      "date": "2026-11-17",
+      "start_equity": 49119.99
     },
     "equity": 49119.99
   },
@@ -108,10 +108,10 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1994247",
-    "last_run": "2026-11-16T09:45:29+00:00",
+    "last_bar": "1994319",
+    "last_run": "2026-11-17T03:55:24+00:00",
     "day": {
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "start_equity": 50000.0
     },
     "equity": 50000.0
@@ -167,10 +167,10 @@
     "style": "positional",
     "description": "Hold top-3 NIFTY 50 by 3M return (above SMA50, TV rating > 0); rotate out below top 10",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 54467.19
+      "date": "2026-11-17",
+      "start_equity": 54886.19
     },
-    "equity": 54767.64,
+    "equity": 54886.19,
     "started": true,
     "last_bar": "2026-11-16",
     "last_run": "2026-11-16T09:40:36+00:00"
@@ -181,10 +181,10 @@
     "style": "benchmark",
     "description": "Benchmark - 100% NIFTY 50 ETF (NIFTYBEES), buy once and hold",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 55754.32
+      "date": "2026-11-17",
+      "start_equity": 55940.56
     },
-    "equity": 55934.8,
+    "equity": 55940.56,
     "started": true,
     "last_bar": "2026-11-16",
     "last_run": "2026-11-16T04:15:24+00:00"
@@ -225,11 +225,11 @@
     "style": "intraday",
     "description": "Supertrend 10/3 flips on 15m with the NIFTY trend, entries before 11:00; 2R",
     "started": true,
-    "last_bar": "1994246",
-    "last_run": "2026-11-16T09:30:36+00:00",
+    "last_bar": "1994319",
+    "last_run": "2026-11-17T03:55:24+00:00",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 49814.28
+      "date": "2026-11-17",
+      "start_equity": 49437.99
     },
     "equity": 49437.99
   },
@@ -239,13 +239,13 @@
     "style": "intraday",
     "description": "TradingView 15m STRONG BUY/SELL + 1h agreement, with the NIFTY trend, entries before 11:00",
     "started": true,
-    "last_bar": "1994246",
-    "last_run": "2026-11-16T09:30:36+00:00",
+    "last_bar": "1994319",
+    "last_run": "2026-11-17T03:55:24+00:00",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 48640.81
+      "date": "2026-11-17",
+      "start_equity": 48889.74
     },
-    "equity": 48911.37
+    "equity": 48889.74
   },
   "tv_rating_swing": {
     "market": "NSE",
@@ -253,10 +253,10 @@
     "style": "swing",
     "description": "NIFTY 50 names rated STRONG BUY (1D) + BUY (1W) by TradingView; 7% trailing stop",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 55283.89
+      "date": "2026-11-17",
+      "start_equity": 55342.49
     },
-    "equity": 55247.69,
+    "equity": 55342.49,
     "started": true,
     "last_bar": "2026-11-16",
     "last_run": "2026-11-16T09:40:36+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-11-17T03:50:26+00:00",
+    "last_engine_run": "2026-11-17T03:55:24+00:00",
     "last_summary": "2026-11-16"
   },
   "dual_momentum": {
@@ -301,10 +301,10 @@
     "style": "positional",
     "description": "Monthly: hold the strongest of NIFTY / Bank NIFTY / Next 50 / Gold ETFs by 6M return, else cash",
     "day": {
-      "date": "2026-11-16",
-      "start_equity": 55227.07
+      "date": "2026-11-17",
+      "start_equity": 55756.83
     },
-    "equity": 55688.89,
+    "equity": 55756.83,
     "started": true,
     "last_bar": "2026-11-16",
     "last_run": "2026-11-16T09:40:36+00:00"
