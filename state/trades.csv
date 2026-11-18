@@ -848,3 +848,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-17T09:45:25+00:00,supertrend_intraday,NSE:SUNPHARMA,SELL,8,1871.3257,7.49,-51.88,0,close,intraday square-off,
 2026-11-17T09:45:25+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,32,496.0008,7.94,32.12,0,close,intraday square-off,
 2026-11-17T09:45:25+00:00,tv_rating_scalper,NSE:ICICIBANK,SELL,10,1607.4784,8.04,74.55,0,close,intraday square-off,
+2026-11-18T03:55:30+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,11,1369.1738,7.53,-7.53,11,open,TV 15m +0.51 / 1h +0.45,
