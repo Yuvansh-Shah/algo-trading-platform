@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_swing",
   "initial": 50000.0,
-  "cash": 17820.23490446,
+  "cash": 1713.3195655400032,
   "positions": {
     "NSE:ICICIBANK": {
       "qty": 12,
@@ -18,11 +18,19 @@
       "tp": null,
       "trail_pct": 7,
       "opened": "2026-10-19T09:35:24+00:00"
+    },
+    "NSE:EICHERMOT": {
+      "qty": 2,
+      "avg": 8044.6086,
+      "sl": null,
+      "tp": null,
+      "trail_pct": 7,
+      "opened": "2026-11-19T09:35:35+00:00"
     }
   },
   "realized": 631.4658,
-  "fees": 59.481855540000005,
-  "trades": 6,
+  "fees": 77.17999446,
+  "trades": 7,
   "wins": 1,
   "losses": 1,
   "memory": {}
