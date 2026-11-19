@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_swing",
   "initial": 50000.0,
-  "cash": 721.488437840002,
+  "cash": 17820.23490446,
   "positions": {
-    "NSE:TECHM": {
-      "qty": 10,
-      "avg": 1579.3157999999999,
-      "sl": 1719.7559999999999,
-      "tp": null,
-      "trail_pct": 7,
-      "opened": "2026-10-14T09:35:25+00:00"
-    },
     "NSE:ICICIBANK": {
       "qty": 12,
       "avg": 1383.97674,
@@ -28,10 +20,10 @@
       "opened": "2026-10-19T09:35:24+00:00"
     }
   },
-  "realized": -692.9520000000011,
-  "fees": 40.652522160000004,
-  "trades": 5,
-  "wins": 0,
+  "realized": 631.4658,
+  "fees": 59.481855540000005,
+  "trades": 6,
+  "wins": 1,
   "losses": 1,
   "memory": {}
 }
