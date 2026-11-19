@@ -22,7 +22,7 @@
     "NSE:EICHERMOT": {
       "qty": 2,
       "avg": 8044.6086,
-      "sl": null,
+      "sl": 7473.48,
       "tp": null,
       "trail_pct": 7,
       "opened": "2026-11-19T09:35:35+00:00"
