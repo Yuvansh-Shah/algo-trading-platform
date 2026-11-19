@@ -1,29 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 19264.324397155033,
-  "positions": {
-    "NSE:BHARTIARTL": {
-      "qty": 7,
-      "avg": 2145.0289199999997,
-      "sl": 2124.092485758981,
-      "tp": 2185.6150284820374,
-      "trail_pct": null,
-      "opened": "2026-11-19T04:15:34+00:00"
-    },
-    "NSE:SUNPHARMA": {
-      "qty": 8,
-      "avg": 1890.378,
-      "sl": 1867.440578415892,
-      "tp": 1936.0188431682157,
-      "trail_pct": null,
-      "opened": "2026-11-19T05:00:51+00:00"
-    }
-  },
-  "realized": 157.71283000005258,
-  "fees": 755.1619928449999,
-  "trades": 96,
-  "wins": 18,
+  "cash": 49549.31308777502,
+  "positions": {},
+  "realized": 319.62515000005203,
+  "fees": 770.312062225,
+  "trades": 98,
+  "wins": 20,
   "losses": 29,
   "memory": {}
 }
