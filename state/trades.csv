@@ -863,3 +863,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-19T04:45:48+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1885.377,7.54,-7.54,8,open,TV 15m +0.51 / 1h +0.47,
 2026-11-19T05:00:51+00:00,supertrend_intraday,NSE:SUNPHARMA,BUY,8,1890.378,7.56,-7.56,8,open,Supertrend flipped up,
 2026-11-19T05:15:32+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,11,1359.528,7.48,-76.17,0,close,15m rating faded (-0.25),
+2026-11-19T05:30:42+00:00,tv_rating_scalper,NSE:ITC,BUY,53,298.3096,7.91,-7.91,53,open,TV 15m +0.51 / 1h +0.49,
