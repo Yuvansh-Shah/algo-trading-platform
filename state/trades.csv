@@ -861,3 +861,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-19T04:15:28+00:00,tv_rating_swing,NSE:TECHM,SELL,10,1711.7576,18.83,1305.59,0,close,stop-loss,
 2026-11-19T04:45:48+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,11,1365.7731,7.51,-7.51,11,open,TV 15m +0.54 / 1h +0.31,
 2026-11-19T04:45:48+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1885.377,7.54,-7.54,8,open,TV 15m +0.51 / 1h +0.47,
+2026-11-19T05:00:51+00:00,supertrend_intraday,NSE:SUNPHARMA,BUY,8,1890.378,7.56,-7.56,8,open,Supertrend flipped up,
