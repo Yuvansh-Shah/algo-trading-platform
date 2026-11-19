@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33753.58346288002,
+  "cash": 3632.010102830025,
   "positions": {
     "NSE:BHARTIARTL": {
       "qty": 7,
@@ -10,11 +10,27 @@
       "tp": 2178.9136,
       "trail_pct": null,
       "opened": "2026-11-19T04:15:35+00:00"
+    },
+    "NSE:AXISBANK": {
+      "qty": 11,
+      "avg": 1365.7730999999999,
+      "sl": 1354.576,
+      "tp": 1387.348,
+      "trail_pct": null,
+      "opened": "2026-11-19T04:45:48+00:00"
+    },
+    "NSE:SUNPHARMA": {
+      "qty": 8,
+      "avg": 1885.377,
+      "sl": 1869.92,
+      "tp": 1915.16,
+      "trail_pct": null,
+      "opened": "2026-11-19T04:45:48+00:00"
     }
   },
   "realized": 465.3695400000561,
-  "fees": 1696.5836371199994,
-  "trades": 215,
+  "fees": 1711.6368971699994,
+  "trades": 217,
   "wins": 41,
   "losses": 66,
   "memory": {}
