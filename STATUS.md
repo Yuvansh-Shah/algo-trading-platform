@@ -1,15 +1,15 @@
 # Bot leaderboard
 
-_Updated 20 Nov 2026 15:20 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
+_Updated 20 Nov 2026 15:25 IST · paper trading · every bot started with ₹50,000 (crypto in USDT)_
 
 | # | Bot | Style | Return | P&L | Today | vs NIFTY | Trades | Win % | Profit factor | Max DD | Open | Health |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | **dual_momentum** | positional 1D | +17.13% | +8,566 | +1,450 | +2.76% | 0 | – | – | -1.2% | 1 | ok |
+| 1 | **dual_momentum** | positional 1D | +17.11% | +8,554 | +1,437 | +2.73% | 0 | – | – | -1.2% | 1 | ok |
 | 2 | **nifty_buy_hold** | benchmark 1D | +14.37% | +7,187 | +670 | +0.00% | 0 | – | – | -3.0% | 1 | ok |
-| 3 | **tv_rating_swing** | swing 1D | +11.47% | +5,737 | +755 | -2.90% | 2 | 50 | 1.86 | -2.8% | 3 | ok |
-| 4 | **momentum_rotation** | positional 1D | +10.56% | +5,281 | +493 | -3.81% | 3 | 100 | ∞ | -4.4% | 3 | ok |
+| 3 | **tv_rating_swing** | swing 1D | +11.39% | +5,697 | +716 | -2.98% | 2 | 50 | 1.86 | -2.8% | 3 | ok |
+| 4 | **momentum_rotation** | positional 1D | +10.51% | +5,253 | +465 | -3.87% | 3 | 100 | ∞ | -4.4% | 3 | ok |
 | 5 | **external_signals** | claude 15m | +0.00% | +0 | +0 | -14.37% | 0 | – | – | 0.0% | 0 | ok |
-| 6 | **bb_reversion_daily** | swing 1D | -0.42% | -211 | +320 | -14.79% | 0 | – | – | -1.5% | 1 | ok |
+| 6 | **bb_reversion_daily** | swing 1D | -0.43% | -217 | +314 | -14.81% | 0 | – | – | -1.5% | 1 | ok |
 | 7 | **tv_rating_scalper** | intraday 15m | -0.65% | -326 | +722 | -15.03% | 115 | 41 | 1.08 | -5.8% | 0 | ok |
 | 8 | **supertrend_intraday** | intraday 15m | -0.89% | -446 | +16 | -15.27% | 51 | 41 | 0.99 | -3.4% | 0 | ok |
 | 9 | **ema_crossover** | intraday 15m | -1.53% | -766 | -143 | -15.90% | 69 | 39 | 0.95 | -3.9% | 0 | ok |
