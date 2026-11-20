@@ -883,3 +883,5 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-20T07:10:27+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,32,510.9478,8.18,268.54,0,close,target,
 2026-11-20T09:00:40+00:00,ema_crossover,NSE:INFY,SELL,14,1095.5808,7.67,-135.63,0,close,opposite EMA cross,
 2026-11-20T09:30:41+00:00,supertrend_intraday,NSE:INFY,SELL,15,1090.5818,8.18,42.29,0,close,Supertrend reversed,
+2026-11-20T09:40:32+00:00,momentum_rotation,NSE:ETERNAL,SELL,49,363.1773,19.58,59.07,0,close,dropped out of top 10 momentum,
+2026-11-20T09:40:32+00:00,momentum_rotation,NSE:HDFCBANK,BUY,21,849.2198,19.62,-19.62,21,open,3M perf +16.6%,
