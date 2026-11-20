@@ -1,16 +1,8 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 17065.03046264502,
+  "cash": 33331.63749044502,
   "positions": {
-    "NSE:ICICIBANK": {
-      "qty": 10,
-      "avg": 1602.3204,
-      "sl": 1589.184,
-      "tp": 1627.632,
-      "trail_pct": null,
-      "opened": "2026-11-20T03:55:30+00:00"
-    },
     "NSE:KOTAKBANK": {
       "qty": 32,
       "avg": 502.30044,
@@ -20,10 +12,10 @@
       "opened": "2026-11-20T04:00:48+00:00"
     }
   },
-  "realized": 955.7205100000567,
-  "fees": 1793.8719673549995,
-  "trades": 228,
-  "wins": 45,
+  "realized": 1207.2609100000557,
+  "fees": 1802.0093395549995,
+  "trades": 229,
+  "wins": 46,
   "losses": 68,
   "memory": {}
 }
