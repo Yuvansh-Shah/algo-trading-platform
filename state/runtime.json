@@ -8,7 +8,7 @@
       "date": "2026-11-20",
       "start_equity": 49468.8
     },
-    "equity": 49782.0,
+    "equity": 49720.2,
     "started": true,
     "last_bar": "2026-11-19",
     "last_run": "2026-11-19T09:40:25+00:00"
@@ -79,13 +79,13 @@
     "style": "intraday",
     "description": "EMA 9/21 cross + RSI + VWAP, with the NIFTY trend, entries before 11:00; 1.5/3 ATR",
     "started": true,
-    "last_bar": "1994609",
-    "last_run": "2026-11-20T04:15:28+00:00",
+    "last_bar": "1994610",
+    "last_run": "2026-11-20T04:30:30+00:00",
     "day": {
       "date": "2026-11-20",
       "start_equity": 49377.63
     },
-    "equity": 49417.21
+    "equity": 49338.81
   },
   "ema_trend_swing": {
     "market": "NSE",
@@ -108,8 +108,8 @@
     "style": "claude",
     "description": "Executes signals Claude writes using the TradingView MCP (claude/mcp_strategies)",
     "started": true,
-    "last_bar": "1994609",
-    "last_run": "2026-11-20T04:15:28+00:00",
+    "last_bar": "1994610",
+    "last_run": "2026-11-20T04:30:30+00:00",
     "day": {
       "date": "2026-11-20",
       "start_equity": 50000.0
@@ -170,7 +170,7 @@
       "date": "2026-11-20",
       "start_equity": 54787.79
     },
-    "equity": 54991.84,
+    "equity": 55114.79,
     "started": true,
     "last_bar": "2026-11-19",
     "last_run": "2026-11-19T09:40:25+00:00"
@@ -184,7 +184,7 @@
       "date": "2026-11-20",
       "start_equity": 56516.56
     },
-    "equity": 56410.96,
+    "equity": 56533.84,
     "started": true,
     "last_bar": "2026-11-20",
     "last_run": "2026-11-20T04:15:28+00:00"
@@ -225,13 +225,13 @@
     "style": "intraday",
     "description": "Supertrend 10/3 flips on 15m with the NIFTY trend, entries before 11:00; 2R",
     "started": true,
-    "last_bar": "1994609",
-    "last_run": "2026-11-20T04:15:28+00:00",
+    "last_bar": "1994610",
+    "last_run": "2026-11-20T04:30:30+00:00",
     "day": {
       "date": "2026-11-20",
       "start_equity": 49537.9
     },
-    "equity": 49821.6
+    "equity": 49675.8
   },
   "tv_rating_scalper": {
     "market": "NSE",
@@ -239,13 +239,13 @@
     "style": "intraday",
     "description": "TradingView 15m STRONG BUY/SELL + 1h agreement, with the NIFTY trend, entries before 11:00",
     "started": true,
-    "last_bar": "1994609",
-    "last_run": "2026-11-20T04:15:28+00:00",
+    "last_bar": "1994610",
+    "last_run": "2026-11-20T04:30:30+00:00",
     "day": {
       "date": "2026-11-20",
       "start_equity": 48952.04
     },
-    "equity": 49196.69
+    "equity": 49306.49
   },
   "tv_rating_swing": {
     "market": "NSE",
@@ -256,7 +256,7 @@
       "date": "2026-11-20",
       "start_equity": 54981.32
     },
-    "equity": 55309.12,
+    "equity": 55415.02,
     "started": true,
     "last_bar": "2026-11-19",
     "last_run": "2026-11-19T09:35:33+00:00"
@@ -292,7 +292,7 @@
     "retired": true
   },
   "_meta": {
-    "last_engine_run": "2026-11-20T04:25:23+00:00",
+    "last_engine_run": "2026-11-20T04:30:30+00:00",
     "last_summary": "2026-11-19"
   },
   "dual_momentum": {
@@ -304,7 +304,7 @@
       "date": "2026-11-20",
       "start_equity": 57116.49
     },
-    "equity": 57045.97,
+    "equity": 57241.19,
     "started": true,
     "last_bar": "2026-11-19",
     "last_run": "2026-11-19T09:40:25+00:00"
