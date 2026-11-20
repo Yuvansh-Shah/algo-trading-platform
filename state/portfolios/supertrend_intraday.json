@@ -1,21 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 35287.444564875026,
-  "positions": {
-    "NSE:TCS": {
-      "qty": 6,
-      "avg": 2381.4762,
-      "sl": 2331.1961933504163,
-      "tp": 2483.6076132991675,
-      "trail_pct": null,
-      "opened": "2026-11-20T04:15:36+00:00"
-    }
-  },
-  "realized": 370.0917500000529,
-  "fees": 793.7899851249999,
-  "trades": 101,
+  "cash": 49553.852512515026,
+  "positions": {},
+  "realized": 354.7792700000533,
+  "fees": 800.9267574849999,
+  "trades": 102,
   "wins": 21,
-  "losses": 29,
+  "losses": 30,
   "memory": {}
 }
