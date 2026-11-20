@@ -1,21 +1,13 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 5367.337729805016,
+  "cash": 1699.9919850650185,
   "positions": {
     "NSE:AXISBANK": {
       "qty": 11,
       "avg": 1373.2746,
       "sl": 1362.016,
       "tp": 1394.968,
-      "trail_pct": null,
-      "opened": "2026-11-20T03:55:30+00:00"
-    },
-    "NSE:LT": {
-      "qty": 3,
-      "avg": 4154.73078,
-      "sl": 4120.6687999999995,
-      "tp": 4220.3624,
       "trail_pct": null,
       "opened": "2026-11-20T03:55:30+00:00"
     },
@@ -26,12 +18,20 @@
       "tp": 1627.632,
       "trail_pct": null,
       "opened": "2026-11-20T03:55:30+00:00"
+    },
+    "NSE:KOTAKBANK": {
+      "qty": 32,
+      "avg": 502.30044,
+      "sl": 498.1824,
+      "tp": 510.2352,
+      "trail_pct": null,
+      "opened": "2026-11-20T04:00:48+00:00"
     }
   },
-  "realized": 732.6932100000556,
-  "fees": 1771.9385401949994,
-  "trades": 225,
+  "realized": 689.0162700000562,
+  "fees": 1786.1856049349994,
+  "trades": 227,
   "wins": 44,
-  "losses": 67,
+  "losses": 68,
   "memory": {}
 }
