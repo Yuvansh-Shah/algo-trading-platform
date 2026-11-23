@@ -886,3 +886,7 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-20T09:40:32+00:00,momentum_rotation,NSE:ETERNAL,SELL,49,363.1773,19.58,59.07,0,close,dropped out of top 10 momentum,
 2026-11-20T09:40:32+00:00,momentum_rotation,NSE:HDFCBANK,BUY,21,849.2198,19.62,-19.62,21,open,3M perf +16.6%,
 2026-11-20T09:45:32+00:00,supertrend_intraday,NSE:TCS,SELL,6,2378.9241,7.14,-22.45,0,close,intraday square-off,
+2026-11-23T03:55:32+00:00,supertrend_intraday,NSE:RELIANCE,BUY,11,1381.2762,7.6,-7.6,11,open,Supertrend flipped up,
+2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,11,1381.2762,7.6,-7.6,11,open,TV 15m +0.60 / 1h +0.60,
+2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,11,1459.1918,8.03,-8.03,11,open,TV 15m +0.56 / 1h +0.54,
+2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,31,518.4037,8.04,-8.04,31,open,TV 15m +0.56 / 1h +0.40,

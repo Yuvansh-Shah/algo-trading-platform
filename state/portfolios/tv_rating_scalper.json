@@ -1,11 +1,36 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 49673.79160580502,
-  "positions": {},
+  "cash": 2334.4725351850175,
+  "positions": {
+    "NSE:RELIANCE": {
+      "qty": 11,
+      "avg": 1381.2762,
+      "sl": 1369.952,
+      "tp": 1403.096,
+      "trail_pct": null,
+      "opened": "2026-11-23T03:55:32+00:00"
+    },
+    "NSE:AXISBANK": {
+      "qty": 11,
+      "avg": 1459.19178,
+      "sl": 1447.2288,
+      "tp": 1482.2424,
+      "trail_pct": null,
+      "opened": "2026-11-23T03:55:32+00:00"
+    },
+    "NSE:KOTAKBANK": {
+      "qty": 31,
+      "avg": 518.40366,
+      "sl": 514.1536,
+      "tp": 526.5928,
+      "trail_pct": null,
+      "opened": "2026-11-23T03:55:32+00:00"
+    }
+  },
   "realized": 1483.9761100000562,
-  "fees": 1810.1845041949996,
-  "trades": 230,
+  "fees": 1833.8423348149993,
+  "trades": 233,
   "wins": 47,
   "losses": 68,
   "memory": {}
