@@ -901,3 +901,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-23T04:45:47+00:00,tv_rating_scalper,NSE:ITC,SELL,53,299.1402,7.93,-77.88,0,close,15m rating faded (-0.02),
 2026-11-23T04:55:25+00:00,supertrend_intraday,NSE:RELIANCE,SELL,11,1361.0277,7.49,-230.22,0,close,stop-loss,
 2026-11-23T06:40:29+00:00,ema_crossover,NSE:INFY,SELL,14,1108.3783,7.76,-176.4,0,close,stop-loss,
+2026-11-23T07:00:48+00:00,supertrend_intraday,NSE:INFY,SELL,14,1105.5788,7.74,-20.93,0,close,Supertrend reversed,

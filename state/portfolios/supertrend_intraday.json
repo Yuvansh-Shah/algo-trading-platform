@@ -1,21 +1,12 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 33816.99349202503,
-  "positions": {
-    "NSE:INFY": {
-      "qty": 14,
-      "avg": 1106.52126,
-      "sl": 1094.1602286103068,
-      "tp": 1134.7795427793865,
-      "trail_pct": null,
-      "opened": "2026-11-23T04:15:45+00:00"
-    }
-  },
-  "realized": 132.04621000005307,
-  "fees": 823.755077975,
-  "trades": 105,
+  "cash": 49287.35820014503,
+  "positions": {},
+  "realized": 118.8523300000519,
+  "fees": 831.494129855,
+  "trades": 106,
   "wins": 21,
-  "losses": 31,
+  "losses": 32,
   "memory": {}
 }
