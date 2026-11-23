@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 18133.70690621502,
+  "cash": 33951.22846907502,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 11,
@@ -10,20 +10,12 @@
       "tp": 1403.096,
       "trail_pct": null,
       "opened": "2026-11-23T03:55:32+00:00"
-    },
-    "NSE:KOTAKBANK": {
-      "qty": 31,
-      "avg": 518.40366,
-      "sl": 514.1536,
-      "tp": 526.5928,
-      "trail_pct": null,
-      "opened": "2026-11-23T03:55:32+00:00"
     }
   },
-  "realized": 1240.0044700000544,
-  "fees": 1841.7459037849992,
-  "trades": 234,
+  "realized": 994.9252900000564,
+  "fees": 1849.6586209249992,
+  "trades": 235,
   "wins": 47,
-  "losses": 69,
+  "losses": 70,
   "memory": {}
 }
