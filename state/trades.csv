@@ -892,3 +892,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,31,518.4037,8.04,-8.04,31,open,TV 15m +0.56 / 1h +0.40,
 2026-11-23T04:05:25+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,11,1437.0125,7.9,-251.88,0,close,stop-loss,
 2026-11-23T04:10:28+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,31,510.4979,7.91,-252.99,0,close,stop-loss,
+2026-11-23T04:15:45+00:00,supertrend_intraday,NSE:INFY,BUY,14,1106.5213,7.75,-7.75,14,open,Supertrend flipped up,
+2026-11-23T04:15:45+00:00,tv_rating_scalper,NSE:TCS,BUY,6,2406.0811,7.22,-7.22,6,open,TV 15m +0.54 / 1h +0.36,
+2026-11-23T04:15:45+00:00,tv_rating_scalper,NSE:ITC,BUY,53,300.4601,7.96,-7.96,53,open,TV 15m +0.51 / 1h +0.47,

@@ -1,7 +1,7 @@
 {
   "strategy": "supertrend_intraday",
   "initial": 50000.0,
-  "cash": 34352.21729341503,
+  "cash": 18853.17400459503,
   "positions": {
     "NSE:RELIANCE": {
       "qty": 11,
@@ -10,11 +10,19 @@
       "tp": 1412.4053111677745,
       "trail_pct": null,
       "opened": "2026-11-23T03:55:32+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 14,
+      "avg": 1106.52126,
+      "sl": 1094.1602286103068,
+      "tp": 1134.7795427793865,
+      "trail_pct": null,
+      "opened": "2026-11-23T04:15:45+00:00"
     }
   },
   "realized": 354.7792700000533,
-  "fees": 808.523776585,
-  "trades": 103,
+  "fees": 816.269425405,
+  "trades": 104,
   "wins": 21,
   "losses": 30,
   "memory": {}
