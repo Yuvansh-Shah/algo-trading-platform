@@ -890,3 +890,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:RELIANCE,BUY,11,1381.2762,7.6,-7.6,11,open,TV 15m +0.60 / 1h +0.60,
 2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:AXISBANK,BUY,11,1459.1918,8.03,-8.03,11,open,TV 15m +0.56 / 1h +0.54,
 2026-11-23T03:55:32+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,31,518.4037,8.04,-8.04,31,open,TV 15m +0.56 / 1h +0.40,
+2026-11-23T04:05:25+00:00,tv_rating_scalper,NSE:AXISBANK,SELL,11,1437.0125,7.9,-251.88,0,close,stop-loss,
