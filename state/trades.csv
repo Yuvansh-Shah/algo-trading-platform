@@ -897,3 +897,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-23T04:15:45+00:00,tv_rating_scalper,NSE:ITC,BUY,53,300.4601,7.96,-7.96,53,open,TV 15m +0.51 / 1h +0.47,
 2026-11-23T04:20:36+00:00,tv_rating_scalper,NSE:RELIANCE,SELL,11,1368.5262,7.53,-147.78,0,close,stop-loss,
 2026-11-23T04:30:38+00:00,ema_crossover,NSE:INFY,BUY,14,1120.424,7.84,-7.84,14,open,"EMA9>21, RSI 68",
+2026-11-23T04:35:31+00:00,tv_rating_scalper,NSE:TCS,SELL,6,2446.9105,7.34,237.64,0,close,target,
