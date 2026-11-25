@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 17990.54480771001,
+  "cash": 33753.854340145015,
   "positions": {
     "NSE:TCS": {
       "qty": 6,
@@ -10,20 +10,12 @@
       "tp": 2549.8552,
       "trail_pct": null,
       "opened": "2026-11-25T04:00:50+00:00"
-    },
-    "NSE:KOTAKBANK": {
-      "qty": 31,
-      "avg": 512.4524700000001,
-      "sl": 508.25120000000004,
-      "tp": 520.5476,
-      "trail_pct": null,
-      "opened": "2026-11-25T04:00:50+00:00"
     }
   },
-  "realized": 856.7518500000594,
-  "fees": 1918.9688322899995,
-  "trades": 244,
+  "realized": 741.9204100000586,
+  "fees": 1926.8544298549994,
+  "trades": 245,
   "wins": 48,
-  "losses": 73,
+  "losses": 74,
   "memory": {}
 }
