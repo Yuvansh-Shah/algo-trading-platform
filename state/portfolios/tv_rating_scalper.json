@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33753.854340145015,
-  "positions": {
-    "NSE:TCS": {
-      "qty": 6,
-      "avg": 2510.20194,
-      "sl": 2489.6223999999997,
-      "tp": 2549.8552,
-      "trail_pct": null,
-      "opened": "2026-11-25T04:00:50+00:00"
-    }
-  },
-  "realized": 741.9204100000586,
-  "fees": 1926.8544298549994,
-  "trades": 245,
+  "cash": 48766.73946248501,
+  "positions": {},
+  "realized": 701.1040900000605,
+  "fees": 1934.3646275149993,
+  "trades": 246,
   "wins": 48,
-  "losses": 74,
+  "losses": 75,
   "memory": {}
 }
