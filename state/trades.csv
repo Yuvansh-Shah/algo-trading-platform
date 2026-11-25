@@ -913,3 +913,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-25T04:30:42+00:00,ema_crossover,NSE:HDFCBANK,BUY,19,844.8189,8.03,-8.03,19,open,"EMA9>21, RSI 66",
 2026-11-25T04:30:43+00:00,ema_crossover,NSE:ICICIBANK,BUY,9,1636.8273,7.37,-7.37,9,open,"EMA9>21, RSI 66",
 2026-11-25T04:35:32+00:00,ema_crossover,NSE:RELIANCE,SELL,11,1372.2255,7.55,-191.82,0,close,stop-loss,
+2026-11-25T04:45:29+00:00,ema_crossover,NSE:AXISBANK,BUY,11,1420.184,7.81,-7.81,11,open,"EMA9>21, RSI 59",
