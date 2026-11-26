@@ -930,3 +930,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-26T05:30:37+00:00,ema_crossover,NSE:RELIANCE,BUY,11,1377.5755,7.58,-7.58,11,open,"EMA9>21, RSI 58",
 2026-11-26T05:45:35+00:00,ema_crossover,NSE:ICICIBANK,SELL,9,1629.3741,7.33,-56.41,0,close,opposite EMA cross,
 2026-11-26T05:50:24+00:00,tv_rating_scalper,NSE:SUNPHARMA,SELL,8,1923.9151,7.7,243.0,0,close,target,
+2026-11-26T09:30:38+00:00,ema_crossover,NSE:RELIANCE,SELL,11,1400.1199,7.7,240.29,0,close,target,
