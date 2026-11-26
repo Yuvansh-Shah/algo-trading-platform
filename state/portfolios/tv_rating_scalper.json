@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33618.54162872501,
+  "cash": 3170.039546005013,
   "positions": {
     "NSE:SUNPHARMA": {
       "qty": 8,
@@ -10,11 +10,27 @@
       "tp": 1922.4752,
       "trail_pct": null,
       "opened": "2026-11-26T03:55:33+00:00"
+    },
+    "NSE:TCS": {
+      "qty": 6,
+      "avg": 2561.41218,
+      "sl": 2540.4128,
+      "tp": 2601.8744,
+      "trail_pct": null,
+      "opened": "2026-11-26T04:00:51+00:00"
+    },
+    "NSE:INFY": {
+      "qty": 13,
+      "avg": 1158.83172,
+      "sl": 1149.3311999999999,
+      "tp": 1177.1376,
+      "trail_pct": null,
+      "opened": "2026-11-26T04:00:51+00:00"
     }
   },
   "realized": 701.1040900000605,
-  "fees": 1941.9349412749993,
-  "trades": 247,
+  "fees": 1957.1515839949993,
+  "trades": 249,
   "wins": 48,
   "losses": 75,
   "memory": {}
