@@ -923,3 +923,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-25T09:45:33+00:00,supertrend_intraday,NSE:HDFCBANK,SELL,19,841.6316,8.0,-116.06,0,close,intraday square-off,
 2026-11-25T09:45:33+00:00,supertrend_intraday,NSE:ICICIBANK,SELL,9,1637.6724,7.37,-15.07,0,close,intraday square-off,
 2026-11-25T09:45:34+00:00,tv_rating_scalper,NSE:TCS,SELL,6,2503.3992,7.51,-48.33,0,close,intraday square-off,
+2026-11-26T03:55:33+00:00,tv_rating_scalper,NSE:SUNPHARMA,BUY,8,1892.5784,7.57,-7.57,8,open,TV 15m +0.60 / 1h +0.56,
