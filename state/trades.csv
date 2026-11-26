@@ -927,3 +927,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-26T04:00:51+00:00,tv_rating_scalper,NSE:TCS,BUY,6,2561.4122,7.68,-7.68,6,open,TV 15m +0.65 / 1h +0.65,
 2026-11-26T04:00:51+00:00,tv_rating_scalper,NSE:INFY,BUY,13,1158.8317,7.53,-7.53,13,open,TV 15m +0.60 / 1h +0.65,
 2026-11-26T05:15:27+00:00,ema_crossover,NSE:ICICIBANK,BUY,9,1634.8269,7.36,-7.36,9,open,"EMA9>21, RSI 52",
+2026-11-26T05:30:37+00:00,ema_crossover,NSE:RELIANCE,BUY,11,1377.5755,7.58,-7.58,11,open,"EMA9>21, RSI 58",

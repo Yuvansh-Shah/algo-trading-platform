@@ -1,7 +1,7 @@
 {
   "strategy": "ema_crossover",
   "initial": 50000.0,
-  "cash": 34303.39459384003,
+  "cash": 19142.48786881003,
   "positions": {
     "NSE:ICICIBANK": {
       "qty": 9,
@@ -10,11 +10,19 @@
       "tp": 1657.2472260869256,
       "trail_pct": null,
       "opened": "2026-11-26T05:15:27+00:00"
+    },
+    "NSE:RELIANCE": {
+      "qty": 11,
+      "avg": 1377.57546,
+      "sl": 1367.8117704911479,
+      "tp": 1396.8764590177043,
+      "trail_pct": null,
+      "opened": "2026-11-26T05:30:37+00:00"
     }
   },
   "realized": 184.69810000005782,
-  "fees": 1167.8614061600008,
-  "trades": 149,
+  "fees": 1175.4380711900008,
+  "trades": 150,
   "wins": 29,
   "losses": 45,
   "memory": {}
