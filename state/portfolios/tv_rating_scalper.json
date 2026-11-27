@@ -1,7 +1,7 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 2142.2952297850097,
+  "cash": 33913.24316910501,
   "positions": {
     "NSE:INFY": {
       "qty": 13,
@@ -10,28 +10,12 @@
       "tp": 1197.864,
       "trail_pct": null,
       "opened": "2026-11-27T03:55:31+00:00"
-    },
-    "NSE:TCS": {
-      "qty": 6,
-      "avg": 2630.42598,
-      "sl": 2608.8608,
-      "tp": 2671.9784,
-      "trail_pct": null,
-      "opened": "2026-11-27T03:55:31+00:00"
-    },
-    "NSE:KOTAKBANK": {
-      "qty": 32,
-      "avg": 506.1012,
-      "sl": 501.952,
-      "tp": 514.096,
-      "trail_pct": null,
-      "opened": "2026-11-27T03:55:31+00:00"
     }
   },
-  "realized": 1454.1238900000637,
-  "fees": 2003.9689802149996,
-  "trades": 255,
-  "wins": 51,
-  "losses": 75,
+  "realized": 1263.170970000065,
+  "fees": 2019.8624008949996,
+  "trades": 257,
+  "wins": 52,
+  "losses": 76,
   "memory": {}
 }
