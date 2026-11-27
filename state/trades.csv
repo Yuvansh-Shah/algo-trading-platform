@@ -933,3 +933,6 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-26T09:30:38+00:00,ema_crossover,NSE:RELIANCE,SELL,11,1400.1199,7.7,240.29,0,close,target,
 2026-11-26T09:40:30+00:00,tv_rating_scalper,NSE:TCS,SELL,6,2603.6792,7.81,245.79,0,close,target,
 2026-11-26T09:45:33+00:00,tv_rating_scalper,NSE:INFY,SELL,13,1177.9644,7.66,241.07,0,close,target,
+2026-11-27T03:55:31+00:00,tv_rating_scalper,NSE:INFY,BUY,13,1179.2358,7.67,-7.67,13,open,TV 15m +0.56 / 1h +0.60,
+2026-11-27T03:55:31+00:00,tv_rating_scalper,NSE:TCS,BUY,6,2630.426,7.89,-7.89,6,open,TV 15m +0.56 / 1h +0.56,
+2026-11-27T03:55:31+00:00,tv_rating_scalper,NSE:KOTAKBANK,BUY,32,506.1012,8.1,-8.1,32,open,TV 15m +0.56 / 1h +0.51,
