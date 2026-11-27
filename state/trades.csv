@@ -939,3 +939,4 @@ time,strategy,symbol,side,qty,price,fee,pnl,position_after,kind,reason,live
 2026-11-27T04:00:44+00:00,tv_rating_scalper,NSE:TCS,SELL,6,2592.4814,7.78,-235.44,0,close,stop-loss,
 2026-11-27T04:00:50+00:00,tv_rating_scalper,NSE:KOTAKBANK,SELL,32,507.2485,8.12,28.6,0,close,15m rating faded (-0.36),
 2026-11-27T04:05:25+00:00,tv_rating_scalper,NSE:INFY,SELL,13,1159.4681,7.54,-264.52,0,close,stop-loss,
+2026-11-27T04:30:45+00:00,tv_rating_scalper,NSE:SBIN,BUY,14,1145.5291,8.02,-8.02,14,open,TV 15m +0.56 / 1h +0.35,
