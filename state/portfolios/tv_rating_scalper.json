@@ -1,21 +1,12 @@
 {
   "strategy": "tv_rating_scalper",
   "initial": 50000.0,
-  "cash": 33913.24316910501,
-  "positions": {
-    "NSE:INFY": {
-      "qty": 13,
-      "avg": 1179.2358,
-      "sl": 1169.568,
-      "tp": 1197.864,
-      "trail_pct": null,
-      "opened": "2026-11-27T03:55:31+00:00"
-    }
-  },
-  "realized": 1263.170970000065,
-  "fees": 2019.8624008949996,
-  "trades": 257,
+  "cash": 48978.79140671501,
+  "positions": {},
+  "realized": 1006.1903500000678,
+  "fees": 2027.3989432849996,
+  "trades": 258,
   "wins": 52,
-  "losses": 76,
+  "losses": 77,
   "memory": {}
 }
